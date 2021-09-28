@@ -1,1 +1,1 @@
-Websites for Mixed Integer Programming Workshops
+Repository for websites at https://www.mixedinteger.org
