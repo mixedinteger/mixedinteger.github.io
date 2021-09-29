@@ -460,3 +460,7 @@ h3 {
 @media (min-width: 550px) {
   h2 { font-size: 3.6rem; }
 }
+
+.affil {
+  color: #999;
+}
