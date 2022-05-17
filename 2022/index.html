@@ -70,8 +70,8 @@
       <h2>Program</h2>
       <div class="row">
         <div class="twelve columns">
-          <h3>Monday, May 23 (DANniversary)</h3>
-          <table>
+          <h3><a title="Show Monday schedule" href="#" onclick="toggle('tablemonday');return false;">Monday, May 23 (DANniversary)</a></h3>
+          <table id="tablemonday" class="hideme">
             <tr><td class="affil">09:15-09:30:</td><td>Danniversary opening remarks</td></tr>
             <tr><td class="affil">09:30-10:00:</td><td>Gerard Cornuejols – Dyadic linear programming</td></tr>
             <tr><td class="affil">10:00-10:30:</td><td>Willem Van Hoeve – Column Elimination</td></tr>
@@ -91,8 +91,8 @@
           </table>
         </div>
         <div class="twelve columns">
-          <h3>Tuesday, May 24</h3>
-          <table>
+          <h3><a title="Show Tuesday schedule" href="#" onclick="toggle('tabletuesday');return false;">Tuesday, May 24</a></h3>
+          <table id="tabletuesday" class="hideme">
             <tr><td class="affil">09:15-09:30:</td><td>MIP opening remarks</td></tr>
             <tr><td class="affil">09:30-10:00</td><td>Sam Fiorini – TBD</td></tr>
             <tr><td class="affil">10:00-10:30</td><td>Manuel Aprile – Binary extended formulations and sequential convexification</td></tr>
@@ -109,8 +109,8 @@
           </table>
         </div>
         <div class="twelve columns">
-          <h3>Wednesday, May 25</h3>
-          <table>
+          <h3><a title="Show Wednesday schedule" href="#" onclick="toggle('tablewednesday');return false;">Wednesday, May 25</a></h3>
+          <table id="tablewednesday" class="hideme">
             <tr><td class="affil">09:30-10:00</td><td>Georgina Hall – TBD</td></tr>
             <tr><td class="affil">10:00-10:30</td><td>Yin Tat Lee – Convex Optimization and Data Structure</td></tr>
             <tr><td class="affil">10:30-11:00</td><td class="affil">break</td></tr>
@@ -126,8 +126,8 @@
           </table>
         </div>
         <div class="twelve columns">
-          <h3>Thursday, May 26</h3>
-          <table>
+          <h3><a title="Show Thursday schedule" href="#" onclick="toggle('tablethursday');return false;">Thursday, May 26</a></h3>
+          <table id="tablethursday" class="hideme">
             <tr><td class="affil">09:30-10:00</td><td>JP Vielma – TBD</td></tr>
             <tr><td class="affil">10:00-10:30</td><td>Yiling Zhang – Integer Programming Approaches for Chance-Constrained Building Load Control<!-- with Wasserstein Ambiguity and Risk-Adjustable Variants--></td></tr>
             <tr><td class="affil">10:30-11:00</td><td class="affil">break</td></tr>
@@ -255,5 +255,10 @@
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script>
+    function toggle(elid) {
+      document.getElementById(elid).classList.toggle("hideme");
+    }
+  </script>
 </body>
 </html>
