@@ -461,10 +461,20 @@ h3 {
   h2 { font-size: 3.6rem; }
 }
 
-.affil {
+.time {
+  color: #999;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.break {
   color: #999;
 }
 
 .hideme {
   display: none;
+}
+
+td p {
+  margin-bottom: 0;
 }
