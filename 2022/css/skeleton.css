@@ -455,6 +455,7 @@ h2 {
 
 h3 {
   font-size: 1.8rem;
+  font-weight: bold;
 }
 
 @media (min-width: 550px) {
