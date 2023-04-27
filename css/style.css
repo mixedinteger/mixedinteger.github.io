@@ -78,6 +78,11 @@ p {
     text-align: justify;
 }
 
+li {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
 #ulprevious {
     padding-left: 0px;
     list-style: none;
