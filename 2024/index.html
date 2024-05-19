@@ -136,388 +136,221 @@
   <div class="mainstyle1">
     <div class="container">
       <h2>Confirmed Speakers</h2>
-      <div class="row">
-	<div class="twelve columns">
-	  <p>
-	    <a href="https://u.osu.edu/bayraksan.1/">
-	      Güzin Bayraksan
-	    </a>
-	    (Ohio State University)
-	    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
-	      (abstract)
-	    </a>
-	  </p>
-	  <p class="hideme">
-	    <b>Title</b> Bounds for Multistage Mixed-Integer Distributionally Robust Optimization<br>
-	    <b>Abstract</b> Multistage mixed-integer distributionally robust optimization (DRO) forms a class of extremely challenging problems since their size grows exponentially with the number of stages. One way to model the uncertainty in multistage DRO is by creating sets of conditional distributions (the so-called conditional ambiguity sets) on a finite scenario tree and requiring that such distributions remain close to nominal conditional distributions according to some measure of similarity/distance. In this talk, new bounding criteria for this class of difficult decision problems are provided through scenario grouping and convolution of risk measures using the ambiguity sets associated with various commonly used φ-divergences and the Wasserstein distance. Our approach does not require any special problem structure such as linearity, convexity, stagewise independence, and so forth. Therefore, while we focus on multistage mixed-integer DRO, our bounds can be applied to a wide range of DRO problems including two-stage and multistage, with or without integer variables, convex or nonconvex, and nested or non-nested formulations. Numerical results on a multistage mixed-integer production problem show the efficiency of the proposed approach through different choices of partition strategies, ambiguity sets, and levels of robustness.
-	  </p>
-	  <p>
-	    <a href="https://matbesancon.xyz/">
-	      Mathieu Besançon
-	    </a>
-	    (Zuse Institute Berlin / Inria Grenoble)
-	    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
-	      (abstract)
-	    </a>
-	  </p>
-	  <p class="hideme">
-	    <b>Title</b> Better Strong Branching Usage with a Stochastic Branching Model<br>
-	    <b>Abstract</b> Strong Branching (SB) is a cornerstone of all modern branching
-	    rules used in the Branch-and-Bound (BnB) algorithm, which is at the center of
-	    Mixed-Integer Programming solvers. In its full form, SB evaluates all variables
-	    to branch on and then selects the one producing the best relaxation, leading to
-	    small trees, but high runtimes. State-of-the-art branching rules therefore use
-	    SB with empirical working limits to achieve both small enough trees and short
-	    run times. In this work, we define a stochastic tree model of the BnB algorithm
-	    where dual gains follow a given probability distribution. This model allows us
-	    to relate expected dual gains to tree sizes and explicitly compare the cost of
-	    sampling a SB candidate with the reward in expected tree size reduction. We
-	    then leverage the insight from the abstract model to design a new stopping
-	    criterion for SB which dynamically continues or interrupts SB, and show that it 
-	    improves solving performance in both time and nodes over MIPLIB.
-	  </p>
-	  <p>
-	    <a href="https://mervebodur.github.io/">
-	      Merve Bodur
-	    </a>
-	    (University of Edinburgh)
-	    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
-	      (abstract)
-	    </a>
-	  </p>
-	  <p class="hideme">
-	      <b>Title</b> Incorporating Service Reliability in Multi-depot Vehicle Scheduling: A Chance-Constrained Approach<br>
-	      <b>Abstract</b> The multi-depot vehicle scheduling problem (MDVSP) is a principal
-	      planning challenge for transit agencies. We introduce a novel approach to MDVSP
-	      by incorporating service reliability through chance-constrained programming
-	      (CCP), targeting the pivotal issue of travel time uncertainty and its impact
-	      on transit service quality. We propose an exact branch-and-cut (B&C) scheme
-	      to solve our CCP model. We present several cut-generation procedures that
-	      exploit the underlying problem structure and analyze the relationship between
-	      the obtained cut families. Additionally, we design a Lagrangian-based heuristic
-	      to handle large-scale instances reflective of real-world transit operations. Our
-	      approach partitions the set of trips, each subset leading to a subproblem that
-	      can be efficiently solved with our B&C algorithm, and then employs a procedure
-	      to combine the subproblem solutions to create a vehicle schedule that
-	      satisfies all the planning constraints of the MDVSP. Our empirical evaluation
-	      demonstrates the superiority of our stochastic variant in achieving cost-effective
-	      schedules with reliable service guarantees compared to alternatives commonly
-	      used by practitioners, as well as the computational benefits of our methodologies.
-	  </p>
-	  <p>
-	    <a href="https://docenti.unisa.it/064642/home">
-	      Martina Cerulli
-	    </a>
-	    (University of Salerno)
-	    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
-	      (abstract)
-	    </a>
-	  </p>
-	  <p class="hideme">
-	    <b>Title</b> A bilevel approach for compensation and routing decisions in last-mile delivery</br>
-	    <b>Abstract</b> In last-mile delivery logistics, peer-to-peer logistic platforms play an
-	    important role in connecting senders, customers, and independent carriers to fulfill
-	    delivery requests. Since the carriers are not under the platform’s control,
-	    the platform has to anticipate their reactions, while deciding how to allocate
-	    the delivery operations. In this work, we model this problem using bilevel pro-
-	    gramming. At the upper level, the platform decides how to assign the orders to
-	    the carriers; at the lower level, each carrier solves a profitable tour problem to
-	    determine which offered requests to accept, based on her own profit maximiza-
-	    tion. Possibly, the platform can influence carriers’ decisions by determining also
-	    the compensation paid for each accepted request. The two considered settings
-	    result in two different formulations: the bilevel profitable tour problem with
-	    fixed compensation margins and with margin decisions, respectively. For each
-	    of them, we propose single-level reformulations and alternative formulations
-	    where the lower-level routing variables are projected out. A branch-and-cut
-	    algorithm is proposed to solve the bilevel models and extensive computational
-	    tests are performed to compare the proposed formulations and analyze solution
-	    characteristics.
-	  </p>
-	  <p>
-	    <a href="https://sites.google.com/view/rchen/home">
-	      Rui Chen
-	    </a>
-	    (Cornell Tech)
-	    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
-	      (abstract)
-	    </a>
-	  </p>
-	  <p class="hideme">
-	    <b>Title</b> Recovering Dantzig-Wolfe Bounds by Cutting Planes<br>
-	    <b>Abstract</b> Dantzig-Wolfe (DW) decomposition is a well-known technique in mixed-integer programming (MIP) for decomposing and convexifying constraints to obtain potentially strong dual bounds. We investigate cutting planes that can be derived in the space of original variables using DW decomposition and show that these cuts can provide the same dual bounds as DW decomposition. Compared with the objective function cut one can simply write using the DW bound, this approach typically leads to a formulation with lower dual degeneracy that consequently has a better computational performance when solved by standard MIP solvers in the original space. We also discuss how to strengthen these cuts to improve the computational performance further.
-	  </p>
-	  <p>
-	    <a href="https://www.hec.ca/en/profs/maryam.daryalal.html">
-	      Maryam Daryalal
-	    </a>
-	    (HEC Montréal)
-	    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
-	      (abstract)
-	    </a>
-	  </p>
-	  <p class="hideme">
-	    TBA
-	  </p>
-	  <p>
-	    <a href="https://sites.google.com/view/danialdavarnia">
-	      Danial Davarnia
-	    </a>
-	    (Iowa State University)
-	    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
-	      (abstract)
-	    </a>
-	  </p>
-	  <p class="hideme">
-	    <b>Title</b> Convexification of Bilinear Terms over Network Polytopes<br>
-	    <b>Abstract</b> It is well-known that the McCormick relaxation for the bilinear constraint z = xy gives the convex hull over the box domains for x and y. In network applications where the domain of bilinear variables is described by a network polytope, the McCormick relaxation, also referred to as linearization, fails to provide the convex hull and often leads to poor dual bounds. We study the convex hull of the set containing bilinear constraints zi,j = xiyj where xi represents the arc-flow variable in a network polytope, and yj is in a simplex. For the case where the simplex contains a single y variable, we introduce a systematic procedure to obtain the convex hull of the above set in the original space of variables and show that all facet-defining inequalities of the convex hull can be obtained explicitly through identifying a special tree structure in the underlying network. For the generalization where the simplex contains multiple y variables, we design a constructive procedure to obtain an important class of facet-defining inequalities for the convex hull of the underlying bilinear set that is characterized by a special forest structure in the underlying network. Computational experiments conducted on different applications show the effectiveness of the proposed methods in improving the dual bounds obtained from alternative techniques.
-	  </p>
-	  <p>
-	    <a href="https://sites.google.com/view/yatharthdubey/">
-	      Yatharth Dubey
-	    </a>
-	    (University of Illinois of Urbana-Champaign)
-	    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
-	      (abstract)
-	    </a>
-	  </p>
-	  <p class="hideme">
-	    TBA
-	  </p>
-	  <p>
-	    <a href="https://www.zib.de/gamrath/">
-	      Gerald Gamrath
-	    </a>
-	    (COPT Cardinal Operations)
-	    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
-	      (abstract)
-	    </a>
-	  </p>
-	  <p class="hideme">
-	    TBA
-	  </p>
-	  <p>
-	    <a href="https://www.nrel.gov/research/staff/bernard-knueven.html">
-	      Bernard Knueven
-	    </a>
-	    (National Renewable Energy Lab)
-	    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
-	      (abstract)
-	    </a>
-	  </p>
-	  <p class="hideme">
-	    <b>Title</b> Scenario-based stochastic integer programming with an application to power grid capacity expansion</br>
-	    <b>Abstract</b> Practical solution of large-scale stochastic integer programming
-	    problems generally requires the use of parallel computing resources. In this
-	    talk, we will describe the open-source package mpi-sppy, which has efficient and
-	    scalable parallelization as a central feature, with a focus on capabilities aimed
-	    at stochastic integer programs. We will demonstrate these capabilities in the
-	    context of a climate-aware power grid capacity expansion model, which is struc-
-	    turally equivalent to a two-stage stochastic integer program, considering a 10K
-	    bus nodal representation of the California electricity grid in the United States.
-	    Leveraging high-performance computing, we can identify provably near-optimal
-	    solutions for instances with thousands of representative days in only a few hours
-	    of wall-clock time.
-	  </p>
-	  <p>
-	    <a href="https://directory.engr.wisc.edu/ie/Faculty/Michini_Carla/">
-	      Carla Michini
-	    </a>
-	    (University of Wisconsin-Madison)
-	    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
-	      (abstract)
-	    </a>
-	  </p>
-	  <p class="hideme">
-	    <b>Title</b> A polyhedral study of multivariate decision trees<br>
-	    <b>Abstract</b> Decision trees are a widely used tool for interpretable machine learning.
-	    Multivariate decision trees employ hyperplanes at the branch nodes to route
-	    datapoints throughout the tree and yield more compact models than univari-
-	    ate trees. Recently, mixed-integer programming (MIP) has been applied to
-	    formulate the optimal decision tree problem. A key component of most MIP
-	    formulations is a specification of how to route datapoints in the tree from the
-	    root to the leaves. Our goal is to provide polyhedral characterizations of realizable
-	    routings, i.e., routings that can be realized using multivariate branching
-	    rules. We first focus on shattering inequalities, a class of valid inequalities that
-	    can be used to strengthen almost any MIP formulation and that have been
-	    shown to be computationally effective. We prove that if all the feature vectors
-	    are in general position, then the shattering inequalities defined for the root of
-	    the tree are facet-defining for the convex hull of the realizable routings. We
-	    then show that every facet-defining inequality of a depth one tree involving at
-	    least two variables is also facet-defining for trees of arbitrary depth. Finally,
-	    we show that facet-defining inequalities characterizing realizable routings are
-	    also facet-defining for a complete MIP formulation. We validate our theoretical
-	    results by performing numerical experiments that specifically exploit shattering
-	    inequalities defined at the root node and we observe an improvement in performance
-	    for both numerical and categorical datasets, especially for decision trees
-	    of intermediate size. This a joint work with Zachary Zhou.
-	  </p>
-	  <p>
-	    <a href="https://www.cbs.dk/en/research/departments-and-centres/department-of-economics/staff/drmeco">
-	      Dolores Romero Morales
-	    </a>
-	    (Copenhagen Business School)
-	    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
-	      (abstract)
-	    </a>
-	  </p>
-	  <p class="hideme">
-	    <b>Title</b> A tour of Mathematical Optimization Models for Group Counterfactual Explanations<br>
-	    <b>Abstract</b> Counterfactual Analysis has shown to be a powerful tool in the burgeoning field of Explainable Artificial Intelligence. In Supervised Classification, this means associating with each record a so-called counterfactual explanation: an instance that is close to the record and whose probability of being classified in the opposite class by a given classifier is high. While the literature mostly focuses on the problem of finding one counterfactual for one record, in this presentation we take a stakeholder perspective, and we address the more general setting in which a group of counterfactual explanations is sought for a group of instances. We introduce some mathematical optimization models as illustration of each possible allocation rule between counterfactuals and instances, for tabular as well as functional data, and tasks beyond Supervised Classification.
-	  </p>
-	  <p>
-	    <a href="https://bentonatura.com/">
-	      Bento Natura
-	    </a>
-	    (UC Berkeley & Georgia Tech)
-	    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
-	      (abstract)
-	    </a>
-	  </p>
-	  <p class="hideme">
-	    <b>Title</b> A strongly polynomial algorithm for linear programs with at most two nonzero entries per row or column<br>
-	    <b>Abstract</b> We give a strongly polynomial algorithm for minimum cost generalized flow, and hence for optimizing any linear program with at most two non-zero entries per row, or at most two non-zero entries per column. Primal and dual feasibility were shown by Megiddo (SICOMP ’83) and Végh (MOR ’17) respectively. Our result can be viewed as progress towards understanding whether all linear programs can be solved in strongly polynomial time, also referred to as Smale’s 9th problem. Our approach is based on the recent primal- dual interior point method (IPM) due to Allamigeon, Dadush, Loho, Natura and Végh (FOCS ’22). The number of iterations needed by the IPM is bounded, up to a polynomial factor in the number of inequalities, by the straight line complexity of the central path. Roughly speaking, this is the minimum number of pieces of any piecewise linear curve that multiplicatively approximates the central path. As our main contribution, we show that the straight line complexity of any minimum cost generalized flow instance is polynomial in the number of arcs and vertices. By applying a reduction of Hochbaum (ORL ’04), the same bound applies to any linear program with at most two non-zeros per column or per row. To be able to run the IPM, one requires a suitable initial point. For this purpose, we develop a novel multistage approach, where each stage can be solved in strongly polynomial time given the result of the previous stage. Beyond this, substantial work is needed to ensure that the bit complexity of each iterate remains bounded during the execution of the algorithm. For this purpose, we show that one can maintain a representation of the iterates as a low complexity convex combination of vertices. Our approach is black-box and can be applied to any log-barrier path following method. Joint work with Daniel Dadush, Zhuan Khye Koh, Neil Olver, and László Végh.
-	  </p>
-	  <p>
-	    <a href="https://profiles.rice.edu/faculty/sebastian-perez-salazar">
-	      Sebastian Perez-Salazar
-	    </a>
-	    (Rice University)
-	    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
-	      (abstract)
-	    </a>
-	  </p>
-	  <p class="hideme">
-	    <b>Title</b> Stochastic Scheduling: Approximations via LP Relaxations<br>
-	    <b>Abstract</b> Motivated by applications where impatience is pervasive, such as
-	    serving customers in call centers and running jobs in the cloud spot market,
-	    we introduce a sequential job scheduling problem, where each job has unknown
-	    stochastic service and departure times. Initially, we have access to a single server
-	    and n jobs with known non-negative values. These jobs also have unknown
-	    stochastic service and departure times with known distributional information,
-	    which we assume to be independent. When the server is free, we can run a job
-	    that has neither been run nor departed and collect its value. Running a job fully
-	    occupies the server for an unknown amount of time, at which other jobs waiting
-	    to be run could depart. We aim to design a policy that maximizes the expected
-	    total value obtained from jobs run on the server. Natural formulations of this
-	    problem (e.g., using dynamic programming) suffer from the curse of dimensionality,
-	    making them intractable. Hence, we focus on heuristic approaches that
-	    provide provable approximations of the optimal policy. We devise a compact
-	    LP with an objective that upper bounds the value of the optimal policy.
-	    Additionally, from this LP, we design an implementable policy that guarantees a
-	    constant approximation of the optimal policy.
-	  </p>
-	  <p>
-	    <a href="https://jeffposkin.github.io/">
-	      Jeff Poskin
-	    </a>
-	    (Boeing Research & Technology)
-	    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
-	      (abstract)
-	    </a>
-	  </p>
-	  <p class="hideme">
-	    TBA
-	  </p>
-	  <p>
-	    <a href="https://coral.ise.lehigh.edu/~ted/">
-	      Ted Ralphs
-	    </a>
-	    (Lehigh University)
-	    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
-	      (abstract)
-	    </a>
-	  </p>
-	  <p class="hideme">
-	    TBA
-	  </p>
-	  <p>
-	    <a href="https://sorooshafiee.github.io/">
-	      Soroosh Shafieezadeh-Abadeh
-	    </a>
-	    (Cornell University)
-	    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
-	      (abstract)
-	    </a>
-	  </p>
-	  <p class="hideme">
-	    <b>Title</b> Constrained Optimization of Low-Rank Functions with Indicator Variables<br>
-	    <b>Abstract</b> Optimization problems involving minimization of a low-rank convex function over constraints modeling restrictions on the support of the decision variables emerge in various machine learning applications. These problems are often modeled with indicator variables for identifying the support of the continuous variables. In this paper we investigate compact extended formulations for such problems through perspective reformulation techniques. In contrast to the majority of previous work that relies on support function arguments and disjunctive programming techniques to provide convex hull results, we propose a constructive approach that exploits a hidden conic structure induced by perspective functions. To this end, we first establish a convex hull result for a general conic mixed-binary set in which each conic constraint involves a linear function of independent continuous variables and a set of binary variables. We then demonstrate that extended representations of sets associated with epigraphs of low-rank convex functions over constraints modeling indicator relations naturally admit such a conic representation. This enables us to systematically give perspective formulations for the convex hull descriptions of these sets with nonlinear separable or non-separable objective functions, sign constraints on continuous variables, and combinatorial constraints on indicator variables.
-	  </p>
-	  <p>
-	    <a href="https://mtanneau.github.io/">
-	      Mathieu Tanneau
-	    </a>
-	    (Georgia Tech)
-	    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
-	      (abstract)
-	    </a>
-	  </p>
-	  <p class="hideme">
-	    <b>Title</b> Trust, but verify: MIP-based verification of (trained) neural networks<br>
-	    <b>Abstract</b> Recent advances in Machine Learning, and artificial neural networks (ANN) in particular, has fueled a growing interest in deploying such models in safety-critical applications, from image recognition in self-driving cars to control systems in power grids. A major obstacle to this deployment, however, is the lack of formal guarantees on the performance of trained ANNs once deployed in real life. This, in turn, has motivated the so-called ANN verification problem, wherein one must verify whether the output of a trained ANN satisfies certain properties for any input in a given domain. All exact verification methods rely, some way or another, on a mixed-integer representation of the mapping between input and output of a ANN with fixed weights. Nevertheless, existing MIP solvers struggle on this class of problems, and are far outperformed by current state-of-the-art methods for ANN verification (as demonstrated by recent outcomes of the Verification of Neural Networks Competition). This talk will cover the challenges (and recent successes!) of MIP-based verification of trained neural networks, with a particular focus on problems arising from engineering applications. Numerical results will be presented on open instances from the VNN-COMP24, and from real-life applications in power systems.
-	  </p>
-	  <p>
-	    <a href="https://juan-pablo-vielma.github.io/">
-	      Juan Pablo Vielma
-	    </a>
-	    (Google)
-	    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
-	      (abstract)
-	    </a>
-	  </p>
-	  <p class="hideme">
-	    TBA
-	  </p>
-	  <p>
-	    <a href="https://sites.google.com/view/kim-yu/home">
-	      Qimeng (Kim) Yu
-	    </a>
-	    (Université de Montréal)
-	    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
-	      (abstract)
-	    </a>
-	  </p>
-	  <p class="hideme">
-	    <b>Title</b> A Polyhedral Study on L<sup style="font-size:12pt">&natural;</sup>-Convex Minimization and Its Mixed-Integer Extension<br>
-	    <b>Abstract</b> L<sup style="font-size:12pt">&natural;</sup>-convex functions are a class of nonlinear functions defined over
-	    integral domains. Such functions are not necessarily convex, but they display a
-	    discrete analogue of convexity. In this work, we explore the polyhedral structure
-	    of the epigraph of any L<sup style="font-size:12pt">&natural;</sup>-convex function and provide a class of valid inequalities.
-	    We show that these inequalities are sufficient to describe the epigraph
-	    convex hull completely, and we give an exact separation algorithm. We further
-	    examine a mixed-integer extension of this class of minimization problems and
-	    propose strong valid inequalities. We establish the connection between our results
-	    and the valid inequalities for some structured mixed-integer sets in the
-	    literature.
-	  </p>
+      <p>
+	<a title="Confirmed Speakers" href="#" onclick="toggleSchedule(this);return false;">Click here to toggle list of speakers.</a>
+      </p>
+      <div class="hideme">
+	<div class="row">
+  	  <div class="twelve columns">
+  	    <p>
+  	      <a href="https://u.osu.edu/bayraksan.1/">
+  		Güzin Bayraksan
+  	      </a>
+  	      (Ohio State University)
+  	    </p>
+  	    <p>
+  	      <a href="https://matbesancon.xyz/">
+  		Mathieu Besançon
+  	      </a>
+  	      (Zuse Institute Berlin / Inria Grenoble)
+  	    </p>
+  	    <p>
+  	      <a href="https://mervebodur.github.io/">
+  		Merve Bodur
+  	      </a>
+  	      (University of Edinburgh)
+  	    </p>
+  	    <p>
+  	      <a href="https://docenti.unisa.it/064642/home">
+  		Martina Cerulli
+  	      </a>
+  	      (University of Salerno)
+  	    </p>
+  	    <p>
+  	      <a href="https://sites.google.com/view/rchen/home">
+  		Rui Chen
+  	      </a>
+  	      (Cornell Tech)
+  	    </p>
+  	    <p>
+  	      <a href="https://www.hec.ca/en/profs/maryam.daryalal.html">
+  		Maryam Daryalal
+  	      </a>
+  	      (HEC Montréal)
+  	    </p>
+  	    <p>
+  	      <a href="https://sites.google.com/view/danialdavarnia">
+  		Danial Davarnia
+  	      </a>
+  	      (Iowa State University)
+  	    </p>
+  	    <p>
+  	      <a href="https://sites.google.com/view/yatharthdubey/">
+  		Yatharth Dubey
+  	      </a>
+  	      (University of Illinois of Urbana-Champaign)
+  	    </p>
+  	    <p>
+  	      <a href="https://www.zib.de/gamrath/">
+  		Gerald Gamrath
+  	      </a>
+  	      (COPT Cardinal Operations)
+  	    </p>
+  	    <p>
+  	      <a href="https://www.nrel.gov/research/staff/bernard-knueven.html">
+  		Bernard Knueven
+  	      </a>
+  	      (National Renewable Energy Lab)
+  	    </p>
+  	    <p>
+  	      <a href="https://directory.engr.wisc.edu/ie/Faculty/Michini_Carla/">
+  		Carla Michini
+  	      </a>
+  	      (University of Wisconsin-Madison)
+  	    </p>
+  	    <p>
+  	      <a href="https://www.cbs.dk/en/research/departments-and-centres/department-of-economics/staff/drmeco">
+  		Dolores Romero Morales
+  	      </a>
+  	      (Copenhagen Business School)
+  	    </p>
+  	    <p>
+  	      <a href="https://bentonatura.com/">
+  		Bento Natura
+  	      </a>
+  	      (UC Berkeley & Georgia Tech)
+  	    </p>
+  	    <p>
+  	      <a href="https://profiles.rice.edu/faculty/sebastian-perez-salazar">
+  		Sebastian Perez-Salazar
+  	      </a>
+  	      (Rice University)
+  	    </p>
+  	    <p>
+  	      <a href="https://jeffposkin.github.io/">
+  		Jeff Poskin
+  	      </a>
+  	      (Boeing Research & Technology)
+  	    </p>
+  	    <p>
+  	      <a href="https://coral.ise.lehigh.edu/~ted/">
+  		Ted Ralphs
+  	      </a>
+  	      (Lehigh University)
+  	    </p>
+  	    <p>
+  	      <a href="https://sorooshafiee.github.io/">
+  		Soroosh Shafieezadeh-Abadeh
+  	      </a>
+  	      (Cornell University)
+  	    </p>
+  	    <p>
+  	      <a href="https://mtanneau.github.io/">
+  		Mathieu Tanneau
+  	      </a>
+  	      (Georgia Tech)
+  	    </p>
+  	    <p>
+  	      <a href="https://juan-pablo-vielma.github.io/">
+  		Juan Pablo Vielma
+  	      </a>
+  	      (Google)
+  	    </p>
+  	    <p>
+  	      <a href="https://sites.google.com/view/kim-yu/home">
+  		Qimeng (Kim) Yu
+  	      </a>
+  	      (Université de Montréal)
+  	    </p>
+  	  </div>
 	</div>
       </div>
     </div>
   </div>
-  
+    
   <div class="mainstyle2">
     <div class="container">
       <h2>Program</h2>
       <div class="row">
         <div class="twelve columns">
-
-	  <p>
-	    The program will follow the following template.
-	    The assignment of speakers to sessions will be announced soon.
-	  </p>
-
           <h3><a title="Show Monday schedule" href="#" onclick="toggleSchedule(this);return false;">Monday, June 3</a></h3>
           <table class="hideme">
 	    <tr><td class="time">9:10 - 9:30</td><td><p>Welcome comments</p></td></tr>
-            <tr><td class="time">9:30 - 10:15</td><td><p>Speaker</p></td></tr>
-            <tr><td class="time">10:15 - 10:45</td><td><p>Break</p></td></tr>
-            <tr><td class="time">10:45 - 11:20</td><td><p>Speaker</p></td></tr>
-            <tr><td class="time">11:20 - 11:55</td><td><p>Speaker</p></td></tr>
+            <tr><td class="time">9:30 - 10:20</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Ted Ralphs – TBA</a>
+		</p>
+		<p class="hideme">
+		  TBA
+		</p>
+	    </td></tr>
+            <tr><td class="time">10:20 - 10:45</td><td><p>Break</p></td></tr>
+            <tr><td class="time">10:45 - 11:20</td><td>
+	   	<p>
+	   	  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Merve Bodur – Incorporating Service Reliability in Multi-depot Vehicle Scheduling: A Chance-Constrained Approach</a>
+	   	</p>
+	   	<p class="hideme">
+	   	  The multi-depot vehicle scheduling problem (MDVSP) is a principal
+		  planning challenge for transit agencies. We introduce a novel approach to MDVSP
+		  by incorporating service reliability through chance-constrained programming
+		  (CCP), targeting the pivotal issue of travel time uncertainty and its impact
+		  on transit service quality. We propose an exact branch-and-cut (B&C) scheme
+		  to solve our CCP model. We present several cut-generation procedures that
+		  exploit the underlying problem structure and analyze the relationship between
+		  the obtained cut families. Additionally, we design a Lagrangian-based heuristic
+		  to handle large-scale instances reflective of real-world transit operations. Our
+		  approach partitions the set of trips, each subset leading to a subproblem that
+		  can be efficiently solved with our B&C algorithm, and then employs a procedure
+		  to combine the subproblem solutions to create a vehicle schedule that
+		  satisfies all the planning constraints of the MDVSP. Our empirical evaluation
+		  demonstrates the superiority of our stochastic variant in achieving cost-effective
+		  schedules with reliable service guarantees compared to alternatives commonly
+		  used by practitioners, as well as the computational benefits of our methodologies.
+	   	</p>
+	    </td></tr>
+            <tr><td class="time">11:20 - 11:55</td><td>
+		<p>
+	   	  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Martina Cerulli – A bilevel approach for compensation and routing decisions in last-mile delivery</a>
+	   	</p>
+	   	<p class="hideme">
+	   	  In last-mile delivery logistics, peer-to-peer logistic platforms play an
+		  important role in connecting senders, customers, and independent carriers to fulfill
+		  delivery requests. Since the carriers are not under the platform’s control,
+		  the platform has to anticipate their reactions, while deciding how to allocate
+		  the delivery operations. In this work, we model this problem using bilevel pro-
+		  gramming. At the upper level, the platform decides how to assign the orders to
+		  the carriers; at the lower level, each carrier solves a profitable tour problem to
+		  determine which offered requests to accept, based on her own profit maximiza-
+		  tion. Possibly, the platform can influence carriers’ decisions by determining also
+		  the compensation paid for each accepted request. The two considered settings
+		  result in two different formulations: the bilevel profitable tour problem with
+		  fixed compensation margins and with margin decisions, respectively. For each
+		  of them, we propose single-level reformulations and alternative formulations
+		  where the lower-level routing variables are projected out. A branch-and-cut
+		  algorithm is proposed to solve the bilevel models and extensive computational
+		  tests are performed to compare the proposed formulations and analyze solution
+		  characteristics.
+	   	</p>
+	    </td></tr>
             <tr><td class="time">11:55 - 2:00</td><td><p>Lunch</p></td></tr>
-            <tr><td class="time">2:00 - 2:35</td><td><p>Speaker</p></td></tr>
+            <tr><td class="time">2:00 - 2:35</td><td>
+		<p>
+	   	  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Jeff Poskin – TBA</a>
+		</p>
+		<p class="hideme">
+	   	  TBA
+		</p>
+	    </td></tr>
             <tr><td class="time">2:35 - 3:10</td><td><p>Poster Teaser #1</p></td></tr>
             <tr><td class="time">3:10 - 3:40</td><td><p>Break</p></td></tr>
-            <tr><td class="time">3:40 - 4:15</td><td><p>Speaker</p></td></tr>
+            <tr><td class="time">3:40 - 4:15</td><td>
+	   	<p>
+	   	  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Mathieu Tanneau – Trust, but verify: MIP-based verification of (trained) neural networks</a>
+	   	</p>
+	   	<p class="hideme">
+	   	  Recent advances in Machine Learning, and artificial neural networks (ANN) in particular, has fueled a growing interest in deploying such models in safety-critical applications, from image recognition in self-driving cars to control systems in power grids. A major obstacle to this deployment, however, is the lack of formal guarantees on the performance of trained ANNs once deployed in real life. This, in turn, has motivated the so-called ANN verification problem, wherein one must verify whether the output of a trained ANN satisfies certain properties for any input in a given domain. All exact verification methods rely, some way or another, on a mixed-integer representation of the mapping between input and output of a ANN with fixed weights. Nevertheless, existing MIP solvers struggle on this class of problems, and are far outperformed by current state-of-the-art methods for ANN verification (as demonstrated by recent outcomes of the Verification of Neural Networks Competition). This talk will cover the challenges (and recent successes!) of MIP-based verification of trained neural networks, with a particular focus on problems arising from engineering applications. Numerical results will be presented on open instances from the VNN-COMP24, and from real-life applications in power systems.
+	   	</p>
+	    </td></tr>
             <tr><td class="time">4:15 - 4:50</td><td><p>Poster Teaser #2</p></td></tr>
             <tr><td class="time"></td><td><p></p></td></tr>
             <tr><td class="time">5:30 - 8:00</td><td><p>Poster Session</p></td></tr>
@@ -525,15 +358,93 @@
 	  
           <h3><a title="Show Tuesday schedule" href="#" onclick="toggleSchedule(this);return false;">Tuesday, June 4</a></h3>
           <table class="hideme">
-            <tr><td class="time">9:30 - 10:15</td><td><p>Speaker</p></td></tr>
-            <tr><td class="time">10:15 - 10:45</td><td><p>Break</p></td></tr>
-            <tr><td class="time">10:45 - 11:20</td><td><p>Speaker</p></td></tr>
-            <tr><td class="time">11:20 - 11:55</td><td><p>Speaker</p></td></tr>
+            <tr><td class="time">9:30 - 10:20</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Dolores Romero Morales – A tour of Mathematical Optimization Models for Group Counterfactual Explanations</a>
+		</p>
+		<p class="hideme">
+		  Counterfactual Analysis has shown to be a powerful tool in the burgeoning field of Explainable Artificial Intelligence. In Supervised Classification, this means associating with each record a so-called counterfactual explanation: an instance that is close to the record and whose probability of being classified in the opposite class by a given classifier is high. While the literature mostly focuses on the problem of finding one counterfactual for one record, in this presentation we take a stakeholder perspective, and we address the more general setting in which a group of counterfactual explanations is sought for a group of instances. We introduce some mathematical optimization models as illustration of each possible allocation rule between counterfactuals and instances, for tabular as well as functional data, and tasks beyond Supervised Classification.
+		</p>
+	    </td></tr>
+            <tr><td class="time">10:20 - 10:45</td><td><p>Break</p></td></tr>
+            <tr><td class="time">10:45 - 11:20</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Carla Michini – A polyhedral study of multivariate decision trees</a>
+		</p>
+		<p class="hideme">
+		  Decision trees are a widely used tool for interpretable machine learning.
+		  Multivariate decision trees employ hyperplanes at the branch nodes to route
+		  datapoints throughout the tree and yield more compact models than univari-
+		  ate trees. Recently, mixed-integer programming (MIP) has been applied to
+		  formulate the optimal decision tree problem. A key component of most MIP
+		  formulations is a specification of how to route datapoints in the tree from the
+		  root to the leaves. Our goal is to provide polyhedral characterizations of realizable
+		  routings, i.e., routings that can be realized using multivariate branching
+		  rules. We first focus on shattering inequalities, a class of valid inequalities that
+		  can be used to strengthen almost any MIP formulation and that have been
+		  shown to be computationally effective. We prove that if all the feature vectors
+		  are in general position, then the shattering inequalities defined for the root of
+		  the tree are facet-defining for the convex hull of the realizable routings. We
+		  then show that every facet-defining inequality of a depth one tree involving at
+		  least two variables is also facet-defining for trees of arbitrary depth. Finally,
+		  we show that facet-defining inequalities characterizing realizable routings are
+		  also facet-defining for a complete MIP formulation. We validate our theoretical
+		  results by performing numerical experiments that specifically exploit shattering
+		  inequalities defined at the root node and we observe an improvement in performance
+		  for both numerical and categorical datasets, especially for decision trees
+		  of intermediate size. This a joint work with Zachary Zhou.
+		</p>
+	    </td></tr>
+            <tr><td class="time">11:20 - 11:55</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Sebastian Perez-Salazar – Stochastic Scheduling: Approximations via LP Relaxations</a>
+		</p>
+		<p class="hideme">
+		  Motivated by applications where impatience is pervasive, such as
+		  serving customers in call centers and running jobs in the cloud spot market,
+		  we introduce a sequential job scheduling problem, where each job has unknown
+		  stochastic service and departure times. Initially, we have access to a single server
+		  and n jobs with known non-negative values. These jobs also have unknown
+		  stochastic service and departure times with known distributional information,
+		  which we assume to be independent. When the server is free, we can run a job
+		  that has neither been run nor departed and collect its value. Running a job fully
+		  occupies the server for an unknown amount of time, at which other jobs waiting
+		  to be run could depart. We aim to design a policy that maximizes the expected
+		  total value obtained from jobs run on the server. Natural formulations of this
+		  problem (e.g., using dynamic programming) suffer from the curse of dimensionality,
+		  making them intractable. Hence, we focus on heuristic approaches that
+		  provide provable approximations of the optimal policy. We devise a compact
+		  LP with an objective that upper bounds the value of the optimal policy.
+		  Additionally, from this LP, we design an implementable policy that guarantees a
+		  constant approximation of the optimal policy.
+		</p>
+	    </td></tr>
             <tr><td class="time">11:55 - 2:00</td><td><p>Lunch</p></td></tr>
-            <tr><td class="time">2:00 - 2:35</td><td><p>Speaker</p></td></tr>
-            <tr><td class="time">2:35 - 3:10</td><td><p>Speaker</p></td></tr>
+            <tr><td class="time">2:00 - 2:35</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Soroosh Shafieezadeh-Abadeh – Constrained Optimization of Low-Rank Functions with Indicator Variables</a>
+		</p>
+		<p class="hideme">
+		  Optimization problems involving minimization of a low-rank convex function over constraints modeling restrictions on the support of the decision variables emerge in various machine learning applications. These problems are often modeled with indicator variables for identifying the support of the continuous variables. In this paper we investigate compact extended formulations for such problems through perspective reformulation techniques. In contrast to the majority of previous work that relies on support function arguments and disjunctive programming techniques to provide convex hull results, we propose a constructive approach that exploits a hidden conic structure induced by perspective functions. To this end, we first establish a convex hull result for a general conic mixed-binary set in which each conic constraint involves a linear function of independent continuous variables and a set of binary variables. We then demonstrate that extended representations of sets associated with epigraphs of low-rank convex functions over constraints modeling indicator relations naturally admit such a conic representation. This enables us to systematically give perspective formulations for the convex hull descriptions of these sets with nonlinear separable or non-separable objective functions, sign constraints on continuous variables, and combinatorial constraints on indicator variables.
+		</p>
+	    </td></tr>
+            <tr><td class="time">2:35 - 3:10</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Danial Davarnia – Convexification of Bilinear Terms over Network Polytopes</a>
+		</p>
+		<p class="hideme">
+		  It is well-known that the McCormick relaxation for the bilinear constraint z = xy gives the convex hull over the box domains for x and y. In network applications where the domain of bilinear variables is described by a network polytope, the McCormick relaxation, also referred to as linearization, fails to provide the convex hull and often leads to poor dual bounds. We study the convex hull of the set containing bilinear constraints zi,j = xiyj where xi represents the arc-flow variable in a network polytope, and yj is in a simplex. For the case where the simplex contains a single y variable, we introduce a systematic procedure to obtain the convex hull of the above set in the original space of variables and show that all facet-defining inequalities of the convex hull can be obtained explicitly through identifying a special tree structure in the underlying network. For the generalization where the simplex contains multiple y variables, we design a constructive procedure to obtain an important class of facet-defining inequalities for the convex hull of the underlying bilinear set that is characterized by a special forest structure in the underlying network. Computational experiments conducted on different applications show the effectiveness of the proposed methods in improving the dual bounds obtained from alternative techniques.
+		</p>
+	    </td></tr>
             <tr><td class="time">3:10 - 3:40</td><td><p>Break</p></td></tr>
-            <tr><td class="time">3:40 - 4:15</td><td><p>Speaker</p></td></tr>
+            <tr><td class="time">3:40 - 4:15</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Gerald Gamrath – TBA</a>
+		</p>
+		<p class="hideme">
+		  TBA
+		</p>
+	    </td></tr>
             <tr><td class="time">4:15 - 4:50</td><td><p>Computational Competition</p></td></tr>
             <tr><td class="time"></td><td><p></p></td></tr>
             <tr><td class="time">5:30 - 8:00</td><td><p>Conference Dinner</p></td></tr>
@@ -541,24 +452,118 @@
 
 	  <h3><a title="Show Wednesday schedule" href="#" onclick="toggleSchedule(this);return false;">Wednesday, June 5</a></h3>
           <table class="hideme">
-            <tr><td class="time">9:30 - 10:15</td><td><p>Speaker</p></td></tr>
-            <tr><td class="time">10:15 - 10:45</td><td><p>Break</p></td></tr>
-            <tr><td class="time">10:45 - 11:20</td><td><p>Speaker</p></td></tr>
-            <tr><td class="time">11:20 - 11:55</td><td><p>Speaker</p></td></tr>
+            <tr><td class="time">9:30 - 10:20</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Güzin Bayraksan – Bounds for Multistage Mixed-Integer Distributionally Robust Optimization</a>
+		</p>
+		<p class="hideme">
+		  Multistage mixed-integer distributionally robust optimization (DRO) forms a class of extremely challenging problems since their size grows exponentially with the number of stages. One way to model the uncertainty in multistage DRO is by creating sets of conditional distributions (the so-called conditional ambiguity sets) on a finite scenario tree and requiring that such distributions remain close to nominal conditional distributions according to some measure of similarity/distance. In this talk, new bounding criteria for this class of difficult decision problems are provided through scenario grouping and convolution of risk measures using the ambiguity sets associated with various commonly used φ-divergences and the Wasserstein distance. Our approach does not require any special problem structure such as linearity, convexity, stagewise independence, and so forth. Therefore, while we focus on multistage mixed-integer DRO, our bounds can be applied to a wide range of DRO problems including two-stage and multistage, with or without integer variables, convex or nonconvex, and nested or non-nested formulations. Numerical results on a multistage mixed-integer production problem show the efficiency of the proposed approach through different choices of partition strategies, ambiguity sets, and levels of robustness.
+		</p>
+	    </td></tr>
+            <tr><td class="time">10:20 - 10:45</td><td><p>Break</p></td></tr>
+            <tr><td class="time">10:45 - 11:20</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Bernard Knueven – Scenario-based stochastic integer programming with an application to power grid capacity expansion</a>
+		</p>
+		<p class="hideme">
+		  Practical solution of large-scale stochastic integer programming
+		  problems generally requires the use of parallel computing resources. In this
+		  talk, we will describe the open-source package mpi-sppy, which has efficient and
+		  scalable parallelization as a central feature, with a focus on capabilities aimed
+		  at stochastic integer programs. We will demonstrate these capabilities in the
+		  context of a climate-aware power grid capacity expansion model, which is struc-
+		  turally equivalent to a two-stage stochastic integer program, considering a 10K
+		  bus nodal representation of the California electricity grid in the United States.
+		  Leveraging high-performance computing, we can identify provably near-optimal
+		  solutions for instances with thousands of representative days in only a few hours
+		  of wall-clock time.
+		</p>
+	    </td></tr>
+            <tr><td class="time">11:20 - 11:55</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Rui Chen – Recovering Dantzig-Wolfe Bounds by Cutting Planes</a>
+		</p>
+		<p class="hideme">
+		  Dantzig-Wolfe (DW) decomposition is a well-known technique in mixed-integer programming (MIP) for decomposing and convexifying constraints to obtain potentially strong dual bounds. We investigate cutting planes that can be derived in the space of original variables using DW decomposition and show that these cuts can provide the same dual bounds as DW decomposition. Compared with the objective function cut one can simply write using the DW bound, this approach typically leads to a formulation with lower dual degeneracy that consequently has a better computational performance when solved by standard MIP solvers in the original space. We also discuss how to strengthen these cuts to improve the computational performance further.
+		</p>
+	    </td></tr>
             <tr><td class="time">11:55 - 2:00</td><td><p>Lunch</p></td></tr>
-            <tr><td class="time">2:00 - 2:35</td><td><p>Speaker</p></td></tr>
-            <tr><td class="time">2:35 - 3:10</td><td><p>Speaker</p></td></tr>
-            <tr><td class="time">3:10 - 3:40</td><td><p>Break</p></td></tr>
-            <tr><td class="time">3:40 - 4:15</td><td><p>Speaker</p></td></tr>
+            <tr><td class="time">2:00 - 2:35</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Mathieu Besançon – Better Strong Branching Usage with a Stochastic Branching Model</a>
+		</p>
+		<p class="hideme">
+		  Strong Branching (SB) is a cornerstone of all modern branching
+		  rules used in the Branch-and-Bound (BnB) algorithm, which is at the center of
+		  Mixed-Integer Programming solvers. In its full form, SB evaluates all variables
+		  to branch on and then selects the one producing the best relaxation, leading to
+		  small trees, but high runtimes. State-of-the-art branching rules therefore use
+		  SB with empirical working limits to achieve both small enough trees and short
+		  run times. In this work, we define a stochastic tree model of the BnB algorithm
+		  where dual gains follow a given probability distribution. This model allows us
+		  to relate expected dual gains to tree sizes and explicitly compare the cost of
+		  sampling a SB candidate with the reward in expected tree size reduction. We
+		  then leverage the insight from the abstract model to design a new stopping
+		  criterion for SB which dynamically continues or interrupts SB, and show that it 
+		  improves solving performance in both time and nodes over MIPLIB.
+		</p>
+	    </td></tr>
+            <tr><td class="time">2:35 - 3:10</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Yatharth Dubey – TBA</a>
+		</p>
+		<p class="hideme">
+		  TBA
+		</p>
+	    </td></tr>
+            <tr><td class="time">3:10 - 3:30</td><td><p>Break</p></td></tr>
+            <tr><td class="time">3:30 - 4:15</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Juan Pablo Vielma – TBA</a>
+		</p>
+		<p class="hideme">
+		  TBA
+		</p>
+	    </td></tr>
             <tr><td class="time">4:15 - 4:50</td><td><p>Business Meeting</p></td></tr>
 	  </table>
 
 	  <h3><a title="Show Thursday schedule" href="#" onclick="toggleSchedule(this);return false;">Thursday, June 6</a></h3>
           <table class="hideme">
-            <tr><td class="time">9:30 - 10:15</td><td><p>Speaker</p></td></tr>
-            <tr><td class="time">10:15 - 10:45</td><td><p>Break</p></td></tr>
-            <tr><td class="time">10:45 - 11:20</td><td><p>Speaker</p></td></tr>
-            <tr><td class="time">11:20 - 11:55</td><td><p>Speaker</p></td></tr>
+            <tr><td class="time">9:30 - 10:20</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Bento Natura – A strongly polynomial algorithm for linear programs with at most two nonzero entries per row or column</a>
+		</p>
+		<p class="hideme">
+		  We give a strongly polynomial algorithm for minimum cost generalized flow, and hence for optimizing any linear program with at most two non-zero entries per row, or at most two non-zero entries per column. Primal and dual feasibility were shown by Megiddo (SICOMP ’83) and Végh (MOR ’17) respectively. Our result can be viewed as progress towards understanding whether all linear programs can be solved in strongly polynomial time, also referred to as Smale’s 9th problem. Our approach is based on the recent primal- dual interior point method (IPM) due to Allamigeon, Dadush, Loho, Natura and Végh (FOCS ’22). The number of iterations needed by the IPM is bounded, up to a polynomial factor in the number of inequalities, by the straight line complexity of the central path. Roughly speaking, this is the minimum number of pieces of any piecewise linear curve that multiplicatively approximates the central path. As our main contribution, we show that the straight line complexity of any minimum cost generalized flow instance is polynomial in the number of arcs and vertices. By applying a reduction of Hochbaum (ORL ’04), the same bound applies to any linear program with at most two non-zeros per column or per row. To be able to run the IPM, one requires a suitable initial point. For this purpose, we develop a novel multistage approach, where each stage can be solved in strongly polynomial time given the result of the previous stage. Beyond this, substantial work is needed to ensure that the bit complexity of each iterate remains bounded during the execution of the algorithm. For this purpose, we show that one can maintain a representation of the iterates as a low complexity convex combination of vertices. Our approach is black-box and can be applied to any log-barrier path following method. Joint work with Daniel Dadush, Zhuan Khye Koh, Neil Olver, and László Végh.
+		</p>
+	    </td></tr>
+            <tr><td class="time">10:20 - 10:45</td><td><p>Break</p></td></tr>
+            <tr><td class="time">10:45 - 11:20</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Maryam Daryalal – TBA</a>
+		</p>
+		<p class="hideme">
+		  TBA
+		</p>
+	    </td></tr>
+            <tr><td class="time">11:20 - 11:55</td><td>
+		<p>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Qimeng (Kim) Yu – A Polyhedral Study on L<sup style="font-size:12pt">&natural;</sup>-Convex Minimization and Its Mixed-Integer Extension</a>
+		</p>
+		<p class="hideme">
+		  L<sup style="font-size:12pt">&natural;</sup>-convex functions are a class of nonlinear functions defined over
+		  integral domains. Such functions are not necessarily convex, but they display a
+		  discrete analogue of convexity. In this work, we explore the polyhedral structure
+		  of the epigraph of any L<sup style="font-size:12pt">&natural;</sup>-convex function and provide a class of valid inequalities.
+		  We show that these inequalities are sufficient to describe the epigraph
+		  convex hull completely, and we give an exact separation algorithm. We further
+		  examine a mixed-integer extension of this class of minimization problems and
+		  propose strong valid inequalities. We establish the connection between our results
+		  and the valid inequalities for some structured mixed-integer sets in the
+		  literature.
+		</p>
+	    </td></tr>
             <tr><td class="time">11:55</td><td><p>Concluding Remarks</p></td></tr>
 	  </table>
 	</div>
