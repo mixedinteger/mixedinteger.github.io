@@ -361,6 +361,7 @@
 		</p>
 		<p class="hideme">
 		  Counterfactual Analysis has shown to be a powerful tool in the burgeoning field of Explainable Artificial Intelligence. In Supervised Classification, this means associating with each record a so-called counterfactual explanation: an instance that is close to the record and whose probability of being classified in the opposite class by a given classifier is high. While the literature mostly focuses on the problem of finding one counterfactual for one record, in this presentation we take a stakeholder perspective, and we address the more general setting in which a group of counterfactual explanations is sought for a group of instances. We introduce some mathematical optimization models as illustration of each possible allocation rule between counterfactuals and instances, for tabular as well as functional data, and tasks beyond Supervised Classification.
+		  <a href="slides/Dolores_RomeroMorales.pdf">(slides)</a>
 		</p>
 	    </td></tr>
             <tr><td class="time">10:20 - 10:45</td><td><p>Break</p></td></tr>
@@ -423,6 +424,7 @@
 		</p>
 		<p class="hideme">
 		  Optimization problems involving minimization of a low-rank convex function over constraints modeling restrictions on the support of the decision variables emerge in various machine learning applications. These problems are often modeled with indicator variables for identifying the support of the continuous variables. In this paper we investigate compact extended formulations for such problems through perspective reformulation techniques. In contrast to the majority of previous work that relies on support function arguments and disjunctive programming techniques to provide convex hull results, we propose a constructive approach that exploits a hidden conic structure induced by perspective functions. To this end, we first establish a convex hull result for a general conic mixed-binary set in which each conic constraint involves a linear function of independent continuous variables and a set of binary variables. We then demonstrate that extended representations of sets associated with epigraphs of low-rank convex functions over constraints modeling indicator relations naturally admit such a conic representation. This enables us to systematically give perspective formulations for the convex hull descriptions of these sets with nonlinear separable or non-separable objective functions, sign constraints on continuous variables, and combinatorial constraints on indicator variables.
+		  <a href="slides/Soroosh_Shafiee.pdf">(slides)</a>
 		</p>
 	    </td></tr>
             <tr><td class="time">2:35 - 3:10</td><td>
@@ -431,6 +433,7 @@
 		</p>
 		<p class="hideme">
 		  It is well-known that the McCormick relaxation for the bilinear constraint z = xy gives the convex hull over the box domains for x and y. In network applications where the domain of bilinear variables is described by a network polytope, the McCormick relaxation, also referred to as linearization, fails to provide the convex hull and often leads to poor dual bounds. We study the convex hull of the set containing bilinear constraints zi,j = xiyj where xi represents the arc-flow variable in a network polytope, and yj is in a simplex. For the case where the simplex contains a single y variable, we introduce a systematic procedure to obtain the convex hull of the above set in the original space of variables and show that all facet-defining inequalities of the convex hull can be obtained explicitly through identifying a special tree structure in the underlying network. For the generalization where the simplex contains multiple y variables, we design a constructive procedure to obtain an important class of facet-defining inequalities for the convex hull of the underlying bilinear set that is characterized by a special forest structure in the underlying network. Computational experiments conducted on different applications show the effectiveness of the proposed methods in improving the dual bounds obtained from alternative techniques.
+		  <a href="slides/Danial_Davarnia.pdf">(slides)</a>
 		</p>
 	    </td></tr>
             <tr><td class="time">3:10 - 3:40</td><td><p>Break</p></td></tr>
@@ -473,6 +476,7 @@
 		</p>
 		<p class="hideme">
 		  Dantzig-Wolfe (DW) decomposition is a well-known technique in mixed-integer programming (MIP) for decomposing and convexifying constraints to obtain potentially strong dual bounds. We investigate cutting planes that can be derived in the space of original variables using DW decomposition and show that these cuts can provide the same dual bounds as DW decomposition. Compared with the objective function cut one can simply write using the DW bound, this approach typically leads to a formulation with lower dual degeneracy that consequently has a better computational performance when solved by standard MIP solvers in the original space. We also discuss how to strengthen these cuts to improve the computational performance further.
+		  <a href="slides/Rui_Chen.pdf">(slides)</a>
 		</p>
 	    </td></tr>
             <tr><td class="time">11:55 - 2:00</td><td><p>Lunch</p></td></tr>
@@ -524,6 +528,7 @@
 		</p>
 		<p class="hideme">
 		  We give a strongly polynomial algorithm for minimum cost generalized flow, and hence for optimizing any linear program with at most two non-zero entries per row, or at most two non-zero entries per column. Primal and dual feasibility were shown by Megiddo (SICOMP ’83) and Végh (MOR ’17) respectively. Our result can be viewed as progress towards understanding whether all linear programs can be solved in strongly polynomial time, also referred to as Smale’s 9th problem. Our approach is based on the recent primal- dual interior point method (IPM) due to Allamigeon, Dadush, Loho, Natura and Végh (FOCS ’22). The number of iterations needed by the IPM is bounded, up to a polynomial factor in the number of inequalities, by the straight line complexity of the central path. Roughly speaking, this is the minimum number of pieces of any piecewise linear curve that multiplicatively approximates the central path. As our main contribution, we show that the straight line complexity of any minimum cost generalized flow instance is polynomial in the number of arcs and vertices. By applying a reduction of Hochbaum (ORL ’04), the same bound applies to any linear program with at most two non-zeros per column or per row. To be able to run the IPM, one requires a suitable initial point. For this purpose, we develop a novel multistage approach, where each stage can be solved in strongly polynomial time given the result of the previous stage. Beyond this, substantial work is needed to ensure that the bit complexity of each iterate remains bounded during the execution of the algorithm. For this purpose, we show that one can maintain a representation of the iterates as a low complexity convex combination of vertices. Our approach is black-box and can be applied to any log-barrier path following method. Joint work with Daniel Dadush, Zhuan Khye Koh, Neil Olver, and László Végh.
+		  <a href="slides/Bento_Natura.pdf">(slides)</a>
 		</p>
 	    </td></tr>
             <tr><td class="time">10:20 - 10:45</td><td><p>Break</p></td></tr>
@@ -533,6 +538,7 @@
 		</p>
 		<p class="hideme">
 		  Description Logics (DL) are formal languages for knowledge representation, enabling structured ontology creation and logical reasoning. This talk presents an optimization-based framework for enhancing reasoning in DL by employing mixed-integer programming methods. The framework exploits a novel approach of mapping DL axioms to a set of inequalities, enabling the use of advanced optimization techniques. The integration of column generation and branch-and-price algorithms addresses the complexity of the resulting inequality system, offering a scalable solution for handling large ontological datasets. In a preliminary set of experiments, the framework's performance is evidenced by its application to the ontology of the Canadian Parliament, where it outperforms traditional reasoning methods. This work could mark a significant advancement for the Semantic Web community by merging ontology reasoning with sophisticated optimization methods to meet the challenges of semantic data processing.
+		  <a href="slides/Maryam_Daryalal.pdf">(slides)</a>
 		</p>
 	    </td></tr>
             <tr><td class="time">11:20</td><td><p>Concluding Remarks</p></td></tr>
