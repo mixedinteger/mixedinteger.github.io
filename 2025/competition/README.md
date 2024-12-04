@@ -14,7 +14,7 @@ The ability to quickly find feasible solutions is an essential component of stat
 
 Several primal heuristics have been developed for MILP and for more general MINLP. But, there has been less focus on MIQP/MIQCQP. The aim of the competition is to fill this gap.
 
-A good primal heuristic algorithm should be able to find a feasible solution quickly, and possibly improve it. Therefore, we ask participants to develop code that returns several solutions across time, not just the best found solution. More instructions are given in the technical details.
+A good primal heuristic algorithm should be able to find a feasible solution quickly, and possibly improve it. Therefore, we ask participants to develop a code that returns several solutions across time, not just the best found solution. More instructions are given in the technical details.
 
 The task is to provide:
 
@@ -26,8 +26,6 @@ Finalists will be provided travel support to present their methods at the [MIP W
 
 ## Timeline
 
-
-
 *   December 4, 2024: Publication of the topic, rules and set of test problems.
 *   **January 31, 2025**: Registration deadline for participation
 *   **March 16, 2025**: Submission deadline for report and code (**Anytime on Earth**)
@@ -37,8 +35,6 @@ Finalists will be provided travel support to present their methods at the [MIP W
 
 ## Awards
 
-
-
 *   The jury will select up to three finalists to present their work at the MIP Workshop 2025. The final winner will be announced at the MIP Workshop 2025.
 *   One representative of each finalist will receive travel support to MIP and free registration.
 *   The performance of non-finalist submissions will not be published.
@@ -47,8 +43,6 @@ Finalists will be provided travel support to present their methods at the [MIP W
 
 
 ## Organizing committee
-
-
 
 *   [Timo Berthold](https://www.zib.de/userpage/berthold/), FICO
 *   [Chen Chen](https://u.osu.edu/chen/), Ohio State University
@@ -65,8 +59,6 @@ Finalists will be provided travel support to present their methods at the [MIP W
 
 ### Rules for Participation
 
-
-
 *   Participants must not be an organizer of the competition nor a family member of a competition organizer.
 *   Otherwise, there is no restriction on participation.
 *   **In particular, student participation is encouraged.**
@@ -76,12 +68,10 @@ Finalists will be provided travel support to present their methods at the [MIP W
 
 ### Technical Rules
 
-
-
 *   Participants may use any existing software (including closed-source solvers) when solving optimization problems (e.g., LPs and MIPs) as subproblems in the primal heuristic. Participants will be responsible for making the code run on a server and installing the required software packages. Please contact the organizers if you plan on using some more unusual software (typical subsolvers are, e.g., SCIP, IPOPT, and Gurobi). 
 *   The code must read the problem in MPS format, and write two types of files as output:
     *   A set of **solution files** logging the best-found solutions that are also reported in the result file. Each file should correspond to a solution and there must be a number appended to the file name in the order that the solutions were found (e.g. SolutionFile1, SolutionFile2, ...). The solution files must be generated at roughly the same time as when the solution is reported in the result file. These solution files will be used to compute the primal integral. It is recommended to only write solutions with the best objective value so far, as writing solution files can take extra time. [Example for one solution file](https://www.mixedinteger.org/2025/competition/SolutionFile1).
-    *   A single **result file** logging the elapsed wall time (in seconds with 3 decimals) and the objective value of the best solution found thus far, in the order that the solutions were found. Each row of the result file must correspond to one solution file as described above. At the beginning of the result file, you should also report a starting time for the primal heuristic, which may be the time after the problem has been read and the main algorithm starts (this time will be subtracted when computing the primal integral). [Example](https://www.mixedinteger.org/2025/competition/ResultFile).
+    *   A single **result file** logging the elapsed wall time (in seconds with 3 decimals) and the objective value of the best solution found thus far, in the order that the solutions were found. Each row of the result file must correspond to one solution file as described above. At the beginning of the result file, you should also report a starting time for the primal heuristic, which may be the time after the problem has been read and the main algorithm starts (this time will be subtracted from the solution times when computing the primal integral). [Example](https://www.mixedinteger.org/2025/competition/ResultFile).
 *   A feasible solution must satisfy all constraints with a tolerance of 1e-6 and integer feasibility tolerance of 1e-5.
 *   The source code may be written in any programming language.
 *   For the final evaluation, participants will need to compile and run their code on a Linux server, accessible via SSH.
@@ -90,11 +80,14 @@ Finalists will be provided travel support to present their methods at the [MIP W
 In case participants have any doubts about the implementation of specific rules, they should not hesitate to contact the organizers.
 
 
+### Problem Instances
+
+The test set of problem instances can be found [here](https://www.mixedinteger.org/2025/competition/Initial_problem_set.zip). All files are in MPS format.
+
+
 ### Final Evaluation Criteria
 
 The evaluation will be performed by an expert jury of researchers with experience in computational optimization. They will judge both paper and code submission on two criteria:
-
-
 
 1. **Computational performance**: We will evaluate the computational performance based on the [primal integral](https://www.sciencedirect.com/science/article/pii/S0167637713001181). We test the code on a hidden set of test instances that covers instances with different structure and different sources of difficulty. For example, for some instances, it is trivial to find a feasible solution, while for others it can be very challenging to even find one feasible solution.
 2. **Novelty and scope**: How innovative is the approach. The minimum requirement for novelty is that the code can’t fully be based on another software. For example, running the commercial solver Gurobi with some specific settings is not novel enough. However, using Gurobi to solve subproblems (for example some sort of decomposition, linearization, or reduced search) is perfectly fine.
@@ -107,8 +100,6 @@ The spirit of this competition is to encourage the development of new methods th
 
 ### Registration
 
-
-
 *   All participants must register with the full list of team members by sending an e-mail [here](mailto:jankr@kth.se) by January 31th, 2025.
 *   Two weeks before the deadline, all teams will receive access to a server for testing installation of their software.
 *   Teams of multiple participants must nominate a single contact person to handle the submission of report and code.
@@ -119,8 +110,6 @@ The spirit of this competition is to encourage the development of new methods th
 All participants must submit a written report of **10 pages maximum** plus references, in Springer LNCS format. Submissions will be accepted until **March 16, 2025 (AoE)**.
 
 The report must include the following information:
-
-
 
 *   A description of the methods developed and implemented, including any necessary citations to the literature and software used.
 *   Computational results on the competition testset.
@@ -135,17 +124,13 @@ If the computational work was performed by students only, the participants shoul
 
 The primal heuristic should be executable via a shell script named `PrimHeur.sh` (provided by the participants) which receives arguments on the command line as follows:
 
-
-
 1. The first argument is the path in the filesystem to the instance to read, in (gzipped) MPS format.
 2. The second argument is the path in the filesystem where the method should write the results (files for solutions found and a result file).
 
 The primal heuristic will thus be executed as
 
-
 ```
 sh PrimHeur.sh /path/to/instance.mps.gz /path/to/results
 ```
-
 
 with a hard time limit of 5 minutes. Files are specified as absolute paths.
