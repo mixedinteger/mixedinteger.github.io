@@ -29,7 +29,7 @@ Finalists will be provided travel support to present their methods at the [MIP W
 *   December 4, 2024: Publication of the topic, rules and set of test problems.
 *   **January 31, 2025**: Registration deadline for participation
 *   **March 16, 2025**: Submission deadline for report and code (**Anytime on Earth**)
-*   Early April 2025: Notification of results
+*   April 2025: Notification of results
 *   June 2025: Presentations of the finalists at the MIP Workshop
 
 
