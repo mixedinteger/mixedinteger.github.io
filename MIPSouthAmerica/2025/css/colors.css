@@ -1,11 +1,11 @@
 :root {
     --navbar: rgb(130, 130, 130);
     --navbartext: #000000;
-    --navbarselect: #b61921;
-    --navbarselecttext: #ffffff;
-    --highlight: #b61921;
-    --highlightext: #ffffff;
-    --highlightlink: #b0b0b0;
+    --navbarselect: #57bc9b;
+    --navbarselecttext: #000000;
+    --highlight: #57bc9b;
+    --highlightext: #000000;
+    --highlightlink: #784141;
     --maincolor1: #d5d6d2;
     --maincolor1text: black;
     --maincolor1link: #7A0019;
