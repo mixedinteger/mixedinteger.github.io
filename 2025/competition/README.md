@@ -26,9 +26,11 @@ Finalists will be provided travel support to present their methods at the [MIP W
 
 ## Timeline
 
+*Update (March 10):* Deadline was extended to March 23, 2025.
+
 *   December 4, 2024: Publication of the topic, rules and set of test problems.
 *   **January 31, 2025**: Registration deadline for participation
-*   **March 16, 2025**: Submission deadline for report and code (**Anytime on Earth**)
+*   **March 23, 2025**: Submission deadline for report and code (**Anytime on Earth**)
 *   April 2025: Notification of results
 *   June 2025: Presentations of the finalists at the MIP Workshop
 
@@ -82,8 +84,9 @@ In case participants have any doubts about the implementation of specific rules,
 
 ### Problem Instances
 
-The test set of problem instances can be found [here](https://www.mixedinteger.org/2025/competition/Initial_problem_set.zip). All files are in MPS format.
+The test set of problem instances can be found [here](https://www.mixedinteger.org/2025/competition/Initial_problem_set.zip). All files are in MPS format. 
 
+*Update (March 10):* We have been informed about issues with reading the MPS files in some systems, particularly Julia/JuMP. Unfortunately, the MPS format is not as standardized for MIQCQP as it is for MILP. The MPS files above were generated with Gurobi. To help find issues in reading the problem instances, here are [solutions](https://www.mixedinteger.org/2025/competition/Problem_set_solutions.zip) for the initial problem set obtained with default Gurobi under a time limit of 1200 seconds. For instances that timed out, the remaining MIP gap is about 1%. Otherwise, they are optimal within default Gurobi tolerances.
 
 ### Final Evaluation Criteria
 
@@ -107,7 +110,7 @@ The spirit of this competition is to encourage the development of new methods th
 
 ### Report
 
-All participants must submit a written report of **10 pages maximum** plus references, in Springer LNCS format. Submissions will be accepted until **March 16, 2025 (AoE)**.
+All participants must submit a written report of **10 pages maximum** plus references, in Springer LNCS format. Submissions will be accepted until **March 23, 2025 (AoE)**.
 
 The report must include the following information:
 
