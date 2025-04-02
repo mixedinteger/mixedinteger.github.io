@@ -479,3 +479,7 @@ h3 {
 td p {
   margin-bottom: 0;
 }
+
+.abstract p {
+  margin-top: 1rem;
+}
