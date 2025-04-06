@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/colors.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -109,6 +110,7 @@
     <div class="container">
       <div class="topnav">
         <a class="active" href="index.html">Home</a>
+        <a href="schedule.html">Schedule</a>
         <a href="registration.html">Registration</a>
         <a href="posters.html">Posters</a>
         <a href="summerschool.html">Summer School</a>
@@ -118,7 +120,7 @@
   </div>
 
   <div class="highlight">
-    <div class="container">
+    <div class="container" id="about">
       <h2>About</h2>
       <div class="row">
         <div>
@@ -126,16 +128,31 @@
           <p>The 2025 edition of the workshop will be the <strong>twenty-second</strong> in the MIP series. Links to past editions can be found <a href="https://mixedinteger.org/">here</a>.
 	    MIP 2025 is supported by the <a href="https://www.mixedinteger.org/">Mixed Integer Programming Society (MIPS)</a>, which is a section of the <a href="http://www.mathopt.org/">Mathematical Optimization Society (MOS)</a>.</p>
 
-	  <p>The MIP 2025 organizing committee and the local organizing committee are committed to making the workshop a welcoming environment for all members of the MIP community.</p>
-          <br>
+	         <p>The MIP 2025 organizing committee and the local organizing committee are committed to making the workshop a welcoming environment for all members of the MIP community.</p>
         </div>
       </div>
     </div>
   </div>
 
+  <div class="mainstyle1">
+    <div class="container" id="updates">
+      <h2>Key Dates and Updates</h2>
+        <ul>
+            <li><b>June 3-6, 2025</b>: <a href="schedule.html">MIP Workshop</a></li>
+            <li><b>June 2, 2025</b>: <a href="summerschool.html">MIP Summer School</a></li>
+            <li><b>May 2, 2025</b>: Deadline for <a href="registration.html">early registration</a>.</li>
+            <li class="highlight"><b>April 7, 2025</b>: Deadline for submitting <a href="#contributed">Contributed Flash Talks</a>.</li>
+            <li class="highlight"><b>April 6, 2025</b>: Check the (tentative) <a href="schedule.html">workshop schedule</a>.</li>
+            <li class="highlight"><b>April 4, 2025</b>: <a href="registration.html">Registration</a> is now open. Early registration ends on May 2, 2025.</li>
+            <li><b>March 23, 2025</b>: Deadline for submitting report for <a href="competition.html">computational competition</a>.</li>
+            <li><b>February 28, 2025</b>: Deadline for submitting abstracts for the <a href="posters.html">poster session</a>.</li>
+        </ul>
+    </div>
+  </div>
+
   <div class="mainstyle2">
-    <div class="container">
-      <h2>Confirmed Speakers</h2>
+    <div class="container" id="speakers">
+      <h2>Speakers and Abstracts</h2>
       <p>
 	<a title="Confirmed Speakers" href="#" onclick="toggleSchedule(this);return false;">Click here to toggle list of speakers.</a>
       </p>
@@ -231,8 +248,6 @@
 
   <div class="mainstyle2">
     <div class="container">
-      <p>Schedule is TBD.</p>
-
       <div class="row">
         <div class="twelve columns">
           <h3><a title="Abstracts" href="#" onclick="toggleSchedule(this);return false;">Abstracts</a></h3>
@@ -406,7 +421,7 @@
   </div>
 
   <div class="mainstyle1">
-    <div class="container">
+    <div class="container" id="contributed">
       <h2>Contributed Talks</h2>
       <div class="row">
       <p>MIP 2025 is opening up limited slots for submissions of contributed “flash” talks by “nonstudents” (those who were not eligible for the poster session, such as postdocs, faculty, national lab members, and industry researchers). If you are interested, please submit your title/abstract by <b>April 7, 2025</b> via <a href="https://forms.gle/EpRu4DfgZR2waLqb9">this form</a>. We intend to communicate decisions by April 18, 2025.</p>
@@ -415,7 +430,7 @@
   </div>
 
   <div class="mainstyle2">
-    <div class="container" >
+    <div class="container" id="competition">
       <h2>Computational Competition</h2>
       <div class="row">
         <p>The 2025 MIP Workshop will host a competition for research teams to showcase their practical, computational prowess.</p>
