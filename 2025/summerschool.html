@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Mixed Integer Programming Workshop 2025</title>
+  <title>Mixed Integer Programming Workshop 2025 Summer School</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -85,6 +85,43 @@
 	color: var(--maincolor2link);
     }
   </style>
+<style>
+    .time {
+        text-align: left;
+        font-weight: 400;
+        color: black;
+    }
+    .speaker {
+        text-align: left;
+        color: black;
+    }
+    .meal {
+        text-align: left;
+        background-color: green;
+        color: white;
+    }
+    .specialevent {
+        text-align: left;
+        background-color: purple;
+        color: white;
+    }
+    .specialtalk {
+        text-align: left;
+        background-color: orange;
+        color: white;
+    }
+    .abstract {
+        /* display: none; */
+        text-decoration: none;
+        /* padding: 10px;
+        margin-top: 5px; */
+    }
+    .title {
+        cursor: pointer;
+        /* color: blue; */
+        /* text-decoration: underline; */
+    }
+</style>
 
 </head>
 <body>
@@ -134,9 +171,10 @@
 
   <div class="mainstyle2">
     <div class="container">
-      <h2>Speakers</h2>
+      <h2>Summer School Speakers</h2>
       <div class="row">
       <div class="twelve columns">
+        <p>Clicking a speaker will toggle the display of their abstract.</p>
       <p>
         <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
           Philipp Christophel (SAS) – Implementing Numerical Optimization Algorithms
@@ -169,6 +207,170 @@
   </div>
 
   <div class="mainstyle1">
+    <div class="container" id="schedule">
+      <h2>Summer School Schedule</h2>
+      <p>Abstracts are available for each speaker by clicking their talk title.</p>
+      
+      <!-- Day 1: Tuesday, June 3, 2025 -->
+      <div class="row">
+        <div class="twelve columns">
+          <h3><a title="Summer School Day" href="#" onclick="toggleSchedule(this);return false;">Monday, June 2, 2025</a></h3>
+          <table class="hideme">
+            <tbody>
+              <tr style="background-color: gray; color: white;">
+                <td style="text-align: center;">Time</td>
+                <td>Event</td>
+                <td>Details</td>
+              </tr>
+              <tr>
+                <td class="time">9:00-9:30</td>
+                <td class="meal">Light Breakfast</td>
+                <td>Location: Keller Hall 3-180</td>
+              </tr>
+              <tr>
+                <td class="time">9:30-9:45</td>
+                <td class="specialevent">Opening Remarks</td>
+                <td>Location: Keller Hall 3-180</td>
+              </tr>
+              <tr>
+                <td class="time">9:45-10:30</td>
+                <td class="speaker" onclick="toggleAbstract('abstract01');">
+                  Philipp Christophel (SAS)
+                </td>
+                <td class="title">
+                    <p>
+                      <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                        Implementing Numerical Optimization Algorithms
+                      </a>
+                    </p>
+                    <div class="hideme abstract">
+                      <p>Abstract: TBD</p>
+                    </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="time">10:30-10:45</td>
+                <td class="meal">Tea / Coffee Break</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time">10:45-11:30</td>
+                <td class="speaker" onclick="toggleAbstract('abstract01');">
+                  Philipp Christophel (SAS)
+                </td>
+                <td class="title">
+                    <p>
+                      <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                        Implementing Numerical Optimization Algorithms
+                      </a>
+                    </p>
+                    <div class="hideme abstract">
+                      <p>Abstract: TBD</p>
+                    </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="time">11:30-1:15</td>
+                <td class="meal">Lunch (not included)</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time">1:15-2:00</td>
+                <td class="speaker" onclick="toggleAbstract('abstract02');">
+                  Ricardo Fukasawa (Waterloo)
+                </td>
+                <td class="title">
+                    <p>
+                      <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                        Column generation and IP (from textbook to practice)
+                      </a>
+                    </p>
+                    <div class="hideme abstract">
+                      <p>Abstract: TBD</p>
+                    </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="time">2:00-2:15</td>
+                <td class="meal">Tea / Coffee Break</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time">2:15-3:00</td>
+                <td class="speaker" onclick="toggleAbstract('abstract02');">
+                  Ricardo Fukasawa (Waterloo)
+                </td>
+                <td class="title">
+                    <p>
+                      <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                        Column generation and IP (from textbook to practice)
+                      </a>
+                    </p>
+                    <div class="hideme abstract">
+                      <p>Abstract: TBD</p>
+                    </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="time">3:00-3:15</td>
+                <td class="meal">Tea / Coffee Break</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time">3:15-4:00</td>
+                <td class="speaker" onclick="toggleAbstract('abstract01');">
+                  Andrés Gómez (USC)
+                </td>
+                <td class="title">
+                    <p>
+                      <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                        Methodologies and Algorithms for Structured Mixed-Integer Nonlinear Optimization
+                      </a>
+                    </p>
+                    <div class="hideme abstract">
+                      <p>Mixed-integer nonlinear optimization problems (MINLPs) are increasingly central to applications in machine learning, model predictive control, energy systems, finance, and beyond. Despite significant advances in MINLP theory and algorithms over the past two decades, deploying these methods to solve complex, real-world problems remains a formidable challenge. In this tutorial, we will survey recent methodologies, algorithms, and theoretical developments that have demonstrated practical success in solving structured MINLPs. We will also discuss open challenges, limitations of current approaches, and promising directions for future research.</p>
+                    </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="time">4:00-4:15</td>
+                <td class="meal">Tea / Coffee Break</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time">4:15-5:00</td>
+                <td class="speaker" onclick="toggleAbstract('abstract03');">
+                  Andrés Gómez (USC)
+                </td>
+                <td class="title">
+                    <p>
+                      <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                        Methodologies and Algorithms for Structured Mixed-Integer Nonlinear Optimization
+                      </a>
+                    </p>
+                    <div class="hideme abstract">
+                      <p>Mixed-integer nonlinear optimization problems (MINLPs) are increasingly central to applications in machine learning, model predictive control, energy systems, finance, and beyond. Despite significant advances in MINLP theory and algorithms over the past two decades, deploying these methods to solve complex, real-world problems remains a formidable challenge. In this tutorial, we will survey recent methodologies, algorithms, and theoretical developments that have demonstrated practical success in solving structured MINLPs. We will also discuss open challenges, limitations of current approaches, and promising directions for future research.</p>
+                    </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="time">5:00-5:15</td>
+                <td class="specialevent">Summer School Group Photo</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time">5:45-8:30</td>
+                <td class="meal">Optional (not included): Group dinner at <a href="https://malcolmyards.market/" target="_blank">The Market at Malcolm Yards</a></td>
+                <td>Location: <a href="https://goo.gl/maps/wJwRRzFoyu9yY1iz8" target="_blank">501 30th Ave SE, Minneapolis, MN 55414</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div> <!-- twelve columns -->
+      </div> <!-- row -->
+    </div>
+  </div>
+
+  <div class="mainstyle2">
     <div class="container">
       <h2>Credits</h2>
       <p>Logo-Design by ©<a href="https://www.jubs-art.com">Julia Silbermann</a> (Font-Credits: Cornerstone, by Zac Freeland).
