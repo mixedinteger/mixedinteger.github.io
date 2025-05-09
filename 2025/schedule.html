@@ -302,7 +302,7 @@
               </tr>
               <tr>
                 <td class="time">11:35-12:05</td>
-                <td class="speaker" onclick="toggleAbstract('abstract03');"><a href="https://sites.google.com/site/karmelshehadeh/home" target="_blank">Karmel S. Shehadeh</a> (Lehigh)</td>
+                <!--<td class="speaker" onclick="toggleAbstract('abstract03');"><a href="https://sites.google.com/site/karmelshehadeh/home" target="_blank">Karmel S. Shehadeh</a> (Lehigh)</td>
                 <td class="title">
                   <p><a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
                     Stochastic mixed-integer programming models for a fleet sizing and appointment scheduling problem with random service and travel times
@@ -310,7 +310,19 @@
                   <div class="hideme abstract">
                     <p>We propose a new stochastic mixed-integer linear programming model for a home service fleet sizing and appointment scheduling problem (HFASP) with random service and travel times. Specifically, given a set of providers and a set of geographically distributed customers within a service region, our model solves the following problems simultaneously: (i) a fleet sizing problem that determines the number of providers required to serve customers; (ii) an assignment problem that assigns customers to providers; and (iii) a sequencing and scheduling problem that decides the sequence of appointment times of customers assigned to each provider. The objective is to minimize the fixed cost of hiring providers plus the expectation of a weighted sum of customers’ waiting time and providers’ travel time, overtime, and idle time. We compare our proposed model with an extension of an existing model for a closely related problem in the literature, theoretically and empirically. Specifically, we show that our newly proposed model is more compact (i.e., has fewer variables and constraints) and provides a tighter linear programming relaxation. Furthermore, to handle large instances observed in other application domains, we propose two optimization-based heuristics. We present extensive computational results to show the size and characteristics of HFASP instances that can be solved with our proposed model, demonstrating its computational efficiency over the extension. Results also show that the proposed heuristics can quickly produce high-quality solutions to large instances with an optimality gap not exceeding 5% on tested instances. Finally, we use a case study based on a service region in Lehigh County to derive insights into the HFASP.</p>
                   </div>
-                </td>
+                </td>-->
+                  <td class="speaker" onclick="toggleAbstract('abstract03');">
+                    <a href="https://www.lix.polytechnique.fr/~dambrosio/" target="_blank">Claudia d'Ambrosio</a> (CNRS)
+                  </td>
+                  <td class="title">
+                    <p><a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                      Approximating complex functions in mixed integer non-linear optimization: a hybrid data- and knowledge-driven approach
+                    </a></p>
+                    <div class="hideme abstract">
+                      <p>The integration of data-driven and knowledge-driven approaches has recently caught the attention of the mathematical optimization community. For example, in Bertsimas and Ozturk (2023) and Bertsimas and Margaritis (2025), data-driven approaches are used to derive a more tractable approximation of some non-linear functions appearing in the constraints of mixed integer non-linear optimization (MINLO) problems. Their approaches involves: i. sampling the non-linear functions; ii. using machine learning (ML) approaches to obtain a good, linear approximation of these functions; iii. integrating it into a mixed integer linear optimization (MILO) models to solve MINLO faster. </p>
+                      <p>We take a similar viewpoint. However, instead of a ML-based function approximation, we apply a statistical learning (SL) approach and fit B-splines. The main advantage of this alternative is that the fitting can be formulated as a mathematical optimization problem. Consequently, prior knowledge about the non-linear function can be directly integrated as constraints (e.g., conditions on the sign, monotonicity, curvature). The resulting B-spline can be modeled as a piecewise polynomial function, which allows the integration in the MINLO model. We test our approach on some instances of challenging instances from the MINLPlib and on a real-world application, namely the hydro unit commitment problem. The results show that, with the proposed method, we can find a good balance between quality and tractability of the approximation.</p>
+                    </div>
+                  </td>
               </tr>
               <tr>
                 <td class="time">12:05-2:00</td>
@@ -690,15 +702,15 @@
                   <tr>
                     <td class="time">9:30-10:05</td>
                     <td class="speaker" onclick="toggleAbstract('abstract22');">
-                      <a href="https://www.lix.polytechnique.fr/~dambrosio/" target="_blank">Claudia d'Ambrosio</a> (CNRS)
+                        <a href="https://jrluedtke.github.io/" target="_blank">Jim Luedtke</a> (UW-Madison)
                     </td>
                     <td class="title">
                       <p><a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
-                        Approximating complex functions in mixed integer non-linear optimization: a hybrid data- and knowledge-driven approach
+                        Optimally Delaying Attacker Projects Under Resource Constraints
                       </a></p>
                       <div class="hideme abstract">
-                        <p>The integration of data-driven and knowledge-driven approaches has recently caught the attention of the mathematical optimization community. For example, in Bertsimas and Ozturk (2023) and Bertsimas and Margaritis (2025), data-driven approaches are used to derive a more tractable approximation of some non-linear functions appearing in the constraints of mixed integer non-linear optimization (MINLO) problems. Their approaches involves: i. sampling the non-linear functions; ii. using machine learning (ML) approaches to obtain a good, linear approximation of these functions; iii. integrating it into a mixed integer linear optimization (MILO) models to solve MINLO faster. </p>
-                        <p>We take a similar viewpoint. However, instead of a ML-based function approximation, we apply a statistical learning (SL) approach and fit B-splines. The main advantage of this alternative is that the fitting can be formulated as a mathematical optimization problem. Consequently, prior knowledge about the non-linear function can be directly integrated as constraints (e.g., conditions on the sign, monotonicity, curvature). The resulting B-spline can be modeled as a piecewise polynomial function, which allows the integration in the MINLO model. We test our approach on some instances of challenging instances from the MINLPlib and on a real-world application, namely the hydro unit commitment problem. The results show that, with the proposed method, we can find a good balance between quality and tractability of the approximation.</p>
+                        <p>We consider the problem of selecting and scheduling mitigations to delay a set of attacker projects. Prior research has considered a problem in which a defender takes actions that delay steps in an attacker project in order to maximize the attacker project duration, given a budget constraint on their actions. We consider an extension of this model in which carrying out the mitigations requires competing limited resources, and hence the selected mitigations must be scheduled over time. At the same time, the attackers may be progressing along their project, and so the timing of completed mitigations determines whether or not they are successful in delaying tasks of the attacker projects. We propose an integrated integer programming model of this bilevel problem by using a time-indexed network that enables keeping track of attackers' task durations over time as determined by the defender's mitigation schedule. We introduce an information-based relaxation and use this to derive an alternative formulation that is stronger and more compact. We find that our reformulation greatly improves the solvability of the model. In addition, we see that considering the interaction of defender mitigation and attacker project schedules leads to 6-10% improvement in the objective over models that ignore this interaction.</p>
+                        <p>This is joint work with Ashley Peper and Laura Albert from UW-Madison.</p>
                       </div>
                     </td>
                   </tr>
@@ -718,21 +730,6 @@
                   <tr>
                     <td class="time">11:00-11:35</td>
                     <td class="speaker" onclick="toggleAbstract('abstract23');">
-                        <a href="https://jrluedtke.github.io/" target="_blank">Jim Luedtke</a> (UW-Madison)
-                    </td>
-                    <td class="title">
-                      <p><a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
-                        Optimally Delaying Attacker Projects Under Resource Constraints
-                      </a></p>
-                      <div class="hideme abstract">
-                        <p>We consider the problem of selecting and scheduling mitigations to delay a set of attacker projects. Prior research has considered a problem in which a defender takes actions that delay steps in an attacker project in order to maximize the attacker project duration, given a budget constraint on their actions. We consider an extension of this model in which carrying out the mitigations requires competing limited resources, and hence the selected mitigations must be scheduled over time. At the same time, the attackers may be progressing along their project, and so the timing of completed mitigations determines whether or not they are successful in delaying tasks of the attacker projects. We propose an integrated integer programming model of this bilevel problem by using a time-indexed network that enables keeping track of attackers' task durations over time as determined by the defender's mitigation schedule. We introduce an information-based relaxation and use this to derive an alternative formulation that is stronger and more compact. We find that our reformulation greatly improves the solvability of the model. In addition, we see that considering the interaction of defender mitigation and attacker project schedules leads to 6-10% improvement in the objective over models that ignore this interaction.</p>
-                        <p>This is joint work with Ashley Peper and Laura Albert from UW-Madison.</p>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="time">11:35-12:05</td>
-                    <td class="speaker" onclick="toggleAbstract('abstract24');">
                         Joris Kinable (Amazon)
                     </td>
                     <td class="title">
@@ -747,10 +744,13 @@
                     </td>
                   </tr>
                   <tr>
-                    <td class="time">12:05-12:30</td>
+                    <td class="time">11:35-12:05</td>
                     <td class="specialevent">Concluding Remarks</td>
-                    <td></td>
                   </tr>
+                  <!--<tr>
+                    <td class="time">12:05-12:30</td>
+                    <td></td>
+                  </tr>-->
                 </tbody>
               </table>
             </div> <!-- twelve columns -->
