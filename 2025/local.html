@@ -137,6 +137,9 @@
             <li><b>June 5, 2025</b>, <i>Optional group dinner</i>: <a href="https://surlybrewing.com">Surly Brewing</a>, located at <a href="https://maps.app.goo.gl/YCotytHhrQ2uCLow5">520 Malcolm Ave SE Minneapolis, MN 55414</a></li>
           </ul>
       </p>
+
+      <p>The map below contains the main locations for MIP 2025.</p>
+      <iframe src="https://www.google.com/maps/d/embed?mid=1ntj8RavfBawtyG1ddwxuyqXb7sjNAZQ&ehbc=2E312F&noprof=1" width="100%" height="720"></iframe>
     </div>
   </div>
 
@@ -201,9 +204,11 @@
                     text-align: left;
                 }
                 .center-text { text-align: center; vertical-align: middle; }
-                th {
+                .hotel-header {
                     background-color: #ffcc33;
                     color: #000000;
+                    text-align: center;
+                    vertical-align: middle;
                 }
                 .stars-2 { background-color: #b4b4b4; }
                 .stars-3 { background-color: #d9d9d9; }
@@ -215,9 +220,9 @@
                 }
             </style>
             <tr>
-                <th class="center-text">Stars</th>
-                <th class="center-text">Hotel</th>
-                <th>Distance to Campus (Miles)</th>
+                <th class="hotel-header">Stars</th>
+                <th class="hotel-header">Hotel</th>
+                <th class="hotel-header">Distance to Campus (Miles)</th>
             </tr>
             <tr class="stars-2">
                 <td rowspan="2" class="center-text">2</td>
@@ -341,15 +346,206 @@
   </div>
 
   <div class="mainstyle1">
-    <div class="container">
+    <div class="container" id="dining">
       <h2>Dining</h2>
       <p>
-        A selection of local dining recommendations will be listed here.
+        A selection of local dining recommendations is below.
       </p>
+
+      <style>
+  .american { background-color: rgb(255, 213, 128); }
+  .asian { background-color: #FFDDC1; }
+  .healthy { background-color: #C1FFD7; }
+  .mexican { background-color: #FFFAC1; }
+  .mediterranean { background-color: #E1C1FF; }
+  .coffee { background-color: rgb(225, 225, 225); }
+  td, th { padding: 8px; }
+  th { background-color: #7a0019; color: #ffffff; }
+</style>
+<table border="1" style="border-collapse: collapse; width: 100%;">
+  <thead>
+    <tr>
+      <th style="padding: 8px;">Cuisine Type</th>
+      <th>On Campus</th>
+      <th>Dinkytown</th>
+      <th>Off Campus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Coffee -->
+    <tr class="coffee">
+      <td style="padding: 8px;"><strong>Coffee</strong></td>
+      <td><a href="https://maps.app.goo.gl/WHkYbPvEArUbhCRs7" target="_blank">7 Corners Coffee</a></td>
+      <td><a href="https://maps.app.goo.gl/N52763S6hDZQCqHh9" target="_blank">Bordertown Coffee</a></td>
+      <td></td>
+    </tr>
+    <tr class="coffee">
+      <td></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=615+Washington+Ave+SE,+Minneapolis,+MN+55414" target="_blank">Starbucks (Graduate Hotel)</a></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=425+14th+Ave+SE,+Minneapolis,+MN+55414" target="_blank">Starbucks (Dinkytown)</a></td>
+      <td></td>
+    </tr>
+    <tr class="coffee">
+      <td></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=604+Washington+Ave+SE,+Minneapolis,+MN+55414" target="_blank">Caribou Coffee</a></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=1407+4th+St+SE,+Minneapolis,+MN+55414" target="_blank">SweeDee Cafe</a></td>
+      <td></td>
+    </tr>
+    <tr class="coffee">
+      <td></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=720+Washington+Ave+SE,+Minneapolis,+MN+55414" target="_blank">Bruegger’s Bagels</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- American -->
+    <tr class="american">
+      <td style="padding: 8px;"><strong>American</strong></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=615+Washington+Ave+SE,+Minneapolis,+MN+55414" target="_blank">The Beacon Public House</a></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=313+14th+Ave+SE,+Minneapolis,+MN+55414" target="_blank">Annie’s Parlor</a></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=1514+Como+Ave+SE,+Minneapolis,+MN+55414" target="_blank">Blue Door Pub</a></td>
+    </tr>
+    <tr class="american">
+      <td></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=615+Washington+Ave+SE,+Minneapolis,+MN+55414" target="_blank">Chick-fil-A</a></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=302+15th+Ave+SE,+Minneapolis,+MN+55414" target="_blank">Raising Cane’s (Dinkytown)</a></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=2001+University+Ave+SE+%23100,+Minneapolis,+MN+55455" target="_blank">Buffalo Wild Wings</a></td>
+    </tr>
+    <tr class="american">
+      <td></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=227+SE+Oak+St,+Minneapolis,+MN+55414" target="_blank">Stub and Herbs</a></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=326+14th+Ave+SE,+Minneapolis,+MN+55414" target="_blank">Potbelly Sandwich Shop</a></td>
+      <td></td>
+    </tr>
+    <tr class="american">
+      <td></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=213+SE+Oak+St,+Minneapolis,+MN+55414" target="_blank">Stadium Village</a></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=404+14th+Ave+SE,+Minneapolis,+MN+55414" target="_blank">Jimmy John’s (Dinkytown)</a></td>
+      <td></td>
+    </tr>
+    <tr class="american">
+      <td></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=825+Washington+Ave+SE+Suite+104,+Minneapolis,+MN+55414" target="_blank">Raising Cane’s (Stadium Village)</a></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=1235+4th+St+SE,+Minneapolis,+MN+55414" target="_blank">Frank From Philly & Andrea Pizza</a></td>
+      <td></td>
+    </tr>
+    <tr class="american">
+      <td></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=219+SE+Oak+St,+Minneapolis,+MN+55414" target="_blank">Jimmy John’s (Stadium Village)</a></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=1323+4th+St+SE,+Minneapolis,+MN+55414" target="_blank">Mesa Pizza Dinkytown</a></td>
+      <td></td>
+    </tr>
+    <tr class="american">
+      <td></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=700+SE+Washington+Ave,+Minneapolis,+MN+55414" target="_blank">Sally’s Saloon</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr class="american">
+      <td></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=309+SE+Oak+St,+Minneapolis,+MN+55414" target="_blank">Lu’s Sandwiches</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr class="american">
+      <td></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=820+Washington+Ave+SE,+Minneapolis,+MN+55414" target="_blank">Noodles and Company</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr class="american">
+      <td></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=856+SE+Washington+Ave,+Minneapolis,+MN+55414" target="_blank">Nashville Coop</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr class="american">
+      <td></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=1000+Washington+Ave+SE,+Minneapolis,+MN+55414" target="_blank">Blaze Pizza</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr class="american">
+      <td></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=309+SE+Oak+St,+Minneapolis,+MN+55414" target="_blank">Lu’s Sandwiches</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr class="american">
+      <td></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=820+Washington+Ave+SE,+Minneapolis,+MN+55414" target="_blank">Noodles and Company</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr class="american">
+      <td></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=825+Washington+Ave+SE+Suite+101,+Minneapolis,+MN+55414" target="_blank">The Test Kitchen</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Asian -->
+    <tr class="asian">
+      <td style="padding: 8px;"><strong>Asian</strong></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=307+SE+Oak+St,+Minneapolis,+MN+55455" target="_blank">Kimchi Tofu House</a></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=511+14th+Ave+SE,+Minneapolis,+MN+55414" target="_blank">Bahn Appetit</a></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=1517+Como+Ave+SE,+Minneapolis,+MN+55414" target="_blank">Thai Cuisine Xpress</a></td>
+    </tr>
+    <tr class="asian">
+      <td></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=211+SE+Oak+St+1st+Floor,+Minneapolis,+MN+55414" target="_blank">Korean Restaurant</a></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=401+14th+Ave+SE,+Minneapolis,+MN+55414" target="_blank">CrunCheese Korean Hot Dog</a></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=1510+Como+Ave+SE,+Minneapolis,+MN+55414" target="_blank">Ramen Kazama Select</a></td>
+    </tr>
+    <tr class="asian">
+      <td></td>
+      <td></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=425+13th+Ave+SE,+Minneapolis,+MN+55414" target="_blank">Kbop Korean Bistro</a></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=2425+University+Ave+SE,+Minneapolis,+MN+55414" target="_blank">Tea House Chinese Restaurant</a></td>
+    </tr>
+    <tr class="asian">
+      <td></td>
+      <td></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=1316+4th+St+SE+suite+7,+Minneapolis,+MN+55414" target="_blank">Rollicious</a></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=2125+E+Hennepin+Ave+Suite+205,+Minneapolis,+MN+55413" target="_blank">Steady Pour</a></td>
+    </tr>
+    <!-- Healthier -->
+    <tr class="healthy">
+      <td style="padding: 8px;"><strong>Healthier</strong></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=615+Washington+Ave+SE,+Minneapolis,+MN+55414" target="_blank">Sweetgreen</a></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=411+14th+Ave+SE,+Minneapolis,+MN+55414" target="_blank">Crisp and Green</a></td>
+      <td></td>
+    </tr>
+    <!-- Mexican -->
+    <tr class="mexican">
+      <td style="padding: 8px;"><strong>Mexican</strong></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=800+Washington+Ave+SE,+Minneapolis,+MN+55414" target="_blank">Chipotle Mexican Grill</a></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=314+15th+Ave+SE,+Minneapolis,+MN+55414" target="_blank">Taco Locos</a></td>
+      <td></td>
+    </tr>
+    <tr class="mexican">
+      <td></td>
+      <td></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=324+14th+Ave+SE,+Minneapolis,+MN+55414" target="_blank">QDOBA Mexican Eats</a></td>
+      <td></td>
+    </tr>
+    <!-- Middle Eastern & Mediterranean -->
+    <tr class="mediterranean">
+      <td style="padding: 8px;"><strong>Middle Eastern &amp; Mediterranean</strong></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=720+Washington+Ave+SE,+Minneapolis,+MN+55414" target="_blank">Afro Deli & Grill</a></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=417+14th+Ave+SE,+Minneapolis,+MN+55414" target="_blank">Wally’s Falafel and Hummus</a></td>
+      <td></td>
+    </tr>
+    <tr class="mediterranean">
+      <td></td>
+      <td><a href="https://www.google.com/maps/search/?api=1&query=614+Washington+Ave+SE,+Minneapolis,+MN+55414" target="_blank">Roti Mediterranean</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+
     </div>
-  </div>
-    </div>
-  </div>
+  </div> <!-- end dining div mainstyle -->
 
   <div class="mainstyle">
     <div class="container">
