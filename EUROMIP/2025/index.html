@@ -297,10 +297,12 @@
             <tr><td class="time">11:45 - 13:30</td><td><p>Lunch break</p></td></tr>
             <tr><td class="time">13:30 - 14:15</td><td>
 		<p>
-	   	  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Elina R&ouml;nnberg – TBA</a>
+	   	  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Elina R&ouml;nnberg – Accelerating branch-and-price by heuristic pricing for integrality</a>
 	   	</p>
 	   	<p class="hideme">
-	   	  TBA
+	   	  In branch-and-price algorithms, the generation of new columns is made as part of solving LP relaxations and not with the integer program explicitly in mind. Instead, the responsibility to find integer solutions is delegated to the branching and cut generation, with an implicit impact on the pricing. When designing heuristics to accelerate branch-and-price by finding high-quality integer solutions early in the solution process, columns for LP relaxations are not necessarily useful. An interesting question is therefore how to price for columns that are of immediate use in integer solutions, that is, to price for integrality.
+One important heuristic technique in the context of mixed-integer programming solvers is Large-eighbourhood search (LNS). These search for primal feasible solutions by solving an auxiliary problem with a restricted feasible region. In this talk, I will introduce an LNS heuristic, IPColGen, where the novelty is to heuristically price for integrality. The theoretical foundation for the pricing scheme is a set of optimality conditions for integer programs.
+IPColGen has been implemented in the generic branch-price-and-cut solver GCG. On a broad test set comprising classical block-diagonal-structured instances and general instances from the MIPLIB 2017 Collection, the computational results show a significant improvement in solving performance of GCG for challenging instances having a large root node gap. We have also made a tailored implementation of IPColGen as part of a branch-price-and-cut algorithm for an Electric Vehicle Routing Problem with Time Windows and capacitated charging resources available only during specific time slots.  Compared to only adding cuts in the root node, the impact of the heuristic is to close one third of the remaining root node gap.
 	   	</p>
 	    </td></tr>
             <tr><td class="time">14:15 - 15:00</td><td>
@@ -354,10 +356,10 @@ Based on joint work with Sven Polak and Luis Felipe Vargas.
             <tr><td class="time">9:45 - 10:15</td><td><p>Break</p></td></tr>
             <tr><td class="time">10:15 - 11:00</td><td>
 		<p>
-		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Fabio Furini – TBA</a>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Fabio Furini – Hidden Bilevel Structures in Graph Disconnection Problems: Stackelberg Game Models and Exact Algorithms</a>
 		</p>
 		<p class="hideme">
-		  TBA
+		  Many fundamental graph disconnection problems hide an underlying bilevel structure that can be exploited for stronger formulations and algorithms. In this talk, we reveal and formalize this hidden structure for two key problems: the capacitated vertex separator and the k-vertex cut. Both are modeled as two-phase Stackelberg games, where a leader strategically deletes vertices and a follower reacts by optimizing over the disconnected graph. We present new integer programming formulations naturally capturing this bilevel interaction, supported by families of strengthening valid inequalities and polynomial-time separation procedures. Our computational studies demonstrate that these approaches significantly improve the state-of-the-art, yielding better solutions and faster convergence on benchmark instances. Beyond these two problems, the bilevel perspective opens promising directions for a broader class of graph modification and partitioning problems.
 		</p>
 	    </td></tr>
             <tr><td class="time">11:00 - 11:45</td><td>
@@ -417,10 +419,10 @@ Based on joint work with Sven Polak and Luis Felipe Vargas.
 	    <tr><td class="time">8:50 - 9:00</td><td><p>Opening remarks</p></td></tr>
             <tr><td class="time">9:00 - 9:40</td><td>
 		<p>
-		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Sophie Demassey – TBA</a>
+		  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Sophie Demassey – Scheduling nonlinear flow network reconfiguration</a>
 		</p>
 		<p class="hideme">
-		  TBA
+		  Optimizing the discrete control of a dynamic nonlinear system often relies on simulation-optimization, searching through the discrete decision space. Instead, we consider searching through the continuous space of the state variables by adapting a control/state variable splitting scheme alike ADMM. Fixing the state variables provides a strict decoupling into static discrete subproblems and, possibly, the further decomposition of the static subproblem itself, enabling its exact solution. We illustrate this on implementing load shifting in drinking water distribution systems to optimize their power consumption, which translates to dynamically reconfigure a nonlinear flow network with sequence-based boundary conditions. The convergence proof of our iterative scheme is lost on this discrete nonconvex problem, however it can be initialized properly, and the problem at each iteration becomes separable in time, in space, and in primal/flow and dual/potential parts.
 		</p>
 	    </td></tr>
             <tr><td class="time">9:45 - 10:15</td><td><p>Break</p></td></tr>
