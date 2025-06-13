@@ -267,11 +267,12 @@
                 <td class="time">9:25-10:00</td>
                 <td class="speaker" onclick="toggleAbstract('abstract01');"><a href="https://www.rug.nl/staff/w.romeijnders" target="_blank">Ward Romeijnders</a> (Groningen)</td>
                 <td class="title">
-                    <p>
+                    <span>
                       <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
                         Convex approximations for multistage stochastic mixed-integer programs
                       </a>
-                    </p>
+                      [<strong><a href="slides/2025-06-03 - Talks - Ward Romeijnders.pdf">Slides</a></strong>]
+                    </span>
                     <div class="hideme abstract">
                         <p>We consider multistage stochastic mixed-integer programs. These problems are extremely challenging to solve since the expected cost-to-go functions in these problems are typically non-convex due to the integer decision variables involved. This means that efficient decomposition methods using tools from convex approximations cannot be applied to this problem. For this reason, we construct convex approximations for the expected cost to-go functions and we derive error bounds for these approximations that converge to zero when the total variation of the probability density functions of the random parameters in the model converge to zero. In other words, the convex approximations perform well if the variability of the random parameters in the problem is large enough. To derive these results, we analyze the mixed-integer value functions in the multistage problem, and show that any MILP with convex and Lipschitz continuous objective exhibits asymptotic periodic behavior. Combining these results with total variation bounds on the expectation of periodic functions yields the desired bounds.</p>
                     </div>
@@ -364,9 +365,12 @@
                 <td class="time">4:15-4:50</td>
                 <td class="speaker" onclick="toggleAbstract('abstract07');"><a href="https://soml.ise.vt.edu/">Esra Büyüktahtakιn Toy</a> (Virginia Tech)</td>
                 <td class="title">
-                  <p><a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
-                    Scenario Dominance Cuts for Risk-Averse Multi-Stage Stochastic Mixed-Integer Programs
-                  </a></p>
+                  <span>
+                    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                      Scenario Dominance Cuts for Risk-Averse Multi-Stage Stochastic Mixed-Integer Programs
+                    </a>
+                    [<strong><a href="slides/2025-06-03 - Talks - Esra Buyuktahtakin Toy.pdf">Slides</a></strong>]
+                  </span>
                   <div class="hideme abstract">
                     <p>We introduce a novel methodology, termed "Stage-t Scenario Dominance," for addressing risk-averse multi-stage stochastic mixed-integer programs (M-SMIPs). We define the scenario dominance concept and utilize the partial ordering of scenarios to derive bounds and cutting planes, which are generated based on implications drawn from solving individual scenario sub-problems up to stage t. This approach facilitates the generation of new cutting planes, significantly enhancing our capacity to manage the computational challenges inherent in risk-averse M-SMIPs. We demonstrate the potential of this method on a stochastic formulation of the mean-Conditional Value-at-Risk (CVaR) dynamic knapsack problem. Our computational findings demonstrate that the "scenario dominance "- based cutting planes significantly reduce solution times for complex mean-risk, stochastic, multi-stage, and multi-dimensional knapsack problems, achieving reductions in computational effort by one to two orders of magnitude.</p>
                   </div>
@@ -409,11 +413,12 @@
                     <a href="https://www.math.ias.edu/~voreis/" target="_blank">Victor Reis</a> (Microsoft)
                   </td>
                   <td class="title">
-                      <p>
+                      <span>
                         <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
                             The Subspace Flatness Conjecture and Faster Integer Programming
                         </a>
-                      </p>
+                        [<strong><a href="slides/2025-06-04 - Talks - Victor Reis.pdf">Slides</a></strong>]
+                      </span>
                       <div class="hideme abstract">
                           <p>In a seminal paper, Kannan and Lovász (1988) considered a quantity $\alpha(\mathcal{L},K)$ which denotes the best volume-based lower bound on the covering radius $\mu(\mathcal{L}, K)$ of a convex body $K$ with respect to a lattice $\mathcal{L}$. Kannan and Lovász proved that $\mu(\mathcal{L}, K) \le n \cdot \alpha(\mathcal{L},K)$ and the Subspace Flatness Conjecture by Dadush (2012) claims a $O(\log n)$ factor suffices, which would match a lower bound from the work of Kannan and Lovász.</p>
                           <p>We settle this conjecture up to a constant in the exponent by proving that $\mu(\mathcal{L}, K) \le O(\log^3 n)\cdot \alpha(\mathcal{L},K)$. Our proof is based on the Reverse Minkowski Theorem due to Regev and Stephens-Davidowitz (2017). Following the work of Dadush (2012, 2019), we obtain a $(\log n)^{O(n)}$-time randomized algorithm to solve integer programs in $n$ variables. Another implication of our main result is a near-optimal $\textit{flatness constant}$ of $O(n\log^3 n)$.</p>
@@ -438,9 +443,12 @@
                   <td class="speaker" onclick="toggleAbstract('abstract09');">
                     <a href="https://sites.google.com/ucdavis.edu/xuluze/home" target="_blank">Luze Xu</a> (UC Davis)</td>
                   <td class="title">
-                    <p><a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                    <span>
+                      <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
                         Gaining or losing perspective for convex multivariate functions
-                    </a></p>
+                      </a>
+                      [<strong><a href="slides/2025-06-04 - Talks - Luze Xu.pdf">Slides</a></strong>]
+                    </span>
                     <div class="hideme abstract">
                         <p>Mixed-integer nonlinear optimization formulations of the disjunction between the origin and a polytope via a binary indicator variable is broadly used in nonlinear combinatorial optimization for modeling a fixed cost associated with carrying out a group of activities and a convex cost function associated with the levels of the activities. The perspective relaxation of such models is often used to solve to global optimality in a branch-and-bound context, but it typically requires suitable conic solvers and is not compatible with general-purpose NLP software in the presence of other classes of constraints. This motivates the investigation of when simpler but weaker relaxations may be adequate. Comparing the volume (i.e., Lebesgue measure) of the relaxations as a measure of tightness, we lift some of the results related to univariate functions to the multivariate case.</p>
                     </div>
@@ -468,9 +476,12 @@
                   <td class="time">2:00-2:35</td>
                   <td class="speaker" onclick="toggleAbstract('abstract11');">Emma S. Johnson (Sandia)</td>
                   <td class="title">
-                    <p><a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                    <span>
+                      <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
                         Negotiating with solvers: Using Generalized Disjunctive Programming to find Computationally Performant MIP Formulations
-                    </a></p>
+                      </a>
+                      [<strong><a href="slides/2025-06-04 - Talks - Emma Johnson.pdf">Slides</a></strong>]
+                    </span>
                     <div class="hideme abstract">
                         <p>We currently live in a world of powerful (but magical) MIP solvers that implement a seemingly endless supply of tricks and techniques (including presolvers, branching strategies, symmetry detection, cuts, heuristics, etc.). The impact of these capabilities is so significant that the practitioner is no longer best served by searching for the best theoretical formation, and instead finds herself searching over the space of formulations, trying to find a form that minimizes solve time (sometimes without even branching!).  From a practical perspective, solvers are black boxes that run on magic pixie dust. Worse still, the “best formulation” is a moving target: the performance of formulations (both in absolute and relative terms) can and does change dramatically from version to version of the solver.</p>
                         <p>In this talk, I will present a systematic approach for generating and exploring alternative MIP formulations based on Generalized Disjunctive Programming.  By combining an approach for representing the logic from a standard MIP with standardized (and automated) routines for reformulating the logical model into a MIP, we can efficiently and expediently explore the space of formulations and empirically identify formulations that are most effective for our problem.  I will present preliminary computational results for several canonical problems using several versions of the Gurobi solver to argue that disjunctive programming serves us well by generalizing MIP and thus staying upwind of numerous formulation decisions that can have dramatic effects on solver performance.</p>
@@ -483,9 +494,12 @@
                     <a href="www.gurobi.com" target="_blank">Tobias Achterberg</a> (Gurobi)
                   </td>
                   <td class="title">
-                    <p><a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                    <span>
+                      <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
                         From Infeasibility to Feasibility - Improvement Heuristics to Find First Feasibles for MIPs
-                    </a></p>
+                      </a>
+                      [<strong><a href="slides/2025-06-04 - Talks - Tobias Achterberg.pdf">Slides</a></strong>]
+                    </span>
                     <div class="hideme abstract">
                         <p>Relaxation Induced Neighborhood Search (RINS) and other large neighborhood search (LNS) improvement heuristics for mixed integer programs (MIPs) explore some neighborhood around a given feasible solution to find other solutions with better objective value. This often leads to a chain of improving solutions with a high quality solution at its end, even if the starting solution is rather poor.</p>
                         <p>RINS and its variants are the most important heuristic ingredients in Gurobi to find good solutions quickly. But they have one issue: they can only be employed after an initial feasible solution has been found.</p>
@@ -505,9 +519,12 @@
                       <a href="https://mitmgmtfaculty.mit.edu/hlu/" target="_blank">Haihao Lu</a> (MIT)
                     </td>
                     <td class="title">
-                      <p><a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
-                        GPU-Based Linear Programming and Beyond
-                      </a></p>
+                      <span>
+                        <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                          GPU-Based Linear Programming and Beyond
+                        </a>
+                        [<strong><a href="slides/2025-06-04 - Talks - Haihao Lu.pdf">Slides</a></strong>]
+                      </span>
                       <div class="hideme abstract">
                           <p>In this talk, I will talk about the recent trend of research on new first-order methods for scaling up and speeding up linear programming (LP) and convex quadratic programming (QP) with GPUs. The state-of-the-art solvers for LP and QP are mature and reliable at delivering accurate solutions. However, these methods are not suitable for modern computational resources, particularly GPUs. The computational bottleneck of these methods is matrix factorization, which usually requires significant memory usage and is highly challenging to take advantage of the massive parallelization of GPUs. In contrast, first-order methods (FOMs) only require matrix-vector multiplications, which work well on GPUs and have already accelerated machine learning training during the last 15 years. This ongoing line of research aims to scale up and speed up LP and QP by using FOMs and GPUs.</p>
                       </div>
@@ -563,11 +580,12 @@
                     <a href="linkedin.com/in/martine-labbé-b87b065" target="_blank">Martine Labbé</a> (Bruxelles)
                   </td>
                   <td class="title">
-                      <p>
+                      <span>
                         <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
                             Solving Chance-Constrained (mixed integer) Linear Optimization Problems with Branch-and Cut
                         </a>
-                      </p>
+                        [<strong><a href="slides/2025-06-05 - Talks - Martine Labbé.pdf">Slides</a></strong>]
+                      </span>
                       <div class="hideme abstract">
                             <p>Consider an optimization problem in which some constraints involve random coefficients with known probability distribution. A chance-constraint version of this problem amounts to impose that these constraints must be satisfied with a probability larger than or equal to a given threshold.</p>
                             <p>Chance-constraint optimization problems (CCOPs) are frequently used to model problems in the domain of energy. They are known to be NP-hard. In the case where objective and constraints are linear, the problem can be reformulated as a mixed-integer linear problem by introducing big-M constants.</p>
@@ -594,9 +612,12 @@
                   <td class="speaker" onclick="toggleAbstract('abstract16');">
                     <a href="https://combi.rwth-aachen.de" target="_blank">Christina Büsing</a> (Aachen)</td>
                   <td class="title">
-                    <p><a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                    <span>
+                      <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
                         Solving Robust Binary Optimization Problem with Budget Uncertainty 
-                    </a></p>
+                      </a>
+                      [<strong><a href="slides/2025-06-05 - Talks - Christina Büsing.pdf">Slides</a></strong>]
+                    </span>
                     <div class="hideme abstract">
                         <p>Robust optimization with budgeted uncertainty, as proposed by Bertsimas and Sim in the early 2000s, is one of the most popular approaches for integrating uncertainty in optimization problems. The existence of a compact reformulation for MILPs and positive complexity results give the impression that these problems are relatively easy to solve. However, the practical performance of the reformulation is actually quite poor due to its weak linear relaxation.</p>
                         <p>To overcome this weakness, we propose a bilinear formulation for robust binary programming, which is as strong as theoretically possible. From this bilinear formulation, we derive strong linear formulations as well as structural properties, which we use within a tailored branch and bound algorithm. Furthermore, we propose a procedure to derive new classes of valid inequalities for robust binary optimization problems. For this, we recycle valid inequalities of the underlying non-robust problem such that the additional variables from the robust formulation are incorporated. The valid inequalities to be recycled may either be readily available model-constraints or actual cutting planes, where we can benefit from decades of research on valid inequalities for classical optimization problems.</p>
@@ -629,9 +650,12 @@
                     <a href="https://www.dei.unipd.it/~salvagni/" target="_blank">Domenico Salvagnin</a> (Padova)
                   </td>
                   <td class="title">
-                    <p><a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                    <span>
+                      <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
                         MIP formulations for delete-free AI planning
-                    </a></p>
+                      </a>
+                      [<strong><a href="slides/2025-06-05 - Talks - Domenico Salvagnin.pdf">Slides</a></strong>]
+                    </span>
                     <div class="hideme abstract">
                         <p>
                           Delete-free relaxations are a fundamental concept in classical AI planning, and the basis of state of the art admissible heuristics for domain-independent A* search, like LM-cut. While considered in general too expensive to be computed exactly, there was a renewed interest in understanding how effectively those can be computed in practice for standard planning tasks appearing in IPC competitions. In particular, several MIP formulations have been proposed in the last decade. In this work we reevaluate current formulations, and propose new approaches that incrementally improve over current methods by using standard MIP techniques, like MIP starts and lazy constraint separation.
