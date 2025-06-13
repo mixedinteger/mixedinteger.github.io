@@ -321,9 +321,12 @@
                     <a href="https://www.lix.polytechnique.fr/~dambrosio/" target="_blank">Claudia D'Ambrosio</a> (CNRS)
                   </td>
                   <td class="title">
-                    <p><a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
-                      Approximating complex functions in mixed integer non-linear optimization: a hybrid data- and knowledge-driven approach
-                    </a></p>
+                    <span>
+                      <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                        Approximating complex functions in mixed integer non-linear optimization: a hybrid data- and knowledge-driven approach
+                      </a>
+                      [<strong><a href="slides/2025-06-03 - Talks - Claudia D'Ambrosio.pdf">Slides</a></strong>]
+                    </span>
                     <div class="hideme abstract">
                       <p>The integration of data-driven and knowledge-driven approaches has recently caught the attention of the mathematical optimization community. For example, in Bertsimas and Ozturk (2023) and Bertsimas and Margaritis (2025), data-driven approaches are used to derive a more tractable approximation of some non-linear functions appearing in the constraints of mixed integer non-linear optimization (MINLO) problems. Their approaches involves: i. sampling the non-linear functions; ii. using machine learning (ML) approaches to obtain a good, linear approximation of these functions; iii. integrating it into a mixed integer linear optimization (MILO) models to solve MINLO faster. </p>
                       <p>We take a similar viewpoint. However, instead of a ML-based function approximation, we apply a statistical learning (SL) approach and fit B-splines. The main advantage of this alternative is that the fitting can be formulated as a mathematical optimization problem. Consequently, prior knowledge about the non-linear function can be directly integrated as constraints (e.g., conditions on the sign, monotonicity, curvature). The resulting B-spline can be modeled as a piecewise polynomial function, which allows the integration in the MINLO model. We test our approach on some instances of challenging instances from the MINLPlib and on a real-world application, namely the hydro unit commitment problem. The results show that, with the proposed method, we can find a good balance between quality and tractability of the approximation.</p>
@@ -339,9 +342,11 @@
                 <td class="time">2:00-2:35</td>
                 <td class="speaker" onclick="toggleAbstract('abstract04');">Alinson S. Xavier (Argonne)</td>
                 <td class="title">
-                  <p><a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
-                    MIPLearn: An Extensible Framework for Learning-Enhanced Optimization
-                  </a></p>
+                  <span>
+                    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                      MIPLearn: An Extensible Framework for Learning-Enhanced Optimization
+                    </a>
+                  </span>
                   <div class="hideme abstract">
                     <p>In many practical scenarios, discrete optimization problems are solved repeatedly, often on a daily basis or even more frequently, with only slight variations in input data. Examples include the Unit Commitment Problem, solved multiple times daily for energy production scheduling, and the Vehicle Routing Problem, solved daily to construct optimal routes. In this talk, we introduce MIPLearn, an extensible open-source framework which uses machine learning (ML) to enhance the performance of state-of-the-art MIP solvers in these situations. Based on collected statistical data, MIPLearn predicts good initial feasible solution, redundant constraints in the formulation, and other information that may help the solver to process new instances faster. The framework is compatible with multiple MIP solvers (e.g. Gurobi, CPLEX, SCIP, HiGHS), multiple modeling languages (JuMP, Pyomo, gurobipy) and supports user-provided ML models.</p>
                   </div>

@@ -214,6 +214,7 @@
                   <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
                     Approximating complex functions in mixed integer non-linear optimization: a hybrid data- and knowledge-driven approach
                   </a>
+                  [<strong><a href="slides/2025-06-03 - Talks - Claudia D'Ambrosio.pdf">Slides</a></strong>]
                 </span>
                 <div class="hideme abstract">
                   <p><strong>Abstract:</strong> The integration of data-driven and knowledge-driven approaches has recently caught the attention of the mathematical optimization community. For example, in Bertsimas and Ozturk (2023) and Bertsimas and Margaritis (2025), data-driven approaches are used to derive a more tractable approximation of some non-linear functions appearing in the constraints of mixed integer non-linear optimization (MINLO) problems. Their approaches involves: i. sampling the non-linear functions; ii. using machine learning (ML) approaches to obtain a good, linear approximation of these functions; iii. integrating it into a mixed integer linear optimization (MILO) models to solve MINLO faster. </p>
@@ -473,7 +474,155 @@
     <div class="container" id="contributed">
       <h2>Contributed Talks</h2>
       <div class="row">
-      <p>MIP 2025 is opening up limited slots for submissions of contributed “flash” talks by “nonstudents” (those who were not eligible for the poster session, such as postdocs, faculty, national lab members, and industry researchers). If you are interested, please submit your title/abstract by <b>April 7, 2025</b> via <a href="https://forms.gle/EpRu4DfgZR2waLqb9">this form</a>. We intend to communicate decisions by April 18, 2025.</p>
+      <p>MIP 2025 invited submissions of contributed “flash” talks by “nonstudents” (those who were not eligible for the poster session, such as postdocs, faculty, national lab members, and industry researchers). The deadline to submit a title/abstract was <b>April 7, 2025</b>. The presented talks are listed below.</p>
+        <!-- via <a href="https://forms.gle/EpRu4DfgZR2waLqb9">this form</a>. We intend to communicate decisions by April 18, 2025.</p> -->
+         <div class="twelve columns">
+          <ul>
+            <li>
+              <a href="https://www.danielecatanzaro.com">Daniele Catanzaro</a>
+              (Université Catholique de Louvain, Belgium),
+              <span>
+                <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                  Optimizing over Path-Length Matrices of Unrooted Binary Trees
+                </a>
+              </span>
+              <div class="hideme abstract">
+                <p><strong>Abstract:</strong> 
+                  Path-Length Matrices (PLMs) form a tree encoding scheme that is often used in the context of optimization problems defined over Unrooted Binary Trees (UBTs). Determining the conditions that a symmetric integer matrix of order n ≥ 3 must satisfy to encode the PLM of a UBT with n leaves is central to these applications. Here, we show that a certain subset of known necessary conditions is also sufficient to characterize the set Θn of PLMs induced by the set of UBTs with n leaves. We also identify key polyhedral results as well as facet-defining and valid inequalities for the convex hull of these matrices. We then examine how these results can be used to develop a new Branch-&-Cut algorithm for the Balanced Minimum Evolution Problem (BMEP), a NP-hard nonlinear optimization problem
+                  over Θn much studied in the literature on molecular phylogenetics. We present a new valid integer linear programming formulation for this problem and we show how to refine it, by removing redundant variables and constraints. We also show how to strengthen the reduced formulation by including lifted versions of the previously identified facet-defining and valid inequalities. We provide separation oracles for these inequalities and we exploit the tight lower bound provided by the linear programming relaxation of this formulation to design a new primal heuristic for the BMEP. The results of extensive computational experiments show that the Branch-&-Cut algorithm derived from this study outperforms the current
+                  state-of-the-art exact solution algorithm for the problem.
+                </p>
+              </div>
+            </li>
+            <li>
+              <a href="https://developer.nvidia.com/blog/author/acoerduek/">Akif Çördük</a>
+              (Nvidia),
+              <span>
+                <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                  GPU-Accelerated Evolutionary Framework for Primal Heuristics
+                </a>
+              </span>
+              <div class="hideme abstract">
+                <p><strong>Abstract:</strong>
+                  We present a GPU-accelerated heuristic framework utilizing parallelized algorithms that power Nvidia cuOpt. In this work, we propose novel evolutionary algorithms and integrate them into an evolutionary framework aimed at improving an initial population of solutions. Offspring solutions are generated through recombination operators and further refined using local search techniques. These solutions are maintained within a population pool that ensures controlled diversity and incorporates Lagrangian local search weights.
+                  <br><br>
+                  Additionally, we introduce a fast bounds propagation rounding procedure that leverages informed bulk rounding and repair strategies. We also briefly discuss why certain algorithms are well-suited for GPU parallelization, including feasibility jump, feasibility pump, PDLP, bounds propagation, recombination heuristics, and local search heuristics.
+                  <br><br>
+                  Finally, we present our results by demonstrating the improvement of the initial population and comparing our approach with other primal heuristics.
+                  <br><br>
+                  This is a joint work with Piotr Sielski.
+                </p>
+              </div>
+            </li>
+            <li>
+              <a href="https://sites.google.com/view/yongchun-li/home">Yongchun Li</a>
+              (University of Tennessee Knoxville),
+              <span>
+                <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                  The Augmented Factorization Bound for Maximum-Entropy Sampling
+                </a>
+                <strong>[<a href="slides/2025-06-03 - Flash Talks - Yongchun Li.pdf">Slides</a>]</strong>
+              </span>
+              <div class="hideme abstract">
+                <p><strong>Abstract:</strong>
+                  The maximum-entropy sampling problem (MESP) aims to select the most informative principal submatrix of a prespecified size from a given covariance matrix. This paper proposes an augmented factorization bound for MESP based on concave relaxation. By leveraging majorization and Schur-concavity theory, we demonstrate that this new bound dominates the classic factorization bound of Nikolov (2015) and a recent upper bound proposed by Li et al. (2024). Furthermore, we provide the theoretical guarantees that quantify how much our proposed bound improves the two existing ones and establish sufficient conditions for when the improvement is strictly attained. These results allow us to refine the celebrated approximation bounds for the two approximation algorithms of MESP. Besides, motivated by the strength of this new bound, we develop a variable fixing logic for MESP from a primal perspective. Finally, our numerical experiments demonstrate that our proposed bound achieves smaller integrality gaps and fixes more variables than the tightest bounds in the MESP literature on most benchmark instances, with the improvement being particularly significant when the condition number of the covariance matrix is small.
+                </p>
+              </div>
+            </li>
+            <li>
+              <a href="https://gonzalomunoz.org/">Gonzalo Muñoz</a>
+              (Universidad de Chile),
+              <span>
+                <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                  Tightening convex relaxations of trained neural networks: a unified approach for convex and S-shaped activations
+                </a>
+                <strong>[<a href="slides/2025-06-04 - Flash Talks - Gonzalo Muñoz.pdf">Slides</a>]</strong>
+              </span>
+              <div class="hideme abstract">
+                <p><strong>Abstract:</strong>
+                  The non-convex nature of trained neural networks has created significant obstacles in their incorporation into optimization models. Considering the wide array of applications that this embedding has, the optimization and deep learning communities have dedicated significant efforts to the convexification of trained neural networks. Many approaches to date have considered obtaining convex relaxations for each non-linear activation in isolation, which poses limitations in the tightness of the relaxations. Anderson et al. (2020) strengthened these relaxations and provided a framework to obtain the convex hull of the graph of a piecewise linear convex activation composed with an affine function; this effectively convexifies activations such as the ReLU together with the affine transformation that precedes it. In this work, we contribute to this line of work by developing a recursive formula that yields a tight convexification for the composition of an activation with an affine function for a wide scope of activation functions, namely, convex or "S-shaped". Our approach can be used to efficiently compute separating hyperplanes or determine that none exists in various settings, including non-polyhedral cases. We provide computational experiments to test the empirical benefits of these convex approximations.
+                </p>
+              </div>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/zedong-peng-1a97b0118/">Zedong Peng</a>
+              (MIT),
+              <span>
+                <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                  MPAX: Mathematical Programming in JAX
+                </a>
+              </span>
+              <div class="hideme abstract">
+                <p><strong>Abstract:</strong>
+                  We introduce MPAX (Mathematical Programming in JAX), a versatile and efficient toolbox for integrating mathematical programming into machine learning workflows. MPAX implemented the state-of-the-art first-order methods, restarted average primal-dual hybrid gradient and reflected restarted Halpern primal-dual hybrid gradient, to solve linear programming and quadratic programming problems in JAX. It provides native support for hardware accelerations along with features like batch solving, auto-differentiation, and device parallelism. Extensive numerical experiments demonstrate the advantages of MPAX over existing solvers. The solver is available at https://github.com/MIT-Lu-Lab/MPAX.
+                </p>
+              </div>
+            </li>
+            <li>
+              <a href="https://www.maths.ed.ac.uk/school-of-mathematics/people/a-z?person=361">Sergio García Quiles</a>
+              (University of Edinburgh),
+              <span>
+                <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                  Some preprocessing and polyhedral results on facility location with preferences
+                </a>
+                <strong>[<a href="slides/2025-06-03 - Flash Talks - Sergio García Quiles.pdf">Slides</a>]</strong>
+              </span>
+              <div class="hideme abstract">
+                <p><strong>Abstract:</strong>
+                  The simple plant location problem with order (SPLPO) is a generalization of the well-known simple
+                  plant location problem (SPLP) where preferences for the customers are considered. In the well-known
+                  version without preferences facilities must be chosen among a set of candidates (locator agent) and
+                  each customer from a given set must be allocated to one of the open facilities (allocator agent) so that
+                  the total cost (location plus allocation) be minimum. When preferences are added, each customer
+                  ranks the facilities from the most preferred to the least preferred. Once the decision on what facilities
+                  to open is taken, each customer is allowed to attend their most preferred open facility. These
+                  preferences may be such that the criteria of the locator and allocator are totally aligned (and thus, the
+                  preferences constraints that we have added are redundant), or they be such that the locator and
+                  allocator have completely opposite criteria (making the choice of what facilities to open critical to
+                  avoid large costs), or anything in between.
+                  <br><br>
+                  The problem can be formulated by simply adding an extra family of inequalities to the SPLP. However,
+                  this new formulation opens the door to several interesting results obtained from a careful analysis of
+                  the problem. Two of them that I will illustrate are: 1) being able to substitute an important number of
+                  the original preferences constraints with fewer constraint that provide a tighter formulation by finding
+                  that certain preference sets have empty intersection and then finding heuristically maximal cliques on
+                  a certain graph, and 2) observing that about more than 90% of the constraints $x_{ij} \le y_j$, which are all
+                  facets for the SPLPO, are not facets for the SPLPO due to a particular dominance hierarchy of
+                  constraints $x_{i1,j} \le x_{i2,j}$.
+                </p>
+              </div>
+            </li>
+            <li>
+              <a href="https://thiagoserra.com/">Thiago Serra</a>
+              (University of Iowa),
+              <span>
+                <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                  Optimal Combinatorial Testing with Constraints: The Balancing Act
+                </a>
+              </span>
+              <div class="hideme abstract">
+                <p><strong>Abstract:</strong>
+                  Imagine that you are in front of a cockpit with several on--off buttons. If you were to thoroughly test it, you would need to try a prohibitive number of configurations. But since most bugs in practice can be isolated to  interactions among few components,  having tests that cover every possible pairwise configuration is a good start. However, this is a problem that goes from easy to NP--hard as soon as some pairwise configurations are forbidden---and constraints are inevitable in real life applications of optimization. In this work, we revisit unconstrained combinatorial testing with pairwise coverage on binary parameters and contrast it with the constrained case, showing or conjecturing properties that are upheld or that change from one to the other. In particular, we discuss the extent to which it remains a good idea---and sometimes indeed optimal---to try turning every button almost as many times on as off to minimize testing. Using integer programming, we propose an exact algorithm and a faster heuristic that often produces provably optimal solutions.
+                </p>
+              </div>
+            </li>
+            <li>
+              <a href="https://www.ie.tsinghua.edu.cn/eng/info/1051/1032.htm">Junlong Zhang</a>
+              (Tsinghua University),
+              <span>
+                <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                  Construction of Value Functions of Integer Programs with Finite Domain
+                </a>
+                <strong>[<a href="slides/2025-06-05 - Flash Talks - Junlong Zhang.pdf">Slides</a>]</strong>
+              </span>
+              <div class="hideme abstract">
+                <p><strong>Abstract:</strong>
+                  Value functions play a central role in integer programming duality, and they are also used to develop solution methods for stochastic integer programs, bilevel integer programs and robust optimization problems. In this paper, we propose a column-by-column algorithm for constructing the value functions of integer programs with finite domain over the set of level-set minimal vectors. The proposed algorithm starts with the first column and sequentially adds the rest of columns one by one. Each time a column is added, a new set of level-set minimal vectors is generated based on the previous set and the optimal objective values over the level-set minimal vectors are also computed. The advantage of the proposed algorithm is that no integer program needs to be solved in the algorithm for instances with nonnegative constraint matrices. Computational results on benchmark instances show that the proposed algorithm can achieve by up to three orders of magnitude speedup compared with a state-of-the-art algorithm. We also extend the proposed algorithm to build value functions of integer programs with negative elements in the constraint matrix.
+                </p>
+              </div>
+            </li>
+          </ul>
+         </div>
       </div>
     </div>
   </div>
