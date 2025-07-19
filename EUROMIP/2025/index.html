@@ -282,6 +282,7 @@
 		</p>
 		<p class="hideme">
 		  We study network design problems for nonlinear and nonconvex flow models without controllable elements under load scenario uncertainties, i.e., under uncertain injections and withdrawals. To this end, we apply the concept of adjustable robust optimization to compute a network design that admits a feasible transport for all, possibly infinitely many, load scenarios within a given uncertainty set. For solving the corresponding adjustable robust mixed-integer nonlinear optimization problem, we show that a given network design is robust feasible, i.e., it admits a feasible transport for all load scenario uncertainties, if and only if a finite number of worst-case load scenarios can be routed through the network. We compute these worst-case scenarios by solving polynomially many nonlinear optimization problems. Embedding this result for robust feasibility in an adversarial approach leads to an exact algorithm that computes an optimal robust network design in a finite number of iterations. Since all of the results are valid for general potential-based flows, the approach can be applied to different utility networks such as gas, hydrogen, or water networks. We finally demonstrate the applicability of the method by computing robust gas networks that are protected from future load fluctuations.
+		  <a href="slides/johannes-thurauf.pdf">(slides)</a>
 		</p>
 	    </td></tr>
             <tr><td class="time">11:00 - 11:45</td><td>
@@ -292,6 +293,7 @@
 	   	  Solving Integer Programs (IPs) is generally NP-hard. But this does not imply that all instances are inherently hard.
 		  In fact, a substantial body of research has focused on identifying tractable subclasses and developing efficient (fixed-parameter tractable) algorithms for those.
 		  This talk will give a little overview of some of the key results and techniques. 
+		  <a href="slides/alexandra-lassota.pdf">(slides)</a>
 	   	</p>
 	    </td></tr>
             <tr><td class="time">11:45 - 13:30</td><td><p>Lunch break</p></td></tr>
@@ -303,6 +305,7 @@
 	   	  In branch-and-price algorithms, the generation of new columns is made as part of solving LP relaxations and not with the integer program explicitly in mind. Instead, the responsibility to find integer solutions is delegated to the branching and cut generation, with an implicit impact on the pricing. When designing heuristics to accelerate branch-and-price by finding high-quality integer solutions early in the solution process, columns for LP relaxations are not necessarily useful. An interesting question is therefore how to price for columns that are of immediate use in integer solutions, that is, to price for integrality.
 One important heuristic technique in the context of mixed-integer programming solvers is Large-eighbourhood search (LNS). These search for primal feasible solutions by solving an auxiliary problem with a restricted feasible region. In this talk, I will introduce an LNS heuristic, IPColGen, where the novelty is to heuristically price for integrality. The theoretical foundation for the pricing scheme is a set of optimality conditions for integer programs.
 IPColGen has been implemented in the generic branch-price-and-cut solver GCG. On a broad test set comprising classical block-diagonal-structured instances and general instances from the MIPLIB 2017 Collection, the computational results show a significant improvement in solving performance of GCG for challenging instances having a large root node gap. We have also made a tailored implementation of IPColGen as part of a branch-price-and-cut algorithm for an Electric Vehicle Routing Problem with Time Windows and capacitated charging resources available only during specific time slots.  Compared to only adding cuts in the root node, the impact of the heuristic is to close one third of the remaining root node gap.
+		  <a href="slides/elina-ronnberg.pdf">(slides)</a>
 	   	</p>
 	    </td></tr>
             <tr><td class="time">14:15 - 15:00</td><td>
@@ -312,6 +315,7 @@ IPColGen has been implemented in the generic branch-price-and-cut solver GCG. On
 	   	<p class="hideme">
 	   	  Grossman et al. show that the subdeterminants of the incidence matrix of a graph can be characterized using the graph’s odd cycle packing number. In particular, a graph’s incidence matrix is totally unimodular if and only if the graph is bipartite. We extend the characterization of total unimodularity to disjoint hypergraphs, i.e., hypergraphs whose hyperedges of size at least four are pairwise disjoint. Disjoint hypergraphs interpolate
 between graphs and hypergraphs, which correspond to arbitrary {0, 1}-matrices. This intermediate structure has been used to model graph optimization problems with fairness constraints, where elements are grouped into non-overlapping categories to ensure balanced representation. We prove that total unimodularity for disjoint hypergraphs is equivalent to forbidding both odd cycles and a structure we call an “odd tree house”. Our result extends to disjoint mixed hypergraphs, i.e., those whose incidence matrices allow for {0, ±1}-entries. As a corollary, we resolve a special case of a conjecture on almost totally unimodular matrices, originally posed by Padberg and later modified by Cornu ́ejols and Zuluaga. The talk is based on joint work with Marco Caoduro and Joseph Paat.
+		  <a href="slides/meike-neuwohner.pdf">(slides)</a>
 	   	</p>
 	    </td></tr>
             <tr><td class="time">15:00 - 15:30</td><td><p>Break</p></td></tr>
@@ -322,6 +326,7 @@ between graphs and hypergraphs, which correspond to arbitrary {0, 1}-matrices. T
 	   	<p class="hideme">
 	   	  Clustering is a fundamental technique in data analysis and machine learning, used to group similar data points together. Among various clustering methods, the Minimum Sum-of-Squares Clustering (MSSC) is one of the most widely used. MSSC aims to minimize the total squared Euclidean distance between data points and their corresponding cluster centroids. Due to the unsupervised nature of clustering, achieving global optimality is crucial, yet computationally challenging. The complexity of finding the global solution increases exponentially with the number of data points, making exact methods impractical for large-scale datasets. Even obtaining strong lower bounds on the optimal MSSC objective value is computationally prohibitive, making it difficult to assess the quality of heuristic solutions.<br>
 		  We address this challenge by introducing a novel method to validate heuristic MSSC solutions through optimality gaps. Our approach employs a divide-and-conquer strategy, decomposing the problem into smaller instances that can be handled by an exact solver. The decomposition is guided by an auxiliary optimization problem, the "anticlustering problem", for which we design an efficient heuristic. Computational experiments demonstrate the effectiveness of the method for large-scale instances, achieving optimality gaps below 3% in most cases while maintaining reasonable computational times. These results highlight the practicality of our approach in assessing feasible clustering solutions for large datasets, bridging a critical gap in MSSC evaluation.
+		  <a href="slides/veronica-piccialli.pdf">(slides)</a>
 	   	</p>
 	    </td></tr>
             <tr><td class="time">16:15 - 17:00</td><td>
@@ -332,6 +337,7 @@ between graphs and hypergraphs, which correspond to arbitrary {0, 1}-matrices. T
 	   	  While CP-SAT focus on pure integer-problems, a lot of its design is similar to the one of a "classic" MIP solver and they can be used to solve optimization problem in mostly the same way.
 		  After explaining the class of MIP problem that CP-SAT can deal with, I will dive on some of its implementation details.
 		  I will focus on the handling of linear constraints and how we use the LP relaxation of the problem, both being critical components like they are in MIP.
+		  <a href="slides/frederic-didier.pdf">(slides)</a>
 	   	</p>
 	    </td></tr>
 	    <tr><td class="time">after</td><td><p>Poster session (location: <a href="https://www.google.com/maps/place/ISIMA/@45.7599822,3.1100872,17.67z/data=!3m1!5s0x47f71c705993f715:0x6dbb5fe635dfee20!4m6!3m5!1s0x47f71c70f75dec15:0x3bcec5a13c4c5008!8m2!3d45.7590113!4d3.1104272!16s%2Fg%2F121m7w9v?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D">ISIMA building</a>)</p></td></tr>
@@ -352,6 +358,7 @@ between graphs and hypergraphs, which correspond to arbitrary {0, 1}-matrices. T
 		  We investigate some graph parameters dealing with biindependent pairs in bipartite graphs, with close relationships to bicliques in general graphs. Deciding whether a bipartite graph has a maximum independent set that is balanced (i.e., with the same number of nodes on each side of the bipartition) is shown to be NP-complete. This implies, in particular, NP-hardness of computing the maximum ratio (sum of sizes over product of sizes) for biindependent pairs.
 These hardness results motivate introducing semidefinite programming bounds for these various graph parameters, which can be seen as natural variations of the Lovász ϑ-number. We also formulate closed-form eigenvalue bounds and show relationships among them as well as with earlier spectral parameters by Hoffman, Haemers (2001) and Vallentin (2020).
 Based on joint work with Sven Polak and Luis Felipe Vargas.
+		  <a href="slides/monique-laurent.pdf">(slides)</a>
 		</p>
 	    </td></tr>
             <tr><td class="time">9:45 - 10:15</td><td><p>Break</p></td></tr>
@@ -361,6 +368,7 @@ Based on joint work with Sven Polak and Luis Felipe Vargas.
 		</p>
 		<p class="hideme">
 		  Many fundamental graph disconnection problems hide an underlying bilevel structure that can be exploited for stronger formulations and algorithms. In this talk, we reveal and formalize this hidden structure for two key problems: the capacitated vertex separator and the k-vertex cut. Both are modeled as two-phase Stackelberg games, where a leader strategically deletes vertices and a follower reacts by optimizing over the disconnected graph. We present new integer programming formulations naturally capturing this bilevel interaction, supported by families of strengthening valid inequalities and polynomial-time separation procedures. Our computational studies demonstrate that these approaches significantly improve the state-of-the-art, yielding better solutions and faster convergence on benchmark instances. Beyond these two problems, the bilevel perspective opens promising directions for a broader class of graph modification and partitioning problems.
+		  <a href="slides/fabio-furini.pdf">(slides)</a>
 		</p>
 	    </td></tr>
             <tr><td class="time">11:00 - 11:45</td><td>
@@ -381,6 +389,7 @@ Based on joint work with Sven Polak and Luis Felipe Vargas.
 	   	</p>
 	   	<p class="hideme">
 	   	  We study network flow interdiction problems with nonlinear and nonconvex flow models. The resulting model is a max-min bilevel optimization problem in which the follower’s problem is nonlinear and nonconvex. In this game, the leader attacks a limited number of arcs with the goal of maximizing the load shed, and the follower aims at minimizing the load shed by solving a transport problem in the interdicted network. We develop an exact algorithm consisting of lower and upper bounding schemes that computes an optimal interdiction under the assumption that the interdicted network remains weakly connected. The main challenge consists of computing valid upper bounds for the maximal load shed, whereas lower bounds can directly be derived from the follower’s problem. To compute an upper bound, we propose solving a specific bilevel problem, which is derived from restricting the flexibility of the follower when adjusting the load flow. This bilevel problem still has a nonlinear and nonconvex follower’s problem, for which we then prove necessary and sufficient optimality conditions. Consequently, we obtain equivalent single-level reformulations of the specific bilevel model to compute upper bounds. Our numerical results show the applicability of this exact approach using the example of gas networks.
+		  <a href="slides/martin-schmidt.pdf">(slides)</a>
 	   	</p>
 	    </td></tr>
             <tr><td class="time">14:15 - 15:00</td><td>
@@ -391,6 +400,7 @@ Based on joint work with Sven Polak and Luis Felipe Vargas.
 	   	    Many problems can be described using an integer program, e.g. scheduling, capital budgeting, or vehicle routing. In full generality, solving an integer program is known to be NP-hard. However, integer programs where the coefficient matrix is totally unimodular (each determinant of any square submatrix is one of the values in &lbrace;-1,0,1&rbrace;) can be solved in polynomial time. One of the central questions in combinatorial optimization is whether there is a polynomial-time algorithm for solving integer programs where the coefficient matrix is totally &Delta;-modular (each determinant of any square submatrix is one of the values in &lbrace;-&Delta;,...,&Delta;&rbrace;). The case of &Delta;=2 was positively resolved by Artmann, Weismantel, and Zenklusen only as recently as 2017 and the question for larger values of &Delta; still remains open and appears to be very difficult.
 		  <br><br>
 		    In this talk, I will present results for several different cases of the above conjecture. These results require tools from structural graph, as well as a new proximity result of integer optimal solutions and their corresponding linear relaxation solutions.
+		  <a href="slides/yelena-yuditsky.pdf">(slides)</a>
 	   	</p>
 	    </td></tr>
             <tr><td class="time">15:00 - 15:30</td><td><p>Break</p></td></tr>
@@ -400,6 +410,7 @@ Based on joint work with Sven Polak and Luis Felipe Vargas.
 	   	</p>
 	   	<p class="hideme">
 	   	  The simplex method is the fundamental building block for optimization algorithms like branch-and-bound, column generation, and cutting-plane methods. We explore the engineering trade-offs involved in building a fast and numerically-stable implementation of the simplex method. In particular, most practical optimization problems exhibit specific structure (with respect to sparsity and degeneracy among others), and we show how this impacts implementation choices, sometimes in counter-intuitive ways.
+		  <a href="slides/laurent-porrier.pdf">(slides)</a>
 	   	</p>
 	    </td></tr>
             <tr><td class="time">16:15 - 17:00</td><td>
@@ -407,7 +418,7 @@ Based on joint work with Sven Polak and Luis Felipe Vargas.
 	   	  <a title="Show abstact" href="#" onclick="toggleAbstract(this);return false;">Fran&ccedil;ois Lamothe – Dantzig-Wolfe and Fenchel decompositions: hybridation and degeneracy</a>
 	   	</p>
 	   	<p class="hideme">
-	   	  TBA
+	   	  <a href="slides/francois-lamothe.pdf">(slides)</a>
 	   	</p>
 	    </td></tr>
 	    <tr><td class="time">after</td><td><p>Gala dinner at <a href="https://maps.app.goo.gl/vUnfBus313f7iycR6">Brasserie Madeleine</a></p></td></tr>
@@ -425,6 +436,7 @@ Based on joint work with Sven Polak and Luis Felipe Vargas.
 		</p>
 		<p class="hideme">
 		  Optimizing the discrete control of a dynamic nonlinear system often relies on simulation-optimization, searching through the discrete decision space. Instead, we consider searching through the continuous space of the state variables by adapting a control/state variable splitting scheme alike ADMM. Fixing the state variables provides a strict decoupling into static discrete subproblems and, possibly, the further decomposition of the static subproblem itself, enabling its exact solution. We illustrate this on implementing load shifting in drinking water distribution systems to optimize their power consumption, which translates to dynamically reconfigure a nonlinear flow network with sequence-based boundary conditions. The convergence proof of our iterative scheme is lost on this discrete nonconvex problem, however it can be initialized properly, and the problem at each iteration becomes separable in time, in space, and in primal/flow and dual/potential parts.
+	   	  <a href="slides/sophie-demassey.pdf">(slides)</a>
 		</p>
 	    </td></tr>
             <tr><td class="time">9:45 - 10:15</td><td><p>Break</p></td></tr>
@@ -446,6 +458,7 @@ Based on joint work with Sven Polak and Luis Felipe Vargas.
 		  sparsity remains: it is still possible to find a sparse approximate
 		  solution whose feasibility error decreases exponentially as the number
 		  of non-zero entries increases.
+	   	  <a href="slides/stefan-kuhlmann.pdf">(slides)</a>
 		</p>
 	    </td></tr>
             <tr><td class="time">11:00 - 11:45</td><td>
@@ -457,6 +470,7 @@ Based on joint work with Sven Polak and Luis Felipe Vargas.
 We first analyze a simplicial decomposition like algorithmic framework that handles convex quadratic programs in an eff ective way. In particular, we propose two suitable strategies for solving the master problem and describe some techniques for speeding up the solution of the pricing problem.
 We then propose a methodological analysis on a family of reformulations combining Dantzig-Wolfe decompositions and Quadratic Convex Reformulations for non-convex binary quadratic problems. As a representative case study, we apply them to a cardinality constrained quadratic knapsack problem.
 Finally, we propose a matrix generation method for non-convex quadratically constrained 0-1 quadratic problems based on a Dantzig-Wolfe reformulation that leads to a linear master and an unconstrained 0-1 pricing problem. The domain of this relaxation, the Boolean Quadric Polytope, is contained in the cone of Completely Positive matrices.
+	   	  <a href="slides/lucas-letocart.pdf">(slides)</a>
 	   	</p>
 	    </td></tr>
             <tr><td class="time">11:45 - 13:30</td><td><p>Lunch break</p></td></tr>
@@ -467,6 +481,13 @@ Finally, we propose a matrix generation method for non-convex quadratically cons
 	  The conference booklet including local information and the program can be found <a href="images/EURO_MIP_2025_Booklet.pdf">here</a>.
 	  <br><br>
 	</div>
+
+	<div class="col gallery">
+          <a href="images/photo_group.jpeg">
+            <img src="images/photo_group.jpeg" alt="MIP 2025 conference" width="100%">
+      	  </a>
+	</div>
+
       </div>
     </div>
   </div>
