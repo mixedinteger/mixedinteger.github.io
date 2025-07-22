@@ -1,0 +1,15 @@
+:root {
+    --navbar: #000E2F;
+    --navbartext: white;
+    --navbarselect: #182A60;
+    --navbarselecttext: white;
+    --highlight: #1B2E67;
+    --highlightext: white;
+    --highlightlink: white;
+    --maincolor1: #013ecd;
+    --maincolor1text: white;
+    --maincolor1link: white;
+    --maincolor2: #F9F7F6;
+    --maincolor2text: black;
+    --maincolor2link: black;
+}
