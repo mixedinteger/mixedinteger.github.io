@@ -85,6 +85,37 @@
 	color: var(--maincolor2link);
     }
   </style>
+<style>
+  dialog#payModal {
+    width: min(720px, 92vw);
+    border: none;
+    border-radius: 12px;
+    padding: 0;
+    box-shadow: 0 24px 64px rgba(0,0,0,.35);
+  }
+  dialog#payModal::backdrop { background: rgba(0,0,0,.35); }
+  .pm-wrap { padding: 1.2rem 1.25rem 1.25rem; background: #fff; color: #111; }
+  .pm-title { margin: 0 2rem .25rem 0; line-height: 1.25; }
+  .pm-text { color: #444; white-space: pre-line; }
+  .pm-actions { display: flex; gap: .5rem; justify-content: flex-end; margin-top: 1rem; align-items: center; }
+  .pm-btn{
+  display: inline-flex;
+  align-items: center;       /* vertical centering */
+  justify-content: center;   /* horizontal centering */
+  line-height: 1;            /* remove extra font ascent/descender space */
+  font-family: inherit;
+}
+  .pm-btn.primary {
+    background: var(--navbarselect); color: var(--navbarselecttext);
+  }
+  .pm-btn.secondary {
+    background: #e5e7eb; color: #111;
+  }
+  .pm-x {
+    position: absolute; right: .7rem; top: .55rem;
+    border: none; background: transparent; font-size: 1.6rem; color: #6b7280; cursor: pointer;
+  }
+</style>
 
 </head>
 <body>
@@ -121,7 +152,7 @@
     <div class="container">
       <h2>Registration</h2>
       <p>
-        Registration for MIP South America 2025 is open <a href="https://pagos.isci.cl/workshop/mip-south-america-2025">HERE</a>.
+        Registration for MIP South America 2025 is open <a id="reg-link" href="https://pagos.isci.cl/workshop/mip-south-america-2025">HERE</a>.
         Registrations include access to all regular workshop talks (December 9-12, 2025), and to the poster session / welcome reception on Tuesday, December 9, 2025.
         There is an additional option for the workshop dinner, for Wednesday, December 10, 2025.
       </p>
@@ -172,5 +203,41 @@
       el.parentElement.nextElementSibling.classList.toggle("hideme");
     }
   </script>
+  <dialog id="payModal" aria-labelledby="pm-title">
+  <button class="pm-x" aria-label="Close" onclick="payModal.close()">×</button>
+  <div class="pm-wrap">
+    <h3 id="pm-title" class="pm-title">Heads up about USD payments</h3>
+    <div class="pm-text" id="pm-text">
+      Some participants have reported issues with the USD payment with credit card. We are trying to solve this, but you can still register by selecting CLP (Chilean pesos) and letting your card do the currency conversion. This has worked without issues.
+
+      You can still proceed to the registration page now. If you try USD and it fails, try switching to CLP.
+    </div>
+    <div class="pm-actions">
+      <button class="pm-btn secondary" onclick="payModal.close()">Cancel</button>
+      <button class="pm-btn primary" id="pm-continue">Continue</button>
+    </div>
+  </div>
+</dialog>
+<script>
+  (function(){
+    const regLink = document.getElementById('reg-link');
+    const modal   = document.getElementById('payModal');
+    const contBtn = document.getElementById('pm-continue');
+
+    if (!regLink || !modal || !contBtn) return;
+
+    const targetHref = regLink.getAttribute('href');
+
+    regLink.addEventListener('click', function (e) {
+      e.preventDefault();
+      modal.showModal();
+    });
+
+    contBtn.addEventListener('click', function () {
+      // proceed to the original registration URL in the same tab
+      window.location.href = targetHref;
+    });
+  })();
+</script>
 </body>
 </html>
