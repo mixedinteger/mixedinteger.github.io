@@ -82,7 +82,7 @@ The committee is currently working on a customized tutorial, which will follow t
     *   [Tutorial on profiling and debugging](https://www.youtube.com/watch?v=dB5Jxwj0PDw)
     *   [Webinar on profiling and debugging](https://www.youtube.com/watch?v=kKANP0kL_hk)
     *   [Documentation on profiling](https://docs.nvidia.com/nsight-systems/UserGuide/index.html#profiling-from-the-cli)
-
+* Libraries such as [JAX](https://github.com/jax-ml/jax) and [PyTorch](https://pytorch.org/) are also accessible and efficient ways to perform computation on GPUs in Python.
 
 ## Competition Rules
 
