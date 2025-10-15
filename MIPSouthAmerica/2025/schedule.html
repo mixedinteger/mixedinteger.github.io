@@ -136,6 +136,59 @@
   .tm-meta{ color:#6b7280; margin-bottom:.6rem }
   .tm-when{ color:#6b7280; font-size:1.25rem; margin-bottom:.4rem }
   .tm-abs{ line-height:1.55 }
+
+  /* lets the schedule scroll sideways on phones */
+  .sched-scroll{
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 6px;      /* tiny space so the scrollbar doesn’t sit on the cards */
+  }
+  /* visible horizontal scrollbar for desktop users */
+  .sched-scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 6px;
+  }
+  .sched-scroll::-webkit-scrollbar {
+    height: 10px;
+  }
+  .sched-scroll::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+
+  .sched-grid {
+  display: grid;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 1.5rem;
+
+  /* time column + 4 day columns with flexible widths */
+  grid-template-columns: 100px repeat(4, minmax(200px, 1fr));
+  grid-auto-rows: auto;
+}
+
+/* === Default: mobile-friendly, scrollable === */
+.sched-grid {
+  grid-template-columns: 80px repeat(4, minmax(160px, 1fr));
+}
+
+/* Tablet and small laptop (fit tighter but still scrollable if needed) */
+@media (min-width: 800px) {
+  .sched-grid {
+    grid-template-columns: 90px repeat(4, minmax(180px, 1fr));
+  }
+}
+
+/* Large desktop: force to fit screen, disable side scroll */
+@media (min-width: 1200px) {
+  .sched-grid {
+    grid-template-columns: 90px repeat(4, 1fr);
+  }
+}
+
 </style>
 
 
@@ -174,7 +227,7 @@
   <div class="highlight">
     <div class="container">
       <br>
-      <h3>Click on a talk to display more details</h3>
+      <h3>Click on a talk to display more details. On mobile, swipe to see more days.</h3>
    </div>
   </div>
 
@@ -209,7 +262,18 @@ function renderGrid(SLOTS, talkById){
   const days = uniq(SLOTS.map(s=>s.day)).sort();
   const times = uniq(SLOTS.flatMap(s=>[mins(s.start), mins(s.end)])).sort((a,b)=>a-b);
 
-  grid.style.gridTemplateColumns = `minmax(84px,100px) repeat(${days.length},1fr)`;
+  // responsive columns: fit on desktop, overflow on small screens
+  const isDesktop = window.innerWidth >= 1200;
+  const timeCol   = isDesktop ? "90px" : "80px";
+  const dayCol    = isDesktop ? "1fr"  : "minmax(180px,1fr)";
+  grid.style.gridTemplateColumns = `${timeCol} repeat(${days.length}, ${dayCol})`;
+
+  // GUARANTEE overflow on small screens (so there's something to scroll)
+  if (!isDesktop) {
+    grid.style.minWidth = (parseInt(timeCol) + days.length * 200) + "px"; // 200px per day column; tweak to 180 if you want
+  }
+
+
 
   // header
   const corner = document.createElement("div"); corner.className="sched-hdr"; corner.textContent="Time"; grid.appendChild(corner);
@@ -252,7 +316,11 @@ function renderGrid(SLOTS, talkById){
     }
   }
 
-  mount.appendChild(grid);
+  const wrap = document.createElement("div");
+  wrap.className = "sched-scroll";
+  wrap.appendChild(grid);
+
+  document.querySelector(".highlight .container").appendChild(wrap);
 }
 
 /* --- modal logic (replaces alert) --- */
@@ -322,6 +390,28 @@ function openIfHash(SLOTS, talkById){
     <div id="tm-abs" class="tm-abs"></div>
   </div>
 </dialog>
+<script>
+  // Allow drag-to-scroll with mouse (for Windows/Linux)
+  const wrapper = document.querySelector('.sched-scroll');
+  let isDown = false, startX, scrollLeft;
+  if (wrapper) {
+    wrapper.addEventListener('mousedown', e => {
+      isDown = true;
+      wrapper.classList.add('active');
+      startX = e.pageX - wrapper.offsetLeft;
+      scrollLeft = wrapper.scrollLeft;
+    });
+    wrapper.addEventListener('mouseleave', () => isDown = false);
+    wrapper.addEventListener('mouseup', () => isDown = false);
+    wrapper.addEventListener('mousemove', e => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - wrapper.offsetLeft;
+      const walk = (x - startX) * 1.2;
+      wrapper.scrollLeft = scrollLeft - walk;
+    });
+  }
+</script>
 
 </body>
 </html>
