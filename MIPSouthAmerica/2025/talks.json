@@ -1,0 +1,163 @@
+[
+  {
+    "id": "margarita",
+    "title": "A Decision Diagram Approach for the Parallel Machine Scheduling Problem with Chance Constraints",
+    "speaker": "Margarita Castro",
+    "affiliation": "Pontificia Universidad Católica, Chile",
+    "abstract": "The Chance-Constrained Parallel Machine Scheduling Problem (CC-PMSP) assigns jobs with uncertain processing times to machines, ensuring that each machine's availability constraints are met with a certain probability. We present a decomposition approach where the master problem assigns jobs to machines, and the subproblems schedule the jobs on each machine while verifying the solution's feasibility under the chance constraint. We propose two different Decision Diagram (DD) formulations to solve the subproblems and generate cuts. The first formulation employs DDs with a linear cost function, while the second uses a non-linear cost function to reduce the diagram's size. We show how to generate no-good and irreducible infeasible subsystem (IIS) cuts based on our DDs. Additionally, we extend the cuts proposed by Lozano & Smith (2018) to solve two-stage stochastic programming models. Our empirical experiments show that the DD-based methodology outperforms traditional integer programming (IP) models designed to solve the CC-PMSP in most instances, solving more instances to optimality and achieving lower optimality gaps."
+  },
+  {
+    "id": "paola",
+    "title": "Polyhedra for dominating set problems on circular interval graphs",
+    "speaker": "Paola Tolomei",
+    "affiliation": "Universidad Nacional de Rosario, Argentina",
+    "abstract": "The well-known concept of domination in graphs, along with its variants, models numerous facility location problems in operations research.\n\nThe dominating set polytope on circular interval graphs is closely related to the set covering polyhedron on circular matrices, for which a complete linear description is known [1]. Leveraging this relationship, we obtain a complete linear description of the dominating set polytope on circular interval graphs. Moreover, the results are established for a larger class of covering polyhedra of the form Q*(A,b) :=conv{x∈ ℤ^n : Ax≥b, x≥0}, where A is a circular matrix and b is an integer vector. These results also yield linear descriptions of polyhedra associated with certain variants of the dominating set problem on circular interval graphs, such as the {k}-dominating set problem, which corresponds to the case b =1k.\n\nAnother variant is the k-dominating set problem, which also corresponds to b =1k but is defined with binary variables {0,1}, introducing bound constraints. This new polyhedron is more difficult to characterize and is studied for a subclass of circular interval graphs known as web graphs. For this case, sufficient conditions and necessary conditions are provided for certain families of inequalities to define facets [2].\n\nReferences\n\n[1] Bianchi, S., G. Nasini, P. Tolomei and L.M. Torres. On dominating set polyhedra of circular interval graphs. Discrete Mathematics, 344(4):112283, 2021.\n\n[2] Kaial, V. On the k-domination polyhedron of web graphs. Undergraduate Thesis in Mathematics (FCEIA, UNR) supervised by M. Escalante and P. Tolomei, 2024."
+  },
+  {
+    "id": "felipe",
+    "title": "Demystifying Conflict Analysis in Mixed-Integer Programming",
+    "speaker": "Felipe Serrano",
+    "affiliation": "Cardinal Optimizer, Germany",
+    "abstract": "Conflict analysis in mixed-integer programming (MIP) is, roughly speaking, a technique for extracting information from infeasible branch-and-bound nodes in order to speed up the overall solution process. It was first introduced into MIP solvers from satisfiability (SAT) solvers by Achterberg in 2005, and has since become a standard feature in most state-of-the-art solvers.  Over the last two decades, multiple variants and enhancements have been proposed. In this talk, we will explain the fundamental idea of conflict analysis and walk through its different flavors, including recent improvements inspired by conflict-driven approaches in pseudo-Boolean optimization. We will also discuss the challenges and limitations of applying conflict analysis in non-binary settings."
+  },
+  {
+    "id": "marcelo",
+    "title": "Optimization in practice: impacting business and careers",
+    "speaker": "Marcelo Reis",
+    "affiliation": "Bitka Analytics, Brazil",
+    "abstract": "Operations Research is a topic that, even in times of all the hype surrounding generative AI, continues to be prominent in both the academic and corporate worlds.\n\nThis presentation will explore, through practical market cases, how companies like BITKA have been using Optimization to help large corporations improve their operations. We will also discuss career opportunities in the field, showing how working with Optimization can open doors and boost professional trajectories, both in the present and in the future."
+  },
+  {
+    "id": "antonio",
+    "title": "Mathematical programming approaches to public transportation network design",
+    "speaker": "Antonio Mauttone",
+    "affiliation": "Universidad de la República, Uruguay",
+    "abstract": "We will discuss the main features of existing models and resolution approaches for optimal design of transit routes and frequency setting. The main sources of problem complexity are the underlying network structure, its combinatorial complexity, multiple objectives (stakeholders with conflicting interests), and multiple levels (passengers behave by themselves, restricted to the decisions of planners). Since the problem is hard to formulate and solve, most approaches to realistic medium-to-large-sized instances rely on heuristics. Nevertheless, mathematical programming enables us to formalize concepts, precisely state problems, understand problem structure, devise exact solution methods, and validate heuristics. We will introduce basic concepts, including the representation of the infrastructure, services, demand, and passenger behavior. Then, we will present briefly the most representative work, ranging from the first models aimed at optimizing a single objective to more recent multi-objective approaches that model passenger behavior, including waiting time. Latest studies include the explicit consideration of vehicle capacity constraints within a bilevel framework and new problem variants. A brief discussion of existing resolution methods will be presented, focused on decomposition strategies. During the talk, we will introduce problem instances commonly used by researchers and report the sizes of those that are solvable by using mathematical programming approaches. The talk ends with discussions on future research avenues related to both formulation and resolution methods, for both classical and new problem variants."
+  },
+  {
+    "id": "emma",
+    "title": "Perspectives on Machine Learning for Accelerating Matheuristics",
+    "speaker": "Emma Frejinger",
+    "affiliation": "Université de Montréal, Canada",
+    "abstract": "There is a fast-growing literature on using machine learning to directly predict solutions to mathematical programs, or to speed up general-purpose solvers. We have contributed to this line of research by proposing a matheuristic to accelerate the integer L-shaped method for mixed-integer linear two-stage stochastic programs. In this talk, we present our work, which achieves speedups of one to two orders of magnitude on benchmark instances. Moreover, we situate these results within the recent literature on integrating machine learning and optimization, and highlight findings as well as promising directions for future research."
+  },
+  {
+    "id": "merve",
+    "title": "Bridging Stochastic and Bilevel Optimization: A Unified Framework for Hierarchical Decisions under Uncertainty",
+    "speaker": "Merve Bodur",
+    "affiliation": "University of Edinburgh, UK",
+    "abstract": "Stochastic and bilevel optimization are two well-established frameworks for modeling decision-making under uncertainty and hierarchy, respectively. We introduce a novel framework that integrates elements from both paradigms, enabling the study of hierarchical interactions when decisions involve uncertainty and integrality constraints. We propose reformulations amenable to decomposition and algorithmic strategies that exploit the structure of the problem to improve tractability, drawing on methodological tools from both areas. Computational results on generated test instances illustrate the effectiveness of our approach and show clear advantages over existing methods where adaptations of those methods are applicable. This is joint work with Sebastián Vásquez (CMU) and Bernardo Pagnoncelli (SKEMA)."
+  },
+  {
+    "id": "luis",
+    "title": "The Double Partition Coloring Problem: A B&P approach",
+    "speaker": "Luis Miguel Torres",
+    "affiliation": "Escuela Politécnica Nacional, Ecuador",
+    "abstract": "In this talk, we address the Double Partition Coloring Problem (DPCP) on graphs, a new coloring problem that generalizes the well-known Partition Coloring Problem (PCP) and List Coloring Problem (LCP) on graphs, as well as the Conflict-Free Coloring Problem (CFCP) on hypergraphs. Given a graph $G$ and two distinct partitions of its vertex set, the task is to provide a partial proper coloring of the vertices of $G$ with the minimum number of colors, such that each class of the first partition contains at least one colored vertex, while no class of the second partition contains two vertices with different colors. The DPCP also has interesting connections with other combinatorial optimization problems; for instance, determining the feasibility of an instance can be reduced to MAXSTAB. We study two integer programming formulations for DPCP: a compact formulation inspired by the classical vertex coloring formulation, and a set-covering formulation whose variables are associated with stable sets. For the latter, we develop a branch-and-price solution algorithm and present preliminary computational results on test instances derived from PCP, LCP, and CFCP, as well as on general DPCP instances."
+  },
+  {
+    "id": "flavio",
+    "title": "A Framework for Approximation Schemes for Packing Fat Objects",
+    "speaker": "Flávio K. Miyazawa",
+    "affiliation": "Universidade Estadual de Campinas, Brazil",
+    "abstract": "One of the oldest mathematical problems is to determine the best arrangement or packing of disks and spheres to optimize space utilization. Finding optimal configurations is challenging even in low dimensions, and already difficult when all spheres have the same radius. When the radii vary, the problem becomes NP-hard, even in the seemingly simple case of packing two-dimensional disks into square bins. This encompasses other disk packing variants, such as knapsack, bin packing, strip packing, and minimum container, among others. On the other hand, if we allow very small deviations from the optimum, several of these problems admit solutions that are provably close to optimal and computable in polynomial time. In this talk, I will present a framework for designing efficient approximation schemes for packing problems involving convex fat objects, sometimes permitting the use of a slightly augmented bin. The core idea is to formulate these problems as integer linear programs with a nearly decomposable structure, which we exploit to obtain well-behaved fractional solutions that can be rounded efficiently. The approach is highly flexible, accommodating a wide range of packing variants and extensions, including item multiplicities and rotations."
+  },
+  {
+    "id": "waldo",
+    "title": "Computing Diverse and Nice Solutions in Combinatorial Optimization",
+    "speaker": "Waldo Gálvez",
+    "affiliation": "Universidad de Concepción, Chile",
+    "abstract": "There has been considerable recent interest in computing a diverse collection of solutions to a given optimization problem, rather than computing a single optimal solution. Given a classical optimization problem (e.g., spanning tree, minimum cuts, maximum matching, minimum vertex cover) with input size n, an integer k, and a distance measure between solutions, the goal is to generate a collection of k maximally dispersed, sufficiently profitable solutions to the problem. This diverse-X paradigm not only allows the user to generate very different solutions but also helps make systems more secure and robust by handling uncertainty.\n\nFor problems in P (such as spanning tree and minimum cut), efficient poly(n, k)-time approximation algorithms are known for their diverse variants. In contrast, only FPT algorithms are known for NP-hard problems, such as vertex covers and independent sets, but they have running time exp((kn)^c), for some c > 0, in the worst case. In this talk, I will present recent results addressing this gap, providing poly(n,k) or f(k)poly(n) time approximation algorithms for diversification variants of several NP-hard problems, such as knapsack, maximum weight independent sets (MWIS) and minimum vertex covers in planar graphs, among others. Our results are achieved by developing a general framework and applying it to problems with textbook dynamic-programming algorithms to find a single solution.\n\nJoint work with Mayank Goswami, Arturo Merino, GiBeom Park, Meng-Tsung Tsai, and Víctor Verdugo."
+  },
+  {
+    "id": "tito",
+    "title": "Problem-Based Scenario Generation for Stochastic Optimization",
+    "speaker": "Tito Homem-de-Mello",
+    "affiliation": "Universidad Adolfo Ibáñez, Chile",
+    "abstract": "Stochastic optimization problems are often defined in terms of a probability distribution that represents the uncertainty in the problem. That distribution may be known explicitly, or may be inferred from available data. Whichever the case, for the purposes of solving the problem numerically it is necessary to select a small or moderate number of scenarios to represent the distribution. Several scenario generation methods have been developed in the literature over the years for that purpose. In many of these methods, the goal is to provide the best possible approximation of the “true” distribution with a reasonable number of scenarios. Recently, however, researchers have started looking at that problem from a different perspective. In those works, the goal is not to approximate the distribution per se; rather, the goal is to find the set of scenarios that provide the best representation of the distribution for the optimization problem being solved. Such methods are called “problem-based scenario generation”, and are in general very challenging.  In this talk we will discuss some of these methods. We also discuss  the case where the data in the problem is accompanied by contextual information, which then requires the integration of scenario generation techniques with some machine learning methods.  Some numerical examples are presented to illustrate the ideas."
+  },
+  {
+    "id": "gustavo",
+    "title": "From Partial Orders to Personalized Promotions: A Proposal to Model Consumer Preferences in Operations",
+    "speaker": "Gustavo Vulcano",
+    "affiliation": "Universidad Torcuato Di Tella, Argentina",
+    "abstract": "The availability of fine-grained transaction and panel data has opened the door for more ambitious models of consumer choice in operations and retail analytics. Yet, much of the literature still relies on aggregate demand models or parametric assumptions that fail to capture the complexity of individual decision-making. This talk brings forward a different perspective: modeling consumer preferences as partial orders—structured, but incomplete, representations of individual tastes that can be inferred from sparse purchasing data, stockouts, and promotions. By representing preferences through directed acyclic graphs (DAGs), we can flexibly accommodate behavioral features such as inertia, bounded rationality, and brand loyalty, while retaining computational tractability. Building on this foundation, we show how partial-order models can be estimated from real-world panel data and then leveraged for predictive accuracy at the individual level. The empirical evidence is striking: compared to state-of-the-art multinomial logit variants, our approach significantly improves prediction accuracy in grocery panel datasets. More importantly, DAG-based preference representations are interpretable and scalable, offering retailers a transparent way to understand heterogeneity across millions of consumers. Finally, we turn prediction into prescription. Using these estimated DAGs as inputs, we design optimization routines for personalized promotions. Simulations with large retail data sets reveal revenue gains of 15–25% relative to existing mass-promotion policies. The broader message of the talk is that by relaxing the traditional assumption of complete preference rankings and embracing structured partial orders, operations researchers can bridge behavioral realism with actionable decision tools—reshaping how firms interact with consumers in both online and offline settings.\n\nThis presentation is based on joint work with Srikanth Jagabathula (New York University) and Dmitry Mitrofanov (Boston College)."
+  },
+  {
+    "id": "marcia",
+    "title": "The MESP problem and its factorization bound computation",
+    "speaker": "Marcia Fampa",
+    "affiliation": "Universidade Federal do Rio de Janeiro, Brazil",
+    "abstract": "The maximum-entropy sampling problem (MESP) aims to  find a subset of given size s, from a set of correlated Gaussian random variables, with maximum differential entropy. Given  the covariance matrix for the multivariate Gaussian vector, MESP is equivalent to  maximizing the determinant of an order-s principal submatrix. The problem is NP-hard and challenging from the perspective of integer nonlinear optimization. Algorithms for exact optimization (of moderate sized instances) are based on branch-and-bound. One of the best upper-bounding methods is the factorization bound obtained from a convex relaxation of MESP. We will describe the factorization bound and present an efficient ADMM (Alternating Direction Method of Multipliers) algorithm for computing it. This is a joint work with Jon Lee, Gabriel Ponte and Luze Xu."
+  },
+  {
+    "id": "jon",
+    "title": "On the relationship between MESP and 0/1 D-Opt and their upper bounds",
+    "speaker": "Jon Lee",
+    "affiliation": "University of Michigan, USA",
+    "abstract": "We establish strong connections between two fundamental nonlinear 0/1 optimization problems coming from the area of experimental design, namely maximum entropy sampling and 0/1 D-Optimality. The connections are based on maps between instances, and we analyze the behavior of these maps. Using these maps, we transport basic upper-bounding methods between these two problems, and we are able to establish new domination results and other inequalities relating various basic upper bounds. Further, we establish results relating how different branch-and-bound schemes based on these maps compare. Additionally, we observe some surprising numerical results, where bounding methods that did not seem promising in their direct application to real-data MESP instances, are now useful for MESP instances that come from 0/1 D-Optimality. This is a joint work with Marcia Fampa and Gabriel Ponte."
+  },
+  {
+    "id": "jose-correa",
+    "title": "Multidimensional political apportionment",
+    "speaker": "José Correa",
+    "affiliation": "Universidad de Chile, Chile",
+    "abstract": "Deciding how to allocate the seats of a deliberative assembly is one of the most fundamental problems in the political organization of societies. The idea of proportionality is at the core of most approaches to tackle this problem, and this notion is captured by the divisor methods, such as the Jefferson/D’Hondt method. In a seminal work, Balinski and Demange extended the single-dimensional idea of divisor methods to the setting in which the seat allocation is simultaneously determined by two dimensions and proposed the so-called biproportional apportionment method. The method, however, is limited to two dimensions. In this work, we initiate the study of multidimensional proportional apportionment. We formalize a notion of multidimensional proportionality that naturally extends that of Balinski and Demange. By analyzing an appropriate integer linear program, we prove that the existence of multidimensional proportional apportionments is not guaranteed. Interestingly, our main result asserts that it is possible to find approximate multidimensional proportional apportionments that deviate from the marginals by a small amount.\n\nJoint work with Javier Cembrano and Victor Verdugo"
+  },
+  {
+    "id": "ivana",
+    "title": "Modeling Fairness in Facility Location and Routing",
+    "speaker": "Ivana Ljubic",
+    "affiliation": "ESSEC Business School, France",
+    "abstract": "Most combinatorial optimization problems evaluate solution quality by aggregating individual performance measures into a single metric. In facility location, for instance, allocation costs from clients to their nearest open facility are typically summarized as the average allocation cost. Similarly, in routing problems, optimization focuses on minimizing the total cost across all routes, often disregarding the individual quality of routes for each driver. Even in machine learning—such as supervised classification—the objective is to minimize the average misclassification error across all observations.\n\nIn this talk, we explore alternative quality measures that account for fairness or equity (e.g., min-max, range, Gini deviation, Hurwicz criterion), as well as robustness (e.g., conditional value at risk, k-sum). To address these objectives, we apply the discrete ordered operator, which provides a unified modeling framework capable of capturing all these quality measures and more. This stands in contrast to much of the existing literature, which typically develops specialized models and solution techniques tailored to each specific measure.\n\nWe provide a generic MIP approach to model these diverse objectives and solve them within a common optimization framework. For facility location problems, we show how the discrete ordered objective can be efficiently handled using Benders decomposition, significantly improving the performance of state-of-the-art MIP approaches. For routing problems, we leverage connections to bilevel optimization to incorporate fairness directly into route planning.\n\nThe talk is based on a joint work with M. Pozo, J. Puerto Albandoz and A. Torrejón."
+  },
+  {
+    "id": "teobaldo",
+    "title": "Meta-Solver: The Next Generation of VRPSolver",
+    "speaker": "Teobaldo Bulhões",
+    "affiliation": "Universidad Federal da Paraíba, Brazil",
+    "abstract": "VRPSolver is an advanced branch-and-cut-and-price solver for a generic model that encompasses a wide class of vehicle routing problems as well as several other types of problems. A VRPSolver model is a general MIP with additional constraints that force some variables to be linear combinations of resource-constrained shortest paths in user-defined graphs. The first generation of VRPSolver features the Bucket Graph Solver, a bidirectional dynamic programming labeling algorithm for the Resource-Constrained Shortest Path Problem, in which labels are stored and extended according to the so-called bucket graph. This organization significantly reduces the number of dominance checks and the algorithm’s running time. It is used for the crucial pricing step in VRPSolver, a branch-cut-and-price algorithm that achieves the current best exact results for many VRP variants. Bucket Graph Meta-Solver is a code refactoring that separates the intricate, general bucket-graph-based core from the functions that implement resource-specific elements such as label extension, dominance, and concatenation. In this talk, we show how a user can create new resources in Meta-Solver to handle more complex routing variants. Computational experiments on the Cumulative Cost VRP and the Simultaneous Pickup and Delivery VRP illustrate the power of Meta-Solver."
+  },
+  {
+    "id": "andrea",
+    "title": "Batched First-Order Methods for Parallel LP Solving in MIP",
+    "speaker": "Andrea Lodi",
+    "affiliation": "Cornell Tech, USA",
+    "abstract": "We present a batched first-order method for solving multiple linear programs in parallel on GPUs. Our approach extends the primal-dual linear programming algorithm to efficiently solve batches of related linear programming problems that arise in mixed-integer programming techniques such as bound tightening and strong branching. By leveraging matrix-matrix operations instead of repeated matrix-vector operations, we obtain significant computational advantages on GPU architectures. We demonstrate the effectiveness of our approach on various case studies and identify the problem sizes where first-order methods outperform traditional simplex-based solvers depending on the computational environment one can use. This is a significant step for the design and development of integer programming algorithms significantly exploiting GPU capabilities where we argue that some specific operations should allocated to GPUs and performed in full instead of using light-weight heuristic approaches on CPUs. (Joint work with N. Blin, S. Gualandi, C. Maes, B. Stellato.)"
+  },
+  {
+    "id": "angela",
+    "title": "Power System Planning under Multi-Scale Uncertainty: Modeling and Solution Methods",
+    "speaker": "Angela Flores",
+    "affiliation": "Universidad de Chile, Chile",
+    "abstract": "Abstract TBD."
+  },
+  {
+    "id": "juan",
+    "title": "Duality and decomposition in Google's OR-Tools",
+    "speaker": "Juan Pablo Vielma",
+    "affiliation": "Google, USA",
+    "abstract": "OR-Tools MathOpt is a software library for algebraic modeling of mathematical optimization problems. MathOpt supports solver-independent modeling of a wide range of optimization problems including continuous and mixed-integer problems with linear or quadratic objectives and various classes of constraints (including linear, quadratic, second order cone and some specialized constraints). In this talk, we describe various aspects of MathOpt's design and implementation with a particular focus on duality and decomposition methods."
+  },
+  {
+    "id": "ricardo",
+    "title": "Operations Research at Mercado Libre, Network Planning for Smarter Deliveries",
+    "speaker": "Ricardo Solar Vivanco",
+    "affiliation": "Mercado Libre, Chile",
+    "abstract": "We present a practical optimization approach to reassign flexible orders across alternative delivery paths while respecting facility time windows and both pallet and volume limits. The model integrates path assignment with vehicle planning, supports fixed multi-stop milk-runs for consolidation, and keeps non-flexible (fast) orders fixed. A lexicographic objective prioritizes transport cost and, when costs tie, preserves service speed, with an optional feature to smooth weekly capacity peaks for better staffing. The short-term scope targets two weeks and can be extended to a longer tactical horizon.\n\nThe solution runs in a decoupled setup that prepares inputs and calls an optimizer. Inputs include demand types, current and alternative paths, facilities and steps, milk-runs, vehicle options, and per-window capacities. The optimizer returns updated flexible paths, step-level volumes, recommended vehicles and fleet usage, occupancy, and costs. Methodologically, it links link- and node-window capacities and uses light penalties to avoid excessive fragmentation. Results aim to lower transport cost, improve use of constrained nodes and corridors, and smooth workloads under real bottlenecks."
+  },
+  {
+    "id": "fernando",
+    "title": "How to construct investment portfolios using machine learning?",
+    "speaker": "Fernando Suárez",
+    "affiliation": "Fintual, Chile",
+    "abstract": "We propose a new approach to portfolio optimization that utilizes a unique combination of synthetic data generation and a CVaR-constraint. We formulate the portfolio optimization problem as an asset allocation problem in which each asset class is accessed through a passive (index) fund. The asset-class weights are determined by solving an optimization problem which includes a CVaR-constraint. The optimization is carried out by means of a Modified CTGAN algorithm which incorporates features (contextual information) and is used to generate synthetic return scenarios, which, in turn, are fed into the optimization engine. For contextual information we rely on several points along the U.S. Treasury yield curve. The merits of this approach are demonstrated with an example based on ten asset classes (covering stocks, bonds, and commodities) over a fourteen-and-half year period (January 2008-June 2022). We also show that the synthetic generation process is able to capture well the key characteristics of the original data, and the optimization scheme results in portfolios that exhibit satisfactory out-of-sample performance. We also show that this approach outperforms the conventional equal-weights (1/N) asset allocation strategy and other optimization formulations based on historical data only."
+  },
+  {
+    "id": "orlando",
+    "title": "Optimization Challenges in Mine Planning: The Optimize Destinations with Blending Problem",
+    "speaker": "Orlando Rivera",
+    "affiliation": "Alicanto Labs, Chile",
+    "abstract": "Strategic mine planning requires solving large-scale mixed-integer optimization problems on a regular basis. These problems are rich in structure, offering great potential for decomposition and specialized algorithms. Strategic planning for open-pit mines requires scheduling, over a multi-year time horizon, the mining of pre-discretized blocks of rock from a mining deposit, and determining how the extracted material flows through a mining network of facilities, including stockpiles, crushers, mills, waste dumps, and final products. The problem is highly relevant for evaluating investments in deposits and operating mines, and it is solved by several commercial software packages used by mining engineers.\n\nWe present the Optimize Destinations with Blending (ODB) problem. In this problem, parcels of rock, with attributes such as tonnage, grades of metals and contaminants, have a pre-defined fixed mining schedule, and we must define which parcels will be sent to which facilities in the mining network. The parcels may be stored for future periods and blended together at stockpile nodes, and the total amount of each attribute from all parcels flowing through the arcs is considered for the optimization problem. In effect, the ODB problem consists of maximizing some linear function of the flows of attributes on the network induced by the parcels, subject to linear side constraints on the amount of attributes from the parcels. Blending nodes introduce bilinear terms, which make the problem less tractable. We show that even when no side constraints are present, the ODB problem is NP-complete. We present equivalent non-convex quadratic formulations for the ODB problem and we discuss the size of real instances, and what type of methods are used in practice."
+  }
+]

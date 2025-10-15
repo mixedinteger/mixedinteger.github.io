@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Mixed Integer Programming Workshop 2025</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/colors.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+
+  <style>  
+    .topnav {
+      overflow: hidden;
+      background-color: var(--navbar);
+    }
+    
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .topnav a:hover {
+      background-color: var(--navbarselect);
+      color: var(--navbarselecttext);
+    }
+    
+    .topnav a.active {
+      background-color: var(--navbarselect);
+      color: var(--navbarselecttext);
+    }
+  </style>
+
+  <style>
+    .highlight {
+	background-color: var(--highlight);
+	color: var(--highlightext);
+    }
+
+    .highlight a {
+	color: var(--highlightlink);
+    }
+  </style>
+
+  <style>
+    .mainstyle1 {
+	background-color: var(--maincolor1);
+	color: var(--maincolor1text);
+    }
+
+    .mainstyle1 a {
+	color: var(--maincolor1link);
+    }
+  </style>
+  
+  <style>
+    .mainstyle2 {
+	background-color: var(--maincolor2);
+	color: var(--maincolor2text);
+    }
+
+    .mainstyle2 a {
+	color: var(--maincolor2link);
+    }
+  </style>
+
+  <style>
+  /* schedule grid shell */
+  .sched-grid{
+    display:grid; border:1px solid #e5e7eb; border-radius:10px; overflow:hidden; margin-top:1.5rem;
+  }
+  .sched-hdr,.sched-time,.sched-cell{
+    border-bottom:1px solid #e5e7eb; border-right:1px solid #e5e7eb;
+  }
+  /* ← this selector was missing in your paste */
+  .sched-hdr{ background:#f3f4f6; padding:.6rem; font-weight:600; text-align:center; position:sticky; top:0; z-index:2 }
+  .sched-time{ background:#f3f4f6; padding:.5rem .6rem; font-variant-numeric:tabular-nums; position:sticky; left:0; z-index:1; color:#374151 }
+
+  /* grid cells + cards */
+  .sched-cell{ padding:4px; position:relative; }        /* give a tiny gutter and ensure children don't spill */
+  .sched-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* vertical centering */
+    height: 100%;              /* fill grid area */
+    width: 100%;               /* fill grid area */
+    box-sizing: border-box;
+    padding: .6rem .7rem;
+    background: #ffffff;
+    border-left: 4px solid #2563eb;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 rgba(0,0,0,.05), 0 6px 16px rgba(0,0,0,.06);
+    cursor: pointer;
+    transition: box-shadow .15s ease, transform .02s ease;
+    color: inherit;
+    text-decoration: none;
+  }
+  .sched-card:hover{ box-shadow:0 1px 0 rgba(0,0,0,.06),0 10px 22px rgba(0,0,0,.10) }
+  .sched-card:active{ transform:translateY(1px) }
+  .sched-title{ font-weight:700; line-height:1.25; margin:0 }
+  .sched-speaker{ color:#4b5563; font-size:1.2rem; margin:.2rem 0 0 }
+
+  /* non-clickable “special” cells (coffee/lunch/posters/etc.) */
+  .sched-special{
+    background:rgba(255,255,255,.92); border-left:0; text-align:center; cursor:default;
+  }
+
+  /* modal dialog */
+  dialog#talkModal{ width:min(720px,92vw); border:none; border-radius:12px; padding:0; box-shadow:0 24px 64px rgba(0,0,0,.35) }
+  dialog#talkModal::backdrop{ background:rgba(0,0,0,.35) }
+  .tm-wrap{ padding:1.2rem 1.25rem 1.25rem }
+  .tm-x{ position:absolute; right:.7rem; top:.55rem; border:none; background:transparent; font-size:1.6rem; color:#6b7280; cursor:pointer }
+  .tm-title{ margin:0 2rem .25rem 0; line-height:1.25 }
+  .tm-meta{ color:#6b7280; margin-bottom:.6rem }
+  .tm-when{ color:#6b7280; font-size:1.25rem; margin-bottom:.4rem }
+  .tm-abs{ line-height:1.55 }
+</style>
+
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="firstrow">
+    <div class="container">
+      <div class="row" style="display: flex; align-items: center;">
+        <div class="six columns">
+          <img src="images/mip-logo-plain.png" alt="MIP South America Logo" width="100%"></div>
+          <div class="six columns" style="display: flex; flex-direction: column; justify-content: center;">
+          <h1>MIP Workshop</h1>
+          <h1>South America 2025</h1>
+          <p class="date">December 9-12, 2025</p>
+          <p class="place">Universidad Adolfo Ibáñez<br> Viña del Mar, Chile</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background-color:var(--navbar);color:var(--navbartext);">
+    <div class="container">
+      <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="registration.html">Registration</a>
+        <a href="posters.html">Posters</a>
+        <a href="local.html">Local Information</a>
+        <a class="active" href="schedule.html">Schedule</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="highlight">
+    <div class="container">
+      <br>
+      <h3>Click on a talk to display more details</h3>
+   </div>
+  </div>
+
+  <div class="mainstyle2">
+    <div class="container">
+      <br>
+      <script>
+(async function initSchedule(){
+  try{
+    const [slots, talks] = await Promise.all([
+      fetch("schedule.json").then(r=>r.json()),
+      fetch("talks.json").then(r=>r.json())
+    ]);
+    const talkById = Object.fromEntries(talks.map(t=>[t.id, t]));
+    renderGrid(slots, talkById);
+    openIfHash(slots, talkById);
+  }catch(e){
+    const c = document.querySelector(".highlight .container");
+    if(c) c.innerHTML += `<p style="color:#b91c1c">Could not load schedule (${e.message})</p>`;
+  }
+})();
+
+const mins = t => {const [H,M]=t.split(":").map(Number); return H*60+M};
+const uniq = a => Array.from(new Set(a));
+const fmt  = m => `${String(Math.floor(m/60)).padStart(2,'0')}:${String(m%60).padStart(2,'0')}`;
+
+function renderGrid(SLOTS, talkById){
+  const mount = document.querySelector(".highlight .container");
+  const grid  = document.createElement("div");
+  grid.className = "sched-grid";
+
+  const days = uniq(SLOTS.map(s=>s.day)).sort();
+  const times = uniq(SLOTS.flatMap(s=>[mins(s.start), mins(s.end)])).sort((a,b)=>a-b);
+
+  grid.style.gridTemplateColumns = `minmax(84px,100px) repeat(${days.length},1fr)`;
+
+  // header
+  const corner = document.createElement("div"); corner.className="sched-hdr"; corner.textContent="Time"; grid.appendChild(corner);
+  for(const d of days){
+    const label = new Date(d+"T00:00:00").toLocaleDateString(undefined,{weekday:"short", month:"short", day:"numeric"});
+    const h = document.createElement("div"); h.className="sched-hdr"; h.textContent = label; grid.appendChild(h);
+  }
+
+  // rows
+  for(let i=0;i<times.length-1;i++){
+    const t0=times[i], t1=times[i+1];
+    const tl = document.createElement("div"); tl.className="sched-time"; tl.textContent = `${fmt(t0)}–${fmt(t1)}`;
+    grid.appendChild(tl);
+
+    for(const d of days){
+      const cell = document.createElement("div"); cell.className="sched-cell";
+      const slot = SLOTS.find(s => s.day===d && mins(s.start)<=t0 && mins(s.end)>=t1);
+
+      if(slot && mins(slot.start)===t0){
+        const span = times.filter(t=>t>t0 && t<=mins(slot.end)).length;
+        cell.style.gridRow = `span ${span}`;
+
+        if (slot.talk_id){
+          const t = talkById[slot.talk_id];
+          const a = document.createElement("a");
+          a.href = `#${slot.talk_id}`;
+          a.className = "sched-card";
+          a.innerHTML = `<div class="sched-title">${t?.title || "TBD"}</div>` +
+                        (t?.speaker ? `<div class="sched-speaker">${t.speaker}${t.affiliation? " — "+t.affiliation:""}</div>`:"");
+          a.addEventListener("click", ev => { ev.preventDefault(); openTalkModal(t, slot); });
+          cell.appendChild(a);
+        } else if (slot.special){
+          const div = document.createElement("div");
+          div.className = "sched-card sched-special";
+          div.innerHTML = `<div class="sched-title">${slot.special.title}</div>`;
+          cell.appendChild(div);
+        }
+      }
+      grid.appendChild(cell);
+    }
+  }
+
+  mount.appendChild(grid);
+}
+
+/* --- modal logic (replaces alert) --- */
+function openTalkModal(talk, slot){
+  if(!talk) return;
+  const start = new Date(slot.day+'T'+slot.start+':00');
+  const end   = new Date(slot.day+'T'+slot.end+':00');
+
+  document.getElementById("tm-title").textContent = talk.title || "TBD";
+  document.getElementById("tm-meta").textContent  = talk.speaker ? `${talk.speaker}${talk.affiliation? " — "+talk.affiliation:""}` : "";
+  document.getElementById("tm-when").textContent  =
+    `${start.toLocaleDateString(undefined,{weekday:'long', year:'numeric', month:'long', day:'numeric'})} • ` +
+    `${start.toLocaleTimeString(undefined,{hour:'2-digit', minute:'2-digit'})} – ${end.toLocaleTimeString(undefined,{hour:'2-digit', minute:'2-digit'})}`;
+  document.getElementById("tm-abs").innerHTML =
+  (talk.abstract || "")
+    .replace(/\\n/g, "\n")                // literal backslash-n -> real newline
+    .replace(/(\r\n|\r|\n)/g, "<br>");
+
+  const dlg = document.getElementById("talkModal");
+  dlg.showModal();
+  history.replaceState(null,"","#"+talk.id);
+}
+function closeTalkModal(){
+  const dlg = document.getElementById("talkModal");
+  dlg.close();
+  if (location.hash) history.replaceState(null,""," ");
+}
+function openIfHash(SLOTS, talkById){
+  const id = location.hash.replace("#","");
+  const t = talkById[id]; if(!t) return;
+  const slot = SLOTS.find(s=>s.talk_id===id);
+  if(slot) openTalkModal(t, slot);
+}
+</script>
+
+        <br>
+    </div>
+  </div>
+
+  <div class="mainstyle1">
+    <div class="container">
+      <h2>Credits</h2>
+      <p>Logo-Design by ©<a href="https://www.jubs-art.com">Julia Silbermann</a> (Font-Credits: Cornerstone, by Zac Freeland).
+	Website hosted at <a href="https://pages.github.com">GitHub Pages</a>, layout based on <a href="http://getskeleton.com">skeleton</a> using <a href="https://github.com/impallari/Raleway">Raleway</a> font</p>
+    </div>
+  </div>
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script>
+    function toggleSchedule(el) {
+      el.parentElement.nextElementSibling.classList.toggle("hideme");
+    }
+
+    function toggleAbstract(el) {
+      el.parentElement.nextElementSibling.classList.toggle("hideme");
+    }
+  </script>
+
+  <dialog id="talkModal" aria-labelledby="tm-title">
+  <button class="tm-x" onclick="closeTalkModal()" aria-label="Close">×</button>
+  <div class="tm-wrap">
+    <h2 id="tm-title" class="tm-title"></h2>
+    <div id="tm-meta" class="tm-meta"></div>
+    <div id="tm-when" class="tm-when"></div>
+    <div id="tm-abs" class="tm-abs"></div>
+  </div>
+</dialog>
+
+</body>
+</html>
