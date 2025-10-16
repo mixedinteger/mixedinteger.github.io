@@ -3,11 +3,11 @@
 
 ## About
 
-The computational development of optimization tools is a key component within the MIP community and has proven to be a challenging task. It requires great knowledge of the well-established methods, technical implementation abilities, as well as creativity to push the boundaries with novel solutions. In 2022, the annual [Mixed Integer Programming Workshop](https://www.mixedinteger.org/) established a computational competition in order to encourage and provide recognition to the development of novel practical techniques within MIP technology. It was renamed in 2025 to honor Ailsa H. Land and Alison G. Harcourt (née Doig), with permission, who proposed the first LP-based branch-and-bound algorithm, a fundamental component of every modern MIP solver.
+The computational development of optimization tools is a key component within the MIP community and has proven to be a challenging task. It requires great knowledge of the well-established methods, technical implementation abilities, as well as creativity to push the boundaries with novel solutions. In 2022, the annual [Mixed Integer Programming Workshop](https://www.mixedinteger.org/2026) established a computational competition in order to encourage and provide recognition to the development of novel practical techniques within MIP technology. It was renamed in 2025 to honor Ailsa H. Land and Alison G. Harcourt (née Doig), with permission, who proposed the first LP-based branch-and-bound algorithm, a fundamental component of every modern MIP solver.
 
 This year, the computational competition will focus on primal heuristics for general MI(L)P that can be enhanced by GPU acceleration.
 
-The 2026 Land-Doig MIP competition is supported by [NVIDIA](http://nvidia.com/), who is providing NVIDIA GPU cloud credits for the development of submissions and as prizes.
+The 2026 Land-Doig MIP competition is supported by [NVIDIA](http://nvidia.com/), who is providing NVIDIA GPU cloud credits for the development of submissions and as prizes. The competition is also supported by the [Mixed Integer Programming Society (MIPS)](http://mixedinteger.org), a section of the [Mathematical Optimization Society (MOS)](http://mathopt.org), via the [MIP workshop](http://mixedinteger.org/2026).
 
 <p align="center">
   <img src="nvidia-logo.png" alt="NVIDIA logo" width="400"/>
@@ -40,7 +40,7 @@ This year, NVIDIA will be providing a total prize pool of $1500 in GPU cloud cre
 
 Furthermore, we will provide the following:
 
-*   One representative of each finalist will receive travel support to the MIP workshop and free registration.
+*   One representative of the winning team will receive travel support to the MIP workshop and free registration.
 *   High-quality submissions will receive an expedited review process in Mathematical Programming Computation.
 
 
