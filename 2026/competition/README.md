@@ -7,11 +7,13 @@ The computational development of optimization tools is a key component within th
 
 This year, the computational competition will focus on primal heuristics for general MI(L)P that can be enhanced by GPU acceleration.
 
-The 2026 Land-Doig MIP competition is supported by [NVIDIA](http://nvidia.com/), who is providing NVIDIA GPU cloud credits for the development of submissions and as prizes. The competition is also supported by the [Mixed Integer Programming Society (MIPS)](http://mixedinteger.org), a section of the [Mathematical Optimization Society (MOS)](http://mathopt.org), via the [MIP workshop](http://mixedinteger.org/2026).
+The 2026 Land-Doig MIP competition is supported by [NVIDIA](http://nvidia.com/), who is providing NVIDIA GPU cloud credits for the development of submissions and as prizes.
 
 <p align="center">
   <img src="nvidia-logo.png" alt="NVIDIA logo" width="400"/>
 </p>
+
+The competition is also supported by the [Mixed Integer Programming Society (MIPS)](http://mixedinteger.org), a section of the [Mathematical Optimization Society (MOS)](http://mathopt.org), via the [MIP workshop](http://mixedinteger.org/2026).
 
 ## The Challenge: GPU-Accelerated Primal Heuristics for MIP
 
