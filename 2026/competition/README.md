@@ -158,7 +158,7 @@ During evaluation, we plan on using MIPLIB’s official solution checker, which 
 
 ### Problem Instances
 
-The test set of problem instances can be found [here](https://drive.google.com/file/d/1AcD7oW0grX7lWtHI0T5ke_6NeFi1kuKq/view?usp=sharing). All files are in gzipped MPS format.
+The test set of problem instances can be found [here](https://drive.google.com/file/d/1AcD7oW0grX7lWtHI0T5ke_6NeFi1kuKq/view?usp=sharing). All files are in gzipped MPS format. All instances belong to the class of mixed-integer **linear** problems.
 
 To encourage generality, the 50 instances in the test set were selected to be diverse, containing 18 different problem classes from typical MIP applications. In addition, the instance set contains several difficult or large-scale instances to align with the goal of pushing boundaries on what can be solved, especially given that most of the recent potential in GPU algorithms for LP/MIP come from large-scale applications.
 
