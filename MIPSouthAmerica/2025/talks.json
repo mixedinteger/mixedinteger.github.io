@@ -130,7 +130,7 @@
     "title": "Power System Planning under Multi-Scale Uncertainty: Modeling and Solution Methods",
     "speaker": "Angela Flores",
     "affiliation": "Universidad de Chile, Chile",
-    "abstract": "Abstract TBD."
+    "abstract": "The deep decarbonization of power systems requires coordinated action and substantial investment to adapt to significant changes in the energy matrix and to address uncertainties posed by climate change. On one hand, the successful integration of variable renewable energy requires sufficient operational flexibility to manage short-term variability and uncertainty. On the other hand, rising average temperatures, more variable precipitation patterns, and the increasing frequency and severity of extreme weather events introduce long-term risks that must be anticipated in planning models to ensure a secure and resilient energy supply.\n\nIn this talk, past and ongoing work in the area of power system planning under uncertainty is presented. First, a capacity expansion planning model that integrates short-term operational constraints with strategic long-term uncertainty is introduced. The resulting formulation is a large-scale multistage stochastic optimization problem, which poses significant computational challenges. To address these, a distributed solution method based on the Column Generation algorithm is developed.  Finally, we explore ongoing extensions of the model to incorporate short-term operational uncertainty and discuss suitable decomposition methods and enhancements to further improve solution times."
   },
   {
     "id": "juan",
