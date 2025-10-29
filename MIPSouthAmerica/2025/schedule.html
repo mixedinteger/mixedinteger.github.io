@@ -286,6 +286,9 @@ function renderGrid(SLOTS, talkById){
   for(let i=0;i<times.length-1;i++){
     const t0=times[i], t1=times[i+1];
     const tl = document.createElement("div"); tl.className="sched-time"; tl.textContent = `${fmt(t0)}–${fmt(t1)}`;
+    tl.style.gridColumn = "1 / 2";
+    const ROW_OFFSET = 2; // header row + 1-based grid index
+    tl.style.gridRow = `${i + ROW_OFFSET} / ${i + 1 + ROW_OFFSET}`;
     grid.appendChild(tl);
 
     for(const d of days){
@@ -293,9 +296,10 @@ function renderGrid(SLOTS, talkById){
       const slot = SLOTS.find(s => s.day===d && mins(s.start)<=t0 && mins(s.end)>=t1);
 
       if(slot && mins(slot.start)===t0){
-        const span = times.filter(t=>t>t0 && t<=mins(slot.end)).length;
-        cell.style.gridRow = `span ${span}`;
-
+        const startIdx = times.indexOf(t0);                 // t0 is already minutes
+        const endIdx   = times.indexOf(mins(slot.end));     // minutes of the slot end
+        const ROW_OFFSET = 2; // 1 header row + CSS grid is 1-based
+        cell.style.gridRow = `${startIdx + ROW_OFFSET} / ${endIdx + ROW_OFFSET}`;
         if (slot.talk_id){
           const t = talkById[slot.talk_id];
           const a = document.createElement("a");
@@ -309,6 +313,9 @@ function renderGrid(SLOTS, talkById){
           const div = document.createElement("div");
           div.className = "sched-card sched-special";
           div.innerHTML = `<div class="sched-title">${slot.special.title}</div>`;
+          if(slot.special.type == "Dinner"){
+            cell.style.gridColumn = 3;
+          }
           cell.appendChild(div);
         }
       }
