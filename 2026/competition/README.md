@@ -80,6 +80,7 @@ The committee is currently working on a customized tutorial, which will follow t
 *   Material on CUDA: 
     *   [Talk on getting started with CUDA](https://www.youtube.com/watch?v=GmNkYayuaA4)
     *   [Course on CUDA with Python](https://github.com/numba/nvidia-cuda-tutorial)
+    *   New: [Course on CUDA with C++](https://www.youtube.com/watch?v=Sdjn9FOkhnA&list=PL5B692fm6--vWLhYPqLcEu6RF3hXjEyJr)
 *   Profiling/debugging:
     *   [Tutorial on profiling and debugging](https://www.youtube.com/watch?v=dB5Jxwj0PDw)
     *   [Webinar on profiling and debugging](https://www.youtube.com/watch?v=kKANP0kL_hk)
