@@ -140,10 +140,10 @@
     "abstract": "OR-Tools MathOpt is a software library for algebraic modeling of mathematical optimization problems. MathOpt supports solver-independent modeling of a wide range of optimization problems including continuous and mixed-integer problems with linear or quadratic objectives and various classes of constraints (including linear, quadratic, second order cone and some specialized constraints). In this talk, we describe various aspects of MathOpt's design and implementation with a particular focus on duality and decomposition methods."
   },
   {
-    "id": "ricardo",
+    "id": "leticia",
     "title": "Operations Research at Mercado Libre, Network Planning for Smarter Deliveries",
-    "speaker": "Ricardo Solar Vivanco",
-    "affiliation": "Mercado Libre, Chile",
+    "speaker": "Leticia Leite Pavanello",
+    "affiliation": "Mercado Libre, Brazil",
     "abstract": "We present a practical optimization approach to reassign flexible orders across alternative delivery paths while respecting facility time windows and both pallet and volume limits. The model integrates path assignment with vehicle planning, supports fixed multi-stop milk-runs for consolidation, and keeps non-flexible (fast) orders fixed. A lexicographic objective prioritizes transport cost and, when costs tie, preserves service speed, with an optional feature to smooth weekly capacity peaks for better staffing. The short-term scope targets two weeks and can be extended to a longer tactical horizon.\n\nThe solution runs in a decoupled setup that prepares inputs and calls an optimizer. Inputs include demand types, current and alternative paths, facilities and steps, milk-runs, vehicle options, and per-window capacities. The optimizer returns updated flexible paths, step-level volumes, recommended vehicles and fleet usage, occupancy, and costs. Methodologically, it links link- and node-window capacities and uses light penalties to avoid excessive fragmentation. Results aim to lower transport cost, improve use of constrained nodes and corridors, and smooth workloads under real bottlenecks."
   },
   {
