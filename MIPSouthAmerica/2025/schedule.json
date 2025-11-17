@@ -13,7 +13,7 @@
 
   {"day": "2025-12-10", "start": "08:30", "end": "09:00", "special": {"title": "Arrival", "type": "Coffee"} },
   {"day": "2025-12-10", "start": "09:00", "end": "09:35", "talk_id": "antonio" },
-  {"day": "2025-12-10", "start": "09:35", "end": "10:10", "special": {"title": "Flash Talks (3)", "type": "Flash"} },
+  {"day": "2025-12-10", "start": "09:35", "end": "10:10", "talk_id": "flash_wed" },
   {"day": "2025-12-10", "start": "10:10", "end": "10:40", "special": {"title": "Coffee", "type": "Coffee"} },
   {"day": "2025-12-10", "start": "10:40", "end": "11:15", "talk_id": "paola" },
   {"day": "2025-12-10", "start": "11:15", "end": "11:50", "talk_id": "luis" },
@@ -29,7 +29,7 @@
 
   {"day": "2025-12-11", "start": "08:30", "end": "09:00", "special": {"title": "Arrival", "type": "Coffee"} },
   {"day": "2025-12-11", "start": "09:00", "end": "09:35", "talk_id": "flavio" },
-  {"day": "2025-12-11", "start": "09:35", "end": "10:10", "special": {"title": "Flash Talks (3)", "type": "Flash"} },
+  {"day": "2025-12-11", "start": "09:35", "end": "10:10", "talk_id": "flash_thu" },
   {"day": "2025-12-11", "start": "10:10", "end": "10:40", "special": {"title": "Coffee", "type": "Coffee"} },
   {"day": "2025-12-11", "start": "10:40", "end": "11:15", "talk_id": "tito" },
   {"day": "2025-12-11", "start": "11:15", "end": "11:50", "talk_id": "merve" },
@@ -43,7 +43,7 @@
 
   {"day": "2025-12-12", "start": "08:30", "end": "09:00", "special": {"title": "Arrival", "type": "Coffee"} },
   {"day": "2025-12-12", "start": "09:00", "end": "09:35", "talk_id": "waldo" },
-  {"day": "2025-12-12", "start": "09:35", "end": "10:10", "special": {"title": "Flash Talks (3)", "type": "Flash"} },
+  {"day": "2025-12-12", "start": "09:35", "end": "10:10", "talk_id": "flash_fri"},
   {"day": "2025-12-12", "start": "10:10", "end": "10:40", "special": {"title": "Coffee", "type": "Coffee"} },
   {"day": "2025-12-12", "start": "10:40", "end": "11:15", "talk_id": "angela" },
   {"day": "2025-12-12", "start": "11:15", "end": "11:50", "talk_id": "juan" },

@@ -166,5 +166,25 @@
     "speaker": "Víctor González",
     "affiliation": "SimpliRoute, Chile",
     "abstract": "At SimpliRoute, we design and deploy large-scale optimization systems that solve thousands of Vehicle Routing Problem (VRP) instances every day across Latin America. These problems go far beyond the classical VRP, encompassing multiple real-world constraints such as time windows, capacity, heterogeneous fleets, parking restrictions, driver preferences, and multi-objective trade-offs.\n\nIn this talk, we will present how SimpliRoute tackles this Rich VRP in practice — from the mathematical formulation to the engineering challenges of scaling optimization in production environments. We will discuss our experience integrating human-centric elements into the routing process, such as what we internally call route beauty, where interpretability, fairness, and driver satisfaction coexist with efficiency. Finally, we will share some of our current research directions, including hybrid optimization–AI methods and adaptive algorithms."
+  },
+  {
+    "id": "flash_wed",
+    "title": "Flash Talks",
+    "speaker": "María Analía González, Diego Morán, Pablo Torrealba",
+    "abstract": "\n- Solving large-scale forest planning with MILP and stand clustering - González M. (Universidad Nacional de Córdoba)\n\n- Parametric polyhedra in integer programming - Morán D. (Rensselaer Polytechnic Institute)\n\n- A column generation approach to solve the Joint Order Batching and Picker Routing Problem with picker congestion - Torrealba P. (Pontificia Universidad Católica de Valparaíso)"
+  }
+  ,
+  {
+    "id": "flash_thu",
+    "title": "Flash Talks",
+    "speaker": "Francisco Zenteno, Juan-José Salazar-González, Zacharie Ales",
+    "abstract": "\n- Deploying with Confidence: Testing Strategies for Optimization Models - Zenteno F. (American Airlines)\n\n- A Mixed Integer Linear Programming Model for Optimal Area Polygonisation Problems - Salazar-González J.J. (Universidad de La Laguna)\n\n- A rounding and clustering-based exact algorithm for the p-center problem - Ales Z. (ENSTA Paris)"
+  }
+  ,
+  {
+    "id": "flash_fri",
+    "title": "Flash Talks",
+    "speaker": "Jasper van Doornmalen, Juan Matias Novas, Eduardo Salazar-Treviño",
+    "abstract": "\n- A Proof System for Certifying Symmetry Handling Reductions in Mathematical Programming - Van Doornmalen J. (Pontificia Universidad Católica)\n\n- A Comparative Study of MILP and Constraint Programming Approaches for the Road-Based Crop Scouting Route Optimization Problem - Novas J. (CONICET)\n\n- A Location-Allocation-Improvement Matheuristic for a Territorial Design Problem in Microfinance Institutions - Salazar-Treviño E. (AMPL Optimization)"
   }
 ]
