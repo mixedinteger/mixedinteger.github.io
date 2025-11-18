@@ -170,8 +170,8 @@
   {
     "id": "flash_wed",
     "title": "Flash Talks",
-    "speaker": "María Analía González, Diego Morán, Pablo Torrealba",
-    "abstract": "\n- Solving large-scale forest planning with MILP and stand clustering - González M. (Universidad Nacional de Córdoba)\n\n- Parametric polyhedra in integer programming - Morán D. (Rensselaer Polytechnic Institute)\n\n- A column generation approach to solve the Joint Order Batching and Picker Routing Problem with picker congestion - Torrealba P. (Pontificia Universidad Católica de Valparaíso)"
+    "speaker": "María Analía Rodríguez, Diego Morán, Pablo Torrealba",
+    "abstract": "\n- Solving large-scale forest planning with MILP and stand clustering - Rodríguez M. (Universidad Nacional de Córdoba)\n\n- Parametric polyhedra in integer programming - Morán D. (Rensselaer Polytechnic Institute)\n\n- A column generation approach to solve the Joint Order Batching and Picker Routing Problem with picker congestion - Torrealba P. (Pontificia Universidad Católica de Valparaíso)"
   }
   ,
   {
