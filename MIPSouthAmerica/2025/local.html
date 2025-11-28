@@ -152,6 +152,18 @@
   }
 </style>
 
+<style>
+  .table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+  }
+
+  .table-responsive table {
+    width: 100%;
+    min-width: 500px; /* prevents columns from collapsing too much */
+  }
+</style>
 
 
 
@@ -222,7 +234,7 @@
         <p>
           All morning buses go from Viña del Mar to Universidad Adolfo Ibáñez (UAI), Viña del Mar campus. There will be <strong>two routes</strong>; one starting at Hotel Marina Del Rey with two additional stops, and one starting at Hotel Pullman with no additional stop.
         </p>
-
+        <div class="table-responsive">
         <table class="bus-schedule">
           <thead>
             <tr>
@@ -306,12 +318,13 @@
             </tr>
           </tbody>
         </table>
-
+      </div>
       <h3>Afternoon shuttle schedule (from UAI Viña del Mar campus)</h3>
       <p>
         All afternoon buses return from Universidad Adolfo Ibáñez (UAI), Viña del Mar campus, to Viña del Mar.
       </p>
-
+      
+      <div class="table-responsive">
       <table class="bus-schedule">
         <thead>
           <tr>
@@ -355,7 +368,7 @@
           </tr>
         </tbody>
       </table>
-
+      </div>
 
       <p><strong><span style="color:red;">Please check this information a few days before the workshop in case there has been any update.</span></strong></p>
       </div>
