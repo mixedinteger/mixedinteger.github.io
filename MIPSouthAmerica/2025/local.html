@@ -86,6 +86,54 @@
     }
   </style>
 
+<style>
+  table.bus-schedule {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 15px;
+
+    border: 2px solid #999;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  /* Header */
+  table.bus-schedule thead th {
+    background-color: #57bc9b;
+    font-weight: 600;
+    padding: 10px 6px;
+    border-bottom: 2px solid #ccc;
+  }
+
+  /* Celdas */
+  table.bus-schedule td {
+    background-color: #ffffff;  /* fondo claro para que destaque */
+    padding: 10px 6px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* Última fila sin borde inferior */
+  table.bus-schedule tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  /* Hover */
+  table.bus-schedule tbody tr:hover td {
+    background-color: #d8d4d4;
+  }
+
+  /* Evitar que se corten fechas/horas */
+  table.bus-schedule td:nth-child(1),
+  table.bus-schedule td:nth-child(3) {
+    white-space: nowrap;
+  }
+</style>
+
+
+
+
+
 </head>
 <body>
 
@@ -131,35 +179,160 @@
   <div class="mainstyle1">
     <div class="container">
       <h2>Daily Buses</h2>
-      <p>To get to the UAI Viña del Mar Campus from the city center, the workshop will have shuttle buses for participants. The specific departure point will be communicated in due course, but it will be close to the following corner:</p>
+      <p>To get to the UAI Viña del Mar Campus from the city center, the workshop will have shuttle buses for participants. The pickup points will be:</p>
+
+      <ul>
+          <li>Hotel Best Western Marina del Rey (A)</li>
+          <li>Corner of 6 Poniente & 4 Norte (B)</li>
+          <li>Hotel Pullman San Martín (C)</li>
+      </ul>
+
+      <p><strong><span style="color:red;">Please check this information a few days before the workshop in case there has been any update.</span></strong></p>
       
-      <h3>Morning Pickup Point (estimate)</h3>
+      
+      <h3>Map of Pickup Points</h3>
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3031.9241409132683!2d-71.5605707084514!3d-33.01830457530045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689dde4eab74ef9%3A0xbfb6f97a450db2cb!2sAv.%20San%20Mart%C3%ADn%20301-269%2C%20Vi%C3%B1a%20del%20Mar%2C%20Valpara%C3%ADso!5e1!3m2!1sen!2scl!4v1764035949385!5m2!1sen!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/d/u/1/embed?mid=14me2AzefNy8i8DlyeHb9eGXHsiEpJLU&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
         <br><br>
-      <h3>Daily Shuttle Schedule (estimate)</h3>
+      <h3>Morning shuttle schedule (to UAI Viña del Mar campus)</h3>
 
-        <ul>
-          <li><strong>Tuesday, December 9:</strong>  
-            Departure to UAI at <strong>08:00</strong>.  
-            Departure from UAI at <strong>18:00</strong>.
-          </li>
+        <p>
+          All morning buses go from Viña del Mar to Universidad Adolfo Ibáñez (UAI), Viña del Mar campus. There will be <strong>two routes</strong>; one starting at Hotel Marina Del Rey with two additional stops, and one starting at Hotel Pullman with no additional stop.
+        </p>
 
-          <li><strong>Wednesday, December 10:</strong>  
-            Departure to UAI at <strong>08:30</strong>.  
-            Departure from UAI at <strong>17:30</strong>.
-          </li>
+        <table class="bus-schedule">
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Bus</th>
+              <th>Departure time</th>
+              <th>Departure point</th>
+              <th>Additional pick-ups</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Tuesday 9 -->
+            <tr>
+              <td>Tuesday, December 9</td>
+              <td>Bus 1</td>
+              <td>07:55</td>
+              <td>Hotel Marina del Rey</td>
+              <td>6 Poniente &amp; 4 Norte, Hotel Pullman</td>
+            </tr>
+            <tr>
+              <td>Tuesday, December 9</td>
+              <td>Bus 2</td>
+              <td>08:00</td>
+              <td>Hotel Pullman</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Tuesday, December 9</td>
+              <td>Bus 3</td>
+              <td>08:00</td>
+              <td>Hotel Marina del Rey</td>
+              <td>6 Poniente &amp; 4 Norte, Hotel Pullman</td>
+            </tr>
 
-          <li><strong>Thursday, December 11:</strong>  
-            Departure to UAI at <strong>08:30</strong>.  
-            Departure from UAI at <strong>17:30</strong>.
-          </li>
+            <!-- Wednesday 10 -->
+            <tr>
+              <td>Wednesday, December 10</td>
+              <td>Bus 1</td>
+              <td>08:25</td>
+              <td>Hotel Marina del Rey</td>
+              <td>6 Poniente &amp; 4 Norte, Hotel Pullman</td>
+            </tr>
+            <tr>
+              <td>Wednesday, December 10</td>
+              <td>Bus 2</td>
+              <td>08:30</td>
+              <td>Hotel Pullman</td>
+              <td>—</td>
+            </tr>
 
-          <li><strong>Friday, December 12:</strong>  
-            Departure to UAI at <strong>08:30</strong>.  
-            Departure from UAI at <strong>12:45</strong>.
-          </li>
-        </ul>
+            <!-- Thursday 11 -->
+            <tr>
+              <td>Thursday, December 11</td>
+              <td>Bus 1</td>
+              <td>08:25</td>
+              <td>Hotel Marina del Rey</td>
+              <td>6 Poniente &amp; 4 Norte, Hotel Pullman</td>
+            </tr>
+            <tr>
+              <td>Thursday, December 11</td>
+              <td>Bus 2</td>
+              <td>08:30</td>
+              <td>Hotel Pullman</td>
+              <td>—</td>
+            </tr>
+
+            <!-- Friday 12 -->
+            <tr>
+              <td>Friday, December 12</td>
+              <td>Bus 1</td>
+              <td>08:25</td>
+              <td>Hotel Marina del Rey</td>
+              <td>6 Poniente &amp; 4 Norte, Hotel Pullman</td>
+            </tr>
+            <tr>
+              <td>Friday, December 12</td>
+              <td>Bus 2</td>
+              <td>08:30</td>
+              <td>Hotel Pullman</td>
+              <td>—</td>
+            </tr>
+          </tbody>
+        </table>
+
+      <h3>Afternoon shuttle schedule (from UAI Viña del Mar campus)</h3>
+      <p>
+        All afternoon buses return from Universidad Adolfo Ibáñez (UAI), Viña del Mar campus, to Viña del Mar.
+      </p>
+
+      <table class="bus-schedule">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Bus</th>
+            <th>Departure time</th>
+            <th>Departure point</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Tuesday 9 -->
+          <tr>
+            <td>Tuesday, December 9</td>
+            <td>Bus 1</td>
+            <td>18:00</td>
+            <td>UAI Viña del Mar campus</td>
+          </tr>
+
+          <!-- Wednesday 10 -->
+          <tr>
+            <td>Wednesday, December 10</td>
+            <td>Bus 1</td>
+            <td>17:30</td>
+            <td>UAI Viña del Mar campus</td>
+          </tr>
+
+          <!-- Thursday 11 -->
+          <tr>
+            <td>Thursday, December 11</td>
+            <td>Bus 1</td>
+            <td>17:30</td>
+            <td>UAI Viña del Mar campus</td>
+          </tr>
+
+          <!-- Friday 12 -->
+          <tr>
+            <td>Friday, December 12</td>
+            <td>Bus 1</td>
+            <td>12:45</td>
+            <td>UAI Viña del Mar campus</td>
+          </tr>
+        </tbody>
+      </table>
+
 
       <p><strong><span style="color:red;">Please check this information a few days before the workshop in case there has been any update.</span></strong></p>
       </div>
