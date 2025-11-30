@@ -71,7 +71,7 @@ Furthermore, we will provide the following:
 
 ### Tutorial
 
-The committee is currently working on a customized tutorial, which will follow through a simple example of a GPU-accelerated heuristic for MIP. We plan on releasing it by November. Please check back!
+The committee is currently working on a customized tutorial, which will follow through a simple example of a GPU-accelerated heuristic for MIP. We plan on releasing it by early December. Please check back!
 
 
 ### External sources
