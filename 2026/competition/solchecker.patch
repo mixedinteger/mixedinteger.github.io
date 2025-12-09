@@ -1,0 +1,93 @@
+diff --git a/checker/src/model.cpp b/checker/src/model.cpp
+index cf36b63..2163545 100644
+--- a/checker/src/model.cpp
++++ b/checker/src/model.cpp
+@@ -530,7 +530,7 @@ void Model::check(
+          ++vitr;
+       }
+
+-      Rational objVal;
++      Rational objVal = objOffset;
+       objVal += objValPlus;
+       objVal += objvalMinus;
+
+@@ -596,7 +596,7 @@ void Model::maxViolations(
+    // check objective
+    if( hasObjectiveValue )
+    {
+-      Rational objVal;
++      Rational objVal = objOffset;
+       vitr = vars.begin();
+       while( vitr != vend )
+       {
+diff --git a/checker/src/model.h b/checker/src/model.h
+index 098279b..387c124 100644
+--- a/checker/src/model.h
++++ b/checker/src/model.h
+@@ -457,6 +457,7 @@ public:
+    std::string modelName; //< name of the model
+    std::string objName; //< name of the objective function
+    ObjSense objSense; //< optimization direction
++   Rational objOffset; //< objective offset
+    bool hasObjectiveValue; //< do we have the objective value of the solution as reported by the solver?
+    Rational objectiveValue; //< objective value of the solution as reported by the solver
+    // \}
+diff --git a/checker/src/mpsinput.cpp b/checker/src/mpsinput.cpp
+index 9c03d0f..b038edc 100644
+--- a/checker/src/mpsinput.cpp
++++ b/checker/src/mpsinput.cpp
+@@ -533,26 +533,40 @@ void MpsInput::readRhs()
+       {
+          val.fromString(f3);
+          LinearConstraint* cons = static_cast<LinearConstraint*>(model->getCons(f2));
+-         assert( cons != NULL );
+-         switch(cons->lintype)
++         if( cons == NULL && model->objName == std::string(f2))
+          {
+-            case LinearConstraint::LESS_THAN:
+-               cons->rhs = val;
+-               break;
+-            case LinearConstraint::GREATER_THAN:
+-               cons->lhs = val;
+-               break;
+-            case LinearConstraint::EQUAL:
+-               cons->lhs = val;
+-               cons->rhs = val;
+-               break;
+-            default:
+-               throw SyntaxError(buf, lineno);
++            Rational minusone(-1.0);
++            mult(model->objOffset, val, minusone);
++         }
++         else
++         {
++            assert( cons != NULL );
++            switch(cons->lintype)
++            {
++               case LinearConstraint::LESS_THAN:
++                  cons->rhs = val;
++                  break;
++               case LinearConstraint::GREATER_THAN:
++                  cons->lhs = val;
++                  break;
++               case LinearConstraint::EQUAL:
++                  cons->lhs = val;
++                  cons->rhs = val;
++                  break;
++               default:
++                  throw SyntaxError(buf, lineno);
++            }
+          }
+          if( f5 != NULL )
+          {
+             val.fromString(f5);
+             LinearConstraint* cons = static_cast<LinearConstraint*>(model->getCons(f4));
++            if (cons == NULL && model->objName == std::string(f4))
++            {
++               Rational minusone(-1.0);
++               mult(model->objOffset, val, minusone);
++               continue;
++            }
+             assert( cons != NULL );
+             switch(cons->lintype)
+             {

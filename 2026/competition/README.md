@@ -156,6 +156,8 @@ It is recommended that submissions use a separate thread to write solution files
 
 During evaluation, we plan on using MIPLIB’s official solution checker, which can be found inside the scripts package miplib2017-testscript-v1.0.4.zip in the [MIPLIB Downloads page](https://miplib.zib.de/download.html). For convenience, we repackage only the checker [here](miplib2017-checker.zip). Importantly, the checker must be run with the tolerances above, as its default tolerances are looser: ./solchecker &lt;model.mps.gz> &lt;solution.sol> 1e-6 1e-5. **We strongly recommend participants to run the checker themselves over all solutions produced by the submission.** Solutions that fail the checker will not be considered valid.
 
+Update (Dec 9, 2025): We have repackaged the above checker to fix a bug with objective offsets. If you download from the original MIPLIB website, you will need to apply [this patch](solchecker.patch).
+
 
 ### Problem Instances
 
