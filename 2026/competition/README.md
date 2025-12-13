@@ -49,8 +49,8 @@ Furthermore, we will provide the following:
 ## Timeline
 
 *   October 13th, 2025: Publication of the topic, rules and set of test problems.
-*   **December 12th, 2025:** Registration deadline for participation. 
-*   March 20th, 2026 (AoE): Submission deadline for report and code.
+*   December 12th, 2025: Registration deadline for participation. 
+*   **March 20th, 2026 (AoE):** Submission deadline for report and code.
 *   April 2026: Notification of results.
 *   May 2026: Presentations of the finalists at the MIP Workshop.
 
@@ -217,7 +217,7 @@ Brev is flexible where one can have setup scripts or start with custom container
 
 ### Registration
 
-All participants must register with the full list of team members by filling out [this registration form](https://docs.google.com/forms/d/e/1FAIpQLSfpjr8Kok8eUxiHF80OTrcJmlsBcFZhXehzg30HRrglYGSmNQ/viewform?usp=sharing&ouid=105423966909691114441) by **December 12, 2025**. Submissions are composed of a report and code.
+Registration is now closed.
 
 
 ### Report
