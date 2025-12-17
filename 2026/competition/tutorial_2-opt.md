@@ -1,8 +1,3 @@
----
-layout: default
-title: GPU-Accelerated 2-Opt Local Search for MIP in Cuda
----
-
 # GPU-Accelerated 2-Opt Local Search for MIP in Cuda
 
 Akif Çördük (acoerduek@nvidia.com) and the 2026 Land-Doig MIP Competition Committee
