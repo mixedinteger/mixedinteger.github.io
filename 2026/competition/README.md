@@ -79,7 +79,7 @@ We provide a customized tutorial where we walk through implementing a local sear
 
 We also provide a shorter CUDA C++ tutorial with an example of 2-opt.
 
-* [2026 MIP Competition Tutorial: GPU-Accelerated 2-Opt Local Search for MIP in CUDA](https://www.mixedinteger.org/2026/competition/tutorial_2-opt.md)
+* [2026 MIP Competition Tutorial: GPU-Accelerated 2-Opt Local Search for MIP in CUDA](https://github.com/mixedinteger/mixedinteger.github.io/blob/master/2026/competition/tutorial_2-opt.md)
 
 
 ### External sources
