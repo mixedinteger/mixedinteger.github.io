@@ -88,7 +88,7 @@ We also provide a shorter CUDA C++ tutorial with an example of 2-opt.
 *   Material on CUDA: 
     *   [Talk on getting started with CUDA](https://www.youtube.com/watch?v=GmNkYayuaA4)
     *   [Course on CUDA with Python](https://github.com/numba/nvidia-cuda-tutorial)
-    *   New: [Course on CUDA with C++](https://www.youtube.com/watch?v=Sdjn9FOkhnA&list=PL5B692fm6--vWLhYPqLcEu6RF3hXjEyJr)
+    *   [Course on CUDA with C++](https://www.youtube.com/watch?v=Sdjn9FOkhnA&list=PL5B692fm6--vWLhYPqLcEu6RF3hXjEyJr)
 *   Profiling/debugging:
     *   [Tutorial on profiling and debugging](https://www.youtube.com/watch?v=dB5Jxwj0PDw)
     *   [Webinar on profiling and debugging](https://www.youtube.com/watch?v=kKANP0kL_hk)
@@ -117,8 +117,9 @@ We also provide a shorter CUDA C++ tutorial with an example of 2-opt.
 *   Submissions that have hyperparameters must have them fixed to a default in advance, bearing in mind that evaluation will also be done on a hidden set of instances. Submissions may try to tune them internally or adaptively, but that will be counted as part of the time limit.
 *   A feasible solution must satisfy all constraints with a tolerance of 1e-6 and integer feasibility tolerance of 1e-5.
 *   The source code may be written in any programming language.
-*   The time limit for each instance is 5 minutes, excluding I/O.
+*   The time limit for each instance is 5 minutes, excluding I/O and any compilation time, whether ahead-of-time or just-in-time.
 *   Submissions must use a maximum of 8 CPU threads and 64GB of RAM in the CPU host. For GPU compute, see the Compute Infrastructure section.
+*   **Update (Dec/17)**: Any compilation can be left out of the 5-minute time limit, whether ahead-of-time or just-in-time. If you are using just-in-time compilation (e.g. Python), please trigger a compilation and record the time in the timing file (see instructions below). If your compilation is ahead-of-time (e.g. C++), you do not need to record your compilation time.
 
 In case participants have any questions about the implementation of specific rules, they should not hesitate to contact the organizers.
 
@@ -155,6 +156,8 @@ The solution files must be generated at roughly the same time as when the soluti
         ```
 
    * Note that the printed solution time values must already have had the input time subtracted, e.g. in the example above, solution_1 was actually found at 10.248 + 0.129 = 10.377s.
+
+   * **Update (Dec/17)**: If you are using just-in-time compilation, please trigger a compilation and record the compilation time in the timing file separately. Use the string "compilation". If your compilation is ahead-of-time, you do not need to do this. 
 
 
 It is recommended that submissions use a separate thread to write solution files. The reported time should be the time right before writing the solution, and it is ok if the execution runs longer to finish writing, as long as the last solution is found before the time limit.
