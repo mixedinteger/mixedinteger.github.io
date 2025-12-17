@@ -77,7 +77,9 @@ We provide a customized tutorial where we walk through implementing a local sear
 * [2026 MIP Competition Tutorial: Local Search on GPU - Part 2: A GPU implementation of feasibility jump via Numba](https://colab.research.google.com/github/mixedinteger/mixedinteger.github.io/blob/master/2026/competition/mip_competition_tutorial_part_2.ipynb)
 * [2026 MIP Competition Tutorial: Local Search on GPU - Part 3: A GPU implementation of feasibility jump via JAX](https://colab.research.google.com/github/mixedinteger/mixedinteger.github.io/blob/master/2026/competition/mip_competition_tutorial_part_3.ipynb)
 
-Furthermore, we will add here soon another MIP-focused example in C++.
+We also provide a shorter CUDA C++ tutorial with an example of 2-opt.
+
+* [2026 MIP Competition Tutorial: GPU-Accelerated 2-Opt Local Search for MIP in CUDA](https://www.mixedinteger.org/2026/competition/tutorial_2-opt.md)
 
 
 ### External sources
