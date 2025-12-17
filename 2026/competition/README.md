@@ -71,7 +71,13 @@ Furthermore, we will provide the following:
 
 ### Tutorial
 
-The committee is currently working on a customized tutorial, which will follow through a simple example of a GPU-accelerated heuristic for MIP. We plan on releasing it by early December. Please check back!
+We provide a customized tutorial where we walk through implementing a local search heuristic on GPU, in particular feasibility jump. This tutorial is in Python and Colab for convenience.
+
+* [2026 MIP Competition Tutorial: Local Search on GPU - Part 1: Introduction + a CPU implementation of feasibility jump](https://www.mixedinteger.org/2026/competition/mip_competition_tutorial_part_1.ipynb)
+* [2026 MIP Competition Tutorial: Local Search on GPU - Part 2: A GPU implementation of feasibility jump via Numba](https://www.mixedinteger.org/2026/competition/mip_competition_tutorial_part_2.ipynb)
+* [2026 MIP Competition Tutorial: Local Search on GPU - Part 3: A GPU implementation of feasibility jump via JAX](https://www.mixedinteger.org/2026/competition/mip_competition_tutorial_part_3.ipynb)
+
+Furthermore, we will add here soon another MIP-focused example in C++.
 
 
 ### External sources
