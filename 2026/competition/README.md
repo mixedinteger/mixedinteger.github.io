@@ -73,9 +73,9 @@ Furthermore, we will provide the following:
 
 We provide a customized tutorial where we walk through implementing a local search heuristic on GPU, in particular feasibility jump. This tutorial is in Python and Colab for convenience.
 
-* [2026 MIP Competition Tutorial: Local Search on GPU - Part 1: Introduction + a CPU implementation of feasibility jump](https://www.mixedinteger.org/2026/competition/mip_competition_tutorial_part_1.ipynb)
-* [2026 MIP Competition Tutorial: Local Search on GPU - Part 2: A GPU implementation of feasibility jump via Numba](https://www.mixedinteger.org/2026/competition/mip_competition_tutorial_part_2.ipynb)
-* [2026 MIP Competition Tutorial: Local Search on GPU - Part 3: A GPU implementation of feasibility jump via JAX](https://www.mixedinteger.org/2026/competition/mip_competition_tutorial_part_3.ipynb)
+* [2026 MIP Competition Tutorial: Local Search on GPU - Part 1: Introduction + a CPU implementation of feasibility jump](https://colab.research.google.com/github/mixedinteger/mixedinteger.github.io/blob/master/2026/competition/mip_competition_tutorial_part_1.ipynb)
+* [2026 MIP Competition Tutorial: Local Search on GPU - Part 2: A GPU implementation of feasibility jump via Numba](https://colab.research.google.com/github/mixedinteger/mixedinteger.github.io/blob/master/2026/competition/mip_competition_tutorial_part_2.ipynb)
+* [2026 MIP Competition Tutorial: Local Search on GPU - Part 3: A GPU implementation of feasibility jump via JAX](https://colab.research.google.com/github/mixedinteger/mixedinteger.github.io/blob/master/2026/competition/mip_competition_tutorial_part_3.ipynb)
 
 Furthermore, we will add here soon another MIP-focused example in C++.
 
