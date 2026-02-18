@@ -251,7 +251,9 @@ The report must include the following information:
 
 ### Code
 
-Participants are responsible for setting up the Brev environment that we provide to be able to run the heuristic. In addition, participants must produce a shell script that will run the code, named `run_heuristic.sh` that takes in two arguments:
+Participants are responsible for setting up the Brev environment that we provide to be able to run the heuristic. In addition, participants must produce two shell scripts: one that will build the code, named `build.sh`, and one that will run the code, named `run_heuristic.sh`, that takes in two arguments:
 
 1. The first argument is the path in the filesystem to the instance to read, in gzipped MPS format.
 2. The second argument is the path in the filesystem where the method should write the results (files for solutions found and a result file).
+
+More detailed instructions for submission have been provided directly to registered participants via email. Please email us if you were registered and have not received the instructions.
