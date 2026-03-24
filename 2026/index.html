@@ -289,11 +289,11 @@ On the O(1/T) Convergence of Alternating Gradient Descent-Ascent in Bilinear Gam
 We study the alternating gradient descent-ascent (AltGDA) algorithm in two-player zero-sum games.
 Alternating methods, where players take turns to update their strategies, have long been recognized as simple and practical approaches for learning in games, exhibiting much better numerical performance than their simultaneous counterparts.
 However, our theoretical understanding of alternating algorithms remains limited, and results are mostly restricted to the unconstrained setting.
-We show that for two-player zero-sum games that admit an interior Nash equilibrium, AltGDA converges at an O(1/T) ergodic convergence rate when employing a small constant stepsize.
+We show that for two-player zero-sum games that admit an interior Nash equilibrium, AltGDA converges at an $\mathcal{O}(1/T)$ ergodic convergence rate when employing a small constant stepsize.
 This is the first result showing that alternation improves over the simultaneous counterpart of GDA in the constrained setting.
-For games without an interior equilibrium, we show an O(1/T) local convergence rate with a constant stepsize that is independent of any game-specific constants.
+For games without an interior equilibrium, we show an $\mathcal{O}(1/T)$ local convergence rate with a constant stepsize that is independent of any game-specific constants.
 In a more general setting, we develop a performance estimation programming (PEP) framework to jointly optimize the AltGDA stepsize along with its worst-case convergence rate.
-The PEP results indicate that AltGDA may achieve an O(1/T) convergence rate for a finite horizon T, whereas its simultaneous counterpart appears limited to an O(1/\sqrt{T}) rate.
+The PEP results indicate that AltGDA may achieve an $\mathcal{O}(1/T)$ convergence rate for a finite horizon T, whereas its simultaneous counterpart appears limited to an $\mathcal{O}(1/\sqrt{T})$ rate.
                   </p>
                   <p>
 Joint work with Tianlong Nan, Garud Iyengar, and Christian Kroer.
@@ -313,7 +313,7 @@ Fast algorithms for structured linear programming
                 <div class="hideme abstract">
                   <p><strong>Abstract:</strong>
 An extremely fruitful line of algorithms research over the past decade has been the application of interior point methods alongside data structure design to classical problems in combinatorial optimization.
-In this talk, we consider linear programs of the form $min <c,x>$ subjected to $Ax = $b, $x >= 0$, where the constraint matrix A has suitable structural properties.
+In this talk, we consider linear programs of the form $\min \langle c,x \rangle$ subjected to $Ax = b$, $x \geq 0$, where the constraint matrix $A$ has suitable structural properties.
 We present a general framework for solving these structured linear programs that ties together interior point methods and tools across theoretical computer science including graph decomposition, sampling, dynamic algorithms, and numerical linear algebra.
 Our framework in turn yields the fastest-known algorithms for min-cost flow and k-commodity flow on planar graphs, and for min-cost flow and general linear programs on graphs with bounded treewidth.
                   </p>
@@ -366,7 +366,7 @@ Under this framework, we develop two novel algorithms that efficiently utilize l
 The process leverages novel linear constraints that often arise from bound propagation methods and is general enough to incorporate constraints from other sources.
 It efficiently handles linear constraints using a specialized GPU procedure that can scale to large neural networks without the use of expensive external solvers.
 Our verification procedure, Clip-and-Verify, consistently tightens bounds across multiple benchmarks and can significantly reduce the number of subproblems handled during BaB.
-We show that our clipping algorithms can be integrated with BaB-based verifiers such as α,β-CROWN, utilizing either the split constraints in activation-space BaB or the output constraints that denote the unverified input space.
+We show that our clipping algorithms can be integrated with BaB-based verifiers such as $\alpha,\beta$-CROWN, utilizing either the split constraints in activation-space BaB or the output constraints that denote the unverified input space.
 We demonstrate the effectiveness of our procedure on a broad range of benchmarks where, in some instances, we witness a 96% reduction in the number of subproblems during branch-and-bound, and also achieve state-of-the-art verified accuracy across multiple benchmarks.
                   </p>
                 </div>
@@ -502,12 +502,12 @@ A Better-Than-2 Approximation for the Directed Tree Augmentation Problem
                 <div class="hideme abstract">
                   <p><strong>Abstract:</strong>
 We introduce and study a directed analogue of the weighted Tree Augmentation Problem (WTAP).
-In the weighted Directed Tree Augmentation Problem (WDTAP), we are given an oriented tree T = (V, A) and a set of directed links L ⊆ V × V with positive costs.
-The goal is to select a minimum cost set of links which enters each fundamental dicut of T (cuts with one leaving and no entering tree arc).
+In the weighted Directed Tree Augmentation Problem (WDTAP), we are given an oriented tree $T = (V, A)$ and a set of directed links $L \subseteq V \times V$ with positive costs.
+The goal is to select a minimum cost set of links which enters each fundamental dicut of $T$ (cuts with one leaving and no entering tree arc).
 WDTAP captures the problem of covering a cross-free set family with directed links.
 It can also be used to solve weighted multi 2-TAP, in which we must cover the edges of an undirected tree at least twice.
 WDTAP can be approximated to within a factor of 2 using standard techniques.
-We provide an improved (1.75 + ε)-approximation algorithm for WDTAP in the case where the links have bounded costs, a setting that has received significant attention for WTAP.
+We provide an improved $(1.75 + \varepsilon)$-approximation algorithm for WDTAP in the case where the links have bounded costs, a setting that has received significant attention for WTAP.
 To obtain this result, we discover a class of instances, called “willows”, for which the natural set covering LP is an integral formulation.
 We further introduce the notion of “visibly k-wide” instances which can be solved exactly using dynamic programming.
 Finally, we show how to leverage these tractable cases to obtain an improved approximation ratio via an elaborate structural analysis of the tree.
