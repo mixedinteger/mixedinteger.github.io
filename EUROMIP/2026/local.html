@@ -82,7 +82,244 @@
     }
 
     .mainstyle2 a {
-	color: var(--maincolor2link);
+      color: var(--maincolor2link);
+    }
+  </style>
+
+  <style>
+    /* Transport cards */
+    .local-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.6rem;
+      margin: 2rem 0;
+    }
+    .local-card {
+      flex: 1 1 260px;
+      border: 1px solid #e1e1e1;
+      border-radius: 4px;
+      padding: 1.6rem 1.8rem;
+    }
+    .local-card h4 {
+      margin-top: 0;
+      margin-bottom: 0.3rem;
+      font-size: 1.5rem;
+    }
+    .local-card .card-meta {
+      font-size: 1.2rem;
+      color: #777;
+      margin-bottom: 0.8rem;
+    }
+    .local-card ol,
+    .local-card ul {
+      padding-left: 1.6rem;
+      margin-top: 0.4rem;
+    }
+    .local-card li { margin-bottom: 0.35rem; }
+    
+    .local-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card-stats {
+      display: flex;
+      border-top: 1px solid #ebebeb;
+      margin-top: 1.2rem;
+      padding-top: 1rem;
+    }
+    
+    .card-stats {
+      margin-top: auto;
+    }
+    .card-stat { flex: 1; text-align: center; }
+    .card-stat + .card-stat { border-left: 1px solid #ebebeb; }
+    .card-stat .val {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #222;
+      line-height: 1.2;
+    }
+    .card-stat .lbl {
+      display: block;
+      font-size: 1.1rem;
+      color: #999;
+      margin-top: 0.2rem;
+    }
+
+    /* Tip box */
+    .local-tip {
+      background: #f8f8f8;
+      border-left: 3px solid #bbb;
+      padding: 1rem 1.4rem;
+      margin: 1.5rem 0;
+      font-size: 1.35rem;
+      color: #555;
+      border-radius: 0 4px 4px 0;
+    }
+    .local-tip strong { color: #333; }
+
+    /* Map iframe */
+    .local-map-iframe {
+      width: 100%;
+      height: 420px;
+      border: 1px solid #e1e1e1;
+      border-radius: 4px;
+      margin: 1.5rem 0 2rem;
+      display: block;
+    }
+
+    /* Practical info tiles */
+    .info-tiles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      margin: 1.5rem 0;
+    }
+    .info-tile {
+      flex: 1 1 180px;
+      background: #f9f9f9;
+      border: 1px solid #e8e8e8;
+      border-radius: 4px;
+      padding: 1.2rem 1.4rem;
+      text-align: center;
+    }
+    .info-tile .tile-icon { font-size: 2rem; display: block; margin-bottom: 0.5rem; }
+    .info-tile h5 {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: #999;
+      margin: 0 0 0.4rem;
+      font-weight: 600;
+    }
+    .info-tile p { font-size: 1.3rem; color: #444; margin: 0; }
+
+    /* Place cards — restaurants */
+    .place-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.4rem;
+      margin: 1.5rem 0;
+    }
+    .place-card {
+      flex: 1 1 280px;
+      border: 1px solid #e1e1e1;
+      border-radius: 4px;
+      padding: 1.4rem 1.6rem;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: box-shadow 0.15s, border-color 0.15s;
+    }
+    .place-card:hover {
+      box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+      border-color: #c0c0c0;
+      text-decoration: none;
+      color: inherit;
+    }
+    .place-card h4 { margin: 0 0 0.3rem; font-size: 1.5rem; }
+    .place-card .place-addr { font-size: 1.2rem; color: #888; margin-bottom: 0.4rem; }
+    .place-card .place-stars { color: #c8a900; font-size: 1.2rem; }
+    .place-card p { font-size: 1.3rem; margin: 0.5rem 0 0; color: #555; }
+
+    /* image */
+    .local-logo {
+
+      margin: 0 auto;
+      width: 300px;
+      height: auto;
+    }
+
+    /* Quick-lunch list */
+    .quick-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 1.2rem 0 0;
+    }
+    .quick-card {
+      flex: 1 1 220px;
+      border: 1px solid #e1e1e1;
+      border-radius: 4px;
+      padding: 1rem 1.2rem;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: box-shadow 0.15s, border-color 0.15s;
+    }
+    .quick-card:hover {
+      box-shadow: 0 2px 10px rgba(0,0,0,0.09);
+      border-color: #c0c0c0;
+      text-decoration: none;
+      color: inherit;
+    }
+    .quick-card h5 { margin: 0 0 0.2rem; font-size: 1.35rem; font-weight: 700; color: #222; }
+    .quick-card .q-addr { font-size: 1.15rem; color: #888; margin-bottom: 0.3rem; }
+    .quick-card p { font-size: 1.2rem; color: #555; margin: 0; }
+
+    /* Maritozzo section */
+    .maritozzo-box {
+      border: 1px solid #e1e1e1;
+      border-radius: 4px;
+      padding: 1.6rem 1.8rem;
+      margin: 1.5rem 0;
+    }
+    .maritozzo-box p { font-size: 1.35rem;; color: #444; }
+    .maritozzo-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1.2rem;
+    }
+    .maritozzo-link {
+      flex: 1 1 200px;
+      border: 1px solid #e1e1e1;
+      border-radius: 4px;
+      padding: 0.9rem 1.2rem;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: box-shadow 0.15s, border-color 0.15s;
+    }
+    .maritozzo-link:hover {
+      box-shadow: 0 2px 10px rgba(0,0,0,0.09);
+      border-color: #c0c0c0;
+      text-decoration: none;
+      color: inherit;
+    }
+    .maritozzo-link strong { display: block; font-size: 1.35rem; color: #222; margin-bottom: 0.15rem; }
+    .maritozzo-link span { font-size: 1.2rem; color: #888; }
+
+    /* Local photo */
+    .local-photo {
+      display: block;
+      width: 100%;
+      border-radius: 6px;
+      margin: 1.2rem auto 1.4rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    }
+    .local-photo-caption {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #999;
+      margin-top: -0.8rem;
+      margin-bottom: 1.4rem;
+    }
+    .maritozzo-box .local-photo-caption {
+      color: #999;
+      font-size: 1.1rem;
+    }
+
+    /* Nasone inline photo */
+    .nasone-inline {
+      float: right;
+      margin: 0 0 1rem 1.6rem;
+      width: 180px;
+      border-radius: 6px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.10);
     }
   </style>
 
@@ -117,14 +354,453 @@
 
   <div class="highlight">
     <div class="container">
-      <h2>Local Information</h2>
+      <h2>Venue</h2>
       <p>
-	More information will follow soon.
+	The workshop will be held at the
+	<strong>DIAG – Dipartimento di Ingegneria Informatica, Automatica e Gestionale
+	  "Antonio Ruberti"</strong>, Sapienza University of Rome.<br>
+	Address: <strong>Via Ariosto 25, 00185 Roma RM, Italy</strong>
+	(<a href="https://maps.app.goo.gl/EDmqGgmn3r1UjGCN8" target="_blank">Google Maps ↗</a>).
       </p>
+      <p>
+	The department is located in the <em>Esquilino</em> district, about 1.5 km south
+	of Roma Termini station, within easy reach by public transport and on foot.
+      </p>
+    </div>
+  </div>
+
+  <div class="mainstyle1">
+    <div class="container">
+      <h2>Getting Here</h2>
+      <div class="local-grid">
+
+	<!-- Termini -->
+	<div class="local-card">
+	  <h4>🚆 From Roma Termini</h4>
+	  <p class="card-meta">from 10 to 20 min</p>
+	  <p>All Trenitalia and Italo high-speed trains stop here. From the station:</p>
+	  <ul>
+	    <li><strong>Bus 714</strong> (dir. Palazzo dello Sport) → alight <em>Merulana/Labicana</em> (~10 min)</li>
+	    <li><strong>Metro Line A</strong> → <em>Manzoni</em> or <em>Vittorio Emanuele</em>, then ~5 min walk</li>
+	    <li><strong>On foot</strong>: ~20 min south along Via Merulana</li>
+	  </ul>
+	  <div class="card-stats">
+	    <div class="card-stat"><span class="val">€1.50</span><span class="lbl">Bus / Metro fare</span></div>
+	    <div class="card-stat"><span class="val">1.5 km</span><span class="lbl">Walking distance</span></div>
+	  </div>
+	</div>
+
+	<!-- Tiburtina -->
+	<div class="local-card">
+	  <h4>🚄 From Roma Tiburtina</h4>
+	  <p class="card-meta">~30 min</p>
+	  <ul>
+	    <li>Take <strong>Metro Line B</strong> from <em>Tiburtina FS</em> to <em>Termini</em>
+              (3 stops, ~7 min), then follow the Termini directions.</li>
+	    <li>Alternatively, Bus lines 71 and 649.</li>
+	  </ul>
+	  <div class="card-stats">
+	    <div class="card-stat"><span class="val">€1.50</span><span class="lbl">Metro fare</span></div>
+	    <div class="card-stat"><span class="val">3.5 km</span><span class="lbl">Walking distance</span></div>
+	  </div>
+	</div>
+
+	<!-- Taxi -->
+	<div class="local-card">
+	  <h4>🚕 Taxi &amp; Rideshare</h4>
+	  <p class="card-meta">~10 min from Termini</p>
+	  <ul>
+	    <li>Use only <strong>official white licensed taxis</strong> — always metered.</li>
+	    <li><strong>Uber</strong> and <strong>FREE NOW</strong> apps are available in Rome.</li>
+	    <li>Phone booking: Radio Taxi Roma +39&nbsp;06&nbsp;3570 / +39&nbsp;06&nbsp;4994.</li>
+	  </ul>
+	  <div class="card-stats">
+	    <div class="card-stat"><span class="val">~€8–12</span><span class="lbl">Termini → venue</span></div>
+	  </div>
+	</div>
+
+	<!-- Fiumicino -->
+	<div class="local-card">
+	  <h4>✈ From Fiumicino Airport (FCO)</h4>
+	  <p class="card-meta">~55 min</p>
+	  <p>From the airport, take a train to either Termini or Tiburtina, then follow the directions from there.</p>
+	  <ul>
+	    <li>
+              <strong>Leonardo Express</strong> (non-stop) → <strong>Roma Termini</strong>.
+              Runs every 15 min, 5:38 am – 11:27 pm. Ticket: <strong>€14</strong>.
+	    </li>
+	    <li>
+              <strong>FL1 regional train</strong> → <strong>Roma Tiburtina</strong> (~47 min) and other stops.
+              Cheaper alternative; runs frequently on weekdays. Ticket : <strong>€8</strong>.
+	    </li>
+	    <li>
+              <strong>Taxi</strong>: fixed fare of <strong>€55</strong> to anywhere inside the Aurelian Walls (covers the DIAG).
+	    </li>
+	  </ul>
+	</div>
+
+      </div><!-- /.local-grid -->
+
+      <div class="local-tip">
+	<strong>Public transport tip.</strong>
+	A single <em>BIT</em> ticket (€1.50) is valid for 100 minutes on all buses, trams, and one metro ride.
+	Multi-day passes are also available: 24 h (€8.50), 48 h (€15), 72 h (€22), and 7 days (€29).
+	Tickets are sold at tobacconists (<em>tabaccherie</em>), newsstands, metro stations,
+	and via <strong>contactless tap-on</strong> validators.
+	A full list of fares is available
+	<a href="https://www.atac.roma.it/en/tickets-and-passes" target="_blank">here ↗</a>.
+      </div>
+    </div>
+  </div>
+
+  <div class="mainstyle2">
+    <div class="container">
+      <h2>Map</h2>
+
+      <iframe
+	class="local-map-iframe"
+	src="https://www.google.com/maps/d/u/0/embed?mid=19L5nNeMu1H43JevJKewQ6cJ15cctBZw&ehbc=2E312F&noprof=1" 
+	width="640" 
+	height="480"
+	allowfullscreen
+	loading="lazy"
+	title="Routes to DIAG – Sapienza University of Rome">
+      </iframe>
+
     </div>
   </div>
   
   <div class="mainstyle1">
+    <div class="container">
+      <h2>Food &amp; Drinks Nearby</h2>
+      <p>
+	Lunch is not covered by the workshop. Below you will find a selection of options
+	within easy walking distance of the venue, from quick bites to proper sit-down meals.
+	Click any card to open it in Google Maps.
+      </p>
+
+      <h3>Quick Lunch</h3>
+      <p>Perfect for a fast break between sessions.</p>
+
+      <div class="quick-grid">
+	<a class="quick-card"
+	   href="https://maps.google.com/?cid=6671022046148460635"
+	   target="_blank">
+	  <h5>Norcineria Cecchini</h5>
+	  <div class="q-addr">📍 Via Merulana 85 · ~100 m</div>
+	  <p>Roman deli. Build your own <em>panino</em> with porchetta, salumi, and cheese. A local institution.</p>
+	</a>
+	<a class="quick-card"
+	   href="https://maps.google.com/?cid=5365893990940180610"
+	   target="_blank">
+	  <h5>Il Braciere</h5>
+	  <div class="q-addr">📍 Via Merulana 171 · ~200 m</div>
+	  <p>Neighbourhood café with sandwiches, pasta, and coffee. Frequented by Sapienza students.</p>
+	</a>
+	<a class="quick-card"
+	   href="https://maps.google.com/?cid=5353897157218222011"
+	   target="_blank">
+	  <h5>La Cuccuma</h5>
+	  <div class="q-addr">📍 Via Merulana 221 · ~400 m</div>
+	  <p>Casual spot for pizza al taglio, pasta, and many other dishes. Good value, outdoor seating available.</p>
+	</a>
+	<a class="quick-card"
+	   href="https://maps.google.com/?cid=354697836543095641"
+	   target="_blank">
+	  <h5>Il Bistrò</h5>
+	  <div class="q-addr">📍 Via E. Filiberto 133 · ~500 m</div>
+	  <p>Relaxed Italian bistro, lunch menu and daily specials. Great for a sit-down lunch without a long wait.</p>
+	</a>
+	<a class="quick-card"
+	   href="https://maps.google.com/?cid=14577117649455047761"
+	   target="_blank">
+	  <h5>Man Yi</h5>
+	  <div class="q-addr">📍 Via Alfieri 17 · ~50 m</div>
+	  <p>Chinese restaurant steps from the venue. Generous portions and honest prices.</p>
+	</a>
+      </div>
+
+      <div class="local-tip">
+	<strong>Eating outside tip.</strong>
+	If you buy takeaway food from any of the spots nearby, you are welcome to eat at the tables in the
+	<strong>DIAG's inner courtyard</strong>.
+	Alternatively, in a few minutes by foot you can reach
+	<a href="https://maps.app.goo.gl/P9kEL4VB11PeYNyK7" target="_blank"><strong>Parco di Colle Oppio ↗</strong></a>,
+	where benches overlooking the Colosseum make for a memorable lunch break.
+      </div>
+
+      <h3 style="margin-top:2rem">Pizza al Taglio</h3>
+      <p>
+	<em>Pizza al taglio</em> ("pizza by the cut") is Rome's quintessential street food:
+	large rectangular trays of pizza baked in the oven, displayed behind the counter,
+	and sold by weight. You point at the slice you want, the server cuts it, weighs it,
+	and wraps it in paper — ready to eat on the go or take back to the courtyard.
+	Toppings range from the classic <em>rossa</em> (tomato) and <em>bianca</em> (olive oil &amp; rosemary)
+	to seasonal vegetables, cured meats, and more creative combinations.
+	Prices are typically €3–6 for a generous portion.
+      </p>
+
+      <div class="quick-grid">
+	<a class="quick-card"
+	   href="https://maps.app.goo.gl/x4nCSR79cWroZ5fy7"
+	   target="_blank">
+	  <h5>Forno Roscioli Esquilino</h5>
+	  <div class="q-addr">📍 Via Buonarroti · ~350 m</div>
+	  <p>Neighbourhood outpost of the famous Roscioli family. Excellent bread and pizza al taglio — a Roman institution.</p>
+	</a>
+	<a class="quick-card"
+	   href="https://maps.app.goo.gl/YXjqosn5bvTkNcfK7"
+	   target="_blank">
+	  <h5>Le Cinquine</h5>
+	  <div class="q-addr">📍 Via Merulana · ~200 m</div>
+	  <p>Creative and traditional pizza al taglio with high-quality toppings. A favourite among locals.</p>
+	</a>
+	<a class="quick-card"
+	   href="https://maps.app.goo.gl/6ePu6JpothadnJtv6"
+	   target="_blank">
+	  <h5>Supplee</h5>
+	  <div class="q-addr">📍 Via Merulana · ~200 m</div>
+	  <p>Also known for <em>supplì</em> — Rome's beloved fried rice balls with mozzarella. Great pizza al taglio alongside.</p>
+	</a>
+      </div>
+
+      <h3 style="margin-top:2rem">Sit-Down Restaurants</h3>
+      <p>For a proper dinner or a longer lunch. Reservations recommended.</p>
+
+      <div class="place-grid">
+	<a class="place-card"
+	   href="https://maps.app.goo.gl/pztWMrc15K5BMw4KA"
+	   target="_blank">
+	  <h4>Trattoria Vecchia Roma</h4>
+	  <div class="place-addr">📍 Via Ferruccio 12b · ~250 m</div>
+	  <div class="place-stars">★★★★★ 4.5 · 13 000+ reviews</div>
+	  <p>Classic Roman trattoria. Excellent cacio e pepe and carbonara.
+	    Very popular — <strong>book in advance</strong>.</p>
+	</a>
+	<a class="place-card"
+	   href="https://maps.app.goo.gl/TmWwiCaomvwYcoYNA"
+	   target="_blank">
+	  <h4>Taverna dei Migliori</h4>
+	  <div class="place-addr">📍 Viale Manzoni 107 · ~600 m</div>
+	  <div class="place-stars">★★★★★ 4.6 · 4 400+ reviews</div>
+	  <p>Generous portions, friendly service. Open every day for lunch and dinner.</p>
+	</a>
+	<a class="place-card"
+	   href="https://maps.app.goo.gl/pXcWmYG9vqLT3HwE9"
+	   target="_blank">
+	  <h4>Ristorante Feelsgood</h4>
+	  <div class="place-addr">📍 Via Emanuele Filiberto 162 · ~700 m</div>
+	  <div class="place-stars">★★★★★ 4.6 · 1 700+ reviews</div>
+	  <p>Cosy neighbourhood restaurant.
+	    Open every day for lunch and dinner.</p>
+	</a>
+	<a class="place-card"
+	   href="https://maps.app.goo.gl/piio9LcAWeq8nT4S7"
+	   target="_blank">
+	  <h4>Sampietrino – L'Osteria di San Giovanni</h4>
+	  <div class="place-addr">📍 Via D. Fontana 16 · ~400 m</div>
+	  <div class="place-stars">★★★★★ 4.5 · 815 reviews</div>
+	  <p>Modern Roman cooking near the Basilica di San Giovanni.
+	    Closed Tuesdays.</p>
+	</a>
+      </div>
+
+      <!-- ── Evening Drinks ── -->
+      <h3>Evening Drinks: Where to Find the Organisers 🍺</h3>
+      <p>
+	After the sessions, the organisers are likely to be found at one of the following spots.
+	Rome has a thriving scene of craft beer and natural wine bars — here are some favourites
+	within easy reach of the venue.
+      </p>
+
+      <div class="place-grid">
+	<a class="place-card"
+	   href="https://maps.app.goo.gl/2tzyHscwepGGY1BQ9"
+	   target="_blank">
+	  <h4>Callimaco</h4>
+	  <div class="place-addr">📍 Near DIAG</div>
+	</a>
+	<a class="place-card"
+	   href="https://maps.app.goo.gl/iWmvHTNjmwEyeucXA"
+	   target="_blank">
+	  <h4>Machiavelli 64</h4>
+	  <div class="place-addr">📍 Near DIAG</div>
+	</a>
+	<a class="place-card"
+	   href="https://maps.app.goo.gl/3e6KFgef7hLmK4tr5"
+	   target="_blank">
+	  <h4>Giufà Libreria Cafè</h4>
+	  <div class="place-addr">📍 San Lorenzo</div>
+	</a>
+	<a class="place-card"
+	   href="https://maps.app.goo.gl/XduL4oS9bojhrTEw7"
+	   target="_blank">
+	  <h4>Luppolo 12</h4>
+	  <div class="place-addr">📍 San Lorenzo</div>
+	</a>
+	<a class="place-card"
+	   href="https://maps.app.goo.gl/5DMSJYfrQtKDkzCN8"
+	   target="_blank">
+	  <h4>Artisan</h4>
+	  <div class="place-addr">📍 San Lorenzo</div>
+	</a>
+      </div>
+
+      <!-- ── Espresso ── -->
+      <h3>A Good Espresso ☕</h3>
+      <p>
+	Rome takes its coffee seriously. An espresso is drunk standing at the bar, costs around €1.20–1.50,
+	and should be finished in two or three sips. Here are two spots near the DIAG where you can find
+	an excellent cup:
+      </p>
+
+      <div class="quick-grid">
+	<a class="quick-card"
+	   href="https://maps.app.goo.gl/2Y5tgapWYxRyd1CZ6"
+	   target="_blank">
+	  <h5>Ciamei Torrefazione</h5>
+	  <div class="q-addr">📍 Via Emanuele Filiberto</div>
+	  <p>A proper Roman coffee roaster and bar. Freshly roasted beans and an espresso pulled with care.</p>
+	</a>
+	<a class="quick-card"
+	   href="https://maps.app.goo.gl/Vhh6qtNYdbkYsEXMA"
+	   target="_blank">
+	  <h5>Bar 081</h5>
+	  <div class="q-addr">📍 Via Merulana</div>
+	  <p>A Neapolitan-style bar on Via Merulana, serving strong and flavourful espresso in the southern tradition.</p>
+	</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mainstyle2">
+    <div class="container">
+      <h2>Accommodation</h2>
+      <p>
+	There is no official conference hotel. The venue is easily reachable on foot from the surrounding neighbourhoods: <strong>Esquilino</strong> (around Piazza Vittorio Emanuele II and Via Merulana),  <strong>San Giovanni</strong>, <strong>Re di Roma</strong>, and <strong>San Lorenzo</strong> are all within comfortable walking distance of the department.
+	If you prefer to rely on the Metro, any accommodation near a station on Line A (between <strong>Colli Albani</strong> and <strong>Ottaviano</strong>) or Line B (between <strong>Bologna</strong> and <strong>Piramide</strong>) guarantees a fast connection to the venue.
+      </p>
+      <p>
+	Use the link below to search for available hotels for the conference dates, pre-filtered by proximity to the venue and guest rating ≥ 8/10:
+      </p>
+      <p>
+	<a href="https://www.booking.com/searchresults.it.html?label=gen173rf-10CAQoggJCG3NlYXJjaF92aWEgYXJpb3N0byAyNSwgcm9tYUgzWANocYgBAZgBM7gBGcgBDNgBA-gBAfgBAYgCAaICFWNsYXVkZXVzZXJjb250ZW50LmNvbagCAbgCzPWGzgbAAgHSAiRlMzMwZmYzOS1mYjlmLTRiNDItYjAwMi00NWIzY2NjYTM4NWLYAgHgAgE&sid=d830431264fc2adf19cb80da6ac6314c&aid=304142&ss=Via+Ariosto%2C+25&efdco=1&lang=it&src=index&dest_id=ChIJdQjYgb5hLxMRLeIsTNcBbqM&dest_type=latlong&latitude=41.8909994&longitude=12.5036591&ac_position=0&ac_click_type=g&ac_langcode=it&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=5f369c30941700ea&checkin=2026-10-19&checkout=2026-10-21&group_adults=1&no_rooms=1&group_children=0&nflt=review_score%3D80" target="_blank">
+	  🏨 Search hotels near DIAG on Booking.com (Oct 18–21, rating ≥ 8) ↗
+	</a>
+      </p>
+      <div class="local-tip">
+	<strong>Booking tip.</strong>
+	October is high season in Rome. We recommend booking accommodation
+	<strong>well in advance</strong>.
+      </div>
+    </div>
+  </div>
+
+  <div class="mainstyle1">
+    <div class="container">
+      <h2>Practical Information</h2>
+
+      <div class="info-tiles">
+	<div class="info-tile">
+	  <span class="tile-icon">🌤️</span>
+	  <h5>Weather</h5>
+	  <p>Mild in October: 18–22 °C by day, 12–14 °C at night. Some rain possible — bring a light jacket.</p>
+	</div>
+	<div class="info-tile">
+	  <span class="tile-icon">🔌</span>
+	  <h5>Power</h5>
+	  <p> Type F/L plugs (round pins). Adapters available at the airport.</p>
+	</div> 
+	<div class="info-tile">
+	  <span class="tile-icon">📶</span>
+	  <h5>Wi-Fi</h5>
+	  <p>Free Wi-Fi at the venue. <strong>Eduroam</strong> is available in all Sapienza buildings.</p>
+	</div>
+	<div class="info-tile">
+	  <span class="tile-icon">🆘</span>
+	  <h5>Emergency</h5>
+	  <p>European emergency: <strong>112</strong>. Ambulance: <strong>118</strong>.</p>
+	</div> 
+	<div class="info-tile">
+	  <span class="tile-icon">🚰</span>
+	  <h5>Tap Water</h5>
+	  <p>Safe to drink. Rome's public fountains (<em>nasoni</em>) offer free, fresh water city-wide.</p>
+	</div>
+      </div>
+
+      <div style="overflow:hidden; margin: 0.5rem 0 1.5rem;">
+	<img src="nasone.png" class="local-photo" style="width: 420px;" alt="A Roman nasone drinking fountain">
+	<p class="local-photo-caption">The iconic <em>nasone</em> ("big nose"): one of Rome's most beloved urban fixtures.</p>
+	<div style="clear:both"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mainstyle2">
+    <div class="container">
+      <h2>While You're in Rome</h2>
+      <p>
+	The DIAG sits in one of Rome's most historically rich neighbourhoods.
+	Within short walking distance you will find the
+	<strong>Colosseum</strong> and <strong>Roman Forum</strong> (~15 min on foot),
+	the <strong>Basilica di Santa Maria Maggiore</strong> (~10 min),
+	and the <strong>Baths of Caracalla</strong> (~20 min).
+	A few metro stops take you toward the <strong>Pantheon</strong>,
+	<strong>Piazza Navona</strong>, and the <strong>Trevi Fountain</strong>.
+      </p>
+      <div class="local-tip">
+	<strong>Museum tip.</strong>
+	Pre-booking is strongly recommended for the Colosseum and Vatican Museums in October.
+	The <a href="https://www.turismoroma.it/en/page/roma-pass" target="_blank"><strong>Roma Pass</strong> ↗</a> (48 h / 72 h) covers unlimited public transport and free entry to several museums.
+      </div>
+    </div>
+  </div>
+
+  <div class="mainstyle1">
+    <div class="container">
+      <h2>A Roman Treat: the Maritozzo 🍞</h2>
+      <div class="maritozzo-box">
+	<p>
+	  The <em>maritozzo</em> is Rome's most beloved pastry: a soft brioche bun
+	  split open and generously filled with fresh whipped cream. It is typically enjoyed
+	  for breakfast or as an afternoon snack, and it is absolutely not to be missed.
+	</p>
+	
+	
+	<div style="overflow:hidden; margin: 0.5rem 0 1.5rem;">
+	  <img src="maritozzo.png" class="local-photo" style="width: 420px;" alt="A Roman maritozzo — a soft brioche bun filled with whipped cream">
+	  <p class="local-photo-caption">A classic Roman <em>maritozzo con la panna.</em></p>
+	  <div style="clear:both"></div>
+	</div>
+
+
+	
+	<p>
+	  Just a short walk from the venue, <strong>Via dello Statuto</strong> is home to
+	  two of the best <em>maritozzi</em> in Rome, facing each other across the street:
+	</p>
+	
+	<div class="maritozzo-links">
+	  <a class="maritozzo-link"
+	     href="https://maps.google.com/?cid=11574199893139537613"
+	     target="_blank">
+	    <strong>Regoli Pasticceria</strong>
+	    <span>📍 Via dello Statuto 60 · ~600 m · ★★★★★ 4.5</span>
+	  </a>
+	  <a class="maritozzo-link"
+	     href="https://maps.google.com/?cid=9119128124028218808"
+	     target="_blank">
+	    <strong>Bar Pasticceria D'Amore</strong>
+	    <span>📍 Via dello Statuto 37 · ~600 m · ★★★★ 4.2</span>
+	  </a>
+	</div>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <div class="mainstyle2">
     <div class="container">
       <h2>Credits</h2>
       <p>Logo-Design by ©<a href="https://www.jubs-art.com">Julia Silbermann</a> (Font-Credits: Cornerstone, by Zac Freeland).
