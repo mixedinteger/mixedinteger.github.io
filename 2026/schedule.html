@@ -9,6 +9,17 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
+  <!-- MathJax -->
+
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -181,6 +192,622 @@
 
     </div>
   </div>
+
+  <div class="mainstyle2">
+    <div class="container" id="schedule">
+      <h2>Daily Details: Speakers, Titles, and Abstracts</h2>
+      <p>Abstracts are available for each speaker by clicking their talk title.</p>
+      
+      <!-- Day 1 -->
+      <div class="row">
+        <div class="twelve columns">
+          <h3><a title="Day 1" href="#" onclick="toggleSchedule(this);return false;">Monday, May 18, 2026</a></h3>
+          <table class="hideme">
+            <tbody>
+              <tr style="background-color: gray; color: white;">
+                <td style="text-align: center;">Time</td>
+                <td>Event</td>
+                <td>Details</td>
+              </tr>
+              <tr>
+                <td class="time">9:00-9:15</td>
+                <td class="meal">Registration</td>
+                <td>Location: <a href="https://classrooms.uconn.edu/classroom/dwtn-109-a1/">DWTN 109 (A1)</a></td>
+              </tr>
+              <tr>
+                <td class="time">9:15-9:25</td>
+                <td class="specialevent">Opening Remarks</td>
+                <td>Location: <a href="https://classrooms.uconn.edu/classroom/dwtn-109-a1/">DWTN 109 (A1)</a></td>
+              </tr>
+              <tr>
+                <td class="time">9:30-10:00</td>
+                <td class="speaker" onclick="toggleAbstract('abstract01');">Andre A. Cire (University of Toronto)</td>
+                <td class="title">
+                  <span>
+                    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+Coupling in Dynamic Systems: A Polyhedral Perspective
+                    </a>
+<!--
+                    [<strong><a href="slides/.pdf">Slides</a></strong>]
+--!>
+                  </span>
+                  <div class="hideme abstract">
+                    <p><strong>Abstract:</strong>
+Many stochastic dynamic systems can be modeled as collections of interacting components linked by shared combinatorial constraints.
+Canonical examples include inventory allocation over time, tour scheduling under capacity limits, and healthcare resource management across patient classes.
+A widely used approximation paradigm applies Lagrangian or fluid relaxations that decompose the system into marginal flow models for individual components, enforcing coupling constraints only through post-processing steps such as sampling, projection, or rounding.
+                    </p>
+                    <p>
+We show that this paradigm implicitly follows an allocate-then-correct structure: it first allocates probability mass over actions using a linear program defined on a marginal flow relaxation, and only afterward projects the resulting solution onto the feasible action space.
+From a polyhedral standpoint, the marginal relaxation can strictly contain the convex hull of feasible joint actions, introducing fractional action distributions that are not implementable by any feasible policy.
+This structural gap induces an aggregate infeasibility bias, forcing corrective adjustments that may substantially degrade policy performance and increase the need for repeated reoptimization.
+                    </p>
+                    <p>
+To address this limitation, we reverse the underlying logic.
+Instead of relaxing the feasible action set, we construct marginalized linear programs over the convex hull of feasible action subsets, yielding a strictly strengthened formulation that enforces coupling constraints by construction.
+The resulting models admit an interpretation as extended formulations of the underlying action polytope and eliminate the need for ex post correction.
+Furthermore, any polynomial-time approximation algorithm for generating feasible action sets induces a tractable corresponding approximate extended formulation of the action polytope, with the approximation ratio translating directly into bounds on the model performance.
+                    </p>
+                    <p>
+Building on these models, we introduce a new policy class that enforces feasibility by construction and eliminates the need for corrective rounding.
+Computational experiments on dynamic assortment and maintenance problems illustrate regimes in which convexified formulations reduce infeasibility corrections, improve stability, and outperform classical fluid relaxations.
+Beyond these applications, the results suggest a broader methodological principle: in coupled dynamic systems, convexification of feasible action sets can provide a structurally stronger alternative to marginal flow relaxations.
+                    </p>
+                  </div>
+               </td>
+              </tr>
+              <tr>
+                <td class="time">10:05-10:30</td>
+                <td class="specialtalk" onclick="toggleAbstract('abstractflash1');">Flash talks</td>
+                <td class="title">
+                </td>
+              </tr>
+              <tr>
+                <td class="time">10:30-10:55</td>
+                <td class="meal">Coffee break</td>
+                <td class="title"></td>
+              </tr>
+              <tr>
+                <td class="time">10:55-11:25</td>
+                <td class="speaker" onclick="toggleAbstract('abstract02');">Menal Guzelsoy (SAS)</td>
+                <td class="title">
+                  <span>
+                    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+Generating dual solutions for bound tightening in MILP 
+                    </a>
+<!--
+                    [<strong><a href="slides/.pdf">Slides</a></strong>]
+--!>
+                  </span>
+                  <div class="hideme abstract">
+                    <p><strong>Abstract:</strong>
+Dual solutions in MILP are typically obtained as a by-product of solving LP relaxations at the nodes of the branch-and-bound tree.
+These dual solutions are globally valid and can be leveraged across the tree and reused in other components such as bound tightening.
+However, storing and processing a large number of dual solutions can be computationally expensive.
+                    </p>
+                    <p> 
+In this work, we propose practical methods to generate dual solutions for local use within the search tree.
+In particular, we either modify existing dual solutions or combine multiple dual solutions to produce new ones.
+Furthermore, we investigate primal–dual relationships to better exploit their interaction to improve the effectiveness of bound tightening.
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="time">11:30-12:00</td>
+                <td class="speaker" onclick="toggleAbstract('abstract03');">Sally Dong (Massachusetts Institute of Technology)</td>
+                <td class="title">
+                  <span>
+                    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+Fast algorithms for structured linear programming
+                    </a>
+<!--
+                    [<strong><a href="slides/.pdf">Slides</a></strong>]
+--!>
+                  </span>
+                  <div class="hideme abstract">
+                    <p><strong>Abstract:</strong>
+An extremely fruitful line of algorithms research over the past decade has been the application of interior point methods alongside data structure design to classical problems in combinatorial optimization.
+In this talk, we consider linear programs of the form $\min \langle c,x \rangle$ subjected to $Ax = b$, $x \geq 0$, where the constraint matrix $A$ has suitable structural properties.
+We present a general framework for solving these structured linear programs that ties together interior point methods and tools across theoretical computer science including graph decomposition, sampling, dynamic algorithms, and numerical linear algebra.
+Our framework in turn yields the fastest-known algorithms for min-cost flow and k-commodity flow on planar graphs, and for min-cost flow and general linear programs on graphs with bounded treewidth.
+                    </p>
+                    <p>
+Based on joint work with Yu Gao, Gramoz Goranci, Yin Tat Lee, Lawrence Li, Richard Peng, Sushant Sachdeva, and Guanghao Ye.
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="time">12:00-2:00</td>
+                <td class="meal">Lunch (not included!)</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time">2:05-2:35</td>
+                <td class="speaker" onclick="toggleAbstract('abstract04');">Cathy Wu (Massachusetts Institute of Technology)</td>
+                <td class="title"></td>
+              </tr>
+              <tr>
+                <td class="time">2:40-3:10</td>
+                <td class="specialtalk" onclick="toggleAbstract('abstract05');">Poster teaser #1</td>
+                <td class="title"></td>
+              </tr>
+              <tr>
+                <td class="time">3:10-3:40</td>
+                <td class="meal">Coffee break</td>
+                <td class="title"></td>
+              </tr>
+              <tr>
+                <td class="time">3:40-4:15</td>
+                <td class="specialtalk" onclick="toggleAbstract('abstract06');">Poster teaser #2</td>
+                <td class="title"></td>
+              </tr>
+              <tr>
+                <td class="time">4:15-4:45</td>
+                <td class="speaker" onclick="toggleAbstract('abstract07');">Harsha Nagarajan (Los Alamos National Lab)</td>
+                <td class="title">
+                  <span>
+                    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+A Generalizable Learning Approach To Accelerate Global Optimization of Quadratically-Constrained Quadratic Programs
+                    </a>
+<!--
+                    [<strong><a href="slides/.pdf">Slides</a></strong>]
+--!>
+                  </span>
+                  <div class="hideme abstract">
+                    <p><strong>Abstract:</strong>
+Quadratically constrained quadratic programs (QCQPs) form a broad class of nonconvex optimization problems arising in applications such as energy infrastructure networks and pooling, yet they can be slow to solve to global optimality in practice.
+Motivated by the effectiveness, and sensitivity, of partitioning within MIP-based relaxations, we introduce strong partitioning policy: choosing variable-domain partitions to strengthen relaxations while preserving global optimality guarantees.
+Because computing this optimal (oracle) partitioning policy is expensive, we learn an efficient approximation for parameterized families of QCQPs using machine learning.
+Further, we propose a novel end-to-end training objective that directly rewards partitioning schemes with desirable relaxation/algorithmic properties, avoiding reliance on a fixed hand-designed policy as labels, and we develop a graph-based approach that enables a single model to generalize across problem sizes.
+Numerical results show that the learned policies generalize to unseen instances (including new sizes) and significantly reduce the runtime of partitioning-based globally convergent iterative algorithms.
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="time">5:30-8:00</td>
+                <td class="specialevent">Poster / Reception</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div> <!-- twelve columns -->
+      </div> <!-- row -->
+      <!-- Day 2 -->
+      <div class="row">
+        <div class="twelve columns">
+          <h3><a title="Day 2" href="#" onclick="toggleSchedule(this);return false;">Tuesday, May 19, 2026</a></h3>
+          <table class="hideme">
+            <tbody>
+              <tr style="background-color: gray; color: white;">
+                <td style="text-align: center;">Time</td>
+                <td>Event</td>
+                <td>Details</td>
+              </tr>
+              <tr>
+                <td class="time">9:00-9:15</td>
+                <td class="meal">Registration</td>
+                <td>Location: <a href="https://classrooms.uconn.edu/classroom/dwtn-109-a1/">DWTN 109 (A1)</a></td>
+              </tr>
+              <tr>
+                <td class="time">9:15-9:25</td>
+                <td class="specialevent">Opening Remarks</td>
+                <td>Location: <a href="https://classrooms.uconn.edu/classroom/dwtn-109-a1/">DWTN 109 (A1)</a></td>
+              </tr>
+              <tr>
+                <td class="time">9:30-10:00</td>
+                <td class="speaker" onclick="toggleAbstract('abstract08');">Kibaek Kim (Argonne National Lab)</td>
+                <td class="title">
+               </td>
+              </tr>
+              <tr>
+                <td class="time">10:05-10:30</td>
+                <td class="specialtalk" onclick="toggleAbstract('abstractflash2');">Flash talks</td>
+                <td class="title">
+                </td>
+              </tr>
+              <tr>
+                <td class="time">10:30-10:55</td>
+                <td class="meal">Coffee break</td>
+                <td class="title"></td>
+              </tr>
+              <tr>
+                <td class="time">10:55-11:25</td>
+                <td class="speaker" onclick="toggleAbstract('abstract09');">Meike Neuwohner (CNRS &amp; DIENS, ENS Paris - PSL Research University)</td>
+                <td class="title">
+                  <span>
+                    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+A Better-Than-2 Approximation for the Directed Tree Augmentation Problem
+                    </a>
+<!--
+                    [<strong><a href="slides/.pdf">Slides</a></strong>]
+--!>
+                  </span>
+                  <div class="hideme abstract">
+                    <p><strong>Abstract:</strong>
+We introduce and study a directed analogue of the weighted Tree Augmentation Problem (WTAP).
+In the weighted Directed Tree Augmentation Problem (WDTAP), we are given an oriented tree $T = (V, A)$ and a set of directed links $L \subseteq V \times V$ with positive costs.
+The goal is to select a minimum cost set of links which enters each fundamental dicut of $T$ (cuts with one leaving and no entering tree arc).
+WDTAP captures the problem of covering a cross-free set family with directed links.
+It can also be used to solve weighted multi 2-TAP, in which we must cover the edges of an undirected tree at least twice.
+WDTAP can be approximated to within a factor of 2 using standard techniques.
+We provide an improved $(1.75 + \varepsilon)$-approximation algorithm for WDTAP in the case where the links have bounded costs, a setting that has received significant attention for WTAP.
+To obtain this result, we discover a class of instances, called “willows”, for which the natural set covering LP is an integral formulation.
+We further introduce the notion of “visibly k-wide” instances which can be solved exactly using dynamic programming.
+Finally, we show how to leverage these tractable cases to obtain an improved approximation ratio via an elaborate structural analysis of the tree.
+                    </p>
+                    <p>
+This result is joint work with Olha Silina and Michael Zlatin and appeared in the proceedings of SODA 2026.
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="time">11:30-12:00</td>
+                <td class="speaker" onclick="toggleAbstract('abstract10');">Alex L. Wang (Purdue University)</td>
+                <td class="title">
+                  <span>
+                    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+An Invitation to Subgame Perfect First-Order Method Design
+                    </a>
+<!--
+                    [<strong><a href="slides/.pdf">Slides</a></strong>]
+--!>
+                  </span>
+                  <div class="hideme abstract">
+                    <p><strong>Abstract:</strong>
+The study of first-order methods for convex optimization has historically been framed in terms of <i>a priori</i> worst-case convergence rates/guarantees.
+Within this paradigm, recent advances in the Performance Estimation Program (PEP) framework have enabled the discovery of provably minimax-optimal algorithms.
+While natural and powerful, an exclusive focus on <i>a priori</i> worst-case guarantees limits our ability to reason about <i>dynamic, beyond worst-case</i> behavior.
+To address this gap, we adopt a game-theoretic view of algorithm design inspired by subgame perfection.
+This lens allows us to formalize and analyze dynamically optimal, subgame perfect algorithms and their relaxations, thereby capturing stronger notions of dynamic optimality.
+                    </p>
+                    <p>
+This talk serves as an introduction to the PEP framework and the recent advances in subgame perfect algorithm design.
+                    </p>
+                    <p>
+Based on joint work with Benjamin Grimmer and Kevin Shu
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="time">12:00-2:00</td>
+                <td class="meal">Lunch (not included!)</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time">2:05-2:35</td>
+                <td class="speaker" onclick="toggleAbstract('abstract11');">Alexandra Newman (Colorado School of Mines)</td>
+                <td class="title">
+                  <span>
+                    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+Optimization in Heavy Industry
+                    </a>
+<!--
+                    [<strong><a href="slides/.pdf">Slides</a></strong>]
+--!>
+                  </span>
+                  <div class="hideme abstract">
+                    <p><strong>Abstract:</strong>
+Hallmark features of optimization models in heavy industry are their apparent lack of special structure (often also involving nonlinearities) and the large size of their corresponding instances.
+Therefore, careful formulation and solution techniques are imperative to obtain implementable solutions in an operationally feasible amount of time.
+Drawing on examples from mine planning, steel manufacturing, concentrated solar power production, and power systems, we show how appropriate model scope, identification of initial feasible solutions, tight formulations, correct algorithmic choice, and, in some cases, tailored decomposition schemes, effect implementable actions.
+We conclude with a contrast to light industry.
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="time">2:40-3:10</td>
+                <td class="speaker" onclick="toggleAbstract('abstract12');">Shuvomoy Das Gupta (Rice University)</td>
+                <td class="title">
+                  <span>
+                    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+On the O(1/T) Convergence of Alternating Gradient Descent-Ascent in Bilinear Games
+                    </a>
+<!--
+                    [<strong><a href="slides/.pdf">Slides</a></strong>]
+--!>
+                  </span>
+                  <div class="hideme abstract">
+                    <p><strong>Abstract:</strong>
+We study the alternating gradient descent-ascent (AltGDA) algorithm in two-player zero-sum games.
+Alternating methods, where players take turns to update their strategies, have long been recognized as simple and practical approaches for learning in games, exhibiting much better numerical performance than their simultaneous counterparts.
+However, our theoretical understanding of alternating algorithms remains limited, and results are mostly restricted to the unconstrained setting.
+We show that for two-player zero-sum games that admit an interior Nash equilibrium, AltGDA converges at an $\mathcal{O}(1/T)$ ergodic convergence rate when employing a small constant stepsize.
+This is the first result showing that alternation improves over the simultaneous counterpart of GDA in the constrained setting.
+For games without an interior equilibrium, we show an $\mathcal{O}(1/T)$ local convergence rate with a constant stepsize that is independent of any game-specific constants.
+In a more general setting, we develop a performance estimation programming (PEP) framework to jointly optimize the AltGDA stepsize along with its worst-case convergence rate.
+The PEP results indicate that AltGDA may achieve an $\mathcal{O}(1/T)$ convergence rate for a finite horizon T, whereas its simultaneous counterpart appears limited to an $\mathcal{O}(1/\sqrt{T})$ rate.
+                    </p>
+                    <p>
+Joint work with Tianlong Nan, Garud Iyengar, and Christian Kroer.
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="time">3:10-3:40</td>
+                <td class="meal">Coffee break</td>
+                <td class="title"></td>
+              </tr>
+              <tr>
+                <td class="time">3:40-4:15</td>
+                <td class="speaker" onclick="toggleAbstract('abstract13');">Grani A. Hanasusanto (University of Illinois Urbana-Champaign)</td>
+                <td class="title">
+                  <span>
+                    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+Clip-and-Verify: Linear Constraint-Driven Domain Clipping for Accelerating Neural Network Verification
+                    </a>
+<!--
+                    [<strong><a href="slides/.pdf">Slides</a></strong>]
+--!>
+                  </span>
+                  <div class="hideme abstract">
+                    <p><strong>Abstract:</strong>
+State-of-the-art neural network (NN) verifiers demonstrate that applying the branch-and-bound (BaB) procedure with fast bounding techniques plays a key role in tackling many challenging verification properties.
+In this work, we introduce the linear constraint-driven clipping framework, a class of scalable and efficient methods designed to enhance the efficacy of NN verifiers.
+Under this framework, we develop two novel algorithms that efficiently utilize linear constraints to 1) reduce portions of the input space that are either verified or irrelevant to a subproblem in the context of branch-and-bound, and 2) directly improve intermediate bounds throughout the network.
+The process leverages novel linear constraints that often arise from bound propagation methods and is general enough to incorporate constraints from other sources.
+It efficiently handles linear constraints using a specialized GPU procedure that can scale to large neural networks without the use of expensive external solvers.
+Our verification procedure, Clip-and-Verify, consistently tightens bounds across multiple benchmarks and can significantly reduce the number of subproblems handled during BaB.
+We show that our clipping algorithms can be integrated with BaB-based verifiers such as $\alpha,\beta$-CROWN, utilizing either the split constraints in activation-space BaB or the output constraints that denote the unverified input space.
+We demonstrate the effectiveness of our procedure on a broad range of benchmarks where, in some instances, we witness a 96% reduction in the number of subproblems during branch-and-bound, and also achieve state-of-the-art verified accuracy across multiple benchmarks.
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="time">4:15-4:45</td>
+                <td class="speaker" onclick="toggleAbstract('abstract14');">Rohit Kannan (Virginia Tech)</td>
+                <td class="title">
+                  <span>
+                    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+Machine Learning-Guided Undercover for Mixed-Integer Nonlinear Programs
+                    </a>
+<!--
+                    [<strong><a href="slides/.pdf">Slides</a></strong>]
+--!>
+                  </span>
+                  <div class="hideme abstract">
+                    <p><strong>Abstract:</strong>
+We design a machine learning (ML)-guided enhancement of the Undercover primal heuristic for mixed-integer nonlinear programs (MINLPs).
+Undercover identifies a subset of variables to fix and assigns them values, thereby restricting the MINLP to a mixed-integer linear program (MILP) that can be solved using off-the-shelf solvers to potentially obtain a feasible solution.
+While Undercover performs well on mixed-integer quadratically constrained quadratic programs (MIQCQPs), its effectiveness on general MINLPs is limited by the difficulty of choosing good fixing values.
+To address this challenge, we propose a graph convolutional network (GCN) that predicts high-quality fixing values for selected variables.
+The model is pretrained using best-known feasible solutions and further optimized through a task-based loss function.
+We integrate our ML-guided Undercover heuristic within the global solver SCIP and evaluate it on benchmark instances from QPLIB and MINLPLIB.
+Computational results demonstrate that the proposed approach improves the performance of the default Undercover implementation in SCIP.
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="time">4:50-5:20</td>
+                <td class="specialtalk" onclick="toggleAbstract('abstract14');">Computational Competition</td>
+                <td class="title"></td>
+              </tr>
+              <tr>
+                <td class="time">4:50-5:25</td>
+                <td class="specialevent">Group photo</td>
+                <td class="title"></td>
+              </tr>
+              <tr>
+                <td class="time">6:00-8:00</td>
+                <td class="meal">Conference Dinner</td>
+                <td class="title">Location: TBA</td>
+              </tr>
+            </tbody>
+          </table>
+        </div> <!-- twelve columns -->
+      </div> <!-- row -->
+      <!-- Day 3 -->
+      <div class="row">
+        <div class="twelve columns">
+          <h3><a title="Day 3" href="#" onclick="toggleSchedule(this);return false;">Wednesday, May 20, 2026</a></h3>
+          <table class="hideme">
+            <tbody>
+              <tr style="background-color: gray; color: white;">
+                <td style="text-align: center;">Time</td>
+                <td>Event</td>
+                <td>Details</td>
+              </tr>
+              <tr>
+                <td class="time">9:00-9:15</td>
+                <td class="meal">Registration</td>
+                <td>Location: <a href="https://classrooms.uconn.edu/classroom/dwtn-109-a1/">DWTN 109 (A1)</a></td>
+              </tr>
+              <tr>
+                <td class="time">9:15-9:25</td>
+                <td class="specialevent">Opening Remarks</td>
+                <td>Location: <a href="https://classrooms.uconn.edu/classroom/dwtn-109-a1/">DWTN 109 (A1)</a></td>
+              </tr>
+              <tr>
+                <td class="time">9:30-10:00</td>
+                <td class="speaker" onclick="toggleAbstract('abstract15');">Rebekah Herrman (University of Tennessee)</td>
+                <td class="title">
+               </td>
+              </tr>
+              <tr>
+                <td class="time">10:05-10:30</td>
+                <td class="specialtalk" onclick="toggleAbstract('abstractflash3');">Flash talks</td>
+                <td class="title">
+                </td>
+              </tr>
+              <tr>
+                <td class="time">10:30-10:55</td>
+                <td class="meal">Coffee break</td>
+                <td class="title"></td>
+              </tr>
+              <tr>
+                <td class="time">10:55-11:25</td>
+                <td class="speaker" onclick="toggleAbstract('abstract15');">Yongchun Li (Chinese University of Hong Kong, Shenzhen)</td>
+                <td class="title">
+                  <span>
+                    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+A Geometric Perspective on Polynomially Solvable Convex Maximization
+                    </a>
+<!--
+                    [<strong><a href="slides/.pdf">Slides</a></strong>]
+--!>
+                  </span>
+                  <div class="hideme abstract">
+                    <p><strong>Abstract:</strong>
+Convex maximization arises in many applications but is generally NP-hard, even for low-rank objectives.
+This paper introduces a set of broadly applicable conditions that certify when such problems are polynomially solvable.
+Our main condition is a new property of the feasible set, which we term comonotonicity.
+We show that this property holds for two important families: matroids and permutation-invariant sets.
+Under comonotonicity and mild additional assumptions, we develop a geometric framework that generates polynomially many candidate solutions, one of which is optimal.
+This yields a polynomial-time algorithm.
+We further derive substantially sharper complexity bounds when the feasible set is permutation-invariant.
+Our framework recovers existing tractable instances and often improves their complexity.
+It also expands the frontier of tractability by providing the first polynomial-time guarantees for new applications.
+                    </p>
+                    <p>
+This is joint work with Shaoning Han and Liangju Li from National University of Singapore.
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="time">11:30-12:00</td>
+                <td class="speaker" onclick="toggleAbstract('abstract16');">Laurent Michel (University of Connecticut)</td>
+                <td class="title">
+                </td>
+              </tr>
+              <tr>
+                <td class="time">12:00-2:00</td>
+                <td class="meal">Lunch (not included!)</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time">2:05-2:35</td>
+                <td class="speaker" onclick="toggleAbstract('abstract17');">Karmel Shehadeh (University of Southern California)</td>
+                <td class="title">
+                  <span>
+                    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+Fairness-promoting Integer Programming Approaches For Medical Resident Rotation Scheduling
+                    </a>
+<!--
+                    [<strong><a href="slides/.pdf">Slides</a></strong>]
+--!>
+                  </span>
+                  <div class="hideme abstract">
+                    <p><strong>Abstract:</strong>
+Motivated by our collaboration with a residency program at an academic health system, we propose new integer programming (IP) approaches for the resident-to-rotation assignment problem (RRAP).
+Given sets of residents, resident classes, and departments, as well as a block structure for each class, staffing needs, rotation requirements for each class, program rules, and resident vacation requests, the RRAP involves finding a feasible year-long rotation schedule that specifies resident assignments to rotations and vacation times.
+We first present an IP formulation for the RRAP, which mimics the manual method for generating rotation schedules in practice and can be easily implemented and efficiently solved using off-the-shelf solvers.
+However, it can lead to disparities in satisfying vacation requests among residents.
+To mitigate such disparities, we derive a fairness-promoting counterpart that finds an optimal rotation schedule, maximizing the number of satisfied vacation requests while minimizing a measure of disparity in satisfying these requests.
+Then, we propose a computationally efficient Pareto Search Algorithm capable of finding the complete set of Pareto optimal solutions to the fairness-promoting IP within a time that is suitable for practical implementation.
+Additionally, we present a user-friendly tool that implements the proposed models to automate the generation of the rotation schedule.
+Finally, we construct diverse RRAP instances based on data from our collaborator and conduct extensive experiments to illustrate the potential practical benefits of our proposed approaches.
+Our results demonstrate the computational efficiency and implementability of our approaches and underscore their potential to enhance fairness in resident rotation scheduling.
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="time">2:40-3:10</td>
+                <td class="speaker" onclick="toggleAbstract('abstract18');">Oliver Hinder (University of Pittsburgh)</td>
+                <td class="title">
+                  <span>
+                    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+PDLP: A Practical First-Order Method for Large-Scale Linear Programming
+                    </a>
+<!--
+                    [<strong><a href="slides/.pdf">Slides</a></strong>]
+--!>
+                  </span>
+                  <div class="hideme abstract">
+                    <p><strong>Abstract:</strong>
+PDLP is a first-order method for linear programming based on a standard first-order method, PDHG, combined with several novel heuristics.
+This talk will discuss the ideas behind the primal weight, feasibility polishing and restart heuristics for PDLP, and showcase our latest results on a newly constructed suite of large-scale linear programming problems.
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="time">3:10-3:40</td>
+                <td class="meal">Coffee break</td>
+                <td class="title"></td>
+              </tr>
+              <tr>
+                <td class="time">3:40-4:15</td>
+                <td class="speaker" onclick="toggleAbstract('abstract19');">Leona Gottwald (Hexaly)</td>
+                <td class="title">
+                </td>
+              </tr>
+              <tr>
+                <td class="time">4:15-4:50</td>
+                <td class="specialevent">MIPS Business Meeting</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="time">5:30-8:00</td>
+                <td class="meal">Optional activity</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div> <!-- twelve columns -->
+      </div> <!-- row -->
+      <!-- Day 4 -->
+      <div class="row">
+        <div class="twelve columns">
+          <h3><a title="Day 4" href="#" onclick="toggleSchedule(this);return false;">Thursday, May 21, 2026</a></h3>
+          <table class="hideme">
+            <tbody>
+              <tr style="background-color: gray; color: white;">
+                <td style="text-align: center;">Time</td>
+                <td>Event</td>
+                <td>Details</td>
+              </tr>
+              <tr>
+                <td class="time">9:00-9:15</td>
+                <td class="meal">Registration</td>
+                <td>Location: <a href="https://classrooms.uconn.edu/classroom/dwtn-109-a1/">DWTN 109 (A1)</a></td>
+              </tr>
+              <tr>
+                <td class="time">9:15-9:25</td>
+                <td class="specialevent">Opening Remarks</td>
+                <td>Location: <a href="https://classrooms.uconn.edu/classroom/dwtn-109-a1/">DWTN 109 (A1)</a></td>
+              </tr>
+              <tr>
+                <td class="time">9:30-10:00</td>
+                <td class="speaker" onclick="toggleAbstract('abstract20');">Diego Moran (Rensselaer Polytechnic Institute)</td>
+                <td class="title">
+               </td>
+              </tr>
+              <tr>
+                <td class="time">10:05-10:30</td>
+                <td class="specialtalk" onclick="toggleAbstract('abstractflash4');">Flash talks</td>
+                <td class="title">
+                </td>
+              </tr>
+              <tr>
+                <td class="time">10:30-10:55</td>
+                <td class="meal">Coffee break</td>
+                <td class="title"></td>
+              </tr>
+              <tr>
+                <td class="time">10:55-11:25</td>
+                <td class="speaker" onclick="toggleAbstract('abstract21');">Sven Leyffer (Argonne National Lab)</td>
+                <td class="title">
+                </td>
+              </tr>
+              <tr>
+                <td class="time">4:15-4:50</td>
+                <td class="specialevent">Concluding remarks</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div> <!-- twelve columns -->
+      </div> <!-- row -->
+    </div> <!-- mainstyle2 -->
 
   <div class="mainstyle1">
     <div class="container">
