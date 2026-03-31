@@ -226,7 +226,7 @@
                   </a>
 --!>
 <!--
-                  [<strong><a href="slides/2025-06-04 - Talks - Tobias Achterberg.pdf">Slides</a></strong>]
+                  [<strong><a href="slides/.pdf">Slides</a></strong>]
 --!>
 <!--
                 </span>
@@ -242,50 +242,50 @@
 --!>
               <li>
                 Andre A. Cire (University of Toronto),
-                <span>
-                  <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                  <span>
+                    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
 Coupling in Dynamic Systems: A Polyhedral Perspective
-                  </a>
+                    </a>
 <!--
-                  [<strong><a href="slides/2025-06-04 - Talks - Tobias Achterberg.pdf">Slides</a></strong>]
+                    [<strong><a href="slides/.pdf">Slides</a></strong>]
 --!>
-                </span>
-                <div class="hideme abstract">
-                  <p><strong>Abstract:</strong>
+                  </span>
+                  <div class="hideme abstract">
+                    <p><strong>Abstract:</strong>
 Many stochastic dynamic systems can be modeled as collections of interacting components linked by shared combinatorial constraints.
 Canonical examples include inventory allocation over time, tour scheduling under capacity limits, and healthcare resource management across patient classes.
 A widely used approximation paradigm applies Lagrangian or fluid relaxations that decompose the system into marginal flow models for individual components, enforcing coupling constraints only through post-processing steps such as sampling, projection, or rounding.
-                  </p>
-                  <p>
+                    </p>
+                    <p>
 We show that this paradigm implicitly follows an allocate-then-correct structure: it first allocates probability mass over actions using a linear program defined on a marginal flow relaxation, and only afterward projects the resulting solution onto the feasible action space.
 From a polyhedral standpoint, the marginal relaxation can strictly contain the convex hull of feasible joint actions, introducing fractional action distributions that are not implementable by any feasible policy.
 This structural gap induces an aggregate infeasibility bias, forcing corrective adjustments that may substantially degrade policy performance and increase the need for repeated reoptimization.
-                  </p>
-                  <p>
+                    </p>
+                    <p>
 To address this limitation, we reverse the underlying logic.
 Instead of relaxing the feasible action set, we construct marginalized linear programs over the convex hull of feasible action subsets, yielding a strictly strengthened formulation that enforces coupling constraints by construction.
 The resulting models admit an interpretation as extended formulations of the underlying action polytope and eliminate the need for ex post correction.
 Furthermore, any polynomial-time approximation algorithm for generating feasible action sets induces a tractable corresponding approximate extended formulation of the action polytope, with the approximation ratio translating directly into bounds on the model performance.
-                  </p>
-                  <p>
+                    </p>
+                    <p>
 Building on these models, we introduce a new policy class that enforces feasibility by construction and eliminates the need for corrective rounding.
 Computational experiments on dynamic assortment and maintenance problems illustrate regimes in which convexified formulations reduce infeasibility corrections, improve stability, and outperform classical fluid relaxations.
 Beyond these applications, the results suggest a broader methodological principle: in coupled dynamic systems, convexification of feasible action sets can provide a structurally stronger alternative to marginal flow relaxations.
-                  </p>
-                </div>
+                    </p>
+                  </div>
               </li>
               <li>
-                Shuvomoy Das Gupta (Rice University),
-                <span>
-                  <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                  Shuvomoy Das Gupta (Rice University),
+                  <span>
+                    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
 On the O(1/T) Convergence of Alternating Gradient Descent-Ascent in Bilinear Games
-                  </a>
+                    </a>
 <!--
-                  [<strong><a href="slides/2025-06-04 - Talks - Tobias Achterberg.pdf">Slides</a></strong>]
+                    [<strong><a href="slides/.pdf">Slides</a></strong>]
 --!>
-                </span>
-                <div class="hideme abstract">
-                  <p><strong>Abstract:</strong>
+                  </span>
+                  <div class="hideme abstract">
+                    <p><strong>Abstract:</strong>
 We study the alternating gradient descent-ascent (AltGDA) algorithm in two-player zero-sum games.
 Alternating methods, where players take turns to update their strategies, have long been recognized as simple and practical approaches for learning in games, exhibiting much better numerical performance than their simultaneous counterparts.
 However, our theoretical understanding of alternating algorithms remains limited, and results are mostly restricted to the unconstrained setting.
@@ -294,72 +294,72 @@ This is the first result showing that alternation improves over the simultaneous
 For games without an interior equilibrium, we show an $\mathcal{O}(1/T)$ local convergence rate with a constant stepsize that is independent of any game-specific constants.
 In a more general setting, we develop a performance estimation programming (PEP) framework to jointly optimize the AltGDA stepsize along with its worst-case convergence rate.
 The PEP results indicate that AltGDA may achieve an $\mathcal{O}(1/T)$ convergence rate for a finite horizon T, whereas its simultaneous counterpart appears limited to an $\mathcal{O}(1/\sqrt{T})$ rate.
-                  </p>
-                  <p>
+                    </p>
+                    <p>
 Joint work with Tianlong Nan, Garud Iyengar, and Christian Kroer.
-                  </p>
-                </div>
+                    </p>
+                  </div>
               </li>
               <li>
                 Sally Dong (Massachusetts Institute of Technology),
-                <span>
-                  <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                  <span>
+                    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
 Fast algorithms for structured linear programming
-                  </a>
+                    </a>
 <!--
-                  [<strong><a href="slides/2025-06-04 - Talks - Tobias Achterberg.pdf">Slides</a></strong>]
+                    [<strong><a href="slides/.pdf">Slides</a></strong>]
 --!>
-                </span>
-                <div class="hideme abstract">
-                  <p><strong>Abstract:</strong>
+                  </span>
+                  <div class="hideme abstract">
+                    <p><strong>Abstract:</strong>
 An extremely fruitful line of algorithms research over the past decade has been the application of interior point methods alongside data structure design to classical problems in combinatorial optimization.
 In this talk, we consider linear programs of the form $\min \langle c,x \rangle$ subjected to $Ax = b$, $x \geq 0$, where the constraint matrix $A$ has suitable structural properties.
 We present a general framework for solving these structured linear programs that ties together interior point methods and tools across theoretical computer science including graph decomposition, sampling, dynamic algorithms, and numerical linear algebra.
 Our framework in turn yields the fastest-known algorithms for min-cost flow and k-commodity flow on planar graphs, and for min-cost flow and general linear programs on graphs with bounded treewidth.
-                  </p>
-                  <p>
+                    </p>
+                    <p>
 Based on joint work with Yu Gao, Gramoz Goranci, Yin Tat Lee, Lawrence Li, Richard Peng, Sushant Sachdeva, and Guanghao Ye.
-                  </p>
-                </div>
+                    </p>
+                  </div>
               </li>
               <li>
                 Leona Gottwald (Hexaly)
               </li>
               <li>
                 Menal Guzelsoy (SAS),
-                <span>
-                  <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                  <span>
+                    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
 Generating dual solutions for bound tightening in MILP 
-                  </a>
+                    </a>
 <!--
-                  [<strong><a href="slides/2025-06-04 - Talks - Tobias Achterberg.pdf">Slides</a></strong>]
+                    [<strong><a href="slides/.pdf">Slides</a></strong>]
 --!>
-                </span>
-                <div class="hideme abstract">
-                  <p><strong>Abstract:</strong>
+                  </span>
+                  <div class="hideme abstract">
+                    <p><strong>Abstract:</strong>
 Dual solutions in MILP are typically obtained as a by-product of solving LP relaxations at the nodes of the branch-and-bound tree.
 These dual solutions are globally valid and can be leveraged across the tree and reused in other components such as bound tightening.
 However, storing and processing a large number of dual solutions can be computationally expensive.
-                  </p>
-                  <p> 
+                    </p>
+                    <p> 
 In this work, we propose practical methods to generate dual solutions for local use within the search tree.
 In particular, we either modify existing dual solutions or combine multiple dual solutions to produce new ones.
 Furthermore, we investigate primal–dual relationships to better exploit their interaction to improve the effectiveness of bound tightening.
-                  </p>
-                </div>
+                    </p>
+                  </div>
               </li>
               <li>
                 Grani A. Hanasusanto (University of Illinois Urbana-Champaign),
-                <span>
-                  <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                  <span>
+                    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
 Clip-and-Verify: Linear Constraint-Driven Domain Clipping for Accelerating Neural Network Verification
-                  </a>
+                    </a>
 <!--
-                  [<strong><a href="slides/2025-06-04 - Talks - Tobias Achterberg.pdf">Slides</a></strong>]
+                    [<strong><a href="slides/.pdf">Slides</a></strong>]
 --!>
-                </span>
-                <div class="hideme abstract">
-                  <p><strong>Abstract:</strong>
+                  </span>
+                  <div class="hideme abstract">
+                    <p><strong>Abstract:</strong>
 State-of-the-art neural network (NN) verifiers demonstrate that applying the branch-and-bound (BaB) procedure with fast bounding techniques plays a key role in tackling many challenging verification properties.
 In this work, we introduce the linear constraint-driven clipping framework, a class of scalable and efficient methods designed to enhance the efficacy of NN verifiers.
 Under this framework, we develop two novel algorithms that efficiently utilize linear constraints to 1) reduce portions of the input space that are either verified or irrelevant to a subproblem in the context of branch-and-bound, and 2) directly improve intermediate bounds throughout the network.
@@ -368,61 +368,61 @@ It efficiently handles linear constraints using a specialized GPU procedure that
 Our verification procedure, Clip-and-Verify, consistently tightens bounds across multiple benchmarks and can significantly reduce the number of subproblems handled during BaB.
 We show that our clipping algorithms can be integrated with BaB-based verifiers such as $\alpha,\beta$-CROWN, utilizing either the split constraints in activation-space BaB or the output constraints that denote the unverified input space.
 We demonstrate the effectiveness of our procedure on a broad range of benchmarks where, in some instances, we witness a 96% reduction in the number of subproblems during branch-and-bound, and also achieve state-of-the-art verified accuracy across multiple benchmarks.
-                  </p>
-                </div>
+                    </p>
+                  </div>
               </li>
               <li>
                 Rebekah Herrman (University of Tennessee),
-                <span>
-                  <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                  <span>
+                    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
 A matching decomposition algorithm for simulating quantum walk Hamiltonians
-                  </a>
+                    </a>
 <!--
-                  [<strong><a href="slides/2025-06-04 - Talks - Tobias Achterberg.pdf">Slides</a></strong>]
+                    [<strong><a href="slides/.pdf">Slides</a></strong>]
 --!>
-                </span>
-                <div class="hideme abstract">
-                  <p><strong>Abstract:</strong>
+                  </span>
+                  <div class="hideme abstract">
+                    <p><strong>Abstract:</strong>
 Hamiltonian simulation is one of the first proposed uses for quantum computers.
 In order to perform Hamiltonian simulation, one has to encode the Hamiltonian, which describes the dynamics of a quantum system, into a quantum computer.
 This can be challenging since current quantum computers are limited in size and connectivity, and are prone to error.
 In this work, we introduce a graph matching algorithm for approximating continuous-time quantum walk Hamiltonians.
 The algorithm requires only polynomial classical overhead and results in smaller circuits (and therefore higher fidelity output) than Pauli decomposition, a standard algorithm used to decompose Hamiltonians, for sparse graphs.
-                  </p>
-                </div>
+                    </p>
+                  </div>
               </li>
               <li>
                 Oliver Hinder (University of Pittsburgh),
-                <span>
-                  <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                  <span>
+                    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
 PDLP: A Practical First-Order Method for Large-Scale Linear Programming
-                  </a>
+                    </a>
 <!--
-                  [<strong><a href="slides/2025-06-04 - Talks - Tobias Achterberg.pdf">Slides</a></strong>]
+                    [<strong><a href="slides/.pdf">Slides</a></strong>]
 --!>
-                </span>
-                <div class="hideme abstract">
-                  <p><strong>Abstract:</strong>
+                  </span>
+                  <div class="hideme abstract">
+                    <p><strong>Abstract:</strong>
 PDLP is a first-order method for linear programming based on a standard first-order method, PDHG, combined with several novel heuristics.
 This talk will discuss the ideas behind the primal weight, feasibility polishing and restart heuristics for PDLP, and showcase our latest results on a newly constructed suite of large-scale linear programming problems.
-                  </p>
-                </div>
+                    </p>
+                  </div>
               </li>
               <li>
                 Kibaek Kim (Argonne National Lab)
               </li>
               <li>
                 Rohit Kannan (Virginia Tech),
-                <span>
-                  <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                  <span>
+                    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
 Machine Learning-Guided Undercover for Mixed-Integer Nonlinear Programs
-                  </a>
+                    </a>
 <!--
-                  [<strong><a href="slides/2025-06-04 - Talks - Tobias Achterberg.pdf">Slides</a></strong>]
+                    [<strong><a href="slides/.pdf">Slides</a></strong>]
 --!>
-                </span>
-                <div class="hideme abstract">
-                  <p><strong>Abstract:</strong>
+                  </span>
+                  <div class="hideme abstract">
+                    <p><strong>Abstract:</strong>
 We design a machine learning (ML)-guided enhancement of the Undercover primal heuristic for mixed-integer nonlinear programs (MINLPs).
 Undercover identifies a subset of variables to fix and assigns them values, thereby restricting the MINLP to a mixed-integer linear program (MILP) that can be solved using off-the-shelf solvers to potentially obtain a feasible solution.
 While Undercover performs well on mixed-integer quadratically constrained quadratic programs (MIQCQPs), its effectiveness on general MINLPs is limited by the difficulty of choosing good fixing values.
@@ -430,24 +430,24 @@ To address this challenge, we propose a graph convolutional network (GCN) that p
 The model is pretrained using best-known feasible solutions and further optimized through a task-based loss function.
 We integrate our ML-guided Undercover heuristic within the global solver SCIP and evaluate it on benchmark instances from QPLIB and MINLPLIB.
 Computational results demonstrate that the proposed approach improves the performance of the default Undercover implementation in SCIP.
-                  </p>
-                </div>
+                    </p>
+                  </div>
               </li>
               <li>
                 Sven Leyffer (Argonne National Lab)
               </li>
               <li>
                 Yongchun Li (Chinese University of Hong Kong, Shenzhen),
-                <span>
-                  <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                  <span>
+                    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
 A Geometric Perspective on Polynomially Solvable Convex Maximization
-                  </a>
+                    </a>
 <!--
-                  [<strong><a href="slides/2025-06-04 - Talks - Tobias Achterberg.pdf">Slides</a></strong>]
+                    [<strong><a href="slides/.pdf">Slides</a></strong>]
 --!>
-                </span>
-                <div class="hideme abstract">
-                  <p><strong>Abstract:</strong>
+                  </span>
+                  <div class="hideme abstract">
+                    <p><strong>Abstract:</strong>
 Convex maximization arises in many applications but is generally NP-hard, even for low-rank objectives.
 This paper introduces a set of broadly applicable conditions that certify when such problems are polynomially solvable.
 Our main condition is a new property of the feasible set, which we term comonotonicity.
@@ -457,13 +457,13 @@ This yields a polynomial-time algorithm.
 We further derive substantially sharper complexity bounds when the feasible set is permutation-invariant.
 Our framework recovers existing tractable instances and often improves their complexity.
 It also expands the frontier of tractability by providing the first polynomial-time guarantees for new applications.
-                  </p>
-                  <p>
+                    </p>
+                    <p>
 This is joint work with Shaoning Han and Liangju Li from National University of Singapore.
-                  </p>
-                </div>
+                    </p>
+                  </div>
               </li>
-			  <li>
+			        <li>
                 Laurent Michel (University of Connecticut)
               </li>
               <li>
@@ -471,36 +471,36 @@ This is joint work with Shaoning Han and Liangju Li from National University of 
               </li>
               <li>
                 Harsha Nagarajan (Los Alamos National Lab),
-                <span>
-                  <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                  <span>
+                    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
 A Generalizable Learning Approach To Accelerate Global Optimization of Quadratically-Constrained Quadratic Programs
-                  </a>
+                    </a>
 <!--
-                  [<strong><a href="slides/2025-06-04 - Talks - Tobias Achterberg.pdf">Slides</a></strong>]
+                    [<strong><a href="slides/.pdf">Slides</a></strong>]
 --!>
-                </span>
-                <div class="hideme abstract">
-                  <p><strong>Abstract:</strong>
+                  </span>
+                  <div class="hideme abstract">
+                    <p><strong>Abstract:</strong>
 Quadratically constrained quadratic programs (QCQPs) form a broad class of nonconvex optimization problems arising in applications such as energy infrastructure networks and pooling, yet they can be slow to solve to global optimality in practice.
 Motivated by the effectiveness, and sensitivity, of partitioning within MIP-based relaxations, we introduce strong partitioning policy: choosing variable-domain partitions to strengthen relaxations while preserving global optimality guarantees.
 Because computing this optimal (oracle) partitioning policy is expensive, we learn an efficient approximation for parameterized families of QCQPs using machine learning.
 Further, we propose a novel end-to-end training objective that directly rewards partitioning schemes with desirable relaxation/algorithmic properties, avoiding reliance on a fixed hand-designed policy as labels, and we develop a graph-based approach that enables a single model to generalize across problem sizes.
 Numerical results show that the learned policies generalize to unseen instances (including new sizes) and significantly reduce the runtime of partitioning-based globally convergent iterative algorithms.
-                  </p>
-                </div>
+                    </p>
+                  </div>
               </li>
               <li>
                 Meike Neuwohner (CNRS &amp; DIENS, ENS Paris - PSL Research University),
-                <span>
-                  <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                  <span>
+                    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
 A Better-Than-2 Approximation for the Directed Tree Augmentation Problem
-                  </a>
+                    </a>
 <!--
-                  [<strong><a href="slides/2025-06-04 - Talks - Tobias Achterberg.pdf">Slides</a></strong>]
+                    [<strong><a href="slides/.pdf">Slides</a></strong>]
 --!>
-                </span>
-                <div class="hideme abstract">
-                  <p><strong>Abstract:</strong>
+                  </span>
+                  <div class="hideme abstract">
+                    <p><strong>Abstract:</strong>
 We introduce and study a directed analogue of the weighted Tree Augmentation Problem (WTAP).
 In the weighted Directed Tree Augmentation Problem (WDTAP), we are given an oriented tree $T = (V, A)$ and a set of directed links $L \subseteq V \times V$ with positive costs.
 The goal is to select a minimum cost set of links which enters each fundamental dicut of $T$ (cuts with one leaving and no entering tree arc).
@@ -511,42 +511,42 @@ We provide an improved $(1.75 + \varepsilon)$-approximation algorithm for WDTAP 
 To obtain this result, we discover a class of instances, called “willows”, for which the natural set covering LP is an integral formulation.
 We further introduce the notion of “visibly k-wide” instances which can be solved exactly using dynamic programming.
 Finally, we show how to leverage these tractable cases to obtain an improved approximation ratio via an elaborate structural analysis of the tree.
-                  </p>
-                  <p>
+                    </p>
+                    <p>
 This result is joint work with Olha Silina and Michael Zlatin and appeared in the proceedings of SODA 2026.
-                </div>
+                  </div>
               </li>
               <li>
                 Alexandra Newman (Colorado School of Mines),
-                <span>
-                  <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                  <span>
+                    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
 Optimization in Heavy Industry
-                  </a>
+                    </a>
 <!--
-                  [<strong><a href="slides/2025-06-04 - Talks - Tobias Achterberg.pdf">Slides</a></strong>]
+                    [<strong><a href="slides/.pdf">Slides</a></strong>]
 --!>
-                </span>
-                <div class="hideme abstract">
-                  <p><strong>Abstract:</strong>
+                  </span>
+                  <div class="hideme abstract">
+                    <p><strong>Abstract:</strong>
 Hallmark features of optimization models in heavy industry are their apparent lack of special structure (often also involving nonlinearities) and the large size of their corresponding instances.
 Therefore, careful formulation and solution techniques are imperative to obtain implementable solutions in an operationally feasible amount of time.
 Drawing on examples from mine planning, steel manufacturing, concentrated solar power production, and power systems, we show how appropriate model scope, identification of initial feasible solutions, tight formulations, correct algorithmic choice, and, in some cases, tailored decomposition schemes, effect implementable actions.
 We conclude with a contrast to light industry.
-                  </p>
-                </div>
+                    </p>
+                  </div>
               </li>
               <li>
-                Karmel S. Shehadeh (University of Southern California),
-                <span>
-                  <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                Karmel Shehadeh (University of Southern California),
+                  <span>
+                    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
 Fairness-promoting Integer Programming Approaches For Medical Resident Rotation Scheduling
-                  </a>
+                    </a>
 <!--
-                  [<strong><a href="slides/2025-06-04 - Talks - Tobias Achterberg.pdf">Slides</a></strong>]
+                    [<strong><a href="slides/.pdf">Slides</a></strong>]
 --!>
-                </span>
-                <div class="hideme abstract">
-                  <p><strong>Abstract:</strong>
+                  </span>
+                  <div class="hideme abstract">
+                    <p><strong>Abstract:</strong>
 Motivated by our collaboration with a residency program at an academic health system, we propose new integer programming (IP) approaches for the resident-to-rotation assignment problem (RRAP).
 Given sets of residents, resident classes, and departments, as well as a block structure for each class, staffing needs, rotation requirements for each class, program rules, and resident vacation requests, the RRAP involves finding a feasible year-long rotation schedule that specifies resident assignments to rotations and vacation times.
 We first present an IP formulation for the RRAP, which mimics the manual method for generating rotation schedules in practice and can be easily implemented and efficiently solved using off-the-shelf solvers.
@@ -556,34 +556,34 @@ Then, we propose a computationally efficient Pareto Search Algorithm capable of 
 Additionally, we present a user-friendly tool that implements the proposed models to automate the generation of the rotation schedule.
 Finally, we construct diverse RRAP instances based on data from our collaborator and conduct extensive experiments to illustrate the potential practical benefits of our proposed approaches.
 Our results demonstrate the computational efficiency and implementability of our approaches and underscore their potential to enhance fairness in resident rotation scheduling.
-                  </p>
-                </div>
+                    </p>
+                  </div>
               </li>
               <li>
                 Alex L. Wang (Purdue University),
-                <span>
-                  <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+                  <span>
+                    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
 An Invitation to Subgame Perfect First-Order Method Design
-                  </a>
+                    </a>
 <!--
-                  [<strong><a href="slides/2025-06-04 - Talks - Tobias Achterberg.pdf">Slides</a></strong>]
+                    [<strong><a href="slides/.pdf">Slides</a></strong>]
 --!>
-                </span>
-                <div class="hideme abstract">
-                  <p><strong>Abstract:</strong>
+                  </span>
+                  <div class="hideme abstract">
+                    <p><strong>Abstract:</strong>
 The study of first-order methods for convex optimization has historically been framed in terms of <i>a priori</i> worst-case convergence rates/guarantees.
 Within this paradigm, recent advances in the Performance Estimation Program (PEP) framework have enabled the discovery of provably minimax-optimal algorithms.
 While natural and powerful, an exclusive focus on <i>a priori</i> worst-case guarantees limits our ability to reason about <i>dynamic, beyond worst-case</i> behavior.
 To address this gap, we adopt a game-theoretic view of algorithm design inspired by subgame perfection.
 This lens allows us to formalize and analyze dynamically optimal, subgame perfect algorithms and their relaxations, thereby capturing stronger notions of dynamic optimality.
-                  </p>
-                  <p>
+                    </p>
+                    <p>
 This talk serves as an introduction to the PEP framework and the recent advances in subgame perfect algorithm design.
-                  </p>
-                  <p>
+                    </p>
+                    <p>
 Based on joint work with Benjamin Grimmer and Kevin Shu
-                  </p>
-                </div>
+                    </p>
+                  </div>
               </li>
               <li>
                 Cathy Wu (Massachusetts Institute of Technology)
@@ -647,7 +647,7 @@ Based on joint work with Benjamin Grimmer and Kevin Shu
                 <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
                   The Augmented Factorization Bound for Maximum-Entropy Sampling
                 </a>
-                <strong>[<a href="slides/2025-06-03 - Flash Talks - Yongchun Li.pdf">Slides</a>]</strong>
+                <strong>[<a href="slides/.pdf">Slides</a>]</strong>
               </span>
               <div class="hideme abstract">
                 <p><strong>Abstract:</strong>
@@ -662,7 +662,7 @@ Based on joint work with Benjamin Grimmer and Kevin Shu
                 <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
                   Tightening convex relaxations of trained neural networks: a unified approach for convex and S-shaped activations
                 </a>
-                <strong>[<a href="slides/2025-06-04 - Flash Talks - Gonzalo Muñoz.pdf">Slides</a>]</strong>
+                <strong>[<a href="slides/.pdf">Slides</a>]</strong>
               </span>
               <div class="hideme abstract">
                 <p><strong>Abstract:</strong>
@@ -691,7 +691,7 @@ Based on joint work with Benjamin Grimmer and Kevin Shu
                 <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
                   Some preprocessing and polyhedral results on facility location with preferences
                 </a>
-                <strong>[<a href="slides/2025-06-03 - Flash Talks - Sergio García Quiles.pdf">Slides</a>]</strong>
+                <strong>[<a href="slides/.pdf">Slides</a>]</strong>
               </span>
               <div class="hideme abstract">
                 <p><strong>Abstract:</strong>
