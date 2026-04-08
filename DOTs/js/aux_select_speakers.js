@@ -54,6 +54,7 @@ export function create_speaker_table(speakers, container, bound) {
   const modalTitle = document.getElementById("abstract-title");
   const modalText = document.getElementById("abstract-text");
   const modalClose = document.getElementById("close-modal");
+  const modalContent = document.getElementById("abstract-content");
 
   modalClose.onclick = () => modal.style.display = "none";
   modal.onclick = (e) => {
@@ -109,13 +110,14 @@ export function create_speaker_table(speakers, container, bound) {
     const titleCell = document.createElement("td");
     titleCell.className = "p-2 text-blue-700 underline cursor-pointer";
     titleCell.textContent = speaker.title;
+    titleCell.style = "min-width: 250px;";
 
     // When clicked → show popup
     titleCell.addEventListener("click", () => {
       modalTitle.textContent = speaker.title;
       modalText.textContent = speaker.abstracttext ?? "No abstract available.";
       modalText.innerHTML = speaker.abstracttext.replace(/\n/g, "<br>");
-      modal.style.display = "flex"; 
+      modal.style.display = "flex";
     });
 
     row.appendChild(titleCell);
