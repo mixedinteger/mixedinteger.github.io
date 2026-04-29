@@ -324,6 +324,34 @@ Based on joint work with Yu Gao, Gramoz Goranci, Yin Tat Lee, Lawrence Li, Richa
               </li>
               <li>
                 Fred Gardi (Hexaly)
+				<span>
+                    <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
+Beyond MILP: Hexaly, a Hybrid Optimization Solver
+                    </a>
+<!--
+                    [<strong><a href="slides/.pdf">Slides</a></strong>]
+--!>
+                  </span>
+                  <div class="hideme abstract">
+                    <p><strong>Abstract:</strong>
+Mixed‑Integer Linear Programming (MILP) has been the dominant optimization framework in Operations Research for several decades. 
+While it has proven extremely powerful, it is also well known that MILP formulations can become unwieldy when confronted with large‑scale,
+highly combinatorial, non‑convex, or structurally rich problems, particularly in application domains such as routing, scheduling, and packing.
+                    </p>
+                    <p> 
+Hexaly is an industrial optimization solver built around a hybrid, post‑MILP approach. Rather than relying primarily on linearization
+techniques and classical branch‑and‑bound‑centered workflows, it combines heuristic and exact methods and draws inspiration from multiple paradigms,
+including Mixed‑Integer Programming, Constraint Programming, Nonlinear Programming, and Black‑Box Optimization.
+A central design objective is modeling expressiveness and openness: enabling users to formulate problems closer to their natural combinatorial structure,
+while allowing diverse algorithmic components to interact in a complementary manner.
+                    </p>
+					<p>
+In this talk, I will present the guiding principles behind this approach, with a particular focus on discrete optimization problems where Hexaly
+currently demonstrates its strongest performance, such as large‑scale routing, scheduling, and packing. I will discuss how hybridization manifests
+not only at the algorithmic level, but also—crucially—within the modeling layer. Finally, I will provide a transparent overview of the solver’s
+current algorithmic status, supported by selected performance benchmarks.
+					</p>
+                  </div>
               </li>
               <li>
                 Menal Guzelsoy (SAS),
