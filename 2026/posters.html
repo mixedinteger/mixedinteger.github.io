@@ -714,8 +714,37 @@ Progressive Integrality Outer-Inner Approximation for AC Unit Commitment with Co
                 </a>
               </span>
               <div class="hideme abstract">
-                <p><strong>Abstract:</strong>
-
+                <p>
+<strong>Motivation.</strong>
+Mixed-integer second-order conic programs (MISOCPs) are increasingly used to model complex systems with nonlinear constraints, such as second-order cone (SOC) relaxations of AC unit commitment (AC-UC), but remain challenging to solve at scale.
+Outer approximation (OA) is a natural framework for such problems, yet it often suffers from slow convergence due to weak relaxations in early iterations and the need to repeatedly solve expensive mixed-integer master problems.
+As a result, existing OA approaches struggle to balance bound improvement and computational cost effectively.
+This motivates the development of new algorithmic strategies that strengthen relaxations early while postponing costly integrality decisions.
+                </p>
+                <p>
+<strong>Key Idea.</strong>
+Our key insight is that, for large-scale MISOCPs such as AC-UC, the efficiency of OA depends critically on how integrality is introduced throughout the algorithm.
+Enforcing integrality too early leads to expensive master problems, while relying solely on continuous relaxations results in weak approximations and slow progress.
+We therefore treat integrality as a progressively activated modeling component rather than a fixed requirement from the outset.
+This perspective yields a more balanced OA framework that allocates combinatorial effort only when it becomes algorithmically valuable.
+                </p>
+                <p>
+<strong>Method Overview.</strong>
+We implement this idea within an outer-inner approximation framework.
+The master problem is a linear relaxation that accumulates cutting planes, while the subproblem is a continuous convex conic program obtained by fixing the binary variables.
+The subproblem provides both a valid upper bound and dual-based (Benders-type, time-block-split) cuts, which are added to the master problem to refine the approximation.
+Within this framework, we progressively enforce integrality in the master problem.
+The algorithm begins with an LP-based OA phase, where all integer variables are relaxed and cuts are generated to strengthen the relaxation at low cost.
+It then transitions to a partial integrality phase, in which integrality is imposed on a subset of variables, leading to smaller mixed-integer master problems that further tighten the formulation.
+Finally, the full mixed-integer master problem is solved within the same outer–inner framework.
+This staged design balances relaxation strength and computational effort throughout the solution process.
+                </p>
+                <p>
+<strong>Results and Impact.</strong>
+We evaluate the proposed framework on standard AC-UC benchmark instances, including 200-bus and 500-bus systems. Computational results show that the proposed method significantly improves performance compared to both a standard OA approach and commercial solvers, while providing more robust convergence across multiple load scenarios.
+The proposed framework suggests a new perspective on handling integrality in OA-based algorithms by treating it as a progressively activated component.
+This idea is broadly applicable to large-scale mixed-integer convex optimization and has the potential to improve solution strategies
+beyond AC-UC.
                 </p>
               </div>
             </li>
@@ -743,7 +772,18 @@ Fast Neural Value Function Surrogates for Nested Mixed-Integer Programs
               </span>
               <div class="hideme abstract">
                 <p><strong>Abstract:</strong>
-
+Mathematical optimization is an invaluable framework for modeling and solving decision-making problems, with many successes in deterministic single-level settings (e.g., mixed-integer linear or nonlinear optimization).
+However, many real-world problems require accounting for uncertainty or the reaction of another agent.
+Paradigms such as stochastic programming, bilevel optimization, and robust optimization can model these settings, but are significantly more computationally challenging than their deterministic counterparts, especially when discrete decisions are involved.
+                </p>
+                <p>
+This work presents a unified framework based on neural value function approximation, in which expensive nested optimization problems are replaced with learned surrogates that can be efficiently optimized over.
+We show how this approach can be adapted to stochastic programming, robust optimization, and bilevel optimization.
+Empirically, our methods achieve solution quality comparable to, and in some cases significantly better than, state-of-the-art algorithms across all three domains, often within a fraction of the running time.
+The datasets and corresponding frameworks, Neur2SP (NeurIPS’22), Neur2RO (ICLR’24), and Neur2BiLO (NeurIPS’24), are open-sourced to support further research.
+                </p>
+                <p>
+This work is based on joint work with Rahul Patel, Esther Julien, Jannis Kurtz, Merve Bodur, and Elias Khalil.
                 </p>
               </div>
             </li>
@@ -757,7 +797,40 @@ GPU-Friendly and Linearly Convergent First-Order Methods for Certifying Optimal 
               </span>
               <div class="hideme abstract">
                 <p><strong>Abstract:</strong>
-
+Sparse generalized linear models (GLMs) are essential tools in machine learning and statistics,
+with broad applications in healthcare, finance, engineering, and science.
+In this work, we study the global optimization of cardinality-constrained GLMs.
+While many scalable approaches rely on convex surrogates, such as the lasso, or other heuristics, these approximations can yield poor
+solutions in the presence of high-dimensional or highly correlated features.
+This limitation is particularly problematic in high-stakes applications such as healthcare, where accuracy, reliability,
+and interpretability are essential.
+We therefore focus on certifiably optimal solutions to the exact l0-constrained formulation.
+                </p>
+                <p>
+These problems are NP-hard, and a standard approach is to solve them with mixed-integer programming using branch-and-bound (BnB), which requires valid lower bounds at every node of the search tree.
+We focus on computing these lower bounds by solving perspective relaxations, which are strong but computationally challenging for large instances.
+Interior-point methods are a standard option, but they do not scale well because they rely on solving linear systems, have cubic
+worst-case complexity in the number of variables, and are difficult to parallelize on modern hardware such as GPUs.
+First-order methods are more scalable and warm-start friendly, but to truly benefit from GPUs they must avoid expensive subroutines that cannot be parallelized.
+Moreover, for use inside BnB, they must generate valid lower bounds with strong convergence guarantees, not merely
+good primal iterates.
+                </p>
+                <p>
+This motivates the central question of our work: can we solve perspective relaxations within BnB and obtain valid lower bounds using a GPU-friendly first-order method with provable linear convergence?
+Our answer is positive.
+We first reformulate the perspective relaxation as an unconstrained convex composite problem with a novel nonsmooth regularizer implicitly defined by the perspective function.
+We then analyze a more general composite structure and uncover two favorable geometric properties.
+Under suitable regularity conditions, the primal problem satisfies quadratic growth, while the dual problem satisfies quadratic decay, a dual counterpart to primal quadratic growth.
+By exploiting these properties, we propose a gap-based restart scheme that applies broadly to convex composite problems beyond perspective relaxations.
+                </p>
+                <p>
+This scheme accelerates a broad class of proximal methods, including fixed-stepsize, linesearch-based, and linesearch-free variants, and gives provable linear convergence rates for both primal and dual objectives and sequences.
+For sparse GLMs, we prove that the implicit perspective regularizer satisfies the required geometric conditions and show that both its function value and proximal operator can be evaluated exactly in log-linear time.
+This enables efficient, GPU-friendly first-order methods without solving expensive conic subproblems.
+Experiments on synthetic and real-world datasets show one-to-two-orders-of-magnitude speedups on CPUs, with an additional order-of-magnitude improvement on GPUs, for computing dual bounds and certifying optimal solutions of large-scale sparse GLMs.
+                </p>
+                <p>
+This is joint work with Andrea Lodi and Soroosh Shafiee.
                 </p>
               </div>
             </li>
@@ -799,7 +872,19 @@ Neural-Embedded Mixed-Integer Optimization for Vehicle Routing Problems
               </span>
               <div class="hideme abstract">
                 <p><strong>Abstract:</strong>
-
+A large class of vehicle routing problems can be viewed as a two-level combinatorial problem: first assign customers to centers (e.g., vehicles, depots, satellites, or days) and then solve an induced routing subproblem at each center.
+This structure is natural in applications, but computationally difficult for optimization.
+Indeed, even the basic capacitated vehicle routing problem is NP-hard, and the cost of an assignment depends on the downstream routing problem rather than a simple linear expression.
+As a result, existing methods have relied on exact arc-based or route-based formulations or on customized (meta)heuristics.
+                </p>
+                <p>
+We propose a neural-embedded mixed-integer optimization framework for this broad class of structurally decomposable routing problems.
+The key observation is that the induced routing cost at a center depends on the set of assigned customers and is therefore permutation-invariant.
+We exploit this structure by training a Deep Sets surrogate to predict routing cost from assigned-customer features, and then embed the trained predictor directly within a MIP using recent tools for optimization over trained neural networks.
+The resulting model stays at the assignment level, can be handled by off-the-shelf MIP solvers, and accommodates application-specific side constraints without designing a new heuristic for each variant.
+                </p>
+                <p>
+We will present location-routing as a concrete testbed and briefly discuss offline model-based routing optimization as a broader application in which learned surrogates capture behavior-driven routing costs from historical data.
                 </p>
               </div>
             </li>
@@ -827,7 +912,12 @@ Supplier Selection and Order Allocation in a Decentralized Supply Chain consider
               </span>
               <div class="hideme abstract">
                 <p><strong>Abstract:</strong>
-
+Outsourcing materials and components in manufacturing systems has become a turning point in modern supply chain management to facilitate high performance and business growth in an interconnected world.
+This trend has made supplier selection and order lot-sizing critical for businesses, leading to studies focused on optimizing these decisions driven by the need to improve efficiency.
+In this research work, we study a supplier selection and order allocation problem in a decentralized three-stage supply chain with price sensitive demand for products.
+A mixed integer nonlinear programming model is proposed with the objective of maximizing the overall supply chain profit while applying a profit-sharing policy that ensures a fair distribution of profit among all participating partners.
+To help overcome a possible negative impact due to profit-sharing, we have developed a price-shifting mechanism to adjust the price of materials produced by suppliers to guarantee the selection of the most efficient vendors.
+Computational results show that the price-shifting process has a positive influence on the supply chain’s performance as profit increases. 
                 </p>
               </div>
             </li>
@@ -841,7 +931,14 @@ Closing the Gap: Efficient  Algorithms for Discrete Wasserstein Barycenters
               </span>
               <div class="hideme abstract">
                 <p><strong>Abstract:</strong>
-
+The Wasserstein barycenter problem seeks a probability measure that minimizes the weighted average of the Wasserstein distances to a given collection of probability measures.
+We study the discrete setting, where each measure has finite support — a regime that frequently arises in machine learning and operations research.
+The discrete Wasserstein barycenter problem is known to be NP-hard, which motivates us to study approximation algorithms with provable
+guarantees.
+The best-known algorithm to date achieves an approximation ratio of two.
+We close this gap by developing a polynomial-time approximation scheme (PTAS) for the discrete Wasserstein barycenter problem that generalizes and improves upon the 2-approximation method.
+In addition, for the special case of equally weighted measures, we obtain a strictly tighter approximation guarantee.
+Numerical experiments show that the proposed algorithms are computationally efficient and produce near-optimal barycenter solutions.
                 </p>
               </div>
             </li>
@@ -855,7 +952,18 @@ Chance-Constrained Maximum Clique Problem
               </span>
               <div class="hideme abstract">
                 <p><strong>Abstract:</strong>
-
+The Maximum Clique Problem (MCP) is a fundamental combinatorial optimization problem with numerous applications in computer science, operations research, and data analysis.
+The goal is to find the largest subset of vertices for a simple graph such that every pair of vertices in the subset is connected by an edge (i.e., the induced subgraph is a clique).
+However, in many real-world networks, connections can be inherently uncertain, and ignoring this uncertainty may lead to models that do not accurately reflect reality.
+In this work, we study the Chance-Constrained Maximum Clique Problem on random graphs, also referred to as the Maximum Probabilistic Clique Problem (MPCP), in which each edge exists independently with a given probability and the goal is to identify a largest vertex subset whose induced subgraph forms a clique with probability at least θ.
+                </p>
+                <p>
+We develop an exact mixed-integer linear programming (MILP) formulation for MPCP by leveraging the complement graph structure and introducing edge variables to capture interactions among selected vertices.
+By exploiting a logarithmic transformation of the chance constraint, the probabilistic requirement can be reformulated as a fractional knapsack constraint over edge variables, yielding an MILP formulation with a polynomial number of constraints.
+To solve this formulation efficiently, we propose a hybrid decomposition framework that combines delayed constraint generation (DCG) with Lagrangian-based cuts.
+The DCG procedure dynamically enforces linking constraints between vertex and edge variables, while solving Lagrangian relaxation problem produces valid cuts that strengthen the formulation.
+This separation of fractional knapsack structure and pairwise linking constraints leads to a more effective solution process compared to directly applying state-of-the-art MILP solvers.
+Computational experiments on a variety of random graphs validate the effectiveness of the proposed methods, which are specifically tailored to the probabilistic and combinatorial structure of the problem.
                 </p>
               </div>
             </li>
@@ -869,7 +977,15 @@ Valid Inequalities for Binary Bilevel Problems with Lower-Level Graph Reformulat
               </span>
               <div class="hideme abstract">
                 <p><strong>Abstract:</strong>
-
+Bilevel optimization is a powerful modeling paradigm, and valid inequalities play a central role in its solution.
+Existing methods largely focus on eliminating bilevel-infeasible integer points within branch-and-cut frameworks.
+In contrast, we study binary bilevel problems whose lower level admits a shortest-path reformulation and, to the best of our knowledge, provide the first systematic investigation of the underlying mixed-integer set to exclude fractional solutions as well.
+Leveraging a disjunctive programming framework, we characterize the space of valid inequalities for bilevel-feasible integer points and reveal a fundamental connection to flow structures on the follower’s graph.
+Building on this perspective, we derive new classes of inequalities and propose a strengthening procedure for value-function cuts informed by these families, which remains effective in the absence of an explicit graph reformulation.
+Preliminary computational results will be presented and discussed.
+                </p>
+                <p>
+This is joint work with Bruno Machado Pacheco and Margarida Carvalho.
                 </p>
               </div>
             </li>
