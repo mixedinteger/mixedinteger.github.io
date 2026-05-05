@@ -9,6 +9,17 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
+  <!-- MathJax -->
+
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -858,7 +869,17 @@ A characterization of maximal inhomogeneous-quadratic-free sets
               </span>
               <div class="hideme abstract">
                 <p><strong>Abstract:</strong>
-
+Given a closed set $S \subseteq \mathbb{R}^d$, we say that a full-dimensional closed convex set is $S$-free if its interior is disjoint from $S$.
+There are various optimization-related applications of $S$-free sets, including optimality certificates and intersections cuts, with the latter perhaps being the most notable.
+Among all $S$-free sets, it is the inclusion-wise maximal $S$-free sets that typically appear in application, perhaps because they generate the strongest intersection cuts.
+Maximal $S$-free sets and intersection cuts have been extensively studied for various choices of $S$.
+Interestingly, there is a descriptive characterization of maximal lattice-free sets as polyhedra with certain properties.
+                </p>
+                <p>
+Muñoz, Paat and Serrano gave a descriptive characterization maximal $S$-free sets when $S$ corresponds to a homogeneous quadratic inequality.
+In this work, we characterize $S$-free sets when $S$ corresponds to an inhomogeneous quadratic inequality.
+Together with Muñoz et al.'s work, this characterizes all maximal $S$-free sets defined by a single quadratic inequality.
+In this flash talk, we give an overview on this problem and provide more precise descriptions of these maximal inhomogeneous-quadratic-free sets.
                 </p>
               </div>
             </li>
