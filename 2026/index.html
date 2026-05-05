@@ -324,7 +324,7 @@ Based on joint work with Yu Gao, Gramoz Goranci, Yin Tat Lee, Lawrence Li, Richa
               </li>
               <li>
                 Fred Gardi (Hexaly)
-				<span>
+                  <span>
                     <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
 Beyond MILP: Hexaly, a Hybrid Optimization Solver
                     </a>
@@ -345,12 +345,12 @@ including Mixed‑Integer Programming, Constraint Programming, Nonlinear Program
 A central design objective is modeling expressiveness and openness: enabling users to formulate problems closer to their natural combinatorial structure,
 while allowing diverse algorithmic components to interact in a complementary manner.
                     </p>
-					<p>
+                    <p>
 In this talk, I will present the guiding principles behind this approach, with a particular focus on discrete optimization problems where Hexaly
 currently demonstrates its strongest performance, such as large‑scale routing, scheduling, and packing. I will discuss how hybridization manifests
 not only at the algorithmic level, but also—crucially—within the modeling layer. Finally, I will provide a transparent overview of the solver’s
 current algorithmic status, supported by selected performance benchmarks.
-					</p>
+                    </p>
                   </div>
               </li>
               <li>
@@ -438,7 +438,7 @@ This talk will discuss the ideas behind the primal weight, feasibility polishing
               </li>
               <li>
                 Kibaek Kim (Argonne National Lab)
-			<span>
+                  <span>
                     <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
 Unit Commitment with ACOPF: Decomposition, Dynamic Programming, and GPU Acceleration
                     </a>
@@ -450,10 +450,9 @@ Unit Commitment with ACOPF: Decomposition, Dynamic Programming, and GPU Accelera
                     <p><strong>Abstract:</strong>
 Unit commitment is a core application of mixed-integer optimization, but incorporating exact AC network constraints turns it into a much harder mixed-integer nonlinear problem.
 In this talk, I will present a decomposition-based approach for UC-ACOPF that separates the integer unit commitment structure from the nonlinear ACOPF subproblems.
-The reformulation yields generator-wise UC subproblems that are solved exactly by dynamic programming and decomposes the AC side into many small nonlinear subproblems that
-can be processed efficiently on GPUs. I will discuss why this viewpoint is natural from a MIP perspective, how it preserves the combinatorial core of unit commitment while
-handling nonconvex grid physics, and what the numerical results show relative to standard solver-based baselines on IEEE test cases. I will close with a brief outlook on a related direction:
-			learning shared representations across ACOPF, SCUC, and UC-ACOPF to support systematic generalization across related grid optimization problems.
+The reformulation yields generator-wise UC subproblems that are solved exactly by dynamic programming and decomposes the AC side into many small nonlinear subproblems that can be processed efficiently on GPUs.
+I will discuss why this viewpoint is natural from a MIP perspective, how it preserves the combinatorial core of unit commitment while handling nonconvex grid physics, and what the numerical results show relative to standard solver-based baselines on IEEE test cases.
+I will close with a brief outlook on a related direction: learning shared representations across ACOPF, SCUC, and UC-ACOPF to support systematic generalization across related grid optimization problems.
                     </p>
                   </div>
               </li>
@@ -481,7 +480,7 @@ Computational results demonstrate that the proposed approach improves the perfor
               </li>
               <li>
                 Sven Leyffer (Argonne National Lab)
-			<span>
+                  <span>
                     <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
 Solving Massive Combinatorial Optimization Problems
                     </a>
@@ -527,9 +526,9 @@ This is joint work with Shaoning Han and Liangju Li from National University of 
                     </p>
                   </div>
               </li>
-			        <li>
+              <li>
                 Laurent Michel (University of Connecticut)
-			<span>
+                  <span>
                     <a title="Show abstract" href="#" onclick="toggleAbstract(this);return false;">
 Complete Anytime Decision Diagram Search with GPU-Accelerated State Expansion
                     </a>
@@ -541,14 +540,12 @@ Complete Anytime Decision Diagram Search with GPU-Accelerated State Expansion
                     <p><strong>Abstract:</strong>
 We present a GPU-accelerated method for compiling multi-valued decision diagrams (MDDs) for dynamic programming models. 
 MDD construction expands states in layers defined by their distance from the root, a structure that enables independent parallel expansion of all states in a layer.
-We exploit this by partitioning each layer into limited-size fragments and executing the full expansion of each fragment on the GPU, including successor generation,
-dominance filtering, duplicate elimination, and pruning of suboptimal states.
+We exploit this by partitioning each layer into limited-size fragments and executing the full expansion of each fragment on the GPU, including successor generation, dominance filtering, duplicate elimination, and pruning of suboptimal states.
                     </p>
-			        <p>
+                    <p>
 By systematically traversing fragments in a depth-first manner, we obtain a parallel Complete Anytime Decision Diagram Search that preserves exactness and anytime behavior.
-Applied to the Traveling Salesman Problem with Time Windows, our implementation yields speedups of up to two orders of magnitude, and outperforms other state-based methods
-as well as a state-of-the-art dedicated optimization method for this application.
-			        </p>
+Applied to the Traveling Salesman Problem with Time Windows, our implementation yields speedups of up to two orders of magnitude, and outperforms other state-based methods as well as a state-of-the-art dedicated optimization method for this application.
+                    </p>
                   </div>
               </li>
               <li>
