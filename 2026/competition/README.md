@@ -35,10 +35,10 @@ To encourage the development of fundamentally novel techniques, this competition
 
 The jury will select one winner and up to two honorable mentions to present their work at the [MIP Workshop 2026](https://www.mixedinteger.org/2026/). The winning team will present in a regular session, whereas honorable mentions will present posters.
 
-This year, NVIDIA will be providing a total prize pool of $1500 in GPU cloud credits:
+This year, NVIDIA provided a total prize pool of $2500 in GPU cloud credits:
 
-*   The winning team will be awarded $750 worth of NVIDIA GPU cloud credits via [Brev](https://developer.nvidia.com/brev).
-*   Each honorable mention team will be awarded $375 worth of NVIDIA GPU cloud credits via Brev.
+*   The winning team was awarded $1500 worth of NVIDIA GPU cloud credits via [Brev](https://developer.nvidia.com/brev).
+*   Each honorable mention team was awarded $500 worth of NVIDIA GPU cloud credits via Brev.
 
 Furthermore, we will provide the following:
 
@@ -46,11 +46,79 @@ Furthermore, we will provide the following:
 *   High-quality submissions will receive an expedited review process in Mathematical Programming Computation.
 
 
+## Competition Results
+
+The winners of the 2026 Land-Doig MIP Competition were:
+
+* **First Place:** Timo Berthold, Ambros Gleixner, Alexander Hoen, Nils-Christian Kempke, Thorsten Koch, Gioni Mexi, Sebastian Pokutta, and Gennesaret Tjusila, for the work entitled *"CHAP - Coordinating Heuristics Across Platforms"* ([slides](competition_mexi_slides.pdf))
+
+* **Honorable Mention:** Peng Lin, Zhe Wang, Kewu Yang, and Shaowei Cai, for the work entitled *"cuLocalMIP: A GPU-Oriented Local Search Framework for Mixed Integer Programming"* ([poster](competition_lin_et_al_poster.pdf))
+
+* **Honorable Mention:** Yiran Zhu, for the work entitled *"GPU-MIP: A GPU-Native Local Search Solver for Mixed-Integer Programming"* ([poster](competition_zhu_poster.pdf))
+
+<p align="center">
+  <img src="first_place_mexi_photo.jpg" alt="First place award" width="500"/>
+  <br>
+  <em>Photo: Gioni Mexi receiving the first place award on behalf of the team.</em>
+</p>
+
+More details on the competition (e.g., brief instance descriptions, evaluation and review process) are in these [slides](competition_slides.pdf), which were presented on May 19th, 2026 at the 2026 MIP workshop at the University of Connecticut.
+
+The committee thanks all of the participants for their submissions!
+
+### Computational performance
+
+Team numbers are randomly assigned. We asked teams if they wanted to have their team members public, keeping it anonymous by default. The following teams opted-in:
+
+* **Team 2:** Peng Lin, Zhe Wang, Kewu Yang, and Shaowei Cai
+* **Team 3:** Stefano Gualandi, Paul Juenger, Andrea Lodi, Vinit Ranjan, and Bartolomeo Stellato
+* **Team 4:** Waquar Kaleem, Aleksandr Kazachkov, and Anirudh Subramanyam
+* **Team 5:** Yupeng Wu and Jean Pauphilet
+* **Team 9:** Yiran Zhu
+* **Team 11:** Timo Berthold, Ambros Gleixner, Alexander Hoen, Nils-Christian Kempke, Thorsten Koch, Gioni Mexi, Sebastian Pokutta, and Gennesaret Tjusila
+
+In the tables below, "Win." indicates the winner, "Hon." indicates honorable mentions, and "R2" indicates teams that made it to the second round of reviews. Please see the [slides](competition_slides.pdf) for details on the review process. In particular, the hidden set table below shows standard deviations only for second-round submissions as only those were ran multiple times.
+
+The first two columns indicate primal integral and gap with respect to a strong heuristic baseline. The next two columns show primal integral and gap with respect to the best per-instance objective value obtained by a submission. The last two columns indicate the number of instances where a feasible solution was found, and the number of instances for which that submission found an objective value within 1% of gap to the best solution found by a submission. More details on the computational evaluation are in the [slides](competition_slides.pdf).
+
+#### Performance on Hidden Set
+
+| Team | Avg Primal Integral w.r.t. Reference | Avg Primal Gap (%) w.r.t. Reference | Avg Primal Integral w.r.t. Competition | Avg Primal Gap (%) w.r.t. Competition | # Instances w/ Sol. Found | # Instances within 1% Gap w.r.t. Competition |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Team 1         | 312.79        | 100.80        | 300.92        | 94.71        | 16         |  0         |
+| <span style="color: orange; font-weight: bold;">Team 2 (Hon.)</span>  |  63.84 ± 1.62 |  15.18 ± 0.15 |  44.97 ± 2.89 |  8.06 ± 0.74 | 50.0 ± 1.7 | 14.7 ± 1.5 |
+| **Team 3 (R2)**    |  91.46 ± 2.20 |  17.79 ± 2.01 |  76.32 ± 2.22 | 12.75 ± 1.78 | 48.3 ± 0.6 | 11.7 ± 2.5 |
+| Team 4         | 244.96        |  70.18        | 231.63        | 59.93        | 37         |  0         |
+| **Team 5 (R2)**    |  85.40 ± 0.51 |  18.75 ± 0.70 |  67.57 ± 0.80 | 12.34 ± 0.85 | 45.3 ± 0.6 | 13.3 ± 0.6 |
+| Team 6         | 211.58        |  61.98        | 199.84        | 56.74        | 29         |  0         |
+| Team 7         | 225.80        |  69.90        | 196.84        | 59.64        | 34         |  0         |
+| Team 8         | 170.82        |  53.62        | 148.24        | 42.68        | 36         |  3         |
+| <span style="color: orange; font-weight: bold;">Team 9 (Hon.)</span>  |  73.97 ± 0.53 |  16.46 ± 0.77 |  55.98 ± 1.84 |  8.41 ± 0.74 | 48.0 ± 0.0 | 16.3 ± 1.2 |
+| Team 10        | 171.38        |  45.24        | 159.32        | 39.68        | 35         |  3         |
+| <span style="color: green; font-weight: bold;">Team 11 (Win.)</span> |  54.95 ± 0.06 |  12.91 ± 0.58 |  33.84 ± 0.30 |  6.03 ± 0.34 | 51.3 ± 0.6 | 19.3 ± 1.5 |
+
+#### Performance on Test Set
+
+| Team | Avg Primal Integral w.r.t. Reference | Avg Primal Gap (%) w.r.t. Reference | Avg Primal Integral w.r.t. Competition | Avg Primal Gap (%) w.r.t. Competition | # Instances w/ Sol. Found | # Instances within 1% Gap w.r.t. Competition |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Team 1          | 200.96 | 48.78 | 191.17 | 41.56 | 36 |  4 |
+| <span style="color: orange; font-weight: bold;">Team 2 (Hon.)</span>   | 70.05  | 14.34 | 52.37  |  7.81 | 44 | 13 |
+| **Team 3 (R2)**     | 87.84  | 15.23 | 71.07  |  8.13 | 44 | 16 |
+| Team 4          | 239.95 | 55.41 | 234.82 | 53.21 | 31 |  2 |
+| **Team 5 (R2)**     | 75.28  | 14.09 | 59.59  |  7.88 | 44 | 14 |
+| Team 6          | 196.71 | 49.83 | 182.57 | 44.39 | 34 |  3 |
+| Team 7          | 231.51 | 72.00 | 219.00 | 67.57 | 37 |  0 |
+| Team 8          | 109.71 | 30.91 | 94.64  | 25.57 | 41 |  3 |
+| <span style="color: orange; font-weight: bold;">Team 9 (Hon.)</span>   | 64.82  | 14.39 | 48.77  |  8.43 | 41 | 15 |
+| Team 10         | 173.10 | 46.66 | 165.53 | 43.23 | 37 |  1 |
+| <span style="color: green; font-weight: bold;">Team 11 (Win.)</span>  | 52.69  | 11.95 | 32.12  |  5.27 | 47 | 19 |
+
+
 ## Timeline
 
 *   October 13th, 2025: Publication of the topic, rules and set of test problems.
 *   December 12th, 2025: Registration deadline for participation. 
-*   **March 20th, 2026 (AoE):** Submission deadline for report and code.
+*   March 20th, 2026 (AoE): Submission deadline for report and code.
 *   April 2026: Notification of results.
 *   May 2026: Presentations of the finalists at the MIP Workshop.
 
