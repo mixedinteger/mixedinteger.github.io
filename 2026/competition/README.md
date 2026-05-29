@@ -57,7 +57,7 @@ The winners of the 2026 Land-Doig MIP Competition were:
 * **Honorable Mention:** Yiran Zhu, for the work entitled *"GPU-MIP: A GPU-Native Local Search Solver for Mixed-Integer Programming"* ([poster](competition_zhu_poster.pdf))
 
 <p align="center">
-  <img src="first_place_mexi_photo.jpg" alt="First place award" width="500"/>
+  <img src="first_place_mexi_photo.jpg" alt="First place award" width="350"/>
   <br>
   <em>Photo: Gioni Mexi receiving the first place award on behalf of the team.</em>
 </p>
