@@ -25,14 +25,18 @@ export const workshop_data = [
     lastname: "Arslan",
     affiliation: 'Universite de Bordeaux',
     website: 'https://aysnrarsln.github.io/',
-    title: 'TBA'
+    picture: 'images/speakers/ayse_nur_arslan.jpeg',
+    title: 'Decomposition algorithms for two-stage robust optimization problems',
+    abstracttext: 'In this talk we consider two-stage robust optimization problems and propose decomposition algorithms for their solution. The first class of problems we consider concern binary recourse with only objective function uncertainty. For these problems we propose a convexification approach based on Dantzig-Wolfe decomposition and show how the problem can be solved to exact optimality using the column-generation algorithm. We provide numerical results on the comparison between this exact approach and the approximate K-adaptability algorithm. We also give insights on how the same convexification approach can be valuable in other contexts such as two-stage stochastic programming. The second class of problems concern problems with continuous and fixed recourse. These problems have been the subject of exact solution approaches, notably, constraint generation (CG) and constraint-and-column generation (CCG). We present an approach reposing on a novel reformulation of the problem with an exponential number of semi-infinite constraints and develop a nested decomposition algorithm to deal with the exponential and semi-infinite natures of our formulation separately. We provide numerical results that showcase the superior performance of our proposed approach compared to the state-of-the-art and evaluate the contribution of different algorithmic components.'
   },
   {
     firstname: "Sophie",
     lastname: "Huiberts",
     affiliation: 'LIMOS, Clermont Auvergne University',
     website: 'https://sophie.huiberts.me/',
-    title: 'TBA'
+    title: 'Analyzing the simplex method by-the-book, or, what theory can learn from practice',
+    abstracttext: 'The simplex method is an algorithm for linear programming, and this algorithm is much faster than theory is able to explain. In this talk I will describe a new theoretical framework we introduced to address this question. Under this framework, we prove new strong running time guarantees, using mathematical assumptions taken from software user manuals. I will discuss which features of real-world software and LPs we have managed to theoretically capture for this purpose, and what will come next.',
+    picture: 'images/speakers/sophie_huiberts.jpg'
   },
   {
     firstname: "Emiliano",
@@ -46,7 +50,9 @@ export const workshop_data = [
     lastname: "Liberti",
     affiliation: 'LIX CNRS, Ecole Polytechnique',
     website: 'https://www.lix.polytechnique.fr/~liberti/',
-    title: 'TBA'
+    title: 'Random projections in mathematical programming: recent advances',
+    abstracttext: 'In this talk I will briefly survey previous work about the application of random projections to mathematical programming, and then talk about recent advances, specifically about quadratically constrained quadratic programs, as well as on a specific MINLP problem, i.e.~the minimum sum-of-squares clustering.\nCo-authors: Benedetto Manca and Pierre-Louis Poirion',
+    picture: 'images/speakers/leo_liberti.png'
   },
   {
     firstname: "Elisabeth",
@@ -60,7 +66,9 @@ export const workshop_data = [
     lastname: "Schmidt",
     affiliation: 'Trier University',
     website: 'https://martinschmidt.squarespace.com/about',
-    title: 'TBA'
+    title: 'Branch-and-Cut for Mixed-Integer Nash Equilibrium Problems',
+    abstracttext: "We consider Nash equilibrium problems with mixed-integer variables in which each player solves a mixed-integer optimization problem parameterized in the rivals' strategies. We distinguish between standard Nash equilibrium problems (NEP), where the parameterization acts only on the players' cost functions and generalized Nash equilibrium problems (GNEPs), where, additionally, the strategy spaces of the players may depend on the rivals' strategies. We introduce a branch-and-cut (B&C) algorithm for such mixed-integer games that, upon termination, either computes a pure Nash equilibrium or decides their non-existence. The main idea is to reformulate the equilibrium problem as a suitable bilevel problem based on the Nikaido-Isoda function of the game. We then use bilevel-optimization techniques to get a computationally tractable relaxation of this reformulation and embed it into a B&C framework. We derive sufficient conditions for the existence of suitable cuts and finite termination of our method depending on the setting. For GNEPs, we adapt the idea of intersection cuts from bilevel optimization and mixed-integer linear optimization. We can guarantee the existence of such cuts under suitable assumptions, which are particularly fulfilled for pure-integer GNEPs with decoupled concave objectives and linear coupling constraints. For NEPs, we show that suitable cuts always exist via best-response inequalities and prove that our B&C method terminates in finite time whenever the set of best-response sets is finite. We show that this condition is fulfilled for the important special cases of (i) players' cost functions being concave in their own continuous strategies and (ii) the players' cost functions only depending on their own strategy and the rivals' integer strategy components. Finally, we present preliminary numerical results for two different types of knapsack games, a game based on capacitated flow problems, and integer NEPs with quadratic objectives.",
+    picture: 'images/speakers/Portrait-Martin-Schmidt19930_pp.webp'
   },
   {
     firstname: "Antonio Maria",
@@ -74,14 +82,18 @@ export const workshop_data = [
     lastname: "Beck",
     affiliation: 'Eindhoven University of Technology',
     website: 'https://yasminebeck.github.io/',
-    title: 'TBA'
+    title: 'Exact Methods for Recoverable Robust Combinatorial Optimization Problems under Budgeted Uncertainty',
+    abstracttext: 'We study recoverable robust combinatorial optimization problems in which a decision maker solves an optimization problem subject to objective uncertainty. The model follows a two-stage robust setup in which the decision maker first commits to an initial solution and may adjust it after the uncertainty is revealed. In this talk, we focus on the setting in which these adjustments correspond to revoking some of the initial commitments. The underlying uncertainty is modeled using a budgeted uncertainty set so that the decision maker only hedges against a limited number of deviations in the uncertain parameters. We present different equivalent reformulations of the recoverable robust problem, which can be tackled using (i) general-purpose MILP solvers, (ii) branch-and-cut methods, or (iii) column-and-constraint generation algorithms. The performance of all proposed methods is assessed and compared in a computational study.',
+    picture: "images/speakers/yasmine_beck.jpeg"
   },
   {
     firstname: "Jannis",
     lastname: "Kurtz",
     affiliation: 'University of Amsterdam',
     website: 'https://www.janniskurtz.eu/',
-    title: 'TBA'
+    title: 'K-Adaptability in Two-Stage Integer Robust Optimization',
+    abstracttext: 'In the realm of robust optimization the k-adaptability approach is one promising method to derive near-optimal solutions for two-stage robust optimization problems with integer decision variables. Instead of allowing all possible second-stage decisions, the k-adaptability approach aims at calculating a limited set of k such decisions already in the first-stage before the uncertainty reveals. The parameter k can be adjusted to control the quality of the approximation. However, until recently, not much was known on how many solutions k are needed to achieve an optimal or approximate solution for the two-stage robust problem. In this talk we approach this question by deriving bounds on k for objective and constraint uncertainty which lead to optimal solutions or solutions with a given approximation guarantee. The results give new insights on how many solutions are needed for problems as the decision dependent information discovery problem or the capital budgeting problem with constraint uncertainty.',
+    picture: 'images/speakers/jannis_kurtz.jpg'
   },
   {
     firstname: "Karen",
@@ -93,16 +105,19 @@ export const workshop_data = [
   {
     firstname: "Bissan",
     lastname: "Ghaddar",
-    affiliation: 'IE University',
+    affiliation: 'Ivey Business School and IE University',
     website: 'https://www.ie.edu/university/about/faculty/bissan-ghaddar/',
-    title: 'TBA'
+    title: 'Machine Learning-Enhanced Non-Linear Optimization',
+    abstracttext: 'Nonlinear optimization problems present significant computational challenges due to their inherent nonconvexity. In this talk, we explore how machine learning can be integrated into key algorithmic components of nonlinear optimization solvers to enhance their efficiency. We examine how learning can be used to predict branching decisions and variable selection within branch-and-bound frameworks, and to generate effective cutting planes or conic constraints that strengthen relaxations of these problems. We then extend this work to learning-guided decomposition for semidefinite programming relaxations, particularly for large-scale nonlinear optimization problems arising in energy systems. We highlight how structural properties such as sparsity and network topology can be leveraged to inform learning models that guide the decomposition of semidefinite relaxations.'
   },
   {
     firstname: "Vanesa",
     lastname: "Guerrero",
     affiliation: 'Universidad Carlos III de Madrid',
     website: 'https://researchportal.uc3m.es/display/inv45738',
-    title: 'TBA'
+    title: 'Mixed-integer programming for model selection in smooth and networked data',
+    abstracttext: 'Mixed-integer programming provides a powerful framework for model selection in complex and structured data settings. In this talk, we address two such scenarios: smooth regression models with shape constraints and learning tasks over distributed networks, where interpretability and sparsity are key challenges. On the one hand, for shape-constrained smooth additive models, we study variable selection through a best subset approach, leading to formulations that incorporate both structural constraints, modeled through a conic optimization framework, and sparsity, introduced via binary decision variables. To tackle the resulting problem, we develop tight continuous relaxations based on perspective formulations. On the other hand, we consider multi-task learning in networked data, where observations are distributed across nodes. We propose methods to partition the network into connected clusters, assigning each cluster a shared predictive model. This is achieved either by selecting existing local models or by learning new ones from pooled data, while enforcing connectivity constraints. We develop a solution approach based on the Variable Neighborhood Search metaheuristic and, for specific network topologies, an exact dynamic programming approach. Experiments on synthetic and real datasets demonstrate that the proposed methods achieve competitive performance while producing interpretable and parsimonious models. Overall, these works highlight the potential of optimization-based approaches for model selection in nonlinear and network-structured data.',
+    picture: 'images/speakers/vanesa_guerro.jpg'
   },
   {
     firstname: "Fritz",
@@ -116,14 +131,18 @@ export const workshop_data = [
     lastname: "Taninmis",
     affiliation: 'Koc Ünicersitesi',
     website: 'https://gsse.ku.edu.tr/en/programs/industrial-engineering-and-operations-management/faculty/?detail=true&id=ktaninmis',
-    title: 'TBA'
+    title: 'Fair Influence Maximization: an Exact Approach',
+    abstracttext: 'Influence Maximization Problem aims at identifying a small set of seed nodes to maximize the expected spread of information on a social network. When the community structure inherent in a social network is overlooked, the optimal seed set often results in a highly imbalanced spread across different groups. This imbalance is undesirable in scenarios involving socially beneficial information, such as job postings and public health outreach campaigns. In contrast to the heuristic approaches commonly discussed in the literature, our objective is to determine the optimal seed set that meets a specified fairness criterion and to assess the price-of-fairness in a more reliable way. To achieve this, we introduce a mixed-integer programming model into which established fairness principles can be directly incorporated. We develop a unified Benders decomposition framework for several fairness principles to address the scalability challenges. Preliminary results demonstrate that the proposed decomposition method significantly outperforms standard commercial solvers.',
+    picture: 'images/speakers/kubra_taninmis.png'
   },
   {
     firstname: "Ruth",
     lastname: "Misener",
     affiliation: 'Imperial College London',
     website: 'https://profiles.imperial.ac.uk/r.misener',
-    title: 'TBA'
+    title: 'Optimizing over graphs: Challenges, Formulations, and Applications',
+    abstracttext: 'Applications involving optimization over graphs include molecular design, graph neural network verification, neural architecture search, etc. This talk discusses formulating graph spaces using mixed-integer optimization and incorporating application-specific constraints. We discuss computational challenges with these mixed-integer optimization formulations and zoom in on the practical implications for these applications. We mention what has been done (by both ourselves and others) and what other research still needs to be done.\nCo-authors: Shiqiang Zhang, Yilin Xie, Christopher Hojny, Juan Campos, Jixiang Qing, Christian Feldmann, David Walz, Frederik Sandfort, Miriam Mathea, Calvin Tsay',
+    picture: 'images/speakers/ruth_misener.jpg'
   },
   {
     firstname: "Andrea",
@@ -137,7 +156,9 @@ export const workshop_data = [
     lastname: "Biró",
     affiliation: 'Hungarian Academy of Sciences',
     website: 'https://mechanismdesign.eu/biro/',
-    title: 'TBA'
+    title: 'Smart Lotteries in School Choice: Ex-ante Pareto-Improvement with Ex-post Stability',
+    abstracttext: "In a typical school choice application, the students have strict preferences over the schools while the schools have coarse priorities over the students based on their distance and their enrolled siblings. The outcome of a centralized admission mechanism is then usually obtained by the Deferred Acceptance (DA) algorithm with random tie-breaking. Therefore, every possible outcome of this mechanism is a stable solution for the coarse priorities that will arise with certain probability. This implies a probabilistic assignment, where the admission probability for each student-school pair is specified. In this paper, we propose a new efficiency-improving stable `smart lottery' mechanism. We aim to improve the probabilistic assignment ex-ante in a stochastic dominance sense, while ensuring that the improved random matching is still ex-post stable, meaning that it can be decomposed into stable matchings regarding the original coarse priorities. Therefore, this smart lottery mechanism can provide a clear Pareto-improvement in expectation for any cardinal utilities compared to the standard DA with lottery solution, without sacrificing the stability of the final outcome. We show that although the underlying computational problem is NP-hard, we can solve the problem by using advanced optimization techniques such as integer programming with column generation. We conduct computational experiments on generated and real instances. Our results show that the welfare gains by our mechanism are substantially larger than the expected gains by standard methods that realize efficiency improvements after ties have already been broken.",
+    picture: 'images/speakers/biro-peter.jpg'
   },
   {
     firstname: "Marco",
@@ -151,7 +172,8 @@ export const workshop_data = [
     lastname: "Mutzel",
     affiliation: 'Universität Bonn',
     website: 'https://ca.cs.uni-bonn.de/doku.php?id=people:mutzel',
-    title: 'TBA'
+    title: 'TBA',
+    picture: 'images/speakers/petra_mutzel.jpeg'
   },
   {
     firstname: "Jon",
