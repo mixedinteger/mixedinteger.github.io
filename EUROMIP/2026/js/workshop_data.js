@@ -51,7 +51,7 @@ export const workshop_data = [
     affiliation: 'LIX CNRS, Ecole Polytechnique',
     website: 'https://www.lix.polytechnique.fr/~liberti/',
     title: 'Random projections in mathematical programming: recent advances',
-    abstracttext: 'In this talk I will briefly survey previous work about the application of random projections to mathematical programming, and then talk about recent advances, specifically about quadratically constrained quadratic programs, as well as on a specific MINLP problem, i.e.~the minimum sum-of-squares clustering.\nCo-authors: Benedetto Manca and Pierre-Louis Poirion',
+    abstracttext: 'In this talk I will briefly survey previous work about the application of random projections to mathematical programming, and then talk about recent advances, specifically about quadratically constrained quadratic programs, as well as on a specific MINLP problem, i.e.~the minimum sum-of-squares clustering.\n\nCo-authors: Benedetto Manca and Pierre-Louis Poirion',
     picture: 'images/speakers/leo_liberti.png'
   },
   {
@@ -141,7 +141,7 @@ export const workshop_data = [
     affiliation: 'Imperial College London',
     website: 'https://profiles.imperial.ac.uk/r.misener',
     title: 'Optimizing over graphs: Challenges, Formulations, and Applications',
-    abstracttext: 'Applications involving optimization over graphs include molecular design, graph neural network verification, neural architecture search, etc. This talk discusses formulating graph spaces using mixed-integer optimization and incorporating application-specific constraints. We discuss computational challenges with these mixed-integer optimization formulations and zoom in on the practical implications for these applications. We mention what has been done (by both ourselves and others) and what other research still needs to be done.\nCo-authors: Shiqiang Zhang, Yilin Xie, Christopher Hojny, Juan Campos, Jixiang Qing, Christian Feldmann, David Walz, Frederik Sandfort, Miriam Mathea, Calvin Tsay',
+    abstracttext: 'Applications involving optimization over graphs include molecular design, graph neural network verification, neural architecture search, etc. This talk discusses formulating graph spaces using mixed-integer optimization and incorporating application-specific constraints. We discuss computational challenges with these mixed-integer optimization formulations and zoom in on the practical implications for these applications. We mention what has been done (by both ourselves and others) and what other research still needs to be done.\n\nCo-authors: Shiqiang Zhang, Yilin Xie, Christopher Hojny, Juan Campos, Jixiang Qing, Christian Feldmann, David Walz, Frederik Sandfort, Miriam Mathea, Calvin Tsay',
     picture: 'images/speakers/ruth_misener.jpg'
   },
   {
