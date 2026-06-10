@@ -18,7 +18,8 @@ export const workshop_data = [
     lastname: "Kober",
     affiliation: 'Université Libre de Bruxelles',
     website: 'https://sites.google.com/view/stefankober/',
-    title: 'TBA'
+    title: 'TBA',
+    picture: 'images/speakers/stefan_kober.jpg'
   },
   {
     firstname: "Ayse Nur",
@@ -181,7 +182,8 @@ export const workshop_data = [
     lastname: "Lee",
     affiliation: 'University of Michigan',
     website: 'https://sites.google.com/site/jonleewebpage/',
-    title: 'TBA'
+    title: 'TBA',
+    picture: 'images/speakers/jon_lee.jpg'
   },
 ];
 
