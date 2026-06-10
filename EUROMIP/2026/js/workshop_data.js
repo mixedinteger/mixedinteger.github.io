@@ -185,7 +185,8 @@ export const workshop_data = [
     lastname: "Lee",
     affiliation: 'University of Michigan',
     website: 'https://sites.google.com/site/jonleewebpage/',
-    title: 'TBA',
+    title: 'Extended-Variable Relaxations for the Constrained Generalized Maximum-Entropy Sampling Problem',
+    abstracttext: 'The generalized maximum-entropy sampling problem (GMESP) is to select an order-s principal submatrix from an order-n covariance matrix, to maximize the product of its t greatest eigenvalues, 0 < t <= s < n. Introduced more than 25 years ago, GMESP is a natural generalization of two fundamental problems in statistical design theory: (i) maximum-entropy sampling problem (MESP); (ii) binary D-optimality (D-Opt). In the general case, it can be motivated by a selection problem in the context of principal component analysis (PCA). We approach GMESP as a challenging nonlinear integer optimization problem, and we aim at developing effective B&amp;B approaches. We present (i) non-convex extended-variable formulations, (ii) first non-convex and then convex continuous relaxations, (iii) results analyzing our new (upper) bounds and demonstrating some relations between different bounds, including bounds from the literature and our new bounds, (iv) theory related to how to carry out B&B (in particular, variable fixing and subproblem construction), and (v) favorable numerical results. This is joint work with Kurt Anstreicher, Marcia Fampa, and Gabriel Ponte.',
     picture: 'images/speakers/jon_lee.jpg'
   },
 ];
