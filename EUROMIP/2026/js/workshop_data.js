@@ -149,7 +149,8 @@ export const workshop_data = [
     lastname: "Lodi",
     affiliation: 'Cornell Tech',
     website: 'https://tech.cornell.edu/people/andrea-lodi/',
-    title: 'TBA'
+    title: 'TBA',
+    picture: 'images/speakers/andrea_lodi.jpg'
   },
   {
     firstname: "Péter",
