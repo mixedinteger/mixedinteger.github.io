@@ -60,7 +60,9 @@ export const workshop_data = [
     lastname: "Gaar",
     affiliation: 'Universität Augsburg',
     website: 'https://www.uni-augsburg.de/de/fakultaet/mntf/math/prof/opt/team/gaar/',
-    title: 'TBA'
+    title: 'MIP approaches for the $p$-$\alpha$-closest-center problem',
+    abstracttext: 'We study a recently emerged resilient variant of the well-known facility location $p$-center problem, the $p$-$\alpha$-closest-center problem. In this problem, we are given a set of customer demand points, a set of possible facility locations, distances between each customer demand point and each possible facility location, as well as two integers $p$ and $\alpha$. The goal of the $p$-$\alpha$-closest-center-problem is to open a facility at $p$ of the possible facility locations such that the maximum sum of the distances from any customer to its $\alpha$ closest open facilities is minimized.\nIn this talk, we several novel mixed-integer programming (MIP) formulations of the $p$-$\alpha$-closest center problem and strengthen them by adding valid inequalities. We also conduct a polyhedral study, present iterative lifting procedures that exploit combinatorial information to derive tighter linear programming relaxations and characterize the best lower bounds obtainable with it. We also carry out a computational study, applying our improved relaxations within a branch-and-cut framework, which we enhance with a starting and a primal heuristic, variable fixings and separating inequalities. This is joint work with Sara Joosten and Markus Sinnl.',
+    picture: 'images/speakers/elisabeth_gaar.jpg'
   },
   {
     firstname: "Martin",
