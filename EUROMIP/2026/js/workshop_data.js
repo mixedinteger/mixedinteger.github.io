@@ -75,8 +75,10 @@ export const workshop_data = [
     firstname: "Antonio Maria",
     lastname: "Sudoso",
     affiliation: 'Sapienza University',
-    website: 'https://www.diag.uniroma1.it/users/antonio-maria_sudoso',
-    title: 'TBA'
+    website: 'https://sites.google.com/view/antoniosudoso',
+    title: 'Exact Methods for Variance Minimization Problems in Data Analysis',
+    abstracttext: 'Variance minimization plays a fundamental role in subset selection, clustering and high-dimensional data analysis, where the objective is to identify compact, homogeneous, and meaningful structures within complex datasets. Despite their broad applicability, these problems typically lead to challenging large-scale combinatorial optimization models whose exact solution remains computationally demanding. In this talk, we discuss recent advances in the design of exact algorithms for variance-based optimization problems, with particular emphasis on strong relaxations with theoretical guarantees and decomposition techniques.',
+    picture: 'images/speakers/antonio_sudoso.jpeg'
   },
   {
     firstname: "Yasmine",
