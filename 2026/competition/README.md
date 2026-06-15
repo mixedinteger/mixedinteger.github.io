@@ -250,6 +250,8 @@ For evaluation, we will run the code on a hidden set of problem instances as wel
 
 For reference, we provide [objective values](instance_5m_bounds.txt) after running Gurobi with a time limit of 5 minutes. These are informative only.
 
+The hidden instance set used for evaluation can be found [here](https://drive.google.com/file/d/18I8LOTNKauV0fGYarDGTtfmllHILiOHz/view?usp=sharing).
+
 
 ## Evaluation Criteria
 
