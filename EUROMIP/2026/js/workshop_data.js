@@ -181,7 +181,8 @@ export const workshop_data = [
     lastname: "Mutzel",
     affiliation: 'Universität Bonn',
     website: 'https://ca.cs.uni-bonn.de/doku.php?id=people:mutzel',
-    title: 'TBA',
+    title: 'Graph Edit Distance: Theory, Models, and Algorithms',
+    abstracttext: 'The Graph Edit Distance (GED) is a fundamental measure of graph similarity with applications in  graph learning, pattern recognition, and network analysis. Its computation is NP-hard and gives rise to challenging combinatorial optimization problems.\n\nThis talk presents recent advances in the theory and computation of GED. After a brief introduction to graph similarity and edit-distance-based approaches, I will focus on FORI, a new integer linear programming formulation for the exact computation of GED. Particular emphasis is placed on the modeling aspects of the problem and on a theoretical comparison of competing formulations. We analyze the strength of their linear programming relaxations and establish dominance relations that explain the observed computational performance. The theoretical findings are complemented by algorithmic developments and computational results showing significant improvements over previous exact approaches.\n\nThis talk is based on joint work with Andrea D’Ascenzo (Gran Sasso Science Institute L’Aquila), Julian Meffert (University of Bonn), and Fabrizio Rossi (University of L’Aquila).',
     picture: 'images/speakers/petra_mutzel.jpeg'
   },
   {
