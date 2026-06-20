@@ -18,7 +18,8 @@ export const workshop_data = [
     lastname: "Kober",
     affiliation: 'Université Libre de Bruxelles',
     website: 'https://sites.google.com/view/stefankober/',
-    title: 'TBA',
+    title: 'Recent advances on integer programming with bounded subdeterminants',
+    abstracttext: 'It is a notorious open question whether integer programs (IPs), with an integer constraint matrix M whose subdeterminants are bounded by a constant in absolute value, can be solved in polynomial time. In recent years, different versions of this question have been studied from perspectives including geometry, IP theory, graph and matroid theory and more. We give an overview on recent progress towards this question and the rich combinatorial structures hidden within.',
     picture: 'images/speakers/stefan_kober.jpg'
   },
   {
