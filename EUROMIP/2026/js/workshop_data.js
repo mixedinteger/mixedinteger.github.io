@@ -114,7 +114,8 @@ export const workshop_data = [
     affiliation: 'Ivey Business School and IE University',
     website: 'https://www.ie.edu/university/about/faculty/bissan-ghaddar/',
     title: 'Machine Learning-Enhanced Non-Linear Optimization',
-    abstracttext: 'Nonlinear optimization problems present significant computational challenges due to their inherent nonconvexity. In this talk, we explore how machine learning can be integrated into key algorithmic components of nonlinear optimization solvers to enhance their efficiency. We examine how learning can be used to predict branching decisions and variable selection within branch-and-bound frameworks, and to generate effective cutting planes or conic constraints that strengthen relaxations of these problems. We then extend this work to learning-guided decomposition for semidefinite programming relaxations, particularly for large-scale nonlinear optimization problems arising in energy systems. We highlight how structural properties such as sparsity and network topology can be leveraged to inform learning models that guide the decomposition of semidefinite relaxations.'
+    abstracttext: 'Nonlinear optimization problems present significant computational challenges due to their inherent nonconvexity. In this talk, we explore how machine learning can be integrated into key algorithmic components of nonlinear optimization solvers to enhance their efficiency. We examine how learning can be used to predict branching decisions and variable selection within branch-and-bound frameworks, and to generate effective cutting planes or conic constraints that strengthen relaxations of these problems. We then extend this work to learning-guided decomposition for semidefinite programming relaxations, particularly for large-scale nonlinear optimization problems arising in energy systems. We highlight how structural properties such as sparsity and network topology can be leveraged to inform learning models that guide the decomposition of semidefinite relaxations.',
+    picture: 'images/speakers/bissanghaddar.jpeg'
   },
   {
     firstname: "Vanesa",
@@ -175,7 +176,9 @@ export const workshop_data = [
     lastname: "Lübbecke",
     affiliation: 'RWTH Aachen',
     website: 'https://www.or.rwth-aachen.de/en/details-staff/luebbecke.html',
-    title: 'TBA'
+    title: 'A Dantzig-Wolfe Hierarchy for the Stable Set Problem',
+    abstracttext: 'The stable set problem is an important subproblem in many practical applications. It has been studied extensively also from a theoretical point of view. In particular, the problem is a poster child for the study of the strength of (the relaxations of) many different formulations for the problem. Dantzig-Wolfe reformulation is a general technique for obtaining strong formulations for a problem. We first motivate connecting the two topics by some computational observations about Dantzig-Wolfe reformulations of a classical ("edge") formulation for the stable set problem. For this model, each reformulation can be associated with a subset of the edges of the original graph, thus a subgraph. In fact, we have exponentially many options for selecting such a subgraph and we are able to characterize which reformulations are strongest and weakest possible. Only recently, we fully understood also the reformulations in between the extremes. More precisely, we can show that any two reformulations lead to identical polyhedra if and only if the corresponding reformulated subgraphs contain the same odd induced cycles. This lends itself to the notion of a hierarchy of Dantzig-Wolfe refomulations which is the first such concept in the Dantzig-Wolfe context.\n\nThis is joint work with Michael Bastubbe, Adrian Gallus, and Jonas Witt.',
+    picture: 'images/speakers/marco_luebbecke.jpg'
   },
   {
     firstname: "Petra",
