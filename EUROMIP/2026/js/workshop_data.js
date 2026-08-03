@@ -45,7 +45,9 @@ export const workshop_data = [
     lastname: "Traversi",
     affiliation: 'ESSEC',
     website: 'https://faculty.essec.edu/en/cv/traversi-emiliano/',
-    title: 'TBA'
+    title: 'An Integer Programming Approach to compute lower bounds for Ramsey Numbers using Circulant Graphs',
+    abstracttext: 'A Ramsey number R(m,n) is the smallest integer t such that every two-coloring of the edges of the complete graph K_t contains either a monochromatic clique of size m or one of size n. We propose a new integer-programming framework for computing lower bounds on classical Ramsey numbers by exploiting the structure of circulant colorings. Instead of searching over all 2^{t choose 2} edge colorings of K_t, our approach restricts attention to circulant graphs, yielding a drastically smaller and more structured search space. We develop two complementary models: a generic IP formulation and a compact circulant formulation in the jump-space, where cliques correspond to specific combinations of jump lengths. We further strengthen these formulations with Turán inequalities and investigate the effectiveness of specific subclasses of inequalities, including uniform-step and even-spread jump constraints. Our computational study yields several new lower bounds for R(3,n) and provides the exact circulant Ramsey number C(m,n) for many pairs (m,n).',
+    picture: 'images/speakers/emiliano_traversi.jpeg'
   },
   {
     firstname: "Leo",
