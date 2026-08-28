@@ -16,15 +16,21 @@ export const workshop_data = [
   {
     firstname: "Stefan",
     lastname: "Kober",
+    time: "9:00-9:45",
+    sortdate: "2026-10-21",
+    date: "day3",
     affiliation: 'Université Libre de Bruxelles',
     website: 'https://sites.google.com/view/stefankober/',
     title: 'Recent advances on integer programming with bounded subdeterminants',
     abstracttext: 'It is a notorious open question whether integer programs (IPs), with an integer constraint matrix M whose subdeterminants are bounded by a constant in absolute value, can be solved in polynomial time. In recent years, different versions of this question have been studied from perspectives including geometry, IP theory, graph and matroid theory and more. We give an overview on recent progress towards this question and the rich combinatorial structures hidden within.',
-    picture: 'images/speakers/stefan_kober.jpg'
+    picture: 'images/speakers/stefan_kober.jpg',
   },
   {
     firstname: "Ayse Nur",
     lastname: "Arslan",
+    time: "14:30-15:15",
+    sortdate: "2026-10-20",
+    date: "day2",
     affiliation: 'Universite de Bordeaux',
     website: 'https://aysnrarsln.github.io/',
     picture: 'images/speakers/ayse_nur_arslan.jpeg',
@@ -34,6 +40,9 @@ export const workshop_data = [
   {
     firstname: "Sophie",
     lastname: "Huiberts",
+    time: "9:00-9:45",
+    sortdate: "2026-10-20",
+    date: "day2",
     affiliation: 'LIMOS, Clermont Auvergne University',
     website: 'https://sophie.huiberts.me/',
     title: 'Analyzing the simplex method by-the-book, or, what theory can learn from practice',
@@ -43,6 +52,9 @@ export const workshop_data = [
   {
     firstname: "Emiliano",
     lastname: "Traversi",
+    time: "14:30-15:15",
+    sortdate: "2026-10-19",
+    date: "day1",
     affiliation: 'ESSEC',
     website: 'https://faculty.essec.edu/en/cv/traversi-emiliano/',
     title: 'An Integer Programming Approach to compute lower bounds for Ramsey Numbers using Circulant Graphs',
@@ -52,6 +64,9 @@ export const workshop_data = [
   {
     firstname: "Leo",
     lastname: "Liberti",
+    time: "16:30-17:15",
+    sortdate: "2026-10-19",
+    date: "day1",
     affiliation: 'LIX CNRS, Ecole Polytechnique',
     website: 'https://www.lix.polytechnique.fr/~liberti/',
     title: 'Random projections in mathematical programming: recent advances',
@@ -61,6 +76,9 @@ export const workshop_data = [
   {
     firstname: "Elisabeth",
     lastname: "Gaar",
+    time: "9:45-10:30",
+    sortdate: "2026-10-21",
+    date: "day3",
     affiliation: 'Universität Augsburg',
     website: 'https://www.uni-augsburg.de/de/fakultaet/mntf/math/prof/opt/team/gaar/',
     title: 'MIP approaches for the $p$-$\alpha$-closest-center problem',
@@ -70,6 +88,9 @@ export const workshop_data = [
   {
     firstname: "Martin",
     lastname: "Schmidt",
+    time: "11:45-12:30",
+    sortdate: "2026-10-20",
+    date: "day2",
     affiliation: 'Trier University',
     website: 'https://martinschmidt.squarespace.com/about',
     title: 'Branch-and-Cut for Mixed-Integer Nash Equilibrium Problems',
@@ -79,6 +100,9 @@ export const workshop_data = [
   {
     firstname: "Antonio Maria",
     lastname: "Sudoso",
+    time: "11:00-11:45",
+    sortdate: "2026-10-21",
+    date: "day3",
     affiliation: 'Sapienza University',
     website: 'https://sites.google.com/view/antoniosudoso',
     title: 'Exact Methods for Variance Minimization Problems in Data Analysis',
@@ -88,6 +112,9 @@ export const workshop_data = [
   {
     firstname: "Yasmine",
     lastname: "Beck",
+    time: "16:30-17:15",
+    sortdate: "2026-10-20",
+    date: "day2",
     affiliation: 'Eindhoven University of Technology',
     website: 'https://yasminebeck.github.io/',
     title: 'Exact Methods for Recoverable Robust Combinatorial Optimization Problems under Budgeted Uncertainty',
@@ -97,6 +124,9 @@ export const workshop_data = [
   {
     firstname: "Jannis",
     lastname: "Kurtz",
+    time: "15:15-16:00",
+    sortdate: "2026-10-20",
+    date: "day2",
     affiliation: 'University of Amsterdam',
     website: 'https://www.janniskurtz.eu/',
     title: 'K-Adaptability in Two-Stage Integer Robust Optimization',
@@ -106,6 +136,9 @@ export const workshop_data = [
   {
     firstname: "Karen",
     lastname: "Aardal",
+    time: "9:45-10:30",
+    sortdate: "2026-10-19",
+    date: "day1",
     affiliation: 'Delft University of Technology',
     website: 'https://diamhomes.ewi.tudelft.nl/~kaardal/',
     title: 'TBA'
@@ -113,6 +146,9 @@ export const workshop_data = [
   {
     firstname: "Bissan",
     lastname: "Ghaddar",
+    time: "11:00-11:45",
+    sortdate: "2026-10-20",
+    date: "day2",
     affiliation: 'Ivey Business School and IE University',
     website: 'https://www.ie.edu/university/about/faculty/bissan-ghaddar/',
     title: 'Machine Learning-Enhanced Non-Linear Optimization',
@@ -122,6 +158,9 @@ export const workshop_data = [
   {
     firstname: "Vanesa",
     lastname: "Guerrero",
+    time: "11:45-12:30",
+    sortdate: "2026-10-21",
+    date: "day3",
     affiliation: 'Universidad Carlos III de Madrid',
     website: 'https://researchportal.uc3m.es/display/inv45738',
     title: 'Mixed-integer programming for model selection in smooth and networked data',
@@ -131,6 +170,9 @@ export const workshop_data = [
   {
     firstname: "Fritz",
     lastname: "Eisenbrand",
+    time: "9:45-10:30",
+    sortdate: "2026-10-20",
+    date: "day2",
     affiliation: 'EPFL',
     website: 'https://people.epfl.ch/friedrich.eisenbrand',
     title: 'A parameterized linear formulation of the integer hull',
@@ -141,6 +183,9 @@ export const workshop_data = [
   {
     firstname: "Kübra",
     lastname: "Taninmis",
+    time: "15:15-16:00",
+    sortdate: "2026-10-21",
+    date: "day3",
     affiliation: 'Koc Ünicersitesi',
     website: 'https://gsse.ku.edu.tr/en/programs/industrial-engineering-and-operations-management/faculty/?detail=true&id=ktaninmis',
     title: 'Fair Influence Maximization: an Exact Approach',
@@ -150,6 +195,9 @@ export const workshop_data = [
   {
     firstname: "Ruth",
     lastname: "Misener",
+    time: "15:15-16:00",
+    sortdate: "2026-10-19",
+    date: "day1",
     affiliation: 'Imperial College London',
     website: 'https://profiles.imperial.ac.uk/r.misener',
     title: 'Optimizing over graphs: Challenges, Formulations, and Applications',
@@ -159,6 +207,9 @@ export const workshop_data = [
   {
     firstname: "Andrea",
     lastname: "Lodi",
+    time: "9:00-9:45",
+    sortdate: "2026-10-19",
+    date: "day1",
     affiliation: 'Cornell Tech',
     website: 'https://tech.cornell.edu/people/andrea-lodi/',
     title: 'Three Ideas toward GPU-Enhanced Mixed-Integer Optimization',
@@ -168,6 +219,9 @@ export const workshop_data = [
   {
     firstname: "Péter",
     lastname: "Biró",
+    time: "14:30-15:15",
+    sortdate: "2026-10-21",
+    date: "day3",
     affiliation: 'Hungarian Academy of Sciences',
     website: 'https://mechanismdesign.eu/biro/',
     title: 'Smart Lotteries in School Choice: Ex-ante Pareto-Improvement with Ex-post Stability',
@@ -177,6 +231,9 @@ export const workshop_data = [
   {
     firstname: "Marco",
     lastname: "Lübbecke",
+    time: "11:00-11:45",
+    sortdate: "2026-10-19",
+    date: "day1",
     affiliation: 'RWTH Aachen',
     website: 'https://www.or.rwth-aachen.de/en/details-staff/luebbecke.html',
     title: 'A Dantzig-Wolfe Hierarchy for the Stable Set Problem',
@@ -186,6 +243,9 @@ export const workshop_data = [
   {
     firstname: "Petra",
     lastname: "Mutzel",
+    time: "11:45-12:30",
+    sortdate: "2026-10-19",
+    date: "day1",
     affiliation: 'Universität Bonn',
     website: 'https://ca.cs.uni-bonn.de/doku.php?id=people:mutzel',
     title: 'Graph Edit Distance: Theory, Models, and Algorithms',
@@ -195,11 +255,150 @@ export const workshop_data = [
   {
     firstname: "Jon",
     lastname: "Lee",
+    time: "16:30-17:15",
+    sortdate: "2026-10-21",
+    date: "day3",
     affiliation: 'University of Michigan',
     website: 'https://sites.google.com/site/jonleewebpage/',
     title: 'Extended-Variable Relaxations for the Constrained Generalized Maximum-Entropy Sampling Problem',
     abstracttext: 'The generalized maximum-entropy sampling problem (GMESP) is to select an order-s principal submatrix from an order-n covariance matrix, to maximize the product of its t greatest eigenvalues, 0 < t <= s < n. Introduced more than 25 years ago, GMESP is a natural generalization of two fundamental problems in statistical design theory: (i) maximum-entropy sampling problem (MESP); (ii) binary D-optimality (D-Opt). In the general case, it can be motivated by a selection problem in the context of principal component analysis (PCA). We approach GMESP as a challenging nonlinear integer optimization problem, and we aim at developing effective B&amp;B approaches. We present (i) non-convex extended-variable formulations, (ii) first non-convex and then convex continuous relaxations, (iii) results analyzing our new (upper) bounds and demonstrating some relations between different bounds, including bounds from the literature and our new bounds, (iv) theory related to how to carry out B&B (in particular, variable fixing and subproblem construction), and (v) favorable numerical results. This is joint work with Kurt Anstreicher, Marcia Fampa, and Gabriel Ponte.',
     picture: 'images/speakers/jon_lee.jpg'
   },
+  {
+    improper: true,
+    firstname: "Registration",
+    lastname: "",
+    title: "",
+    time: "8:30-8:50",
+    sortdate: "2026-10-19",
+    date: "day1"
+  },
+  {
+    improper: true,
+    firstname: "Opening remarks",
+    lastname: "",
+    title: "",
+    time: "8:50-9:00",
+    sortdate: "2026-10-19",
+    date: "day1"
+  },
+  {
+    improper: true,
+    firstname: "Coffee break",
+    lastname: "",
+    title: "",
+    time: "10:30-11:00",
+    sortdate: "2026-10-19",
+    date: "day1"
+  },
+  {
+    improper: true,
+    firstname: "Lunch break",
+    lastname: "",
+    title: "(lunch is not provided)",
+    time: "12:30-14:30",
+    sortdate: "2026-10-19",
+    date: "day1"
+  },
+  {
+    improper: true,
+    firstname: "Coffee break",
+    lastname: "",
+    title: "",
+    time: "16:00-16:30",
+    sortdate: "2026-10-19",
+    date: "day1"
+  },
+  {
+    improper: true,
+    firstname: "Poster session",
+    lastname: "",
+    title: "",
+    time: "17:30-19:00",
+    sortdate: "2026-10-19",
+    date: "day1"
+  },
+  {
+    improper: true,
+    firstname: "Apericena and networking reception",
+    lastname: "",
+    title: "",
+    time: "19:00-20:30",
+    sortdate: "2026-10-19",
+    date: "day1"
+  },
+  {
+    improper: true,
+    firstname: "Coffee break",
+    lastname: "",
+    title: "",
+    time: "10:30-11:00",
+    sortdate: "2026-10-20",
+    date: "day2"
+  },
+  {
+    improper: true,
+    firstname: "Lunch break",
+    lastname: "",
+    title: "(lunch is not provided)",
+    time: "12:30-14:30",
+    sortdate: "2026-10-20",
+    date: "day2"
+  },
+  {
+    improper: true,
+    firstname: "Coffee break",
+    lastname: "",
+    title: "",
+    time: "16:00-16:30",
+    sortdate: "2026-10-20",
+    date: "day2"
+  },
+  {
+    improper: true,
+    firstname: "",
+    lastname: "",
+    title: "Informal group walk through Ancient Rome",
+    time: "17:30-19:00",
+    sortdate: "2026-10-20",
+    date: "day2",
+    abstracttext: "Departure from DIAG and walk to the Imperial Fora via Colle Oppio and the Domus Aurea, with a view of the Colosseum and a stop at Sapienza’s historic Engineering campus at San Pietro in Vincoli and the adjacent basilica to see Michelangelo’s Moses."
+  },
+  {
+    improper: true,
+    firstname: "Coffee break",
+    lastname: "",
+    title: "",
+    time: "10:30-11:00",
+    sortdate: "2026-10-21",
+    date: "day3"
+  },
+  {
+    improper: true,
+    firstname: "Lunch break",
+    lastname: "",
+    title: "(lunch is not provided)",
+    time: "12:30-14:30",
+    sortdate: "2026-10-21",
+    date: "day3"
+  },
+  {
+    improper: true,
+    firstname: "Coffee break",
+    lastname: "",
+    title: "",
+    time: "16:00-16:30",
+    sortdate: "2026-10-21",
+    date: "day3"
+  },
+  {
+    improper: true,
+    firstname: "",
+    lastname: "",
+    title: "Closing session",
+    time: "17:15-17:30",
+    sortdate: "2026-10-21",
+    date: "day3",
+    abstracttext: "announcement of the Best Poster Competition winners, award ceremony, and closing remarks"
+  },
 ];
-
