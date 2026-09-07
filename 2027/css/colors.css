@@ -1,0 +1,20 @@
+/* MIP 2027: colours sampled from the supplied logo.
+   Use yellow as a background/accent with dark text, not as text on white. */
+:root {
+  --mip-yellow: #fece00;
+  --mip-black: #000000;
+  --mip-grey: #919191;
+  --navbar: #000000;
+  --navbartext: #ffffff;
+  --navbarselect: #fece00;
+  --navbarselecttext: #000000;
+  --highlight: #fece00;
+  --highlightext: #000000;
+  --highlightlink: #000000;
+  --maincolor1: #eeeeee;
+  --maincolor1text: #222222;
+  --maincolor1link: #000000;
+  --maincolor2: #ffffff;
+  --maincolor2text: #222222;
+  --maincolor2link: #000000;
+}
