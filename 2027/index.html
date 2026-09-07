@@ -9,6 +9,14 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/colors.css">
   <link rel="stylesheet" href="css/site.css">
+  <!-- Small page-specific overrides keep this update to one HTML file. -->
+  <style>
+    #about .society-link { text-decoration: none; font-weight: 600; }
+    #about .society-link:hover,
+    #about .society-link:focus-visible { text-decoration: underline; }
+    .credits-section { padding: 3.2rem 0; }
+    .credits-section p { margin-bottom: 0; }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -47,7 +55,9 @@
       <div class="container" id="about">
         <h2 id="about-heading">About</h2>
         <p>The Mixed Integer Programming (MIP) Workshop is a single-track workshop highlighting the latest trends in integer programming and discrete optimization, with speakers chosen by invitation.</p>
-        <p>MIP 2027 will take place at the University of Iowa from 24 to 28 May 2027. Links to past editions can be found on the <a href="https://www.mixedinteger.org/">Mixed Integer Programming Society website</a>.</p>
+        <p>MIP 2027 will take place at the University of Iowa from 24 to 28 May 2027.</p>
+        <p>The 2027 edition of the workshop will be the <strong>twenty-fourth</strong> in the MIP series. Links to past editions can be found <a class="society-link" href="https://www.mixedinteger.org/">here</a>. MIP 2027 is supported by the <a class="society-link" href="https://www.mixedinteger.org/">Mixed Integer Programming Society (MIPS)</a>, which is a section of the <a class="society-link" href="https://www.mathopt.org/">Mathematical Optimization Society (MOS)</a>.</p>
+        <p>The MIP 2027 organizing committee and the local organizing committee are committed to making the workshop a welcoming environment for all members of the MIP community. <strong>MIP 2027 will be an entirely in-person event.</strong> We look forward to seeing the community at the University of Iowa.</p>
       </div>
     </section>
 
@@ -87,13 +97,10 @@
     -->
   </main>
 
-  <footer class="credits">
-    <div class="container">
-      <p>Logo-Design by<br>
-        &copy; Julia Silbermann<br>
-        <a href="https://www.julia-silbermann.com/">www.julia-silbermann.com</a><br>
-        Font-Credits:<br>
-        Cornerstone, by Zac Freeland</p>
+  <footer class="highlight credits-section" aria-labelledby="credits-heading">
+    <div class="container" id="credits">
+      <h2 id="credits-heading">Credits</h2>
+      <p>Logo-Design by &copy; <a href="https://www.julia-silbermann.com/">Julia Silbermann</a> (Font-Credits: Cornerstone, by Zac Freeland).</p>
     </div>
   </footer>
 </body>
