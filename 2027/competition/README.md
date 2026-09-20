@@ -1,3 +1,5 @@
+<img src="https://www.mixedinteger.org/2027/images/mip-2027.jpg" width="400">
+
 # MIPcc27: The 2027 Land-Doig MIP Competition
 
 > **Preliminary announcement.** The final rules, instance set, and submission instructions will be
@@ -19,7 +21,7 @@ branch-and-bound algorithm, a fundamental component of every modern MIP solver.
 The competition is also supported by the
 [Mixed Integer Programming Society (MIPS)](http://mixedinteger.org), a section of the
 [Mathematical Optimization Society (MOS)](http://mathopt.org), via the
-[MIP workshop](https://www.mixedinteger.org/2026/).
+[MIP workshop](https://www.mixedinteger.org/2027/).
 
 ## Topic
 
