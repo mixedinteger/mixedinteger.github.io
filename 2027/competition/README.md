@@ -34,16 +34,16 @@ Explaining the outcomes of a MIP: for example, why a model is infeasible or how 
 feasible are natural questions that are difficult to answer due to the combinatorial nature of the
 problem.
 
-A widely used feature of commercial MIP solvers that aims at helping to explain infeasibility is the
-so-called Irreducible Infeasible Subsystems (IIS). For a given MIP instance, an IIS is a subsystem
-of linear constraints (including variable-bound constraints) that is still infeasible, but if any
-single kept element is removed the resulting subsystem becomes feasible.
+A widely used feature of commercial MIP solvers for explaining infeasibility is the so-called
+Irreducible Infeasible Subsystem (IIS). In the literature, an IIS is typically defined as a
+subsystem of the original linear constraints of the MIP formulation (including variable-bound
+constraints)that is infeasible, but becomes feasible if any single remaining element is removed.
 
-Producing a small IIS directly helps in having a short readable explanation of the infeasibility of
-a potentially much larger model. Yet, while most modern commercial solvers have developed
-(heuristic) methods to compute IIS in the context of MIP, there is very little scientific literature
-(see references below) on good techniques to compute an IIS, and open-source implementations are
-seldom (recently one was introduced in SCIP).
+Producing a small IIS directly helps provide a short, readable explanation of the infeasibility of a
+potentially much larger model. Yet, while most modern commercial MIP solvers have developed
+(heuristic) methods to compute IISs in the context of MIP, there is very little scientific
+literature (see references below) on good techniques for computing IISs, and open-source
+implementations are rare; one was recently introduced in SCIP.
 
 ### Problem Definition
 
@@ -89,20 +89,22 @@ For an infeasible instance of MIP, we say that $MIP(C,J)$ is an IIS if:
 This is a single-element irreducibility definition. In particular, relaxing a variable bound is
 treated as removing the corresponding bound constraint.
 
-Note that this definition of IIS differs from the literature in that it allows for the removal of
-integrality constraints.
+**Note that this definition of IIS differs from the literature in that it allows for the removal of
+integrality constraints.**
 
 ## Competition Task
 
 Given a collection of relatively simple infeasible MIP instances, produce for each instance an
 infeasible subsystem obtained by removing constraints and/or integrality constraints.
 
-The subsystem does not need to be an IIS; any infeasible subsystem is a valid output. Submissions are evaluated on both the size of the subsystem and whether it is an IIS (see Evaluation Criteria).
+The subsystem does not need to be an IIS; any infeasible subsystem is a valid output. Submissions
+are evaluated on both the size of the subsystem and whether it is an IIS (see Evaluation Criteria).
 
 ### Instance Selection
 
-The public and hidden evaluation instance sets will be announced with the final rules in early October 2026.
-Infeasible instances from [MIPLIB](https://miplib.zib.de/) can be used for starting.
+The public and hidden evaluation instance sets will be announced with the final rules in early
+October 2026. Infeasible instances from [MIPLIB](https://miplib.zib.de/) can be used as a starting
+point for investigating the topic.
 
 **Call for instances.** We welcome suggestions of interesting infeasible MIP instances from the
 community, in particular real-world or structurally novel instances for which a small IIS would be
@@ -148,15 +150,16 @@ The report must include the following information:
 - A description of the method developed and implemented, including any necessary citations to the
   literature and software used.
 - A section discussing the methodological and/or engineering innovations of the method (see
-  Evaluation Criteria above). If you have any clever implementation techniques to showcase (e.g.
-  performance optimization) please highlight (the jury will not check every details of the code).
+  Evaluation Criteria above). If you have any clever implementation techniques to showcase (e.g.,
+  performance optimizations), please highlight them (the jury will not check every detail of the
+  code).
 - Computational results on the open competition test set, including a table of results produced with
   the benchmarking script.
 
 ### Code
 
-The code should output a json file listing the constraint kept and optionally certificates that
-removing them results in a feasible system.
+The code should output a JSON file listing the kept constraints and, optionally, certificates
+showing that removing them yields a feasible system.
 
 ## Rules and Eligibility
 
@@ -172,7 +175,8 @@ removing them results in a feasible system.
 - Questions may be directed to the competition committee by opening an
   [Issue](https://github.com/pobonomo/mip-competition-2027/issues) or
   [Discussion](https://github.com/pobonomo/mip-competition-2027/discussions) on the competition
-  GitHub repository: [https://github.com/pobonomo/mip-competition-2027](https://github.com/pobonomo/mip-competition-2027),
+  GitHub repository:
+  [https://github.com/pobonomo/mip-competition-2027](https://github.com/pobonomo/mip-competition-2027),
   which will also host the checker and helper scripts.
 
 ### Technical Rules
@@ -194,13 +198,13 @@ The following will be published with the final rules:
 
 ## Timeline
 
-| Date             | Milestone                                                                       |
-| ---------------- | ------------------------------------------------------------------------------- |
-| September 2026   | Competition topic announcement                                                  |
+| Date               | Milestone                                                                       |
+| ------------------ | ------------------------------------------------------------------------------- |
+| September 2026     | Competition topic announcement                                                  |
 | Early October 2026 | Publication of rules, instance set and open registration                        |
-| Mid January 2027 | Registration closes                                                             |
-| Mid April 2027   | Final submission of solutions, evaluation on public and hidden set of instances |
-| End of May 2027  | MIP Workshop: Winners announced                                                 |
+| Mid January 2027   | Registration closes                                                             |
+| Mid April 2027     | Final submission of solutions, evaluation on public and hidden set of instances |
+| End of May 2027    | MIP Workshop: Winners announced                                                 |
 
 ## Organizing Committee
 
@@ -212,8 +216,8 @@ The following will be published with the final rules:
 - [Thiago Serra](https://thiagoserra.com) — University of Iowa
 
 For questions, feedback, or inquiries, please visit the competition GitHub repository:
-[https://github.com/pobonomo/MIPcc27](https://github.com/pobonomo/MIPcc27),
-which hosts the solution checker and helper scripts. Participants can open an
+[https://github.com/pobonomo/MIPcc27](https://github.com/pobonomo/MIPcc27), which hosts the solution
+checker and helper scripts. Participants can open an
 [Issue](https://github.com/pobonomo/MIPcc27/issues) or start a
 [Discussion](https://github.com/pobonomo/MIPcc27/discussions).
 
