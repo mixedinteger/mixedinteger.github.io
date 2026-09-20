@@ -23,7 +23,6 @@ The competition is also supported by the
 The topic of the 2027 MIP competition is "Explainability and Small Infeasible Subsystems". The goal
 is to advance the state of the art on computing small infeasible subsystems.
 
-
 ## Timeline
 
 | Date               | Milestone                                                                       |
@@ -44,7 +43,6 @@ is to advance the state of the art on computing small infeasible subsystems.
 - [Thiago Serra](https://thiagoserra.com) — University of Iowa
 
 For questions, feedback, or inquiries, please visit the competition GitHub repository:
-[https://github.com/pobonomo/MIPcc27](https://github.com/pobonomo/MIPcc27), which hosts the solution
-checker and helper scripts. Participants can open an
-[Issue](https://github.com/pobonomo/MIPcc27/issues) or start a
+<https://github.com/pobonomo/MIPcc27>, which hosts the solution checker and helper scripts.
+Participants can open an [Issue](https://github.com/pobonomo/MIPcc27/issues) or start a
 [Discussion](https://github.com/pobonomo/MIPcc27/discussions).
