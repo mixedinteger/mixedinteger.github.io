@@ -1,0 +1,55 @@
+<style>
+  body {
+    background: linear-gradient(120deg, #fffef5 0%, #fff9d8 22%, #f5f5f5 52%, #fff5c2 100%);
+    background-size: 180% 180%;
+    animation: mipBackgroundShift 18s ease-in-out infinite alternate;
+  }
+
+  .nav-band {
+    background: linear-gradient(90deg, #000 0%, #1a1a1a 100%);
+    box-shadow: inset 0 -1px 0 rgba(255,255,255,0.08);
+  }
+
+  .firstrow {
+    background: #fff;
+  }
+
+  .credits-section {
+    padding: 3.2rem 0;
+  }
+
+  .credits-section p {
+    margin-bottom: 0;
+  }
+
+  @keyframes mipBackgroundShift {
+    0%   { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+</style>
+
+<header class="firstrow">
+  <div class="container">
+    <div class="row masthead">
+      <div class="six columns">
+        <img class="workshop-logo" src="../images/mip-2027.jpg" alt="MIP 2027 logo" width="2047" height="1191">
+      </div>
+      <div class="six columns">
+        <h1>MIPcc27: The 2027 Land-Doig MIP Competition</h1>
+        <p class="date"><time datetime="2026-10-01">Preliminary announcement</time></p>
+        <p class="place">Competition page</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="nav-band">
+  <nav class="container topnav" aria-label="Main navigation">
+    <a class="active" href="index.html" aria-current="page">Competition</a>
+    <a href="https://github.com/pobonomo/MIPcc27">GitHub</a>
+    <a href="../index.html">Workshop</a>
+  </nav>
+</div>
+
+<main id="main" tabindex="-1">
+  <div class="container">

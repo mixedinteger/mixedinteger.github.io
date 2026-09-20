@@ -38,7 +38,8 @@ if matches:
         end = matches[i + 1].start() if i + 1 < len(matches) else len(body)
         block = body[start:end].strip()
         if block:
-            sections.append(f'<section class="{classes[i % len(classes)]}">{block}</section>')
+          class_name = 'mainstyle2' if 'id="references"' in match.group(0) else classes[i % len(classes)]
+          sections.append(f'<section class="{class_name}">{block}</section>')
     body = '\n'.join(sections)
 new_html = content.split('<body>', 1)[0] + '<body>' + '\n' + header + '\n' + body + '\n' + footer + '\n</body>\n</html>\n'
 out.write_text(new_html)
