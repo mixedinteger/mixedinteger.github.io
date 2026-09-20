@@ -212,10 +212,10 @@ The following will be published with the final rules:
 - [Thiago Serra](https://thiagoserra.com) — University of Iowa
 
 For questions, feedback, or inquiries, please visit the competition GitHub repository:
-[https://github.com/pobonomo/mip-competition-2027](https://github.com/pobonomo/mip-competition-2027),
+[https://github.com/pobonomo/MIPcc27](https://github.com/pobonomo/MIPcc27),
 which hosts the solution checker and helper scripts. Participants can open an
-[Issue](https://github.com/pobonomo/mip-competition-2027/issues) or start a
-[Discussion](https://github.com/pobonomo/mip-competition-2027/discussions).
+[Issue](https://github.com/pobonomo/MIPcc27/issues) or start a
+[Discussion](https://github.com/pobonomo/MIPcc27/discussions).
 
 ## References
 
