@@ -36,7 +36,13 @@ h2 { padding-top: 0; margin-bottom: 1.6rem; font-size: 3rem; }
 .mainstyle1 a { color: var(--maincolor1link); }
 .mainstyle2 { background: var(--maincolor2); color: var(--maincolor2text); }
 .mainstyle2 a { color: var(--maincolor2link); }
-section { padding: 3.2rem 0; }
+section {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding: 3.2rem calc(50vw - 50%) 3.2rem;
+  box-sizing: border-box;
+}
 section p:last-child { margin-bottom: 0; }
 a { color: #222; text-underline-offset: .2em; overflow-wrap: anywhere; }
 a:hover { color: #000; text-decoration-thickness: 2px; }
