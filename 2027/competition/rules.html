@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>MIPcc27: The 2027 Land-Doig MIP Competition</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <link rel="stylesheet" href="../css/skeleton.css" />
+  <link rel="stylesheet" href="../css/colors.css" />
+  <link rel="stylesheet" href="../css/site.css" />
+</head>
+<body>
+<style>
+  body {
+    background: linear-gradient(120deg, #fffef5 0%, #fff9d8 22%, #f5f5f5 52%, #fff5c2 100%);
+    background-size: 180% 180%;
+    animation: mipBackgroundShift 18s ease-in-out infinite alternate;
+  }
+
+  .nav-band {
+    background: linear-gradient(90deg, #000 0%, #1a1a1a 100%);
+    box-shadow: inset 0 -1px 0 rgba(255,255,255,0.08);
+  }
+
+  .firstrow {
+    background: #fff;
+  }
+
+  .credits-section {
+    padding: 3.2rem 0;
+  }
+
+  .credits-section p {
+    margin-bottom: 0;
+  }
+
+  @keyframes mipBackgroundShift {
+    0%   { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+</style>
+
+<header class="firstrow">
+  <div class="container">
+    <div class="row masthead">
+      <div class="six columns">
+        <img class="workshop-logo" src="../images/mip-2027.jpg" alt="MIP 2027 logo" width="2047" height="1191">
+      </div>
+      <div class="six columns">
+        <h1>The 2027 Land-Doig MIP Competition</h1>
+        <p class="place">Explainability and Small Infeasible Subsystems</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="nav-band">
+  <nav class="container topnav" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="topic.html">Topic</a>
+    <a class="active" href="rules.html">Rules</a>
+    <a href="https://github.com/pobonomo/MIPcc27">GitHub</a>
+    <a href="../index.html">Workshop</a>
+  </nav>
+</div>
+
+<main id="main" tabindex="-1">
+  <div class="container">
+
+<section class="highlight"><blockquote>
+<p><strong>Preliminary announcement.</strong> The final rules, instance
+set, and submission instructions still to be announced are listed below
+in <a href="#to-be-announced-early-october-2026">To Be Announced</a>;
+see also the <a href="index.html#timeline">timeline</a>.</p>
+</blockquote></section>
+<section class="mainstyle1"><h2 id="submission-requirements">Submission Requirements</h2>
+<h3 id="report">Report</h3>
+<p>All participants must submit a written report of <strong>10 pages
+maximum</strong> plus references, in Springer LNCS format. The report
+and the code must be submitted together.</p>
+<p>The report must include the following information:</p>
+<ul>
+<li>A description of the method developed and implemented, including any
+necessary citations to the literature and software used.</li>
+<li>A section discussing the methodological and/or engineering
+innovations of the method (see Evaluation Criteria above). If you have
+any clever implementation techniques to showcase (e.g., performance
+optimizations), please highlight them (the jury will not check every
+detail of the code).</li>
+<li>Computational results on the open competition test set, including a
+table of results produced with the benchmarking script.</li>
+</ul>
+<h3 id="code">Code</h3>
+<p>The code should output a JSON file listing the kept constraints and,
+optionally, certificates showing that removing them yields a feasible
+system.</p></section>
+<section class="mainstyle2"><h2 id="rules-and-eligibility">Rules and Eligibility</h2>
+<h3 id="rules-for-participation">Rules for Participation</h3>
+<ul>
+<li>Participants must not be an organizer of the competition nor a
+family member of a competition organizer. Otherwise, there is no
+restriction on participation.</li>
+<li>Student participation is strongly encouraged.</li>
+<li>Should participants be related to organizers of the competition
+(e.g., students of an organizer), the rest of the committee will decide
+whether a conflict of interest is at hand and affected organizers should
+not be part of the jury for the final evaluation.</li>
+<li>Participants can be a single entrant or a team; there is no
+restriction on the size of teams.</li>
+<li>Questions may be directed to the competition committee by opening an
+<a
+href="https://github.com/pobonomo/mip-competition-2027/issues">Issue</a>
+or <a
+href="https://github.com/pobonomo/mip-competition-2027/discussions">Discussion</a>
+on the competition GitHub repository: <a
+href="https://github.com/pobonomo/mip-competition-2027"><a
+href="https://github.com/pobonomo/mip-competition-2027">https://github.com/pobonomo/mip-competition-2027</a></a>,
+which will also host the checker and helper scripts.</li>
+</ul>
+<h3 id="technical-rules">Technical Rules</h3>
+<ul>
+<li>Competitors cannot use commercial solvers as subroutines of the
+final submission.</li>
+</ul></section>
+<section class="mainstyle1"><h2 id="to-be-announced-early-october-2026">To Be Announced (Early
+October 2026)</h2>
+<p>The following will be published with the final rules:</p>
+<ul>
+<li>Complete rules and problem/instance specification</li>
+<li>Public and hidden evaluation instance sets</li>
+<li>Instructions for submitting community instance suggestions</li>
+<li>Public release of the solution checker</li>
+<li>Registration form and process</li>
+<li>Code submission requirements (build, execution, interface,
+language)</li>
+<li>Organizing committee contact details</li>
+<li>Prizes and any associated support</li>
+</ul></section>
+  </div>
+</main>
+
+<footer class="mainstyle1 credits-section" aria-labelledby="credits-heading">
+  <div class="container" id="credits">
+    <h2 id="credits-heading">Credits</h2>
+    <p>Logo-design by &copy; <a href="https://www.julia-silbermann.com/">Julia Silbermann</a> (Font-Credits: Cornerstone, by Zac Freeland).</p>
+  </div>
+</footer>
+
+</body>
+</html>

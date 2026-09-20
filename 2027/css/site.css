@@ -26,7 +26,8 @@ h2 { padding-top: 0; margin-bottom: 1.6rem; font-size: 3rem; }
   text-decoration: none;
   font-size: 1.7rem;
 }
-.topnav a.active, .topnav a:hover {
+.topnav a.active,
+.topnav a:hover {
   color: var(--navbarselecttext);
   background: var(--navbarselect);
 }

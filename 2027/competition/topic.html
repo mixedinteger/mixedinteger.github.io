@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>MIPcc27: The 2027 Land-Doig MIP Competition</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <link rel="stylesheet" href="../css/skeleton.css" />
+  <link rel="stylesheet" href="../css/colors.css" />
+  <link rel="stylesheet" href="../css/site.css" />
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<style>
+  body {
+    background: linear-gradient(120deg, #fffef5 0%, #fff9d8 22%, #f5f5f5 52%, #fff5c2 100%);
+    background-size: 180% 180%;
+    animation: mipBackgroundShift 18s ease-in-out infinite alternate;
+  }
+
+  .nav-band {
+    background: linear-gradient(90deg, #000 0%, #1a1a1a 100%);
+    box-shadow: inset 0 -1px 0 rgba(255,255,255,0.08);
+  }
+
+  .firstrow {
+    background: #fff;
+  }
+
+  .credits-section {
+    padding: 3.2rem 0;
+  }
+
+  .credits-section p {
+    margin-bottom: 0;
+  }
+
+  @keyframes mipBackgroundShift {
+    0%   { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+</style>
+
+<header class="firstrow">
+  <div class="container">
+    <div class="row masthead">
+      <div class="six columns">
+        <img class="workshop-logo" src="../images/mip-2027.jpg" alt="MIP 2027 logo" width="2047" height="1191">
+      </div>
+      <div class="six columns">
+        <h1>The 2027 Land-Doig MIP Competition</h1>
+        <p class="place">Explainability and Small Infeasible Subsystems</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="nav-band">
+  <nav class="container topnav" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a class="active" href="topic.html">Topic</a>
+    <a href="rules.html">Rules</a>
+    <a href="https://github.com/pobonomo/MIPcc27">GitHub</a>
+    <a href="../index.html">Workshop</a>
+  </nav>
+</div>
+
+<main id="main" tabindex="-1">
+  <div class="container">
+
+<section class="highlight"><blockquote>
+<p><strong>Preliminary announcement.</strong> The final rules, instance
+set, and submission instructions still to be announced are listed on the
+<a href="rules.html#to-be-announced-early-october-2026">Rules page</a>;
+see also the <a href="index.html#timeline">timeline</a>.</p>
+</blockquote></section>
+<section class="mainstyle1"><h2 id="topic">Topic</h2>
+<p>The topic of the 2027 MIP competition is "Explainability and Small
+Infeasible Subsystems". The goal is to advance the state of the art on
+computing small infeasible subsystems.</p>
+<h3 id="motivation">Motivation</h3>
+<p>Explaining the outcomes of a MIP: for example, why a model is
+infeasible or how it could be made feasible are natural questions that
+are difficult to answer due to the combinatorial nature of the
+problem.</p>
+<p>A widely used feature of commercial MIP solvers for explaining
+infeasibility is the so-called Irreducible Infeasible Subsystem (IIS).
+In the literature, an IIS is typically defined as a subsystem of the
+original linear constraints of the MIP formulation (including
+variable-bound constraints)that is infeasible, but becomes feasible if
+any single remaining element is removed.</p>
+<p>Producing a small IIS directly helps provide a short, readable
+explanation of the infeasibility of a potentially much larger model.
+Yet, while most modern commercial MIP solvers have developed (heuristic)
+methods to compute IISs in the context of MIP, there is very little
+scientific literature (see references below) on good techniques for
+computing IISs, and open-source implementations are rare; one was
+recently introduced in SCIP.</p>
+<h3 id="problem-definition">Problem Definition</h3>
+<p>We are given a MIP of the form</p>
+<p><span class="math display">\[
+\begin{aligned}
+\min \quad &amp; c^T x\\
+\text{s.t.} \quad &amp; Ax\leq b \\
+&amp; x_i \in \mathbb{Z} &amp;&amp; \forall i \in I, \\
+&amp; x \in \mathbb{R}^n.
+\end{aligned}
+\]</span></p>
+<p>Note that the system <span class="math inline">\(Ax \le b\)</span>
+may include variable-bound constraints, i.e., constraints of the form
+<span class="math inline">\(x_i \le u_i\)</span> or <span
+class="math inline">\(x_i \ge l_i\)</span> for some <span
+class="math inline">\(i \in \{1,\ldots,n\}\)</span>. All linear
+constraints are indexed by set <span
+class="math inline">\(M\)</span>.</p>
+<p>In this competition, a subsystem is obtained from the original MIP
+by:</p>
+<ol type="1">
+<li>removing a subset of linear constraints (including bound
+constraints), and/or</li>
+<li>removing integrality constraints for a subset of integer
+variables.</li>
+</ol>
+<p>Let <span class="math inline">\(C \subseteq M\)</span> be the set of
+kept linear constraints and let <span class="math inline">\(J \subseteq
+I\)</span> be the set of variables that remain integer. The resulting
+subsystem is denoted by <span class="math inline">\(MIP(C,J)\)</span>
+and is formally defined as</p>
+<p><span class="math display">\[
+\begin{aligned}
+\min \quad &amp; c^T x\\
+\mathrm{s.t.} \quad &amp; a_r^T x \le b_r &amp;&amp; \forall r \in C, \\
+&amp; x_j \in \mathbb{Z} &amp;&amp; \forall j \in J, \\
+&amp; x \in \mathbb{R}^n.
+\end{aligned}
+\]</span></p>
+<p>For an infeasible instance of MIP, we say that <span
+class="math inline">\(MIP(C,J)\)</span> is an IIS if:</p>
+<ol type="1">
+<li><span class="math inline">\(MIP(C,J)\)</span> is infeasible;</li>
+<li>for every constraint <span class="math inline">\(r \in C\)</span>,
+the subsystem <span class="math inline">\(MIP(C \setminus \{r\},
+J)\)</span> is feasible;</li>
+<li>for every integer variable <span class="math inline">\(j \in
+J\)</span>, the subsystem <span class="math inline">\(MIP(C, J \setminus
+\{j\})\)</span> is feasible.</li>
+</ol>
+<p>This is a single-element irreducibility definition. In particular,
+relaxing a variable bound is treated as removing the corresponding bound
+constraint.</p>
+<p><strong>Note that this definition of IIS differs from the literature
+in that it allows for the removal of integrality
+constraints.</strong></p></section>
+<section class="mainstyle2"><h2 id="competition-task">Competition Task</h2>
+<p>Given a collection of relatively simple infeasible MIP instances,
+produce for each instance an infeasible subsystem obtained by removing
+constraints and/or integrality constraints.</p>
+<p>The subsystem does not need to be an IIS; any infeasible subsystem is
+a valid output. Submissions are evaluated on both the size of the
+subsystem and whether it is an IIS (see Evaluation Criteria).</p>
+<h3 id="instance-selection">Instance Selection</h3>
+<p>The public and hidden evaluation instance sets will be announced with
+the final rules in early October 2026. Infeasible instances from <a
+href="https://miplib.zib.de/">MIPLIB</a> can be used as a starting point
+for investigating the topic.</p>
+<p><strong>Call for instances.</strong> We welcome suggestions of
+interesting infeasible MIP instances from the community, in particular
+real-world or structurally novel instances for which a small IIS would
+be practically valuable or illustrative. Instructions for submitting
+instance suggestions will be published with the final rules.</p>
+<h3 id="input--output">Input / Output</h3>
+<ul>
+<li><strong>Input:</strong> infeasible MIP instances in MPS format.</li>
+<li><strong>Output:</strong> list of constraints and integrality
+constraints that are kept in the infeasible subsystem.</li>
+</ul></section>
+<section class="mainstyle1"><h2 id="evaluation-criteria">Evaluation Criteria</h2>
+<p>As is usual in the MIP competition, the jury will evaluate the
+submissions based both on performance and innovation.</p>
+<h3 id="performance">Performance</h3>
+<p>The evaluation criteria will combine:</p>
+<ol type="1">
+<li>Correctness: the output is obtained only by constraint removal
+(including bound constraints) and/or integrality-constraint removal, and
+it is infeasible.</li>
+<li>Size of the subsystem</li>
+<li>Speed of computation</li>
+<li>Whether the submitted subsystem is an IIS, supported by feasible
+certificates for each single-element relaxation</li>
+</ol>
+<h3 id="innovation">Innovation</h3>
+<p>The jury will also evaluate the quality and novelty of the approach
+described in the submitted report.</p></section>
+<section class="mainstyle2"><h2 id="references">References</h2>
+<p>There is surprisingly little scientific literature on the topic of
+computing IIS for MIP. Here are three references that are relevant to
+the topic:</p>
+<p>Guieu, O., &amp; Chinneck, J. W. (1999). <em>Analyzing infeasible
+mixed-integer and integer linear programs</em>. INFORMS Journal on
+Computing, <strong>11</strong>(1), 63–77. <a
+href="https://doi.org/10.1287/ijoc.11.1.63">https://doi.org/10.1287/ijoc.11.1.63</a></p>
+<p>Pfetsch, M. E. (2008). <em>Branch-and-cut for the maximum feasible
+subsystem problem</em>. SIAM Journal on Optimization,
+<strong>19</strong>(1), 21–38. <a
+href="https://doi.org/10.1137/050645828">https://doi.org/10.1137/050645828</a></p>
+<p>Amaldi, E., Pfetsch, M. E., &amp; Trotter Jr., L. E. (2003). <em>On
+the maximum feasible subsystem problem, IISs, and IIS-hypergraphs</em>.
+Mathematical Programming, <strong>95</strong>(3), 533–554.</p></section>
+  </div>
+</main>
+
+<footer class="mainstyle1 credits-section" aria-labelledby="credits-heading">
+  <div class="container" id="credits">
+    <h2 id="credits-heading">Credits</h2>
+    <p>Logo-design by &copy; <a href="https://www.julia-silbermann.com/">Julia Silbermann</a> (Font-Credits: Cornerstone, by Zac Freeland).</p>
+  </div>
+</footer>
+
+</body>
+</html>
