@@ -46,3 +46,15 @@ For questions, feedback, or inquiries, please visit the competition GitHub repos
 <https://github.com/mixedinteger/MIPcc27>, which hosts the solution checker and helper scripts.
 Participants can open an [Issue](https://github.com/mixedinteger/MIPcc27/issues) or start a
 [Discussion](https://github.com/mixedinteger/MIPcc27/discussions).
+
+## Past Competitions
+
+- [2026](https://www.mixedinteger.org/2026/competition/): GPU-Accelerated
+  Primal Heuristics for MIP
+- [2025](https://www.mixedinteger.org/2025/competition/): MIP Quadratic Primal
+  Heuristics
+- [2024](https://github.com/dominiqs81/MIPcc24): MIP Presolve
+- [2023](https://github.com/ambros-gleixner/MIPcc23): MIP Reoptimization
+- [2022](https://www.mixedinteger.org/2022/competition/): General-purpose
+  primal heuristic
+
