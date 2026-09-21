@@ -43,6 +43,6 @@ is to advance the state of the art on computing small infeasible subsystems.
 - [Thiago Serra](https://thiagoserra.com) — University of Iowa
 
 For questions, feedback, or inquiries, please visit the competition GitHub repository:
-<https://github.com/pobonomo/MIPcc27>, which hosts the solution checker and helper scripts.
-Participants can open an [Issue](https://github.com/pobonomo/MIPcc27/issues) or start a
-[Discussion](https://github.com/pobonomo/MIPcc27/discussions).
+<https://github.com/mixedinteger/MIPcc27>, which hosts the solution checker and helper scripts.
+Participants can open an [Issue](https://github.com/mixedinteger/MIPcc27/issues) or start a
+[Discussion](https://github.com/mixedinteger/MIPcc27/discussions).

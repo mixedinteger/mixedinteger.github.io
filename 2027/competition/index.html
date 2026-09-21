@@ -1,17 +1,31 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
+  <meta name="generator" content="pandoc 3.11" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>The 2027 Land-Doig MIP Competition</title>
   <style>
-    code{white-space: pre-wrap;}
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
   </style>
   <link rel="stylesheet" href="https://www.mixedinteger.org/2027/css/normalize.css" />
   <link rel="stylesheet" href="https://www.mixedinteger.org/2027/css/skeleton.css" />
@@ -117,30 +131,30 @@ computing small infeasible subsystems.</p></section>
 <section class="mainstyle2"><h2 id="timeline">Timeline</h2>
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>Date</th>
 <th>Milestone</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>September 2026</td>
 <td>Competition topic announcement</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Early October 2026</td>
 <td>Publication of rules, instance set and open registration</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Mid January 2027</td>
 <td>Registration closes</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Mid April 2027</td>
 <td>Final submission of solutions, evaluation on public and hidden set
 of instances</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>End of May 2027</td>
 <td>MIP Workshop: Winners announced</td>
 </tr>
@@ -163,11 +177,12 @@ Iowa</li>
 </ul>
 <p>For questions, feedback, or inquiries, please visit the competition
 GitHub repository: <a
-href="https://github.com/pobonomo/MIPcc27">https://github.com/pobonomo/MIPcc27</a>,
+href="https://github.com/mixedinteger/MIPcc27">https://github.com/mixedinteger/MIPcc27</a>,
 which hosts the solution checker and helper scripts. Participants can
-open an <a href="https://github.com/pobonomo/MIPcc27/issues">Issue</a>
-or start a <a
-href="https://github.com/pobonomo/MIPcc27/discussions">Discussion</a>.</p></section>
+open an <a
+href="https://github.com/mixedinteger/MIPcc27/issues">Issue</a> or start
+a <a
+href="https://github.com/mixedinteger/MIPcc27/discussions">Discussion</a>.</p></section>
   </div>
 </main>
 

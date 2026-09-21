@@ -37,9 +37,9 @@ showing that removing them yields a feasible system.
   organizers should not be part of the jury for the final evaluation.
 - Participants can be a single entrant or a team; there is no restriction on the size of teams.
 - Questions may be directed to the competition committee by opening an
-  [Issue](https://github.com/pobonomo/MIPcc27/issues) or
-  [Discussion](https://github.com/pobonomo/MIPcc27/discussions) on the competition GitHub
-  repository: <https://github.com/pobonomo/MIPcc27>, which will also host the checker and helper
+  [Issue](https://github.com/mixedinteger/MIPcc27/issues) or
+  [Discussion](https://github.com/mixedinteger/MIPcc27/discussions) on the competition GitHub
+  repository: <https://github.com/mixedinteger/MIPcc27>, which will also host the checker and helper
   scripts.
 
 ### Technical Rules
