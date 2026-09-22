@@ -16,8 +16,11 @@
     #about .society-link:hover,
     #about .society-link:focus-visible { text-decoration: underline; }
     .committee-list { list-style-type: disc; }
-    .committee-group + .committee-group { margin-top: 3.2rem; }
-    .competition-announcement { margin-top: 3.2rem; }
+    .committee-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 3.2rem; }
+    .committee-group { min-width: 0; }
+    @media (min-width: 900px) {
+      .committee-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
     .credits-section { padding: 3.2rem 0; }
     .credits-section p { margin-bottom: 0; }
   </style>
@@ -70,48 +73,53 @@
         <p><strong>25–28 May 2027:</strong> MIP Workshop, University of Iowa.</p>
         <!-- TODO: Add registration and submission deadlines when confirmed. -->
         <p>Registration details and information about poster and flash talk submissions will be posted as they become available.</p>
-        <div class="competition-announcement" id="competition" role="region" aria-labelledby="competition-heading">
-          <h2 id="competition-heading">Land-Doig MIP Competition</h2>
-          <p>The 2027 MIP Workshop will host a computational competition for research teams to showcase their practical, computational prowess. It is called the Land-Doig MIP Competition in honor of Ailsa H. Land and Alison G. Harcourt (née Doig), with permission.</p>
-        </div>
       </div>
     </section>
 
-    <section class="mainstyle1" aria-labelledby="committee-heading">
+    <section class="mainstyle1" aria-labelledby="competition-heading">
+      <div class="container" id="competition">
+        <h2 id="competition-heading">Land-Doig MIP Competition</h2>
+        <p>The 2027 MIP Workshop will host a computational competition for research teams to showcase their practical, computational prowess. It is called the Land-Doig MIP Competition in honor of Ailsa H. Land and Alison G. Harcourt (née Doig), with permission.</p>
+      </div>
+    </section>
+
+    <section class="highlight" aria-labelledby="committee-heading">
       <div class="container" id="committee">
         <h2 id="committee-heading">Organization</h2>
-        <div class="committee-group" id="program-committee">
-          <h3>MIP Program Committee</h3>
-          <ul class="committee-list">
-            <li><a href="https://sites.google.com/view/bestebasciftci/home">Beste Basciftci</a> (chair)</li>
-            <li><a href="https://ryancorywright.github.io/">Ryan Cory-Wright</a></li>
-            <li><a href="https://shuvomoy.github.io/">Shuvomoy Das Gupta</a></li>
-            <li><a href="https://sites.google.com/view/damr">Diego Morán Ramírez</a></li>
-            <li><a href="https://u.osu.edu/xianyu/">Xian Yu</a></li>
-          </ul>
-        </div>
-        <div class="committee-group" id="local-committee">
-          <h3>Local Organization</h3>
-          <ul class="committee-list">
-            <li><a href="https://sites.google.com/view/bestebasciftci/home">Beste Basciftci</a></li>
-            <li><a href="https://sburer.github.io/">Sam Burer</a></li>
-            <li><a href="https://sites.uci.edu/hosseini/">Mojtaba Hosseini</a></li>
-            <li><a href="https://tippie.uiowa.edu/people/qihang-lin">Qihang Lin</a></li>
-            <li><a href="https://qi-luo-or.com/">Qi Luo</a></li>
-            <li><a href="https://thiagoserra.com/">Thiago Serra</a> (chair)</li>
-            <li><a href="https://renbozhao.github.io/">Renbo Zhao</a></li>
-          </ul>
-        </div>
-        <div class="committee-group" id="competition-committee">
-          <h3>Competition Committee</h3>
-          <ul class="committee-list">
-            <li><a href="https://support.gurobi.com/hc/en-us/profiles/401593985232-Pierre-Bonami">Pierre Bonami</a> (chair)</li>
-            <li><a href="https://shuvomoy.github.io/">Shuvomoy Das Gupta</a></li>
-            <li><a href="https://www.zib.de/userpage/gamrath/">Gerald Gamrath</a></li>
-            <li><a href="https://sites.google.com/view/reemkhir">Reem Khir</a></li>
-            <li><a href="https://gionimexi.com/">Gioni Mexi</a></li>
-            <li><a href="https://thiagoserra.com/">Thiago Serra</a></li>
-          </ul>
+        <div class="committee-grid">
+          <div class="committee-group" id="program-committee">
+            <h3>MIP Program Committee</h3>
+            <ul class="committee-list">
+              <li><a href="https://sites.google.com/view/bestebasciftci/home">Beste Basciftci</a> (chair)</li>
+              <li><a href="https://ryancorywright.github.io/">Ryan Cory-Wright</a></li>
+              <li><a href="https://shuvomoy.github.io/">Shuvomoy Das Gupta</a></li>
+              <li><a href="https://sites.google.com/view/damr">Diego Morán Ramírez</a></li>
+              <li><a href="https://u.osu.edu/xianyu/">Xian Yu</a></li>
+            </ul>
+          </div>
+          <div class="committee-group" id="local-committee">
+            <h3>Local Organization</h3>
+            <ul class="committee-list">
+              <li><a href="https://sites.google.com/view/bestebasciftci/home">Beste Basciftci</a></li>
+              <li><a href="https://sburer.github.io/">Sam Burer</a></li>
+              <li><a href="https://sites.uci.edu/hosseini/">Mojtaba Hosseini</a></li>
+              <li><a href="https://tippie.uiowa.edu/people/qihang-lin">Qihang Lin</a></li>
+              <li><a href="https://qi-luo-or.com/">Qi Luo</a></li>
+              <li><a href="https://thiagoserra.com/">Thiago Serra</a> (chair)</li>
+              <li><a href="https://renbozhao.github.io/">Renbo Zhao</a></li>
+            </ul>
+          </div>
+          <div class="committee-group" id="competition-committee">
+            <h3>Competition Committee</h3>
+            <ul class="committee-list">
+              <li><a href="https://support.gurobi.com/hc/en-us/profiles/401593985232-Pierre-Bonami">Pierre Bonami</a> (chair)</li>
+              <li><a href="https://shuvomoy.github.io/">Shuvomoy Das Gupta</a></li>
+              <li><a href="https://www.zib.de/userpage/gamrath/">Gerald Gamrath</a></li>
+              <li><a href="https://sites.google.com/view/reemkhir">Reem Khir</a></li>
+              <li><a href="https://gionimexi.com/">Gioni Mexi</a></li>
+              <li><a href="https://thiagoserra.com/">Thiago Serra</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -130,7 +138,7 @@
     -->
   </main>
 
-  <footer class="highlight credits-section" aria-labelledby="credits-heading">
+  <footer class="mainstyle2 credits-section" aria-labelledby="credits-heading">
     <div class="container" id="credits">
       <h2 id="credits-heading">Credits</h2>
       <p>Logo-Design by &copy; <a href="https://www.julia-silbermann.com/">Julia Silbermann</a> (Font-Credits: Cornerstone, by Zac Freeland).</p>
