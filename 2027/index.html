@@ -16,6 +16,8 @@
     #about .society-link:hover,
     #about .society-link:focus-visible { text-decoration: underline; }
     .committee-list { list-style-type: disc; }
+    .committee-group + .committee-group { margin-top: 3.2rem; }
+    .competition-announcement { margin-top: 3.2rem; }
     .credits-section { padding: 3.2rem 0; }
     .credits-section p { margin-bottom: 0; }
   </style>
@@ -58,7 +60,7 @@
         <h2 id="about-heading">About</h2>
         <p>The Mixed Integer Programming (MIP) Workshop is a single-track workshop highlighting the latest trends in integer programming and discrete optimization, with speakers chosen by invitation.</p>
         <p>The 2027 edition of the workshop will be the <strong>twenty-fourth</strong> in the MIP series. Links to past editions can be found <a class="society-link" href="https://www.mixedinteger.org/">here</a>. MIP 2027 is supported by the <a class="society-link" href="https://www.mixedinteger.org/">Mixed Integer Programming Society (MIPS)</a>, which is a section of the <a class="society-link" href="https://www.mathopt.org/">Mathematical Optimization Society (MOS)</a>.</p>
-        <p>The MIP 2027 organizing committee and the local organizing committee are committed to making the workshop a welcoming environment for all members of the MIP community. <strong>MIP 2027 will be an entirely in-person event.</strong> We look forward to seeing the community at the University of Iowa.</p>
+        <p>The MIP 2027 program committee and the local organizing committee are committed to making the workshop a welcoming environment for all members of the MIP community. <strong>MIP 2027 will be an entirely in-person event.</strong> We look forward to seeing the community at the University of Iowa.</p>
       </div>
     </section>
 
@@ -68,19 +70,49 @@
         <p><strong>25–28 May 2027:</strong> MIP Workshop, University of Iowa.</p>
         <!-- TODO: Add registration and submission deadlines when confirmed. -->
         <p>Registration details and information about poster and flash talk submissions will be posted as they become available.</p>
+        <div class="competition-announcement" id="competition" role="region" aria-labelledby="competition-heading">
+          <h2 id="competition-heading">Land-Doig MIP Competition</h2>
+          <p>The 2027 MIP Workshop will host a computational competition for research teams to showcase their practical, computational prowess. It is called the Land-Doig MIP Competition in honor of Ailsa H. Land and Alison G. Harcourt (née Doig), with permission.</p>
+        </div>
       </div>
     </section>
 
     <section class="mainstyle1" aria-labelledby="committee-heading">
       <div class="container" id="committee">
-        <h2 id="committee-heading">Organizing Committee</h2>
-        <ul class="committee-list">
-          <li><a href="https://sites.google.com/view/bestebasciftci/home">Beste Basciftci</a> (University of Iowa), <strong>Chair</strong></li>
-          <li><a href="https://ryancorywright.github.io/">Ryan Cory-Wright</a> (Imperial Business School)</li>
-          <li><a href="https://shuvomoy.github.io/">Shuvomoy Das Gupta</a> (Rice University)</li>
-          <li><a href="https://sites.google.com/view/damr">Diego Morán Ramírez</a> (Rensselaer Polytechnic Institute)</li>
-          <li><a href="https://u.osu.edu/xianyu/">Xian Yu</a> (The Ohio State University)</li>
-        </ul>
+        <h2 id="committee-heading">Organization</h2>
+        <div class="committee-group" id="program-committee">
+          <h3>MIP Program Committee</h3>
+          <ul class="committee-list">
+            <li><a href="https://sites.google.com/view/bestebasciftci/home">Beste Basciftci</a> (chair)</li>
+            <li><a href="https://ryancorywright.github.io/">Ryan Cory-Wright</a></li>
+            <li><a href="https://shuvomoy.github.io/">Shuvomoy Das Gupta</a></li>
+            <li><a href="https://sites.google.com/view/damr">Diego Morán Ramírez</a></li>
+            <li><a href="https://u.osu.edu/xianyu/">Xian Yu</a></li>
+          </ul>
+        </div>
+        <div class="committee-group" id="local-committee">
+          <h3>Local Organization</h3>
+          <ul class="committee-list">
+            <li><a href="https://sites.google.com/view/bestebasciftci/home">Beste Basciftci</a></li>
+            <li><a href="https://sburer.github.io/">Sam Burer</a></li>
+            <li><a href="https://sites.uci.edu/hosseini/">Mojtaba Hosseini</a></li>
+            <li><a href="https://tippie.uiowa.edu/people/qihang-lin">Qihang Lin</a></li>
+            <li><a href="https://qi-luo-or.com/">Qi Luo</a></li>
+            <li><a href="https://thiagoserra.com/">Thiago Serra</a> (chair)</li>
+            <li><a href="https://renbozhao.github.io/">Renbo Zhao</a></li>
+          </ul>
+        </div>
+        <div class="committee-group" id="competition-committee">
+          <h3>Competition Committee</h3>
+          <ul class="committee-list">
+            <li><a href="https://support.gurobi.com/hc/en-us/profiles/401593985232-Pierre-Bonami">Pierre Bonami</a> (chair)</li>
+            <li><a href="https://shuvomoy.github.io/">Shuvomoy Das Gupta</a></li>
+            <li><a href="https://www.zib.de/userpage/gamrath/">Gerald Gamrath</a></li>
+            <li><a href="https://sites.google.com/view/reemkhir">Reem Khir</a></li>
+            <li><a href="https://gionimexi.com/">Gioni Mexi</a></li>
+            <li><a href="https://thiagoserra.com/">Thiago Serra</a></li>
+          </ul>
+        </div>
       </div>
     </section>
 
