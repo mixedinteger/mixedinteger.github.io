@@ -28,14 +28,14 @@ is to advance the state of the art on computing small infeasible subsystems.
 | Date               | Milestone                                                                       |
 | ------------------ | ------------------------------------------------------------------------------- |
 | September 2026     | Competition topic announcement                                                  |
-| Early October 2026 | Publication of rules, instance set and open registration                        |
+| October 2026       | Publication of rules, instance set and open registration                        |
 | Mid January 2027   | Registration closes                                                             |
-| Mid April 2027     | Final submission of solutions, evaluation on public and hidden set of instances |
+| Mid March 2027     | Final submission of solutions, evaluation on public and hidden set of instances |
 | End of May 2027    | MIP Workshop: Winners announced                                                 |
 
 ## Organizing Committee
 
-- [Pierre Bonami](https://pobonomo.github.io/) — Gurobi
+- [Pierre Bonami](https://pobonomo.github.io/) — Gurobi (chair)
 - [Gerald Gamrath](https://www.zib.de/userpage/gamrath/) — Cardinal Operations
 - [Shuvomoy Das Gupta](https://shuvomoy.github.io/) — Rice University
 - [Reem Khir](https://sites.google.com/view/reemkhir/home) — Purdue University

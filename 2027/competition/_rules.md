@@ -46,15 +46,13 @@ showing that removing them yields a feasible system.
 
 - Competitors cannot use commercial solvers as subroutines of the final submission.
 
-## To Be Announced (Early October 2026)
+## To Be Announced (October 2026)
 
 The following will be published with the final rules:
 
 - Complete rules and problem/instance specification
-- Public and hidden evaluation instance sets
-- Instructions for submitting community instance suggestions
-- Public release of the solution checker
+- Public instance sets
+- Solution checker
 - Registration form and process
-- Code submission requirements (build, execution, interface, language)
-- Organizing committee contact details
+- Code submission requirements
 - Prizes and any associated support
