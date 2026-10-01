@@ -265,6 +265,17 @@ export const workshop_data = [
     picture: 'images/speakers/jon_lee.jpg'
   },
   {
+    firstname: "Fred",
+    lastname: "Gardi",
+    time: "17:15-17:30",
+    sortdate: "2026-10-20",
+    date: "day2",
+    affiliation: 'Hexaly',
+    website: '',
+    title: 'TBA',
+    picture: ''
+  },
+  {
     improper: true,
     firstname: "Registration",
     lastname: "",
@@ -359,7 +370,7 @@ export const workshop_data = [
     firstname: "",
     lastname: "",
     title: "Informal group walk through Ancient Rome",
-    time: "17:30-19:00",
+    time: "17:45-19:15",
     sortdate: "2026-10-20",
     date: "day2",
     abstracttext: "Departure from DIAG and walk to the Imperial Fora via Colle Oppio and the Domus Aurea, with a view of the Colosseum and a stop at Sapienza’s historic Engineering campus at San Pietro in Vincoli and the adjacent basilica to see Michelangelo’s Moses."
