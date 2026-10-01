@@ -51,8 +51,7 @@ showing that removing them yields a feasible system.
 The following will be published with the final rules:
 
 - Complete rules and problem/instance specification
-- Public instance sets
+- Instance sets
 - Solution checker
 - Registration form and process
 - Code submission requirements
-- Prizes and any associated support

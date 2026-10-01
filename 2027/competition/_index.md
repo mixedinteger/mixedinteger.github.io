@@ -23,6 +23,14 @@ The competition is also supported by the
 The topic of the 2027 MIP competition is "Explainability and Small Infeasible Subsystems". The goal
 is to advance the state of the art on computing small infeasible subsystems.
 
+The jury will select one winner and up to two honorable mentions to present their work at the
+[MIP workshop 2027](https://www.mixedinteger.org/2027/).
+
+Furthermore, we will provide the following:
+
+    One representative of the winning team will receive travel support to the MIP workshop and free registration.
+    High-quality submissions will receive an expedited review process in Mathematical Programming Computation.
+
 ## Timeline
 
 | Date               | Milestone                                                                       |
