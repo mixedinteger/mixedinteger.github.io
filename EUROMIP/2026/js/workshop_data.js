@@ -141,7 +141,9 @@ export const workshop_data = [
     date: "day1",
     affiliation: 'Delft University of Technology',
     website: 'https://diamhomes.ewi.tudelft.nl/~kaardal/',
-    title: 'TBA'
+    title: 'Rounding half-integral solutions to the metric uncapacitated facility location problem',
+    abstracttext: 'We consider half-integral LP solutions to the metric uncapacitated facility location problem and show that such solutions can be rounded in polynomial time to an integral solution of cost at most 1.268... times the optimal fractional cost. We also show that this approximation bound is tight.\n\nThis is joint work with Laura Sanità, Bocconi University',
+    picture: 'images/speakers/karen_aardal.jpg'
   },
   {
     firstname: "Bissan",
