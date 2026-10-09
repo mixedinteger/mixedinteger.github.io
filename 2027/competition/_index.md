@@ -1,5 +1,5 @@
 > **Preliminary announcement.** The final rules, instance set, and submission instructions still to
-> be announced are listed on the [Rules page](rules.html#to-be-announced-early-october-2026); see
+> be announced are listed on the [Rules page](rules.html#to-be-announced-october-2026); see
 > also the [timeline](#timeline).
 
 ## About
@@ -12,12 +12,12 @@ solutions.
 In 2022, the annual [Mixed Integer Programming Workshop](https://www.mixedinteger.org/#mipworkshops)
 established a computational competition in order to encourage and provide recognition to the
 development of novel practical techniques within MIP technology. It was renamed in 2025 to honor
-Ailsa H. Land and Alison G. Harcourt (née Doig), with permission, who proposed the first LP-based
-branch-and-bound algorithm, a fundamental component of every modern MIP solver.
+Ailsa H. Land and Alison G. Harcourt (née Doig), with their permission, who proposed the first
+LP-based branch-and-bound algorithm, a fundamental component of every modern MIP solver.
 
 The competition is also supported by the
-[Mixed Integer Programming Society (MIPS)](http://mixedinteger.org), a section of the
-[Mathematical Optimization Society (MOS)](http://mathopt.org), via the
+[Mixed Integer Programming Society (MIPS)](https://mixedinteger.org), a section of the
+[Mathematical Optimization Society (MOS)](https://mathopt.org), via the
 [MIP workshop](https://www.mixedinteger.org/2027/).
 
 The topic of the 2027 MIP competition is "Explainability and Small Infeasible Subsystems". The goal
@@ -28,8 +28,10 @@ The jury will select one winner and up to two honorable mentions to present thei
 
 Furthermore, we will provide the following:
 
-    One representative of the winning team will receive travel support to the MIP workshop and free registration.
-    High-quality submissions will receive an expedited review process in Mathematical Programming Computation.
+- One representative of the winning team will receive travel support to the MIP workshop and free
+  registration.
+- High-quality submissions will receive an expedited review process in Mathematical Programming
+  Computation.
 
 ## Timeline
 
@@ -37,8 +39,8 @@ Furthermore, we will provide the following:
 | ------------------ | ------------------------------------------------------------------------------- |
 | September 2026     | Competition topic announcement                                                  |
 | October 2026       | Publication of rules, instance set and open registration                        |
-| Mid January 2027   | Registration closes                                                             |
-| Mid March 2027     | Final submission of solutions, evaluation on public and hidden set of instances |
+| Mid-January 2027   | Registration closes                                                             |
+| Mid-March 2027     | Final submission of solutions, evaluation on public and hidden set of instances |
 | End of May 2027    | MIP Workshop: Winners announced                                                 |
 
 ## Organizing Committee
@@ -51,7 +53,7 @@ Furthermore, we will provide the following:
 - [Thiago Serra](https://thiagoserra.com) — University of Iowa
 
 For questions, feedback, or inquiries, please visit the competition GitHub repository:
-<https://github.com/mixedinteger/MIPcc27>, which hosts the solution checker and helper scripts.
+<https://github.com/mixedinteger/MIPcc27>, which will host the solution checker and helper scripts.
 Participants can open an [Issue](https://github.com/mixedinteger/MIPcc27/issues) or start a
 [Discussion](https://github.com/mixedinteger/MIPcc27/discussions).
 
@@ -63,6 +65,6 @@ Participants can open an [Issue](https://github.com/mixedinteger/MIPcc27/issues)
   Heuristics
 - [2024](https://github.com/dominiqs81/MIPcc24): MIP Presolve
 - [2023](https://github.com/ambros-gleixner/MIPcc23): MIP Reoptimization
-- [2022](https://www.mixedinteger.org/2022/competition/): General-purpose
-  primal heuristic
+- [2022](https://www.mixedinteger.org/2022/competition/): General-Purpose
+  Primal Heuristic
 

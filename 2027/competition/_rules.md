@@ -1,5 +1,5 @@
 > **Preliminary announcement.** The final rules, instance set, and submission instructions still to
-> be announced are listed below in [To Be Announced](#to-be-announced-early-october-2026); see also
+> be announced are listed below in [To Be Announced](#to-be-announced-october-2026); see also
 > the [timeline](index.html#timeline).
 
 ## Submission Requirements
@@ -14,16 +14,18 @@ The report must include the following information:
 - A description of the method developed and implemented, including any necessary citations to the
   literature and software used.
 - A section discussing the methodological and/or engineering innovations of the method (see
-  Evaluation Criteria above). If you have any clever implementation techniques to showcase (e.g.,
-  performance optimizations), please highlight them (the jury will not check every detail of the
-  code).
+  [Evaluation Criteria](topic.html#evaluation-criteria)). If you have any clever implementation
+  techniques to showcase (e.g., performance optimizations), please highlight them (the jury will not
+  check every detail of the code).
 - Computational results on the open competition test set, including a table of results produced with
   the benchmarking script.
 
 ### Code
 
-The code should output a JSON file listing the kept constraints and, optionally, certificates
-showing that removing them yields a feasible system.
+The code should output a JSON file listing the elements kept in the infeasible subsystem (linear
+constraints, bound constraints, and integrality constraints) and, optionally, feasibility
+certificates (feasible solutions) showing that removing any single kept element yields a feasible
+system. The exact file format will be published with the final rules.
 
 ## Rules and Eligibility
 
