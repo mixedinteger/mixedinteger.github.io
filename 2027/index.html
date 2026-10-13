@@ -16,6 +16,8 @@
     #about .society-link:hover,
     #about .society-link:focus-visible { text-decoration: underline; }
     .committee-list { list-style-type: disc; }
+    .speaker-list { list-style-type: disc; list-style-position: outside; padding-left: 2rem; margin-bottom: 0; }
+    .speaker-list li:last-child { margin-bottom: 0; }
     .committee-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 3.2rem; }
     .committee-group { min-width: 0; }
     @media (min-width: 900px) {
@@ -76,14 +78,43 @@
       </div>
     </section>
 
-    <section class="mainstyle1" aria-labelledby="competition-heading">
-      <div class="container" id="competition">
-        <h2 id="competition-heading">Land-Doig MIP Competition</h2>
-        <p>The 2027 MIP Workshop will host a computational competition for research teams to showcase their practical, computational prowess. It is called the Land-Doig MIP Competition in honor of Ailsa H. Land and Alison G. Harcourt (née Doig), with permission.</p>
+    <section class="mainstyle1" aria-labelledby="speakers-heading">
+      <div class="container" id="speakers">
+        <h2 id="speakers-heading">Confirmed Speakers</h2>
+        <ul class="speaker-list">
+          <li>David Bernal (Purdue University)</li>
+          <li>Federico Bobbio (SKEMA)</li>
+          <li>Geunyeong Byeon (Arizona State University)</li>
+          <li>Anna Deza (MERL)</li>
+          <li>Justin Dumouchelle (University of Calgary)</li>
+          <li>Omar El Housni (Cornell University)</li>
+          <li>Salar Fattahi (University of Michigan)</li>
+          <li>Huiwen Jia (University of California, Berkeley)</li>
+          <li>Ruiwei Jiang (University of Michigan)</li>
+          <li>Connor Lawless (Percepta AI)</li>
+          <li>Jisun Lee (University of Texas at Austin)</li>
+          <li>Eduardo Moreno (Google)</li>
+          <li>David Morton (Northwestern University)</li>
+          <li>Feng Qiu (Argonne National Laboratory)</li>
+          <li>David Salas (Universidad de O&#x27;Higgins)</li>
+          <li>Emiliano Traversi (ESSEC)</li>
+          <li>Calvin Tsay (Imperial College London)</li>
+          <li>Emily Tucker (Clemson University)</li>
+          <li>Pascal Van Hentenryck (Georgia Institute of Technology)</li>
+          <li>Ellen Vitercik (Stanford University)</li>
+        </ul>
       </div>
     </section>
 
-    <section class="highlight" aria-labelledby="committee-heading">
+    <section class="highlight" aria-labelledby="competition-heading">
+      <div class="container" id="competition">
+        <h2 id="competition-heading">Land-Doig MIP Competition</h2>
+        <p>The 2027 MIP Workshop will host a computational competition for research teams to showcase their practical, computational prowess. It is called the Land-Doig MIP Competition in honor of Ailsa H. Land and Alison G. Harcourt (née Doig), with permission.</p>
+        <p>The competition will be on explainability and small infeasible subsystems. Please check <a href="https://www.mixedinteger.org/2027/competition">the competition webpage</a> for further details.</p>
+      </div>
+    </section>
+
+    <section class="mainstyle2" aria-labelledby="committee-heading">
       <div class="container" id="committee">
         <h2 id="committee-heading">Organization</h2>
         <div class="committee-grid">
@@ -125,11 +156,6 @@
     </section>
 
     <!-- Future Home sections: populate with confirmed 2027 information before enabling.
-    <section class="mainstyle1" aria-labelledby="speakers-heading">
-      <div class="container" id="speakers">
-        <h2 id="speakers-heading">Confirmed Speakers</h2>
-      </div>
-    </section>
     <section class="mainstyle1" aria-labelledby="sponsors-heading">
       <div class="container" id="sponsors">
         <h2 id="sponsors-heading">Sponsors</h2>
@@ -138,7 +164,7 @@
     -->
   </main>
 
-  <footer class="mainstyle2 credits-section" aria-labelledby="credits-heading">
+  <footer class="mainstyle1 credits-section" aria-labelledby="credits-heading">
     <div class="container" id="credits">
       <h2 id="credits-heading">Credits</h2>
       <p>Logo-Design by &copy; <a href="https://www.julia-silbermann.com/">Julia Silbermann</a> (Font-Credits: Cornerstone, by Zac Freeland).</p>
