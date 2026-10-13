@@ -274,8 +274,9 @@ export const workshop_data = [
     date: "day2",
     affiliation: 'Hexaly',
     website: '',
-    title: 'TBA',
-    picture: ''
+    title: 'Hexaly, beyond traditional MIP',
+    abstracttext: 'Mixed-Integer Programming (MIP) has been the dominant optimization framework in Operations Research for several decades. While highly effective, classical MIP formulations can become increasingly difficult to express and solve as problems grow in scale and structural complexity, particularly in domains such as routing, scheduling, and packing.\n\nHexaly is an enriched MIP solver. Rather than relying solely on linearization and standard branch-and-bound workflows, it provides a unified framework for modeling and solving combinatorial and nonlinear problems in a more natural way. By integrating techniques from MIP, constraint programming, nonlinear optimization, and black-box optimization within a single engine, Hexaly enables more expressive models while maintaining high solution quality and scalable performance.\n\nIn this talk, I will show how this extended modeling framework enables problems to be formulated more closely to their underlying structure, while allowing diverse algorithmic components to interact in a complementary manner.',
+    picture: 'images/speakers/fred_gardi.png'
   },
   {
     improper: true,
