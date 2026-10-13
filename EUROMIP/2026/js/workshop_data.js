@@ -269,7 +269,7 @@ export const workshop_data = [
   {
     firstname: "Fred",
     lastname: "Gardi",
-    time: "14:15-14:30",
+    time: "8:45-9:00",
     sortdate: "2026-10-20",
     date: "day2",
     affiliation: 'Hexaly',
@@ -355,7 +355,7 @@ export const workshop_data = [
     firstname: "Lunch break",
     lastname: "",
     title: "(lunch is not provided)",
-    time: "12:30-14:15",
+    time: "12:30-14:30",
     sortdate: "2026-10-20",
     date: "day2"
   },
