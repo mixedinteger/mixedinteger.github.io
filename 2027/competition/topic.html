@@ -191,10 +191,15 @@ J\)</span>, the subsystem <span class="math inline">\(MIP(C, J \setminus
 </ul>
 <p>This is a single-element irreducibility definition. In particular,
 relaxing a variable bound is treated as removing the corresponding bound
-constraint.</p>
-<p><strong>Note that this definition of IIS follows the literature.
-However, most current implementations differ in that they do not
-consider the removal of integrality constraints.</strong></p></section>
+constraint. Note, however, that bound constraints of a variable that
+remains integer in the subsystem (i.e., <span
+class="math inline">\(x_j\)</span> with <span class="math inline">\(j
+\in J\)</span>) are always considered part of the subsystem: they are
+neither counted in its size nor considered for minimality.</p>
+<p><strong>Note that this definition of IIS follows the literature,
+except for the treatment of bounds of integer variables. However, most
+current implementations differ in that they do not consider the removal
+of integrality constraints.</strong></p></section>
 <section class="mainstyle2"><h2 id="competition-task">Competition Task</h2>
 <p>Given a collection of relatively simple infeasible MIP instances,
 produce for each instance an infeasible subsystem obtained by removing

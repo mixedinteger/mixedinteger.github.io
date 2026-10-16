@@ -68,10 +68,14 @@ Following Guieu and Chinneck (1999), for an infeasible instance of MIP, we say t
   2. for every integer variable $j \in J$, the subsystem $MIP(C, J \setminus \{j\})$ is feasible.
 
 This is a single-element irreducibility definition. In particular, relaxing a variable bound is
-treated as removing the corresponding bound constraint.
+treated as removing the corresponding bound constraint. Note, however, that bound constraints
+of a variable that remains integer in the subsystem (i.e., $x_j$ with $j \in J$) are always
+considered part of the subsystem: they are neither counted in its size nor considered for
+minimality.
 
-**Note that this definition of IIS follows the literature. However, most current implementations
-differ in that they do not consider the removal of integrality constraints.**
+**Note that this definition of IIS follows the literature, except for the treatment of bounds of
+integer variables. However, most current implementations differ in that they do not consider the
+removal of integrality constraints.**
 
 ## Competition Task
 
