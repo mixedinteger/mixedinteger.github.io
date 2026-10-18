@@ -11,20 +11,25 @@ root = Path(__file__).resolve().parent
 out = Path(sys.argv[1])
 active = sys.argv[2]
 
-header = (root / "page-header.html").read_text()
+header = (root / "page-header.html").read_text(encoding="utf-8")
+style = re.search(r"<style\b[^>]*>.*?</style>", header, flags=re.S)
+if style:
+    header = header[: style.start()] + header[style.end() :]
 for page in ("home", "topic", "rules"):
     header = header.replace(
         f"__ACTIVE_{page.upper()}__", "active" if page == active else ""
     )
 header = header.replace(' class=""', "")
 
-footer = (root / "page-footer.html").read_text()
+footer = (root / "page-footer.html").read_text(encoding="utf-8")
 
-content = out.read_text()
+content = out.read_text(encoding="utf-8")
 content = re.sub(
     r'\n<header id="title-block-header">.*?</header>\n', "\n", content, flags=re.S
 )
 head, rest = content.split("<body>", 1)
+if style:
+    head = head.replace("</head>", f"{style.group(0)}\n</head>")
 body, _tail = rest.split("</body>", 1)
 body = body.strip()
 
@@ -57,4 +62,4 @@ new_html = (
     + footer
     + "\n</body>\n</html>\n"
 )
-out.write_text(new_html)
+out.write_text(new_html, encoding="utf-8")

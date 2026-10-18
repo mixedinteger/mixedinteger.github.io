@@ -1,6 +1,5 @@
-> **Preliminary announcement.** The final rules, instance set, and submission instructions still to
-> be announced are listed below in [To Be Announced](#to-be-announced-october-2026); see also
-> the [timeline](index.html#timeline).
+> **Preliminary announcement.** Details that are still to be announced are listed below in
+> [To Be Announced](#to-be-announced); see also the [timeline](index.html#timeline).
 
 ## Submission Requirements
 
@@ -17,15 +16,20 @@ The report must include the following information:
   [Evaluation Criteria](topic.html#evaluation-criteria)). If you have any clever implementation
   techniques to showcase (e.g., performance optimizations), please highlight them (the jury will not
   check every detail of the code).
-- Computational results on the open competition test set, including a table of results produced with
-  the benchmarking script.
+- Computational results on the public competition set, including a table of results.
 
 ### Code
 
-The code should output a JSON file listing the elements kept in the infeasible subsystem (linear
-constraints, bound constraints, and integrality constraints) and, optionally, feasibility
-certificates (feasible solutions) showing that removing any single kept element yields a feasible
-system. The exact file format will be published with the final rules.
+The code should output a JSON file listing the elements relaxed and kept in the infeasible subsystem
+(linear constraints, bound constraints, and integrality constraints). Infeasibility certificates can
+be optionally specified and count towards certifying the system is irreducible.
+
+Refer to the GitHub repository for the exact
+[solution format](https://github.com/mixedinteger/MIPcc27/blob/main/SOLUTION_FORMAT.md) and
+[program interface](https://github.com/mixedinteger/MIPcc27/blob/main/PROGRAM_INTERFACE.md).
+
+Public [sample instances and solutions](https://github.com/mixedinteger/MIPcc27/tree/main/smallset)
+are available.
 
 ## Rules and Eligibility
 
@@ -36,24 +40,32 @@ system. The exact file format will be published with the final rules.
 - Student participation is strongly encouraged.
 - Should participants be related to organizers of the competition (e.g., students of an organizer),
   the rest of the committee will decide whether a conflict of interest is at hand and affected
-  organizers should not be part of the jury for the final evaluation.
+  organizers will not be part of the jury for the final evaluation.
 - Participants can be a single entrant or a team; there is no restriction on the size of teams.
 - Questions may be directed to the competition committee by opening an
   [Issue](https://github.com/mixedinteger/MIPcc27/issues) or
   [Discussion](https://github.com/mixedinteger/MIPcc27/discussions) on the competition GitHub
-  repository: <https://github.com/mixedinteger/MIPcc27>, which will also host the checker and helper
-  scripts.
+  repository: <https://github.com/mixedinteger/MIPcc27>, which hosts the
+  [solution checker and helper scripts](https://github.com/mixedinteger/MIPcc27#check-your-solutions).
 
 ### Technical Rules
 
 - Competitors cannot use commercial solvers as subroutines of the final submission.
 
-## To Be Announced (October 2026)
+### Evaluation Platform
+
+Each instance will have a wall-clock time limit of 3000 seconds, and each run will have at least 8
+threads available. The exact hardware and memory limits will be announced later. See the
+[program interface](https://github.com/mixedinteger/MIPcc27/blob/main/PROGRAM_INTERFACE.md) for how
+programs are invoked and how time is measured.
+
+## To Be Announced
 
 The following will be published with the final rules:
 
-- Complete rules and problem/instance specification
-- Instance sets
-- Solution checker
-- Registration form and process
-- Code submission requirements
+- Final evaluation details, including how criteria are combined and how failed, timed-out, or
+  missing instance results are treated
+- Public and hidden evaluation instance sets (sample instances are already available)
+- Evaluation platform hardware and memory limits
+- Registration form and process, including conflict-of-interest disclosures
+- Submission process and exact dates and time zone

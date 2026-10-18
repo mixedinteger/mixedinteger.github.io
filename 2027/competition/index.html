@@ -1,38 +1,22 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="pandoc 3.11" />
+  <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>The 2027 Land-Doig MIP Competition</title>
   <style>
-    /* Default styles provided by pandoc.
-    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-    */
+    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: 1.5em;}
-    div.column{flex: auto;}
-    @media screen {
-    div.columns{gap: min(4vw, 1.5em);}
-    div.column{overflow-x: auto;}
-    }
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    /* The extra [class] is a hack that increases specificity enough to
-       override a similar rule in reveal.js */
-    ul.task-list[class]{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      font-size: inherit;
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
-    }
+    ul.task-list{list-style: none;}
   </style>
   <link rel="stylesheet" href="https://www.mixedinteger.org/2027/css/normalize.css" />
   <link rel="stylesheet" href="https://www.mixedinteger.org/2027/css/skeleton.css" />
   <link rel="stylesheet" href="https://www.mixedinteger.org/2027/css/colors.css" />
   <link rel="stylesheet" href="https://www.mixedinteger.org/2027/css/site.css" />
-</head>
-<body>
 <style>
   body {
     background: linear-gradient(120deg, #fffef5 0%, #fff9d8 22%, #f5f5f5 52%, #fff5c2 100%);
@@ -72,6 +56,9 @@
     100% { background-position: 100% 50%; }
   }
 </style>
+</head>
+<body>
+
 
 <header class="firstrow">
   <div class="container">
@@ -101,10 +88,10 @@
   <div class="container">
 
 <section class="highlight"><blockquote>
-<p><strong>Preliminary announcement.</strong> The final rules, instance
-set, and submission instructions still to be announced are listed on the
-<a href="rules.html#to-be-announced-october-2026">Rules page</a>; see
-also the <a href="#timeline">timeline</a>.</p>
+<p><strong>Preliminary announcement.</strong> Details that are still to
+be announced are listed on the <a
+href="rules.html#to-be-announced">Rules page</a>; see also the <a
+href="#timeline">timeline</a>.</p>
 </blockquote></section>
 <section class="mainstyle1"><h2 id="about">About</h2>
 <p>The computational development of optimization tools is a key
@@ -116,9 +103,9 @@ boundaries with novel solutions.</p>
 href="https://www.mixedinteger.org/#mipworkshops">Mixed Integer
 Programming Workshop</a> established a computational competition in
 order to encourage and provide recognition to the development of novel
-practical techniques within MIP technology. It was renamed in 2025 to
-honor Ailsa H. Land and Alison G. Harcourt (née Doig), with their
-permission, who proposed the first LP-based branch-and-bound algorithm,
+practical techniques within MIP technology. In 2025, it was renamed,
+with their permission, to honor Ailsa H. Land and Alison G. Harcourt
+(née Doig), who proposed the first LP-based branch-and-bound algorithm,
 a fundamental component of every modern MIP solver.</p>
 <p>The competition is also supported by the <a
 href="https://mixedinteger.org">Mixed Integer Programming Society
@@ -141,30 +128,30 @@ Mathematical Programming Computation.</li>
 <section class="mainstyle2"><h2 id="timeline">Timeline</h2>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th>Date</th>
 <th>Milestone</th>
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td>September 2026</td>
 <td>Competition topic announcement</td>
 </tr>
-<tr>
+<tr class="even">
 <td>October 2026</td>
 <td>Publication of rules, instance set and open registration</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>Mid-January 2027</td>
 <td>Registration closes</td>
 </tr>
-<tr>
+<tr class="even">
 <td>Mid-March 2027</td>
-<td>Final submission of solutions, evaluation on public and hidden set
-of instances</td>
+<td>Final submission of code and report, evaluation on public and hidden
+set of instances</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>End of May 2027</td>
 <td>MIP Workshop: Winners announced</td>
 </tr>
@@ -180,7 +167,7 @@ Cardinal Operations</li>
 University</li>
 <li><a href="https://sites.google.com/view/reemkhir/home">Reem Khir</a>
 — Purdue University</li>
-<li><a href="http://iol.zib.de/gionimexi">Gioni Mexi</a> — Zuse
+<li><a href="https://iol.zib.de/gionimexi">Gioni Mexi</a> — Zuse
 Institute Berlin</li>
 <li><a href="https://thiagoserra.com">Thiago Serra</a> — University of
 Iowa</li>
@@ -188,8 +175,15 @@ Iowa</li>
 <p>For questions, feedback, or inquiries, please visit the competition
 GitHub repository: <a
 href="https://github.com/mixedinteger/MIPcc27">https://github.com/mixedinteger/MIPcc27</a>,
-which will host the solution checker and helper scripts. Participants
-can open an <a
+which hosts the <a
+href="https://github.com/mixedinteger/MIPcc27#check-your-solutions">solution
+checker and helper scripts</a>, <a
+href="https://github.com/mixedinteger/MIPcc27/blob/main/SOLUTION_FORMAT.md">solution
+format</a>, <a
+href="https://github.com/mixedinteger/MIPcc27/blob/main/PROGRAM_INTERFACE.md">program
+interface</a>, and <a
+href="https://github.com/mixedinteger/MIPcc27/tree/main/smallset">sample
+instances</a>. Participants can open an <a
 href="https://github.com/mixedinteger/MIPcc27/issues">Issue</a> or start
 a <a
 href="https://github.com/mixedinteger/MIPcc27/discussions">Discussion</a>.</p></section>

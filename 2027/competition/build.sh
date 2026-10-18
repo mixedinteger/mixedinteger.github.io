@@ -6,12 +6,13 @@ build_page() {
   local source="$1"
   local output="$2"
   local active="$3"
+  local title="$4"
 
   pandoc "${source}" \
     -f gfm+tex_math_dollars \
     -t html5 \
     --standalone \
-    --metadata title="The 2027 Land-Doig MIP Competition" \
+    --metadata "title=${title}" \
     --mathjax=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js \
     --css=https://www.mixedinteger.org/2027/css/normalize.css \
     --css=https://www.mixedinteger.org/2027/css/skeleton.css \
@@ -23,6 +24,6 @@ build_page() {
   python3 wrap_page.py "${output}" "${active}"
 }
 
-build_page _index.md index.html home
-build_page _topic.md topic.html topic
-build_page _rules.md rules.html rules
+build_page _index.md index.html home "The 2027 Land-Doig MIP Competition"
+build_page _topic.md topic.html topic "The 2027 Land-Doig MIP Competition — Topic"
+build_page _rules.md rules.html rules "The 2027 Land-Doig MIP Competition — Rules"

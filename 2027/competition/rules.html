@@ -1,38 +1,22 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="pandoc 3.11" />
+  <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>The 2027 Land-Doig MIP Competition</title>
+  <title>The 2027 Land-Doig MIP Competition — Rules</title>
   <style>
-    /* Default styles provided by pandoc.
-    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-    */
+    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: 1.5em;}
-    div.column{flex: auto;}
-    @media screen {
-    div.columns{gap: min(4vw, 1.5em);}
-    div.column{overflow-x: auto;}
-    }
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    /* The extra [class] is a hack that increases specificity enough to
-       override a similar rule in reveal.js */
-    ul.task-list[class]{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      font-size: inherit;
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
-    }
+    ul.task-list{list-style: none;}
   </style>
   <link rel="stylesheet" href="https://www.mixedinteger.org/2027/css/normalize.css" />
   <link rel="stylesheet" href="https://www.mixedinteger.org/2027/css/skeleton.css" />
   <link rel="stylesheet" href="https://www.mixedinteger.org/2027/css/colors.css" />
   <link rel="stylesheet" href="https://www.mixedinteger.org/2027/css/site.css" />
-</head>
-<body>
 <style>
   body {
     background: linear-gradient(120deg, #fffef5 0%, #fff9d8 22%, #f5f5f5 52%, #fff5c2 100%);
@@ -72,6 +56,9 @@
     100% { background-position: 100% 50%; }
   }
 </style>
+</head>
+<body>
+
 
 <header class="firstrow">
   <div class="container">
@@ -101,10 +88,10 @@
   <div class="container">
 
 <section class="highlight"><blockquote>
-<p><strong>Preliminary announcement.</strong> The final rules, instance
-set, and submission instructions still to be announced are listed below
-in <a href="#to-be-announced-october-2026">To Be Announced</a>; see also
-the <a href="index.html#timeline">timeline</a>.</p>
+<p><strong>Preliminary announcement.</strong> Details that are still to
+be announced are listed below in <a href="#to-be-announced">To Be
+Announced</a>; see also the <a
+href="index.html#timeline">timeline</a>.</p>
 </blockquote></section>
 <section class="mainstyle1"><h2 id="submission-requirements">Submission Requirements</h2>
 <h3 id="report">Report</h3>
@@ -121,16 +108,23 @@ href="topic.html#evaluation-criteria">Evaluation Criteria</a>). If you
 have any clever implementation techniques to showcase (e.g., performance
 optimizations), please highlight them (the jury will not check every
 detail of the code).</li>
-<li>Computational results on the open competition test set, including a
-table of results produced with the benchmarking script.</li>
+<li>Computational results on the public competition set, including a
+table of results.</li>
 </ul>
 <h3 id="code">Code</h3>
-<p>The code should output a JSON file listing the elements kept in the
-infeasible subsystem (linear constraints, bound constraints, and
-integrality constraints) and, optionally, feasibility certificates
-(feasible solutions) showing that removing any single kept element
-yields a feasible system. The exact file format will be published with
-the final rules.</p></section>
+<p>The code should output a JSON file listing the elements relaxed and
+kept in the infeasible subsystem (linear constraints, bound constraints,
+and integrality constraints). Infeasibility certificates can be
+optionally specified and count towards certifying the system is
+irreducible.</p>
+<p>Refer to the GitHub repository for the exact <a
+href="https://github.com/mixedinteger/MIPcc27/blob/main/SOLUTION_FORMAT.md">solution
+format</a> and <a
+href="https://github.com/mixedinteger/MIPcc27/blob/main/PROGRAM_INTERFACE.md">program
+interface</a>.</p>
+<p>Public <a
+href="https://github.com/mixedinteger/MIPcc27/tree/main/smallset">sample
+instances and solutions</a> are available.</p></section>
 <section class="mainstyle2"><h2 id="rules-and-eligibility">Rules and Eligibility</h2>
 <h3 id="rules-for-participation">Rules for Participation</h3>
 <ul>
@@ -140,7 +134,7 @@ restriction on participation.</li>
 <li>Student participation is strongly encouraged.</li>
 <li>Should participants be related to organizers of the competition
 (e.g., students of an organizer), the rest of the committee will decide
-whether a conflict of interest is at hand and affected organizers should
+whether a conflict of interest is at hand and affected organizers will
 not be part of the jury for the final evaluation.</li>
 <li>Participants can be a single entrant or a team; there is no
 restriction on the size of teams.</li>
@@ -149,22 +143,32 @@ restriction on the size of teams.</li>
 href="https://github.com/mixedinteger/MIPcc27/discussions">Discussion</a>
 on the competition GitHub repository: <a
 href="https://github.com/mixedinteger/MIPcc27">https://github.com/mixedinteger/MIPcc27</a>,
-which will also host the checker and helper scripts.</li>
+which hosts the <a
+href="https://github.com/mixedinteger/MIPcc27#check-your-solutions">solution
+checker and helper scripts</a>.</li>
 </ul>
 <h3 id="technical-rules">Technical Rules</h3>
 <ul>
 <li>Competitors cannot use commercial solvers as subroutines of the
 final submission.</li>
-</ul></section>
-<section class="mainstyle1"><h2 id="to-be-announced-october-2026">To Be Announced (October
-2026)</h2>
+</ul>
+<h3 id="evaluation-platform">Evaluation Platform</h3>
+<p>Each instance will have a wall-clock time limit of 3000 seconds, and
+each run will have at least 8 threads available. The exact hardware and
+memory limits will be announced later. See the <a
+href="https://github.com/mixedinteger/MIPcc27/blob/main/PROGRAM_INTERFACE.md">program
+interface</a> for how programs are invoked and how time is measured.</p></section>
+<section class="mainstyle1"><h2 id="to-be-announced">To Be Announced</h2>
 <p>The following will be published with the final rules:</p>
 <ul>
-<li>Complete rules and problem/instance specification</li>
-<li>Instance sets</li>
-<li>Solution checker</li>
-<li>Registration form and process</li>
-<li>Code submission requirements</li>
+<li>Final evaluation details, including how criteria are combined and
+how failed, timed-out, or missing instance results are treated</li>
+<li>Public and hidden evaluation instance sets (sample instances are
+already available)</li>
+<li>Evaluation platform hardware and memory limits</li>
+<li>Registration form and process, including conflict-of-interest
+disclosures</li>
+<li>Submission process and exact dates and time zone</li>
 </ul></section>
   </div>
 </main>
