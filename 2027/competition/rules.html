@@ -1,17 +1,31 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
+  <meta name="generator" content="pandoc 3.12.1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>The 2027 Land-Doig MIP Competition — Rules</title>
   <style>
-    code{white-space: pre-wrap;}
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
   </style>
   <link rel="stylesheet" href="https://www.mixedinteger.org/2027/css/normalize.css" />
   <link rel="stylesheet" href="https://www.mixedinteger.org/2027/css/skeleton.css" />
@@ -114,9 +128,8 @@ table of results.</li>
 <h3 id="code">Code</h3>
 <p>The code should output a JSON file listing the elements relaxed and
 kept in the infeasible subsystem (linear constraints, bound constraints,
-and integrality constraints). Infeasibility certificates can be
-optionally specified and count towards certifying the system is
-irreducible.</p>
+and integrality constraints). Feasibility certificates can be optionally
+specified and count towards certifying the system is irreducible.</p>
 <p>Refer to the GitHub repository for the exact <a
 href="https://github.com/mixedinteger/MIPcc27/blob/main/SOLUTION_FORMAT.md">solution
 format</a> and <a
@@ -153,7 +166,7 @@ checker and helper scripts</a>.</li>
 final submission.</li>
 </ul>
 <h3 id="evaluation-platform">Evaluation Platform</h3>
-<p>Each instance will have a wall-clock time limit of 3000 seconds, and
+<p>Each instance will have a wall-clock time limit of 3600 seconds, and
 each run will have at least 8 threads available. The exact hardware and
 memory limits will be announced later. See the <a
 href="https://github.com/mixedinteger/MIPcc27/blob/main/PROGRAM_INTERFACE.md">program

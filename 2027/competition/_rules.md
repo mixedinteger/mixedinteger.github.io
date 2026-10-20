@@ -21,7 +21,7 @@ The report must include the following information:
 ### Code
 
 The code should output a JSON file listing the elements relaxed and kept in the infeasible subsystem
-(linear constraints, bound constraints, and integrality constraints). Infeasibility certificates can
+(linear constraints, bound constraints, and integrality constraints). Feasibility certificates can
 be optionally specified and count towards certifying the system is irreducible.
 
 Refer to the GitHub repository for the exact
@@ -54,7 +54,7 @@ are available.
 
 ### Evaluation Platform
 
-Each instance will have a wall-clock time limit of 3000 seconds, and each run will have at least 8
+Each instance will have a wall-clock time limit of 3600 seconds, and each run will have at least 8
 threads available. The exact hardware and memory limits will be announced later. See the
 [program interface](https://github.com/mixedinteger/MIPcc27/blob/main/PROGRAM_INTERFACE.md) for how
 programs are invoked and how time is measured.
