@@ -55,7 +55,7 @@ are available.
 ### Evaluation Platform
 
 Each instance will have a wall-clock time limit of 3600 seconds, and each run will have at least 8
-threads available. The exact hardware and memory limits will be announced later. See the
+threads and 32 GB of memory available. The exact hardware will be announced later. See the
 [program interface](https://github.com/mixedinteger/MIPcc27/blob/main/PROGRAM_INTERFACE.md) for how
 programs are invoked and how time is measured.
 
@@ -66,6 +66,6 @@ The following will be published with the final rules:
 - Final evaluation details, including how criteria are combined and how failed, timed-out, or
   missing instance results are treated
 - Public and hidden evaluation instance sets (sample instances are already available)
-- Evaluation platform hardware and memory limits
+- Evaluation platform hardware
 - Registration form and process, including conflict-of-interest disclosures
 - Submission process and exact dates and time zone
