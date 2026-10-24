@@ -1,6 +1,3 @@
-> **Preliminary announcement.** Details that are still to be announced are listed below in
-> [To Be Announced](#to-be-announced); see also the [timeline](index.html#timeline).
-
 ## Submission Requirements
 
 ### Report
@@ -48,6 +45,11 @@ are available.
   repository: <https://github.com/mixedinteger/MIPcc27>, which hosts the
   [solution checker and helper scripts](https://github.com/mixedinteger/MIPcc27#check-your-solutions).
 
+### Registration
+
+Registration is required to participate. Register your team on the [Register page](register.html) by **January 22, 2027**. The registration form includes the
+conflict-of-interest disclosure (see Rules for Participation above).
+
 ### Technical Rules
 
 - Competitors cannot use commercial solvers as subroutines of the final submission.
@@ -67,5 +69,4 @@ The following will be published with the final rules:
   missing instance results are treated
 - Public and hidden evaluation instance sets (sample instances are already available)
 - Evaluation platform hardware
-- Registration form and process, including conflict-of-interest disclosures
 - Submission process and exact dates and time zone

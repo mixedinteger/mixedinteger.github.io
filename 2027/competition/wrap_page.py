@@ -15,7 +15,7 @@ header = (root / "page-header.html").read_text(encoding="utf-8")
 style = re.search(r"<style\b[^>]*>.*?</style>", header, flags=re.S)
 if style:
     header = header[: style.start()] + header[style.end() :]
-for page in ("home", "topic", "rules"):
+for page in ("home", "topic", "rules", "register"):
     header = header.replace(
         f"__ACTIVE_{page.upper()}__", "active" if page == active else ""
     )

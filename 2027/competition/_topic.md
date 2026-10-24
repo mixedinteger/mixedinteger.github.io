@@ -1,6 +1,3 @@
-> **Preliminary announcement.** Details that are still to be announced are listed on the
-> [Rules page](rules.html#to-be-announced); see also the [timeline](index.html#timeline).
-
 ## Topic
 
 The topic of the 2027 MIP competition is "Explainability and Small Infeasible Subsystems". The goal

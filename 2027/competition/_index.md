@@ -1,5 +1,7 @@
-> **Preliminary announcement.** Details that are still to be announced are listed on the
-> [Rules page](rules.html#to-be-announced); see also the [timeline](#timeline).
+> **Registration Open.** 
+[Register](https://forms.gle/tQTnzVApHgwRw33X6) by January 22, 2027.
+
+Details that are still to be announced are listed on the [Rules page](rules.html#to-be-announced); see also the [timeline](#timeline).
 
 ## About
 
@@ -34,13 +36,15 @@ Furthermore, we will provide the following:
 
 ## Timeline
 
-| Date             | Milestone                                                                             |
-| ---------------- | ------------------------------------------------------------------------------------- |
-| September 2026   | Competition topic announcement                                                        |
-| October 2026     | Publication of rules, instance set and open registration                              |
-| Mid-January 2027 | Registration closes                                                                   |
-| Mid-March 2027   | Final submission of code and report, evaluation on public and hidden set of instances |
-| End of May 2027  | MIP Workshop: Winners announced                                                       |
+| Date                    | Milestone                                                                             |
+| ----------------------- | ------------------------------------------------------------------------------------- |
+| From October 2026       | Registration open                                                                     |
+| Before January 22, 2027 | Final evaluation details announced: instance sets, evaluation machine and ranking     |
+| January 22, 2027        | Registration closes                                                                   |
+| Mid-March 2027          | Final submission of code and report, evaluation on public and hidden set of instances |
+| End of May 2027         | MIP Workshop: Winners announced                                                       |
+
+Register with the [registration form](https://forms.gle/tQTnzVApHgwRw33X6) by January 22, 2027.
 
 ## Organizing Committee
 

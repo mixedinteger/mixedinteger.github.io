@@ -27,3 +27,4 @@ build_page() {
 build_page _index.md index.html home "The 2027 Land-Doig MIP Competition"
 build_page _topic.md topic.html topic "The 2027 Land-Doig MIP Competition — Topic"
 build_page _rules.md rules.html rules "The 2027 Land-Doig MIP Competition — Rules"
+build_page _register.md register.html register "The 2027 Land-Doig MIP Competition — Registration"
