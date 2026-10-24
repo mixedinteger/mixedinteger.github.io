@@ -1,5 +1,5 @@
 > **Registration Open.** 
-[Register](https://forms.gle/tQTnzVApHgwRw33X6) by January 22, 2027.
+[Register](https://forms.gle/tQTnzVApHgwRw33X6) by January 22, 2027 (AoE).
 
 Details that are still to be announced are listed on the [Rules page](rules.html#to-be-announced); see also the [timeline](#timeline).
 
@@ -40,11 +40,11 @@ Furthermore, we will provide the following:
 | ----------------------- | ------------------------------------------------------------------------------------- |
 | From October 2026       | Registration open                                                                     |
 | Before January 22, 2027 | Final evaluation details announced: instance sets, evaluation machine and ranking     |
-| January 22, 2027        | Registration closes                                                                   |
+| January 22, 2027 (AoE)  | Registration closes                                                                   |
 | Mid-March 2027          | Final submission of code and report, evaluation on public and hidden set of instances |
 | End of May 2027         | MIP Workshop: Winners announced                                                       |
 
-Register with the [registration form](https://forms.gle/tQTnzVApHgwRw33X6) by January 22, 2027.
+Register with the [registration form](https://forms.gle/tQTnzVApHgwRw33X6) by January 22, 2027 (AoE).
 
 ## Organizing Committee
 

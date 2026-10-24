@@ -47,7 +47,7 @@ are available.
 
 ### Registration
 
-Registration is required to participate. Register your team on the [Register page](register.html) by **January 22, 2027**. The registration form includes the
+Registration is required to participate. Register your team on the [Register page](register.html) by **January 22, 2027 (AoE)**. The registration form includes the
 conflict-of-interest disclosure (see Rules for Participation above).
 
 ### Technical Rules
