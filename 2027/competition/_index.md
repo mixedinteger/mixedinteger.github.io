@@ -16,33 +16,38 @@ development of novel practical techniques within MIP technology. In 2025, it was
 permission, to honor Ailsa H. Land and Alison G. Harcourt (née Doig), who proposed the first
 LP-based branch-and-bound algorithm, a fundamental component of every modern MIP solver.
 
+The 2027 Land-Doig MIP competition is supported by Gurobi, which is providing prizes for the winner and honorable mentions.
+
+<p style="text-align: center;"><a href="https://www.gurobi.com/"><img src="https://raw.githubusercontent.com/Gurobi/gurobi-machinelearning/main/docs/source/_static/gurobi_light_tagline.svg" alt="Gurobi" width="250"></a></p>
+
 The competition is also supported by the
 [Mixed Integer Programming Society (MIPS)](https://mixedinteger.org), a section of the
 [Mathematical Optimization Society (MOS)](https://mathopt.org), via the
-[MIP workshop](https://www.mixedinteger.org/2027/).
+[MIP Workshop](https://www.mixedinteger.org/2027/).
 
 The topic of the 2027 MIP competition is "Explainability and Small Infeasible Subsystems". The goal
 is to advance the state of the art on computing small infeasible subsystems.
 
 The jury will select one winner and up to two honorable mentions to present their work at the
-[MIP workshop 2027](https://www.mixedinteger.org/2027/).
+[MIP Workshop 2027](https://www.mixedinteger.org/2027/).
 
 Furthermore, we will provide the following:
 
-- One representative of the winning team will receive travel support to the MIP workshop and free
+- One representative of the winning team will receive travel support to the MIP Workshop and free
   registration.
 - High-quality submissions will receive an expedited review process in Mathematical Programming
   Computation.
 
 ## Timeline
 
-| Date                    | Milestone                                                                             |
-| ----------------------- | ------------------------------------------------------------------------------------- |
-| From October 2026       | Registration open                                                                     |
-| Before January 22, 2027 | Final evaluation details announced: instance sets, evaluation machine and ranking     |
-| January 22, 2027 (AoE)  | Registration closes                                                                   |
-| Mid-March 2027          | Final submission of code and report, evaluation on public and hidden set of instances |
-| End of May 2027         | MIP Workshop: Winners announced                                                       |
+| Date                       | Milestone                                                                             |
+| -------------------------- | ------------------------------------------------------------------------------------- |
+| From October 2026          | Registration open                                                                     |
+| Beginning of December 2026 | Deadline for [instance submissions](topic.html#call-for-instances)                    |
+| End of December 2026       | Final evaluation details announced: instance sets, evaluation machine and ranking     |
+| January 22, 2027 (AoE)     | Registration closes                                                                   |
+| Mid-March 2027             | Final submission of code and report, evaluation on public and hidden set of instances |
+| End of May 2027            | MIP Workshop: Winners announced                                                       |
 
 Register with the [registration form](https://forms.gle/tQTnzVApHgwRw33X6) by January 22, 2027 (AoE).
 

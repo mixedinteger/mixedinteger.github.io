@@ -10,7 +10,7 @@ feasible) is a natural question that is hard to answer because of the combinator
 problem.
 
 A widely used feature of commercial MIP solvers for explaining infeasibility is the so-called
-Irreducible Infeasible System (IIS). In the literature, an IIS is typically defined as a subset of
+Irreducible Infeasible Subsystem (IIS). In the literature, an IIS is typically defined as a subset of
 the original constraints of the MIP formulation (including variable-bound constraints and
 integrality constraints) that is infeasible, but becomes feasible if any single element is removed.
 
@@ -60,8 +60,8 @@ $$
 
 Following Guieu and Chinneck (1999), for an infeasible instance of MIP, we say that:
 
-- $MIP(C,J)$ is an Infeasible System (IS) if it is also infeasible;
-- furthermore, an IS is called an Irreducible Infeasible System (IIS) if:
+- $MIP(C,J)$ is an Infeasible Subsystem (IS) if it is also infeasible;
+- furthermore, an IS is called an Irreducible Infeasible Subsystem (IIS) if:
   1. for every constraint $r \in C$, the subsystem $MIP(C \setminus \{r\}, J)$ is feasible;
   2. for every integer variable $j \in J$, the subsystem $MIP(C, J \setminus \{j\})$ is feasible.
 
@@ -84,8 +84,9 @@ removal of integrality constraints.**
 Given infeasible MIP instances, produce for each an infeasible subsystem obtained by removing
 constraints and/or integrality constraints.
 
-The subsystem does not need to be an IIS; any infeasible subsystem is a valid output. Submissions
-are evaluated on both the size of the subsystem and whether it is an IIS (see Evaluation Criteria).
+The subsystem does not need to be an IIS; any infeasible subsystem is a valid output. Entries are
+evaluated on the size of the subsystem, the speed of computation, and whether the subsystem is an
+IIS (see Evaluation Criteria).
 
 ### Instance Selection
 
@@ -96,10 +97,13 @@ supported; ambiguous MPS files are rejected by the checker. Public
 available in the GitHub repository. They can be used as a starting point for investigating the
 topic.
 
-**Call for instances.** We welcome suggestions of interesting infeasible MIP instances from the
-community, in particular real-world or structurally novel instances for which a small IIS would be
-practically valuable or illustrative. Please send suggestions privately to
-[the committee chair](mailto:bonami+mipcc27@gurobi.com).
+<a id="call-for-instances"></a>**Call for instances.** We welcome submissions of interesting
+infeasible MIP instances from the community, in particular real-world or structurally novel
+instances for which a small IIS would be practically valuable or illustrative. Note that since
+entries are evaluated on whether they find an IIS, infeasibility should be provable in a reasonable
+amount of time (less than 10 minutes) with a state-of-the-art open-source solver. Please send
+submissions privately to [the committee chair](mailto:bonami+mipcc27@gurobi.com) by the beginning of
+December 2026.
 
 ### Input / Output
 

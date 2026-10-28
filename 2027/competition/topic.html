@@ -1,37 +1,23 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="pandoc 3.12.1" />
+  <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>The 2027 Land-Doig MIP Competition — Topic</title>
+  <title>The 2027 Land-Doig MIP Competition ��� Topic</title>
   <style>
-    /* Default styles provided by pandoc.
-    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-    */
+    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: 1.5em;}
-    div.column{flex: auto;}
-    @media screen {
-    div.columns{gap: min(4vw, 1.5em);}
-    div.column{overflow-x: auto;}
-    }
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    /* The extra [class] is a hack that increases specificity enough to
-       override a similar rule in reveal.js */
-    ul.task-list[class]{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      font-size: inherit;
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
-    }
+    ul.task-list{list-style: none;}
   </style>
   <link rel="stylesheet" href="https://www.mixedinteger.org/2027/css/normalize.css" />
   <link rel="stylesheet" href="https://www.mixedinteger.org/2027/css/skeleton.css" />
   <link rel="stylesheet" href="https://www.mixedinteger.org/2027/css/colors.css" />
   <link rel="stylesheet" href="https://www.mixedinteger.org/2027/css/site.css" />
-  <script defer=""
+  <script
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
   type="text/javascript"></script>
 <style>
@@ -115,11 +101,11 @@ infeasible, or how it could be made feasible) is a natural question that
 is hard to answer because of the combinatorial nature of the
 problem.</p>
 <p>A widely used feature of commercial MIP solvers for explaining
-infeasibility is the so-called Irreducible Infeasible System (IIS). In
-the literature, an IIS is typically defined as a subset of the original
-constraints of the MIP formulation (including variable-bound constraints
-and integrality constraints) that is infeasible, but becomes feasible if
-any single element is removed.</p>
+infeasibility is the so-called Irreducible Infeasible Subsystem (IIS).
+In the literature, an IIS is typically defined as a subset of the
+original constraints of the MIP formulation (including variable-bound
+constraints and integrality constraints) that is infeasible, but becomes
+feasible if any single element is removed.</p>
 <p>Producing a small IIS directly helps provide a short, readable
 explanation of the infeasibility of a potentially much larger model.
 Yet, while most modern commercial MIP solvers have developed (heuristic)
@@ -173,9 +159,9 @@ and is formally defined as</p>
 MIP, we say that:</p>
 <ul>
 <li><span class="math inline">\(MIP(C,J)\)</span> is an Infeasible
-System (IS) if it is also infeasible;</li>
-<li>furthermore, an IS is called an Irreducible Infeasible System (IIS)
-if:
+Subsystem (IS) if it is also infeasible;</li>
+<li>furthermore, an IS is called an Irreducible Infeasible Subsystem
+(IIS) if:
 <ol type="1">
 <li>for every constraint <span class="math inline">\(r \in C\)</span>,
 the subsystem <span class="math inline">\(MIP(C \setminus \{r\},
@@ -212,8 +198,9 @@ of integrality constraints.</strong></p></section>
 subsystem obtained by removing constraints and/or integrality
 constraints.</p>
 <p>The subsystem does not need to be an IIS; any infeasible subsystem is
-a valid output. Submissions are evaluated on both the size of the
-subsystem and whether it is an IIS (see Evaluation Criteria).</p>
+a valid output. Entries are evaluated on the size of the subsystem, the
+speed of computation, and whether the subsystem is an IIS (see
+Evaluation Criteria).</p>
 <h3 id="instance-selection">Instance Selection</h3>
 <p>The competition instances are linear MIPs with continuous and integer
 variables, supplied in MPS format. RANGES, SOS, indicator and quadratic
@@ -222,12 +209,15 @@ MPS files are rejected by the checker. Public <a
 href="https://github.com/mixedinteger/MIPcc27/tree/main/smallset">sample
 instances and solutions</a> are available in the GitHub repository. They
 can be used as a starting point for investigating the topic.</p>
-<p><strong>Call for instances.</strong> We welcome suggestions of
-interesting infeasible MIP instances from the community, in particular
-real-world or structurally novel instances for which a small IIS would
-be practically valuable or illustrative. Please send suggestions
-privately to <a href="mailto:bonami+mipcc27@gurobi.com">the committee
-chair</a>.</p>
+<p><a id="call-for-instances"></a><strong>Call for instances.</strong>
+We welcome submissions of interesting infeasible MIP instances from the
+community, in particular real-world or structurally novel instances for
+which a small IIS would be practically valuable or illustrative. Note
+that since entries are evaluated on whether they find an IIS,
+infeasibility should be provable in a reasonable amount of time (less
+than 10 minutes) with a state-of-the-art open-source solver. Please send
+submissions privately to <a href="mailto:bonami+mipcc27@gurobi.com">the
+committee chair</a> by the beginning of December 2026.</p>
 <h3 id="input--output">Input / Output</h3>
 <ul>
 <li><strong>Input:</strong> infeasible MIP instances in MPS format.</li>
